@@ -1,0 +1,14 @@
+180701.215456.0056 // TIME STAMP
+EMPLOYEE_TYPE 
+ l5 // EMPLOYEE_LIST count
+ {[SERVER1],
+  ....}
+ s60 // ScheudleSetUp positionIDs.size
+ GLOBAL_MAX_HOURS{[P_ID],...,[P_2_ID]}
+ m30 // QualifedEmployeeListMap map.size
+  KEY (SF) {[SERVER_ID],[SERVER_2_ID]...}
+  ...
+ o100 // OperationStack opCount
+  {[BOTTOM]....[TOP]}
+EMPLOYEE_TYPE_2
+ ...

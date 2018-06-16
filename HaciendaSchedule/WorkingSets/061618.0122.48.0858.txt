@@ -1,0 +1,27 @@
+061618.0122.48.0858
+Class
+l14
+{[7,chels,2010-01-01,0.0,{[true,true],[true,true],[true,true],[true,true],[true,true],[true,true],[true,true]},0.0,40,35,0[Cocktail,Closer,Head_Wait,Sales]],
+[12,Paul 3,2018-01-01,0.0,{[true,true],[true,true],[true,true],[true,true],[true,true],[true,true],[true,true]},0.0,40,35,0[Sales]],
+[14,alecia,2007-01-01,0.0,{[true,true],[true,true],[true,true],[true,true],[true,true],[true,true],[true,true]},0.0,40,35,0[Bar]],
+[11,Paul 2,2017-06-01,0.0,{[true,true],[true,true],[true,true],[true,true],[true,true],[true,true],[true,true]},0.0,40,35,0[Cocktail,Closer,Head_Wait,Sales]],
+[2,wade,2000-01-01,0.0,{[true,true],[true,true],[true,true],[true,true],[true,true],[true,true],[true,true]},0.0,40,35,0[Bar]],
+[6,blake,2014-01-01,0.0,{[true,true],[true,true],[true,true],[true,true],[true,true],[true,true],[true,true]},0.0,40,35,0[Bar,Cocktail,Closer,Head_Wait,Sales]],
+[13,Gregs,2015-06-01,0.0,{[true,true],[true,true],[true,true],[true,true],[true,true],[true,true],[true,true]},0.0,40,35,0[Cocktail,Closer,Head_Wait,Sales]],
+[10,Marcy,2018-01-01,0.0,{[true,true],[true,true],[true,true],[true,true],[true,true],[true,true],[true,true]},0.0,40,35,0[Sales]],
+[3,Olson,2005-01-01,0.0,{[true,true],[true,true],[true,true],[true,true],[true,true],[true,true],[true,true]},0.0,40,35,0[Bar]],
+[4,Chris,2010-01-01,0.0,{[true,true],[true,true],[true,true],[true,true],[true,true],[true,true],[true,true]},0.0,40,35,0[Bar,Cocktail,Closer,Head_Wait,Sales]],
+[5,Dena,2013-01-01,0.0,{[true,true],[true,true],[true,true],[true,true],[true,true],[true,true],[true,true]},0.0,40,35,0[Cocktail,Closer,Head_Wait,Sales]],
+[8,brandon,2018-01-01,0.0,{[true,true],[true,true],[true,true],[true,true],[true,true],[true,true],[true,true]},0.0,40,35,0[Cocktail,Closer,Head_Wait,Sales]],
+[9,me,2017-01-01,0.0,{[true,true],[true,true],[true,true],[true,true],[true,true],[true,true],[true,true]},0.0,40,35,0[Cocktail,Closer,Head_Wait,Sales]],
+[1,Kim,2017-01-01,0.0,{[true,true],[true,true],[true,true],[true,true],[true,true],[true,true],[true,true]},0.0,40,35,0[Cocktail,Closer,Head_Wait,Sales]]}
+
+s47
+40{[1,b,1,6.0],[1,b,1,6.0],[1,t,1,6.0],[1,t,1,6.0],[1,c,1,6.0],[1,c,1,6.0],[1,h,1,5.0],[1,h,1,5.0],[1,s,1,4.0],[1,s,1,4.0],[1,s,1,2.0],[1,s,1,2.0],[1,s,1,1.0],[1,s,1,1.0],[4,b,1,9.0],[4,b,1,8.0],[4,t,1,9.0],[4,t,1,8.0],[4,c,1,9.0],[4,c,1,8.0],[4,h,1,8.0],[4,h,1,7.0],[4,s,1,5.0],[4,s,1,5.0],[4,s,1,4.0],[4,s,1,4.0],[4,s,1,3.0],[4,s,1,3.0],[4,s,1,2.0],[4,s,1,2.0],[5,b,1,10.0],[5,b,1,10.0],[5,b,1,9.0],[5,t,1,10.0],[5,t,1,10.0],[5,c,1,10.0],[5,c,1,9.0],[5,h,1,9.0],[5,h,1,8.0],[5,s,1,8.0],[5,s,1,7.0],[5,s,1,6.0],[5,s,1,6.0],[5,s,1,5.0],[5,s,1,5.0],[5,s,1,4.0],[5,s,1,4.0]}
+
+m0
+EMPTY MAP
+
+o0
+OPERATION STACK N/A
+
