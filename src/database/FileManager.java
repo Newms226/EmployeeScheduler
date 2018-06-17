@@ -76,26 +76,26 @@ public class FileManager {
 	
 	private static <E extends Employee> void saveEmployeeList(EmployeeList<E> list) {
 		if (Driver.debugging) System.out.println("  Writing Employee List");
-		writer.append(listChar + " " + list.count() + "\n" + list.toCSV() + "\n");
+		writer.append(listChar + " " + list.count() + "\n" + list.toCSV());
 		if (Driver.debugging) System.out.println("    DONE");
 	}
 	
 	private static <E extends Employee> void saveOperationsStack(OperationStack opStack) {
 		if (Driver.debugging) System.out.println("  Writing OperationStack");
-		writer.append(opStackChar + " " + opStack.size() + "\n" + opStack.toCSV()+ "\n");
+		writer.append(opStackChar + " " + opStack.size() + "\n" + opStack.toCSV());
 		if (Driver.debugging) System.out.println("    DONE");
 		// TODO
 	}
 	
 	private static <E extends Employee> void saveSetUp(ScheduleSetUp<E> setUp) {
 		if (Driver.debugging) System.out.println("  Writing set-up");
-		writer.append(setUpChar + " " + setUp.positionIDCount() + "\n" + setUp.getMaxHours() + "\n" + setUp.toCSV()+ "\n");
+		writer.append(setUpChar + " " + setUp.positionIDCount() + "\n" + setUp.getMaxHours() + "\n" + setUp.toCSV());
 		if (Driver.debugging) System.out.println("    DONE");
 	}
 	
 	private static <E extends Employee> void saveQueueMap(QualifiedEmployeeListMap<E> queueMap) {
 		if (Driver.debugging) System.out.println("  Writing queue-map");
-		writer.append(queueMapChar + " " + queueMap.getQueueCount() + "\n" + queueMap.toCSV() + "\n");
+		writer.append(queueMapChar + " " + queueMap.getQueueCount() + "\n" + queueMap.toCSV());
 		if (Driver.debugging) System.out.println("    DONE");
 	}
 	
@@ -105,7 +105,7 @@ public class FileManager {
 			if (Driver.debugging) System.out.println("   SCHEDULE NULL");
 			return;
 		}
-		writer.append(scheduleChar + " " + schedule.getPositionIDCount() + "\n" + schedule.toCSV() + "\n");
+		writer.append(scheduleChar + " " + schedule.getPositionIDCount() + "\n" + schedule.toCSV());
 		if (Driver.debugging) System.out.println("    DONE");
 	}
 	
@@ -138,17 +138,8 @@ public class FileManager {
 		// TODO
 		return null;
 	}
-
-	
-//	public static <E extends Employee>
-	
-//	private static void testRegrex() {
-//		String queueTest = "[ME,9.2]";
-//		Matcher tester;
-//		tester = ARRAY_ELEMENT_REGREX_MATCHER.matcher(queueTest);
-//		System.out.println(tester.matches());
-//	}
 	
 	public static void main(String[] args) {
+		
 	}
 }

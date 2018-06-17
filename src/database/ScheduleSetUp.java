@@ -174,10 +174,10 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	}
 	
 	String toCSV() {
-		StringBuffer buffer = new StringBuffer("{");
+		StringBuffer buffer = new StringBuffer();
 		positionIDs.stream()
-			.forEach(ID -> buffer.append("[" + ID.toCSV() + "],"));
-		return StringTools.removeLastComma(buffer).concat("}\n");
+			.forEach(ID -> buffer.append("[" + ID.toCSV() + "]\n"));
+		return buffer.toString();
 	}
 	
 	List<PositionID<? extends Employee>> getPositionIDsMUTATIVE() {

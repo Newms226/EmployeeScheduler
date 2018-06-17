@@ -78,7 +78,13 @@ public class Schedule {
 		StringBuffer buffer = new StringBuffer("{");
 		completedIDs
 			.stream()
-			.forEach(id -> buffer.append("[" + id.toCSV() + "," + id.getEmplyee().ID + "]," ));
+			.forEach(id ->{
+				System.out.println(id);
+				buffer.append("[" + 
+						id.toCSV() + "," +
+						id.getEmplyee().ID + "]," );
+			});
+					
 		
 		return buffer.toString();
 	}

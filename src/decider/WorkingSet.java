@@ -83,7 +83,7 @@ public class WorkingSet <E extends Employee> {
 	public Schedule getSchedule() {
 		if (schedule == null && Driver.debugging) {
 			System.out.println("WARNING: Attempted to get schedule when object is null");
-			throw new Error();
+//			throw new Error();
 		}
 		return schedule;
 	}
