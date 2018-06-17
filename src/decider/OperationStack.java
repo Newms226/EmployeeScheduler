@@ -1,36 +1,39 @@
 package decider;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import driver.Driver;
 import tools.FileTools;
 
-public class OperationStack extends ArrayList<Operation<? extends Cloneable>> implements Cloneable {
+public class OperationStack implements Cloneable, Serializable {
 	private static final long serialVersionUID = 7548634254297027242L;
+	private ArrayList<Operation<? extends Cloneable>> stack;
 	
 //	Class<? extends Operation> classType;
 	
 	public OperationStack(/*Class<? extends Operation> classType*/) {
 //		this.classType = classType;
+		stack = new ArrayList<>();
 	}
 	
 	public Operation<?> peek() {
-		return get(size() - 1);
+		return stack.get(stack.size() - 1);
 	}
 	
 	public Operation<?> pop() {
-		return remove(size() - 1);
+		return stack.remove(stack.size() - 1);
 	}
 	
 	public Operation<?> push(Operation<?> operation) {
-		add(operation);
+		stack.add(operation);
 		return operation;
 	}
 	
 	// TODO: Save before? FileManager enum like "BEFORE_ROLL_BACK"
 	OperationStack rollBack(Operation<? extends Cloneable> op) {
 		if (Driver.debugging) System.out.println(FileTools.LINE_BREAK + "ATTEMPTING TO ROLL BACK TO: " + op);
-		if (isEmpty()) {
+		if (stack.isEmpty()) {
 			if (Driver.debugging) System.out.println("ERROR: Cannot roll back, empty operation stack");
 			return null;
 		}
@@ -38,7 +41,7 @@ public class OperationStack extends ArrayList<Operation<? extends Cloneable>> im
 		OperationStack clone = clone();
 		
 		Operation<? extends Cloneable> toExamine;
-		while (!clone.isEmpty()) {
+		while (!clone.stack.isEmpty()) {
 			toExamine = clone.pop();
 			toExamine.rollback(); // NOTE: This process returns an opstack WITHOUT op
 			if (toExamine.equals(op)) {
@@ -47,7 +50,7 @@ public class OperationStack extends ArrayList<Operation<? extends Cloneable>> im
 			}
 		}
 		
-		if (Driver.debugging && clone.isEmpty()) {
+		if (Driver.debugging && clone.stack.isEmpty()) {
 			System.out.println("ERROR: " + op + " was not present in the list, returning an empty operation stack");
 		}
 		
@@ -67,5 +70,9 @@ public class OperationStack extends ArrayList<Operation<? extends Cloneable>> im
 	public OperationStack clone() {
 		// TODO
 		return null;
+	}
+	
+	public int count() {
+		return stack.size();
 	}
 }

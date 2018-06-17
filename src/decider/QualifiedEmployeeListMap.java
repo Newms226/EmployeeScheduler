@@ -2,7 +2,7 @@ package decider;
 import java.util.Map;
 import java.util.TreeMap;
 
-import database.EmployeeList;
+import database.EmployeeSet;
 import database.PositionID;
 import database.PositionID.ShiftID;
 import driver.Driver;
@@ -12,10 +12,10 @@ import emp.Employee;
 public class QualifiedEmployeeListMap<E extends Employee> {
 
 	Map <ShiftID, QualifiedEmployeeList<E>> availabilityMap;
-	EmployeeList<E> list;
+	EmployeeSet<E> list;
 	final int globalMax;
 	
-	QualifiedEmployeeListMap(EmployeeList<E> list, int globalMax) {
+	QualifiedEmployeeListMap(EmployeeSet<E> list, int globalMax) {
 		this.list = list;
 		availabilityMap = new TreeMap<ShiftID, QualifiedEmployeeList<E>>(PositionID.SHIFT_ID_ORDER);
 		this.globalMax = globalMax;

@@ -86,7 +86,7 @@ public class FileManager {
 		writer.close();
 	}
 	
-	private static <E extends Employee> void saveEmployeeList(EmployeeList<E> list) {
+	private static <E extends Employee> void saveEmployeeList(EmployeeSet<E> list) {
 		if (Driver.debugging) System.out.println("  Writing Employee List");
 		writer.append(listChar + " " + list.count() + "\n" + list.toCSV());
 		if (Driver.debugging) System.out.println("    DONE");
@@ -149,7 +149,7 @@ public class FileManager {
 	}
 	
 	private static WorkingSet<Server> readServerWorkingSet(String[] componentArray) {
-		EmployeeList<Server> employeeList = readServerSet(componentArray[1]);
+		EmployeeSet<Server> employeeList = readServerSet(componentArray[1]);
 		return new WorkingSet<>(
 				Server.class,
 				employeeList,
@@ -158,13 +158,13 @@ public class FileManager {
 				FileManager.<Server>readQueueMap(componentArray[3], employeeList));
 	}
 	
-	private static EmployeeList<Server> readServerSet(String str){
+	private static EmployeeSet<Server> readServerSet(String str){
 		String[] components = str.split(LINE_BREAK_CHAR);
 		if (!components[0].contains(listChar)) {
 			throw new Error("Invalid call to readEmployeeSet: " + components[0]);
 		}
 		
-		EmployeeList<Server> list = new EmployeeList<Server>(Server.class);
+		EmployeeSet<Server> list = new EmployeeSet<Server>(Server.class);
 		for (int i = 2; i < components.length; i++) {
 			list.addEmployee(Server.fromCSV(StringTools.trimBraces(components[i])));
 		}
@@ -177,7 +177,7 @@ public class FileManager {
 		return list;
 	}
 	
-	private static <E extends Employee> OperationStack readOpStack(String str, EmployeeList<E> list) {
+	private static <E extends Employee> OperationStack readOpStack(String str, EmployeeSet<E> list) {
 		// TODO
 		return null;
 	}
@@ -187,7 +187,7 @@ public class FileManager {
 		return null;
 	}
 	
-	private static <E extends Employee> QualifiedEmployeeListMap<E> readQueueMap(String str, EmployeeList<E> list) {
+	private static <E extends Employee> QualifiedEmployeeListMap<E> readQueueMap(String str, EmployeeSet<E> list) {
 		// TODO
 		return null;
 	}

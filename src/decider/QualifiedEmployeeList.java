@@ -5,7 +5,7 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.function.Predicate;
 
-import database.EmployeeList;
+import database.EmployeeSet;
 import database.PositionID;
 import driver.Driver;
 import emp.Employee;
@@ -22,7 +22,7 @@ public class QualifiedEmployeeList<E extends Employee> {
 	
 	public enum SF {BELLOW_DESIRED, BELLOW_PERSONAL_MAX, BELLOW_GLOBAL_MAX, HOUSE_ONLY}
 	
-	QualifiedEmployeeList(EmployeeList<E> list, PositionID<E> ID, int globalMax) {
+	QualifiedEmployeeList(EmployeeSet<E> list, PositionID<E> ID, int globalMax) {
 		if (Driver.debugging) new RuntimeException(" CREATING LIST FOR: " + ID).printStackTrace();
 		statusFlag = SF.BELLOW_DESIRED;
 		this.ID = ID;
@@ -31,7 +31,7 @@ public class QualifiedEmployeeList<E extends Employee> {
 		this.globalMax = globalMax;
 	}
 	
-	Set<E> fill(EmployeeList<E> list) {
+	Set<E> fill(EmployeeSet<E> list) {
 		return list.filter(s -> s.canWork(ID));
 	}
 

@@ -7,14 +7,15 @@ import java.util.stream.Collectors;
 
 import driver.Driver;
 import emp.Employee;
+import emp.Server;
 import tools.CollectionTools;
 import tools.StringTools;
 
-public class EmployeeList<E extends Employee> {
+public class EmployeeSet<E extends Employee> {
 	Set<E> employeeSet;
 	public final Class<? extends Employee> employeeType;
 	
-	public EmployeeList(Class<? extends Employee> employeeType) {
+	public EmployeeSet(Class<? extends Employee> employeeType) {
 		if (Driver.debugging) {
 			System.out.println("Intalizing ServerList Object");
 		}
@@ -79,7 +80,7 @@ public class EmployeeList<E extends Employee> {
 			.collect(Collectors.toSet());
 	}
 	
-	public static EmployeeList<? extends Employee> fromCSV(String csvString) {
+	public static EmployeeSet<? extends Employee> fromCSV(String csvString) {
 		return null; // TODO
 	}
 	

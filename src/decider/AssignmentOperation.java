@@ -3,7 +3,7 @@ package decider;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-import database.EmployeeList;
+import database.EmployeeSet;
 import database.PositionID;
 import driver.Driver;
 import emp.ClassNotEqualException;
@@ -99,7 +99,7 @@ public class AssignmentOperation implements Operation<PositionID<? extends Emplo
 		return getClass().getCanonicalName() + "," + time + "," + employee.ID + ",{" + ID.toCSV() + "},{" + list.toCSV() + "},{" + averager.toCSV() + "}";
 	}
 	
-	public static <E extends Employee> AssignmentOperation fromCSV(String str, EmployeeList<E> list) {
+	public static <E extends Employee> AssignmentOperation fromCSV(String str, EmployeeSet<E> list) {
 		String[] components = str.split(",");
 		AssignmentOperation toReturn = new AssignmentOperation(
 				PositionID.fromCSV(StringTools.trimBraces(components[3])),

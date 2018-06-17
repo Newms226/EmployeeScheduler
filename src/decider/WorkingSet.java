@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import database.EmployeeList;
+import database.EmployeeSet;
 import database.FileManager;
 import database.PositionID;
 import database.ScheduleSetUp;
@@ -19,7 +19,7 @@ import emp.PositionType;
 import emp.Server;
 
 public class WorkingSet <E extends Employee> {
-	public final EmployeeList<E> employeeList;
+	public final EmployeeSet<E> employeeList;
 	public final ScheduleSetUp<E> setUp;
 	public final OperationStack opStack;
 	public final QualifiedEmployeeListMap<E> queueMap;
@@ -29,14 +29,14 @@ public class WorkingSet <E extends Employee> {
 	
 	public WorkingSet(Class<E> E_TYPE, int globalMax) {
 		employeeType = E_TYPE;
-		employeeList = new EmployeeList<E>(E_TYPE);
+		employeeList = new EmployeeSet<E>(E_TYPE);
 		setUp = new ScheduleSetUp<E>();
 		opStack = new OperationStack();
 		queueMap = new QualifiedEmployeeListMap<E>(employeeList, globalMax);
 	}
 	
 	public WorkingSet(Class<E> employeeType,
-			   EmployeeList<E> employeeList,
+			   EmployeeSet<E> employeeList,
 			   ScheduleSetUp<E> setUp, 
 			   OperationStack opStack,
 			   QualifiedEmployeeListMap<E> queueMap){
