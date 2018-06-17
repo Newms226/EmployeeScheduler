@@ -25,6 +25,8 @@ public class FileManager {
 	static String setID;
 	private static File workingFile;
 	private static PrintWriter writer; // TODO
+	
+	public static enum SF 
 
 	
 	public final static SimpleDateFormat fileFormat = new SimpleDateFormat("MMddyy.kkmm.ss.SSSS"); 
