@@ -4,6 +4,7 @@ package decider;
 import java.util.Iterator;
 import java.util.List;
 
+import database.FileManager;
 import database.PositionID;
 import driver.Driver;
 import emp.Employee;
@@ -28,7 +29,7 @@ public class Scheduler<E extends Employee> {
 		if (positionIDs.isEmpty()) {
 			throw new IllegalArgumentException("ERROR: PositionIDs is empty!");
 		}
-		workingSet.save();
+		workingSet.save(FileManager.SF.BEFORE_SCHEDULE);
 		
 		// TODO: This should never happen, ensured by the working set
 		// ClassNotEqualException.assertEqual(workingSet.employeeType, positionIDs.get(0).employeeType);
@@ -51,6 +52,7 @@ public class Scheduler<E extends Employee> {
 		long endTime = System.nanoTime();
 		if (Driver.debugging) System.out.println(FileTools.LINE_BREAK + "COMPLETE: Scheudler\n  IN: " + StopWatch.nanosecondsToString(endTime - startTime) + FileTools.LINE_BREAK);
 		workingSet.setSchedule(positionIDs);
+		workingSet.save(FileManager.SF.AFTER_SCHEDULE);
 		/* > Get list of PositionIDs
 		 * > Sort list according to priority
 		 * > Work through the list
