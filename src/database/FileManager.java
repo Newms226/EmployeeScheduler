@@ -153,7 +153,7 @@ public class FileManager {
 				Server.class,
 				employeeList,
 				readScheduleSetUp(componentArray[2]),
-				readOpStack(componentArray[4]),
+				readOpStack(componentArray[4], employeeList),
 				readQueueMap(componentArray[3], employeeList));
 	}
 	
@@ -162,7 +162,7 @@ public class FileManager {
 		return null;
 	}
 	
-	private static OperationStack readOpStack(String str) {
+	private static <E extends Employee> OperationStack readOpStack(String str, EmployeeList<E> list) {
 		// TODO
 		return null;
 	}

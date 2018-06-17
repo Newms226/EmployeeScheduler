@@ -278,7 +278,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 		return getDay().dayOfWeek  + "," + getShiftType().ordinal() + "," + getPositionType().ABR + "," + priority;
 	}
 	
-	static <E extends Employee> PositionID<E> fromCSV(String str) {
+	public static <E extends Employee> PositionID<E> fromCSV(String str) {
 		return fromCSV(str.split(","));
 	}
 	

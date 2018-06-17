@@ -1,12 +1,15 @@
 package decider;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+import database.EmployeeList;
 import database.PositionID;
 import driver.Driver;
 import emp.ClassNotEqualException;
 import emp.Employee;
 import emp.HouseShift;
+import tools.StringTools;
 import util.Averager;
 
 public class AssignmentOperation implements Operation<PositionID<? extends Employee>> {
@@ -93,8 +96,18 @@ public class AssignmentOperation implements Operation<PositionID<? extends Emplo
 
 	@Override
 	public String toCSV() {
-		// TODO Auto-generated method stub
-		return null;
+		return getClass().getCanonicalName() + "," + time + "," + employee.ID + ",{" + ID.toCSV() + "},{" + list.toCSV() + "},{" + averager.toCSV() + "}";
+	}
+	
+	public static <E extends Employee> AssignmentOperation fromCSV(String str, EmployeeList<E> list) {
+		String[] components = str.split(",");
+		AssignmentOperation toReturn = new AssignmentOperation(
+				PositionID.fromCSV(StringTools.trimBraces(components[3])),
+				QualifiedEmployeeList.fromCSV(StringTools.trimBraces(components[4])), 
+				Averager.fromCSV(StringTools.trimBraces(components[5])));
+		toReturn.employee = list.findEmployee(Integer.parseInt(components[2]));
+		toReturn.time = LocalDateTime.parse(components[1]);
+		return toReturn;
 	}
 	
 	public PositionID<? extends Employee> getID(){
@@ -102,5 +115,6 @@ public class AssignmentOperation implements Operation<PositionID<? extends Emplo
 	}
 	
 	public static void main(String[] args) {
+		System.out.println(LocalDateTime.now().toString());
 	}
 }

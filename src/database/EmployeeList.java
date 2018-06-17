@@ -34,15 +34,15 @@ public class EmployeeList<E extends Employee> {
 		});
 	}
 	
-	E findEmployee(E toFind) {
+	public E findEmployee(E toFind) {
 		return CollectionTools.findFirst(employeeSet, s -> s.equals(toFind));
 	}
 	
-	E findEmployee(String name) {
+	public E findEmployee(String name) {
 		return CollectionTools.findFirst(employeeSet, s -> s.NAME.equalsIgnoreCase(name));
 	}
 	
-	E findEmployee(int ID) {
+	public E findEmployee(int ID) {
 		return CollectionTools.findFirst(employeeSet, s -> s.ID == ID);
 	}
 	
