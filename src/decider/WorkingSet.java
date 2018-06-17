@@ -46,8 +46,8 @@ public class WorkingSet <E extends Employee> {
 		// TODO writeToFile();
 	}
 	
-	public void save() {
-		FileManager.saveAll(this);
+	public void save(FileManager.SF statusFlag) {
+		FileManager.saveAll(this, statusFlag);
 	}
 	
 	public static <E extends Employee> WorkingSet<E> readFromFile(File input) {
@@ -67,7 +67,7 @@ public class WorkingSet <E extends Employee> {
 	}
 	
 	public Class<?> getEmployeeType() {
-		return employeeType.getClass();
+		return employeeType;
 	}
 	
 	public void setSchedule(Collection<PositionID<? extends Employee>> completedIDs) {
@@ -131,8 +131,8 @@ public class WorkingSet <E extends Employee> {
 	}
 	
 	public static void main(String[] args) {
-		WorkingSet<Server> test = WorkingSet.serverTrainingData();
-		FileManager.saveAll(test);
+//		WorkingSet<Server> test = WorkingSet.serverTrainingData();
+//		FileManager.saveAll(test);
 	}
 
 }
