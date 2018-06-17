@@ -20,7 +20,8 @@ public class FileManager {
 	public static final String ARRAY_REGREX = "\\{(\\[)([^\\s]+)(,*)([^\\s]*)(\\])\\}";
 	public static final Pattern ARRAY_REGREX_MATCHER = Pattern.compile(ARRAY_ELEMENT_REGREX);
 	
-	static final String resourceFolder = "/Users/Michael/eclipse-workspace/HaciendaSchedule/WorkingSets";
+	static final String resourceFolder = "/Users/Michael/gitHub/EmployeeScheduler/WorkingSets"; 
+;
 			            
 	static String setID;
 	private static File workingFile;
@@ -32,7 +33,8 @@ public class FileManager {
 		AFTER_VERIFY, 
 		BEFORE_ROLLBACK, 
 		ROLLED_BACK,
-		MODIFIED_SCHEDULE;
+		MODIFIED_SCHEDULE,
+		ON_EXIT;
 	}
 
 	
@@ -43,7 +45,7 @@ public class FileManager {
 			               setUpChar = "s",
 			            queueMapChar = "m";
 
-	public static <E extends Employee> void saveAll(WorkingSet<E> set) {
+	public static <E extends Employee> void saveAll(WorkingSet<E> set, SF statusFlag) {
 		setID = fileFormat.format(new Date());
 		workingFile = new File(resourceFolder + "/" + setID + ".txt");
 //		if (!workingFile.mkdirs()) {
@@ -59,7 +61,7 @@ public class FileManager {
 			throw new Error();
 		}
 		
-		writer.write(setID + "\n" + set.getEmployeeType().getSimpleName() + "\n");
+		writer.write(setID + "\n" + statusFlag.name() + "\n" + set.getEmployeeType().getSimpleName() + "\n");
 		
 		saveEmployeeList(set.employeeList);
 		saveSetUp(set.setUp);
