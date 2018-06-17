@@ -11,7 +11,9 @@ import decider.OperationStack;
 import decider.QualifiedEmployeeListMap;
 import decider.WorkingSet;
 import driver.Driver;
+import driver.Schedule;
 import emp.Employee;
+import emp.Server;
 
 public class FileManager {
 	public static final String ARRAY_ELEMENT_REGREX = "(\\[)([^\\s]+)(,*)([^\\s]*)(\\])";
@@ -21,7 +23,6 @@ public class FileManager {
 	public static final Pattern ARRAY_REGREX_MATCHER = Pattern.compile(ARRAY_ELEMENT_REGREX);
 	
 	static final String resourceFolder = "/Users/Michael/gitHub/EmployeeScheduler/WorkingSets"; 
-;
 			            
 	static String setID;
 	private static File workingFile;
@@ -39,11 +40,12 @@ public class FileManager {
 
 	
 	public final static SimpleDateFormat fileFormat = new SimpleDateFormat("MMddyy.kkmm.ss.SSSS"); 
-	static final String workingSetChar = "w",
-			             opStackChar = "o",
-			                listChar = "l",
-			               setUpChar = "s",
-			            queueMapChar = "m";
+	static final String workingSetChar = "#w",
+			             opStackChar = "#o",
+			                listChar = "#l",
+			               setUpChar = "#s",
+			            queueMapChar = "#m",
+			            scheduleChar = "#r";
 
 	public static <E extends Employee> void saveAll(WorkingSet<E> set, SF statusFlag) {
 		setID = fileFormat.format(new Date());
@@ -61,39 +63,80 @@ public class FileManager {
 			throw new Error();
 		}
 		
-		writer.write(setID + "\n" + statusFlag.name() + "\n" + set.getEmployeeType().getSimpleName() + "\n");
+		writer.write(setID + "\n" + statusFlag.name() + "\n" + set.getEmployeeType().getCanonicalName() + "\n");
 		
 		saveEmployeeList(set.employeeList);
 		saveSetUp(set.setUp);
 		saveQueueMap(set.queueMap);
 		saveOperationsStack(set.opStack);
+		saveSchedule(set.getSchedule());
 		
 		writer.close();
 	}
 	
 	private static <E extends Employee> void saveEmployeeList(EmployeeList<E> list) {
 		if (Driver.debugging) System.out.println("  Writing Employee List");
-		writer.append(listChar + list.count() + "\n" + list.toCSV() + "\n");
+		writer.append(listChar + " " + list.count() + "\n" + list.toCSV() + "\n");
 		if (Driver.debugging) System.out.println("    DONE");
 	}
 	
 	private static <E extends Employee> void saveOperationsStack(OperationStack opStack) {
 		if (Driver.debugging) System.out.println("  Writing OperationStack");
-		writer.append(opStackChar + opStack.size() + "\n" + opStack.toCSV()+ "\n");
+		writer.append(opStackChar + " " + opStack.size() + "\n" + opStack.toCSV()+ "\n");
 		if (Driver.debugging) System.out.println("    DONE");
 		// TODO
 	}
 	
 	private static <E extends Employee> void saveSetUp(ScheduleSetUp<E> setUp) {
 		if (Driver.debugging) System.out.println("  Writing set-up");
-		writer.append(setUpChar + setUp.positionIDCount() + "\n" + setUp.getMaxHours() + setUp.toCSV()+ "\n");
+		writer.append(setUpChar + " " + setUp.positionIDCount() + "\n" + setUp.getMaxHours() + "\n" + setUp.toCSV()+ "\n");
 		if (Driver.debugging) System.out.println("    DONE");
 	}
 	
 	private static <E extends Employee> void saveQueueMap(QualifiedEmployeeListMap<E> queueMap) {
 		if (Driver.debugging) System.out.println("  Writing queue-map");
-		writer.append(queueMapChar + queueMap.getQueueCount() + "\n" + queueMap.toCSV()+ "\n");
+		writer.append(queueMapChar + " " + queueMap.getQueueCount() + "\n" + queueMap.toCSV() + "\n");
 		if (Driver.debugging) System.out.println("    DONE");
+	}
+	
+	private static <E extends Employee> void saveSchedule(Schedule schedule) {
+		if (Driver.debugging) System.out.println("  Writing Schedule");
+		if (schedule == null) {
+			if (Driver.debugging) System.out.println("   SCHEDULE NULL");
+			return;
+		}
+		writer.append(scheduleChar + " " + schedule.getPositionIDCount() + "\n" + schedule.toCSV() + "\n");
+		if (Driver.debugging) System.out.println("    DONE");
+	}
+	
+	public static WorkingSet<? extends Employee> readWorkingSet(File file) {
+		// TODO
+		return null;
+	}
+	
+	private static <E extends Employee> EmployeeList<E> readEmployeeSet(String str){
+		// TODO
+		return null;
+	}
+	
+	private static OperationStack readOpStack(String str) {
+		// TODO
+		return null;
+	}
+	
+	private static <E extends Employee> ScheduleSetUp<E> readScheduleSetUp(String str) {
+		// TODO
+		return null;
+	}
+	
+	private static <E extends Employee> QualifiedEmployeeListMap<E> readQueueMap(String str) {
+		// TODO
+		return null;
+	}
+	
+	private static Schedule readSchedule(String str) {
+		// TODO
+		return null;
 	}
 
 	
@@ -107,9 +150,5 @@ public class FileManager {
 //	}
 	
 	public static void main(String[] args) {
-//		ScheduleSetUp<Server> test = new ScheduleSetUp<>();
-//		test.trainingData();
-//		FileManager.saveSetUp(test);
-//		System.out.println(Operation.OperationType.valueOf("a").name() + " " + Operation.OperationType.valueOf("a").toString());
 	}
 }

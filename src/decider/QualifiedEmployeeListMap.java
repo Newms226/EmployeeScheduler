@@ -44,7 +44,7 @@ public class QualifiedEmployeeListMap<E extends Employee> {
 		if (availabilityMap.isEmpty()) return "EMPTY MAP\n";
 		StringBuffer buffer = new StringBuffer();
 		availabilityMap.entrySet().stream()
-			.forEach(entry -> buffer.append(entry.getKey() + entry.getValue().toCSV() + "\n" ));
+			.forEach(entry -> buffer.append(entry.getKey().toCSV() + entry.getValue().toCSV() + "\n" ));
 		return buffer.toString();
 	}
 	

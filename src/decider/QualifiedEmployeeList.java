@@ -81,7 +81,7 @@ public class QualifiedEmployeeList<E extends Employee> {
 		workingList.stream()
 			.mapToInt(emp -> emp.ID)
 			.forEach(i -> buffer.append("[" + i + "],"));
-		return StringTools.removeLastComma(buffer).concat("}\n");
+		return StringTools.removeLastComma(buffer).concat("}");
 	}
 	
 	public static <E extends Employee> QualifiedEmployeeList<E> fromCSV(String csvEncoded){

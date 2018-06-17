@@ -65,12 +65,12 @@ public class EmployeeList<E extends Employee> {
 	}
 	
 	public String toCSV() {
-		StringBuffer buffer = new StringBuffer("{");
+		StringBuffer buffer = new StringBuffer();
 		
 		employeeSet.stream()
-			.forEach(server -> buffer.append("[" + server.toCSV() + "],\n"));
+			.forEach(server -> buffer.append("[" + server.toCSV() + "]\n"));
 		
-		return StringTools.removeLastComma(buffer).concat("}\n");
+		return buffer.toString();
 	}
 	
 	public Set<E> filter(Predicate<? super Employee> predicate){
@@ -128,7 +128,5 @@ public class EmployeeList<E extends Employee> {
 //	}
 	
 	public static void main(String[] args) {
-		String str = "hello,george,bob,";
-		System.out.println(str.substring(0, str.lastIndexOf(",")));
 	}
 }

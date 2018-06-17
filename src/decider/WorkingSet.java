@@ -1,6 +1,8 @@
 package decider;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -130,9 +132,7 @@ public class WorkingSet <E extends Employee> {
 		return workingSet;
 	}
 	
-	public static void main(String[] args) {
-//		WorkingSet<Server> test = WorkingSet.serverTrainingData();
-//		FileManager.saveAll(test);
+	public static void main(String[] args) throws IOException {
 	}
 
 }

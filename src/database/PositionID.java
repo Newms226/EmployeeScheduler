@@ -274,8 +274,8 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 		modify.selection();
 	}
 	
-	String toCSV() {
-		return getDay().dayOfWeek  + "," + getPositionType().ABR + "," + getShiftType().ordinal() + "," + priority;
+	public String toCSV() {
+		return getDay().dayOfWeek  + "," + getShiftType().ordinal() + "," + getPositionType().ABR + "," + priority;
 	}
 	
 	static <E extends Employee> PositionID<E> fromCSV(String str) {
@@ -373,6 +373,10 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 
 		ShiftID(Day clone, ShiftType shiftType, PositionType positionType) {
 			this (clone.dayOfWeek, shiftType.ordinal(), positionType.ordinal());
+		}
+		
+		public String toCSV() {
+			return dayOfWeek + "," + shiftTypeOrdinal + "," + positionTypeOrdinal;
 		}
 
 		@Override

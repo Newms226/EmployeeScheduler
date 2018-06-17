@@ -25,7 +25,7 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	private static final long serialVersionUID = 4051599033147551363L;
 
 	private final String TRAINING_FILE_STR = "testingData/s_1";
-	private final File TRAINING_FILE;
+	public final File TRAINING_FILE;
 	
 	private static int DEFAULT_GLOBAL_MAX_HOURS = 40;
 	private int GLOBAL_MAX_HOURS;

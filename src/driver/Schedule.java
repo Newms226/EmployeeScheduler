@@ -70,6 +70,24 @@ public class Schedule {
 		return buffer.toString();
 	}
 	
+	public int getPositionIDCount() {
+		return completedIDs.size();
+	}
+	
+	public String toCSV() {
+		StringBuffer buffer = new StringBuffer("{");
+		completedIDs
+			.stream()
+			.forEach(id -> buffer.append("[" + id.toCSV() + "," + id.getEmplyee().ID + "]," ));
+		
+		return buffer.toString();
+	}
+	
+	public static Schedule fromCSV(String csv) {
+		// TODO
+		return null;
+	}
+	
 	public String toString() {
 		// TODO
 		return null;
