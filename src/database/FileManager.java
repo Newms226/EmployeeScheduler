@@ -17,6 +17,7 @@ import driver.Driver;
 import driver.Schedule;
 import emp.Employee;
 import emp.Server;
+import tools.StringTools;
 
 public class FileManager {
 	public static final String ARRAY_ELEMENT_REGREX = "(\\[)([^\\s]+)(,*)([^\\s]*)(\\])";
@@ -52,11 +53,11 @@ public class FileManager {
 	
 	public final static SimpleDateFormat fileFormat = new SimpleDateFormat("MMddyy.kkmm.ss.SSSS"); 
 	static final String workingSetChar = "#w",
-			             opStackChar = "#o",
-			                listChar = "#l",
-			               setUpChar = "#s",
-			            queueMapChar = "#m",
-			            scheduleChar = "#r";
+			               opStackChar = "#o",
+			                  listChar = "#l",
+			                 setUpChar = "#s",
+			              queueMapChar = "#m",
+			              scheduleChar = "#r";
 
 	public static <E extends Employee> void saveAll(WorkingSet<E> set, SF statusFlag) {
 		setID = fileFormat.format(new Date());
@@ -148,18 +149,32 @@ public class FileManager {
 	}
 	
 	private static WorkingSet<Server> readServerWorkingSet(String[] componentArray) {
-		EmployeeList<Server> employeeList = readEmployeeSet(componentArray[1]);
+		EmployeeList<Server> employeeList = readServerSet(componentArray[1]);
 		return new WorkingSet<>(
 				Server.class,
 				employeeList,
-				readScheduleSetUp(componentArray[2]),
-				readOpStack(componentArray[4], employeeList),
-				readQueueMap(componentArray[3], employeeList));
+				FileManager.<Server>readScheduleSetUp(componentArray[2]),
+				FileManager.<Server>readOpStack(componentArray[4], employeeList),
+				FileManager.<Server>readQueueMap(componentArray[3], employeeList));
 	}
 	
-	private static <E extends Employee> EmployeeList<E> readEmployeeSet(String str){
-		// TODO
-		return null;
+	private static EmployeeList<Server> readServerSet(String str){
+		String[] components = str.split(LINE_BREAK_CHAR);
+		if (!components[0].contains(listChar)) {
+			throw new Error("Invalid call to readEmployeeSet: " + components[0]);
+		}
+		
+		EmployeeList<Server> list = new EmployeeList<Server>(Server.class);
+		for (int i = 2; i < components.length; i++) {
+			list.addEmployee(Server.fromCSV(StringTools.trimBraces(components[i])));
+		}
+		
+		if (Integer.parseInt(components[0].substring(3, components[0].length() - 1)) != list.count()) {
+			throw new Error("Did not read in the valid amount of employees. "
+				+ "Read: " + list.count() + " Expected: " + Integer.parseInt(components[0].substring(3, components[0].length() - 1)));
+		}
+		
+		return list;
 	}
 	
 	private static <E extends Employee> OperationStack readOpStack(String str, EmployeeList<E> list) {

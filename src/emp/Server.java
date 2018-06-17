@@ -103,7 +103,10 @@ public class Server extends Employee {
 				PositionType.buildServerPositions());
 	}
 	
-	
+	public static Server fromCSV(String str) {
+		// TOD
+		return null;
+	}
 	
 	public static void testPriorityCalc() {
 		ArrayList<PositionType> w = new ArrayList<>(5);
