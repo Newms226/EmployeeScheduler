@@ -1,7 +1,10 @@
 package database;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -23,19 +26,27 @@ public class FileManager {
 	public static final Pattern ARRAY_REGREX_MATCHER = Pattern.compile(ARRAY_ELEMENT_REGREX);
 	
 	static final String resourceFolder = "/Users/Michael/gitHub/EmployeeScheduler/WorkingSets"; 
+	
+	public static final String LINE_BREAK_CHAR = "_\\n_";
 			            
 	static String setID;
 	private static File workingFile;
 	private static PrintWriter writer; // TODO
 	
 	public static enum SF {
-		BEFORE_SCHEDULE, 
-		AFTER_SCHEDULE, 
-		AFTER_VERIFY, 
-		BEFORE_ROLLBACK, 
-		ROLLED_BACK,
-		MODIFIED_SCHEDULE,
-		ON_EXIT;
+		BEFORE_SCHEDULE(01), 
+		AFTER_SCHEDULE(02), 
+		AFTER_VERIFY(03), 
+		BEFORE_ROLLBACK(04), 
+		ROLLED_BACK(05),
+		MODIFIED_SCHEDULE(06),
+		ON_EXIT(07);
+		
+		public final int ID_CODE;
+		
+		private SF(int ID) {
+			ID_CODE = ID;
+		}
 	}
 
 	
@@ -49,7 +60,7 @@ public class FileManager {
 
 	public static <E extends Employee> void saveAll(WorkingSet<E> set, SF statusFlag) {
 		setID = fileFormat.format(new Date());
-		workingFile = new File(resourceFolder + "/" + setID + ".txt");
+		workingFile = new File(resourceFolder + "/" + statusFlag.ID_CODE + "." + setID + ".txt");
 //		if (!workingFile.mkdirs()) {
 //			if (Driver.debugging)System.out.println("FAILED TO MAKE DIRECTORIES:\n  " + workingFile);
 //			throw new Error();
@@ -110,6 +121,33 @@ public class FileManager {
 	}
 	
 	public static WorkingSet<? extends Employee> readWorkingSet(File file) {
+		String fileText = generateStringFromFile(file);
+		String[] components = fileText.split("#");
+		String employeeTypeString = components[0].split(LINE_BREAK_CHAR)[2];
+		if (employeeTypeString.equals(Server.class.getCanonicalName())) {
+			return readServerWorkingSet(components);
+		}
+		
+		throw new Error("Cound not match \"" + employeeTypeString + "\"");
+	}
+	
+	public static String generateStringFromFile(File file) {
+		try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+			StringBuffer buffer = new StringBuffer();
+			reader.lines().forEach(str -> buffer.append(str + LINE_BREAK_CHAR));
+			return buffer.toString();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
+	
+	private static WorkingSet<Server> readServerWorkingSet(String[] componentArray) {
 		// TODO
 		return null;
 	}
@@ -140,6 +178,6 @@ public class FileManager {
 	}
 	
 	public static void main(String[] args) {
-		
+		System.out.println(generateStringFromFile(new File("/Users/Michael/gitHub/EmployeeScheduler/WorkingSets/061718.0103.54.0371.txt")));
 	}
 }
