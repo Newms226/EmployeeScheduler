@@ -35,7 +35,7 @@ public class WorkingSet <E extends Employee> {
 		queueMap = new QualifiedEmployeeListMap<E>(employeeList, globalMax);
 	}
 	
-	WorkingSet(Class<E> employeeType,
+	public WorkingSet(Class<E> employeeType,
 			   EmployeeList<E> employeeList,
 			   ScheduleSetUp<E> setUp, 
 			   OperationStack opStack,

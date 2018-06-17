@@ -148,8 +148,13 @@ public class FileManager {
 	}
 	
 	private static WorkingSet<Server> readServerWorkingSet(String[] componentArray) {
-		// TODO
-		return null;
+		EmployeeList<Server> employeeList = readEmployeeSet(componentArray[1]);
+		return new WorkingSet<>(
+				Server.class,
+				employeeList,
+				readScheduleSetUp(componentArray[2]),
+				readOpStack(componentArray[4]),
+				readQueueMap(componentArray[3], employeeList));
 	}
 	
 	private static <E extends Employee> EmployeeList<E> readEmployeeSet(String str){
@@ -167,7 +172,7 @@ public class FileManager {
 		return null;
 	}
 	
-	private static <E extends Employee> QualifiedEmployeeListMap<E> readQueueMap(String str) {
+	private static <E extends Employee> QualifiedEmployeeListMap<E> readQueueMap(String str, EmployeeList<E> list) {
 		// TODO
 		return null;
 	}
