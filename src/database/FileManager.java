@@ -26,7 +26,14 @@ public class FileManager {
 	private static File workingFile;
 	private static PrintWriter writer; // TODO
 	
-	public static enum SF 
+	public static enum SF {
+		BEFORE_SCHEDULE, 
+		AFTER_SCHEDULE, 
+		AFTER_VERIFY, 
+		BEFORE_ROLLBACK, 
+		ROLLED_BACK,
+		MODIFIED_SCHEDULE;
+	}
 
 	
 	public final static SimpleDateFormat fileFormat = new SimpleDateFormat("MMddyy.kkmm.ss.SSSS"); 
