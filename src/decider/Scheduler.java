@@ -48,10 +48,16 @@ public class Scheduler<E extends Employee> {
 			workingSet.opStack.push(new AssignmentOperation(ID, 
 					                                        workingSet.queueMap.getList((PositionID<E>) ID),
 					                                        averager)).run();
+//			if (Driver.debugging) {
+//				System.out.println("CURRENT LIST: ");
+//				positionIDs.stream().forEachOrdered(i -> System.out.println(i));
+//			}
 		}
 		long endTime = System.nanoTime();
-		if (Driver.debugging) System.out.println(FileTools.LINE_BREAK + "COMPLETE: Scheudler\n  IN: " + StopWatch.nanosecondsToString(endTime - startTime) + FileTools.LINE_BREAK);
-		workingSet.setSchedule(positionIDs);
+		if (Driver.debugging) System.out.println(FileTools.LINE_BREAK 
+				+ "COMPLETE: Scheudler\n  IN: " + StopWatch.nanosecondsToString(endTime - startTime) 
+				+ FileTools.LINE_BREAK);
+		workingSet.setSchedule(workingSet.opStack.extractPositionIDs());
 		workingSet.save(FileManager.SF.AFTER_SCHEDULE);
 		/* > Get list of PositionIDs
 		 * > Sort list according to priority

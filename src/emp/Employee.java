@@ -114,8 +114,15 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 	public String toCSV() {
 		return ID + "," + NAME + "," + START_DATE + ","  + PAY + ","
 				+ ArrayTools.print2D(POSSIBLE_HOURS, false) + ","
-				+ currentHours + "," + MAX_HOURS + "," + DESIRED_HOURS + "," + MIN_HOURS
+				+ currentHours + "," + MAX_HOURS + "," + DESIRED_HOURS + "," + MIN_HOURS + ","
 				+ qualifiedFor.toString().replaceAll(" ", "");
+	}
+	
+	public static <E extends Employee> E fromCSV(Class<E> employeeType) {
+		if (employeeType.equals(Server.class)) {
+			return Server.fromCSV(employeeType);
+		}
+		throw new Error("Bottomed out in Employee.fromCSV()");
 	}
 	
 	public boolean everAvailableFor(PositionID<? extends Employee> ID) {
@@ -238,6 +245,10 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 	
 	public double updateEmployeePriority(double averageFill) {
 		return employeePriority.getCurrentPriority(averageFill);
+	}
+	
+	public double getCurrentPrioirty() {
+		return employeePriority.currentPriority;
 	}
 		
 	public static void main(String[] args) {

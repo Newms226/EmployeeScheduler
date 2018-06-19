@@ -31,7 +31,7 @@ public class EmployeePriority implements Comparable<EmployeePriority> {
 	double grace;
 	
 	// Priority Variables
-	private double staticPriority,
+	double staticPriority,
 	               currentPriority;
 	
 	public EmployeePriority(Employee employee) {

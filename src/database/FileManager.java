@@ -94,7 +94,7 @@ public class FileManager {
 	
 	private static <E extends Employee> void saveOperationsStack(OperationStack opStack) {
 		if (Driver.debugging) System.out.println("  Writing OperationStack");
-		writer.append(opStackChar + " " + opStack.size() + "\n" + opStack.toCSV());
+		writer.append(opStackChar + " " + opStack.count() + "\n" + opStack.toCSV());
 		if (Driver.debugging) System.out.println("    DONE");
 		// TODO
 	}

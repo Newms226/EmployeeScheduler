@@ -2,8 +2,13 @@ package decider;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
+import database.EmployeeSet;
+import database.PositionID;
 import driver.Driver;
+import emp.Employee;
 import tools.FileTools;
 
 public class OperationStack implements Cloneable, Serializable {
@@ -45,7 +50,7 @@ public class OperationStack implements Cloneable, Serializable {
 			toExamine = clone.pop();
 			toExamine.rollback(); // NOTE: This process returns an opstack WITHOUT op
 			if (toExamine.equals(op)) {
-				if (Driver.debugging) System.out.println("  FOUND: " + toExamine);
+				if (Driver.debugging) System.out.println(" FOUND: " + toExamine);
 				break;
 			}
 		}
@@ -59,17 +64,38 @@ public class OperationStack implements Cloneable, Serializable {
 	}
 	
 	public String toCSV() {
-		// TODO
-		return "OPERATION STACK N/A\n";
+		if (stack.size() == 0) {
+			return "EMPTY STACK";
+		}
+		StringBuffer buffer = new StringBuffer();
+		stack.stream()
+			.forEach(o -> buffer.append(o.toCSV() + "\n"));
+		return buffer.toString();
 	}
 	
-	public static OperationStack fromCSV(String csvFile){
-		return null; // TODO
+	public static OperationStack fromCSV(String[] csvFileLines, EmployeeSet<? extends Employee> list){
+		OperationStack toReturn = new OperationStack();
+		for (int i = csvFileLines.length - 1; i >= 0; i--) {
+			if (csvFileLines[i].split(",")[0].equals(AssignmentOperation.class.getCanonicalName())) {
+				toReturn.push(AssignmentOperation.fromCSV(csvFileLines[i], list));
+			} else {
+				throw new Error("Bottomed out in OperationStack.fromCSV: " + csvFileLines[i].split(",")[0]);
+			}
+		}
+		return toReturn;
 	}
 	
 	public OperationStack clone() {
 		// TODO
 		return null;
+	}
+	
+	public List<PositionID<? extends Employee>> extractPositionIDs(){
+		if (Driver.debugging) System.out.println("EXTRACTING...");
+		return stack.stream()
+			.filter(o -> o.getClass().equals(AssignmentOperation.class))
+			.map(a -> ((AssignmentOperation)a).getPositionID())
+			.collect(Collectors.toList());
 	}
 	
 	public int count() {

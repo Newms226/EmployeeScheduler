@@ -22,7 +22,8 @@ public class AssignmentOperation implements Operation<PositionID<? extends Emplo
 	
 	AssignmentOperation(PositionID<?> ID,
 			            QualifiedEmployeeList<?> list,
-			            Averager avg){
+			            Averager avg) {
+		
 		ClassNotEqualException.assertEqual(ID.employeeType, list.employeeType());
 		
 		this.ID = ID;
@@ -40,7 +41,9 @@ public class AssignmentOperation implements Operation<PositionID<? extends Emplo
 					                        ID.getPositionType(), 
 					                        ID.getShiftType(), 
 					                        ID.getPriority());
-			ID.assignEmployee(new HouseShift());
+			employee = new HouseShift();
+			ID.assignEmployee(employee);
+			if (Driver.debugging) System.out.println("HOUSE ASSINGMENT: " + ID);
 		} else {
 			employee.accept(ID);
 			averager.update(employee.updateEmployeePriority(currentAverage));
@@ -96,7 +99,9 @@ public class AssignmentOperation implements Operation<PositionID<? extends Emplo
 
 	@Override
 	public String toCSV() {
-		return getClass().getCanonicalName() + "," + time + "," + employee.ID + ",{" + ID.toCSV() + "},{" + list.toCSV() + "},{" + averager.toCSV() + "}";
+//		if (Driver.debugging) System.out.println("TO CSV: " + ID);
+		return getClass().getCanonicalName() + "," + time + "," + employee.ID 
+				+ ",{" + ID.toCSV() + "},{" + list.toCSV() + "}";
 	}
 	
 	public static <E extends Employee> AssignmentOperation fromCSV(String str, EmployeeSet<E> list) {
@@ -104,13 +109,13 @@ public class AssignmentOperation implements Operation<PositionID<? extends Emplo
 		AssignmentOperation toReturn = new AssignmentOperation(
 				PositionID.fromCSV(StringTools.trimBraces(components[3])),
 				QualifiedEmployeeList.fromCSV(StringTools.trimBraces(components[4])), 
-				Averager.fromCSV(StringTools.trimBraces(components[5])));
+				null);
 		toReturn.employee = list.findEmployee(Integer.parseInt(components[2]));
 		toReturn.time = LocalDateTime.parse(components[1]);
 		return toReturn;
 	}
 	
-	public PositionID<? extends Employee> getID(){
+	public PositionID<? extends Employee> getPositionID(){
 		return ID;
 	}
 	

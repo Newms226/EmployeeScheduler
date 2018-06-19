@@ -57,8 +57,6 @@ public class QualifiedEmployeeList<E extends Employee> {
 			optionalEmployee = conditionalFill(emp -> emp.currentlyAvailableFor(ID) && emp.bellowGlobalMax(globalMax));
 			if (optionalEmployee.isPresent()) {
 				return optionalEmployee.get();
-			} else {
-				statusFlag = SF.BELLOW_GLOBAL_MAX;
 			}
 		}
 		
@@ -77,14 +75,13 @@ public class QualifiedEmployeeList<E extends Employee> {
 	}
 	
 	public String toCSV() {
-		StringBuffer buffer = new StringBuffer("(" + statusFlag.name() + ") {");
+		StringBuffer buffer = new StringBuffer("(" + statusFlag.name() + "){");
 		workingList.stream()
-			.mapToInt(emp -> emp.ID)
-			.forEach(i -> buffer.append("[" + i + "],"));
+			.forEach(emp -> buffer.append("[" + emp.ID + "," + emp.getCurrentPrioirty() + "],"));
 		return StringTools.removeLastComma(buffer).concat("}");
 	}
 	
-	public static <E extends Employee> QualifiedEmployeeList<E> fromCSV(String csvEncoded){
+	public static <E extends Employee> QualifiedEmployeeList<E> fromCSV(String string){
 		// TODO
 		return null;
 	}

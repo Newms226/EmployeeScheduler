@@ -142,10 +142,10 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	}
 	
 	public void trainingData() {
-		parseCSV(TRAINING_FILE);
+		fromCSV(TRAINING_FILE);
 	}
 	
-	public void parseCSV(File importDoc) {
+	public void fromCSV(File importDoc) {
 		try (BufferedReader reader = new BufferedReader(new FileReader(importDoc))){
 //			GLOBAL_MAX_HOURS = Integer.parseInt(reader.readLine());
 			positionIDs = reader

@@ -1,4 +1,5 @@
 package database;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -69,9 +70,16 @@ public class EmployeeSet<E extends Employee> {
 		StringBuffer buffer = new StringBuffer();
 		
 		employeeSet.stream()
-			.forEach(server -> buffer.append("[" + server.toCSV() + "]\n"));
+			.forEach(server -> buffer.append(server.toCSV() + "\n"));
 		
 		return buffer.toString();
+	}
+	
+	public static <E extends Employee> EmployeeSet<E> fromCSV(String[] csvString, Class<E> employeeType) {
+		EmployeeSet<E> toReturn = new EmployeeSet<>(employeeType);
+		Arrays.asList(csvString).stream()
+			.forEach(str -> toReturn.addEmployee(Employee.fromCSV(employeeType)));
+		return toReturn;
 	}
 	
 	public Set<E> filter(Predicate<? super Employee> predicate){
@@ -79,12 +87,6 @@ public class EmployeeSet<E extends Employee> {
 			.filter(predicate)
 			.collect(Collectors.toSet());
 	}
-	
-	public static EmployeeSet<? extends Employee> fromCSV(String csvString) {
-		return null; // TODO
-	}
-	
-	
 	
 //	void addServer() {
 //	boolean valid = false;

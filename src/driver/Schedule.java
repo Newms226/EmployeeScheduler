@@ -75,14 +75,11 @@ public class Schedule {
 	}
 	
 	public String toCSV() {
-		StringBuffer buffer = new StringBuffer("{");
+		StringBuffer buffer = new StringBuffer();
 		completedIDs
 			.stream()
 			.forEach(id ->{
-				System.out.println(id);
-				buffer.append("[" + 
-						id.toCSV() + "," +
-						id.getEmplyee().ID + "]," );
+				buffer.append(id.toCSV() + "," + id.getEmplyee().ID + "\n" );
 			});
 					
 		
