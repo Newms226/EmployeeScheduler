@@ -4,12 +4,13 @@ import database.FileManager;
 import decider.Scheduler;
 import decider.WorkingSet;
 import emp.Server;
+import tools.CollectionTools;
 
 public class Driver {
 	public static final boolean debugging = true; 
 	
 	private String intro;
-	private Menu beginningInput, mainMenu, scheduleMenu, employeeMenu;
+	private Menu beginningInput, mainMenu, scheduleMenu, employeeMenu, scheduleViewer;
 	
 	Restaurant restaurant;
 	Scheduler<Server> DA_KING_MAKER;
@@ -45,8 +46,16 @@ public class Driver {
 				() -> scheduleMenu.selection());
 		mainMenu.add("Exit program",
 				() -> {
-					workingSet.save(FileManager.SF.ON_EXIT);
+					if (workingSet != null) workingSet.save(FileManager.SF.ON_EXIT);
 					System.exit(0);
+				});
+		
+		scheduleViewer = new Menu("Schedule Viewer");
+		scheduleViewer.add("View whole schedule",
+				() -> System.out.println(getSchedule()));
+		scheduleViewer.add("View indvidual servers shifts", 
+				() -> {
+	
 				});
 		
 		scheduleMenu = new Menu("Schedule Set-Up");

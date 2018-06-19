@@ -1,7 +1,9 @@
 package database;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -10,10 +12,11 @@ import driver.Driver;
 import emp.Employee;
 import emp.Server;
 import tools.CollectionTools;
+import tools.NumberTools;
 import tools.StringTools;
 
 public class EmployeeSet<E extends Employee> {
-	Set<E> employeeSet;
+	List<E> employeeSet;
 	public final Class<? extends Employee> employeeType;
 	
 	public EmployeeSet(Class<? extends Employee> employeeType) {
@@ -21,12 +24,16 @@ public class EmployeeSet<E extends Employee> {
 			System.out.println("Intalizing ServerList Object");
 		}
 		this.employeeType = employeeType;
-		employeeSet = new HashSet<>();
+		employeeSet = new ArrayList<>();
 	}
 	
 	public boolean addEmployee(E employee) {
 		if (Driver.debugging) System.out.println("  Adding " + employee + " to ServerList");
-		return (employeeSet.add(employee));
+		if (employeeSet.contains(employee)) {
+			return false;
+		}
+		employeeSet.add(employee);
+		return true;
 	}
 	
 	public void addMultipleEmployees(Collection<? extends E> collection) {
@@ -86,6 +93,16 @@ public class EmployeeSet<E extends Employee> {
 		return employeeSet.stream()
 			.filter(predicate)
 			.collect(Collectors.toSet());
+	}
+	
+	public void viewServerPositions() {
+		employeeSet.get(NumberTools.generateInt(
+				"Which server should you like to view?"
+					+ "\n" + CollectionTools.collectionPrinter(employeeSet, true),
+				false,
+				1,
+				employeeSet.size()))
+			.viewAssignedShifts();
 	}
 	
 //	void addServer() {

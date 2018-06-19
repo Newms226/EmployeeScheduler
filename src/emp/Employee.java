@@ -10,6 +10,7 @@ import database.PositionID;
 import driver.Driver;
 import driver.Restaurant;
 import tools.ArrayTools;
+import tools.CollectionTools;
 
 public abstract class Employee implements Comparable<Employee>, Serializable {
 	
@@ -80,7 +81,9 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 		
 		serverMod = new Menu(NAME + " modification menu. What would you like to change?");
 		serverMod.add("Change available hours", null);
+		serverMod.add("View assgined shifts", () -> viewAssignedShifts());
 		// TODO
+		serverMod.add("Return", null, null, null);
 		
 		assignedShifts = new ArrayList<>();
 	}
@@ -249,6 +252,14 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 	
 	public double getCurrentPrioirty() {
 		return employeePriority.currentPriority;
+	}
+	
+	public void menu() {
+		serverMod.selection();
+	}
+	
+	public void viewAssignedShifts() {
+		CollectionTools.collectionPrinter(assignedShifts, false);
 	}
 		
 	public static void main(String[] args) {
