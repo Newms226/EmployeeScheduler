@@ -1,5 +1,6 @@
 package driver;
 import Menu.Menu;
+import database.FileManager;
 import decider.Scheduler;
 import decider.WorkingSet;
 import emp.Server;
@@ -8,7 +9,7 @@ public class Driver {
 	public static final boolean debugging = true; 
 	
 	private String intro;
-	private Menu beginningInput, mainMenu, scheduleMenu, employeeMenu, endMenu;
+	private Menu beginningInput, mainMenu, scheduleMenu, employeeMenu;
 	
 	Restaurant restaurant;
 	Scheduler<Server> DA_KING_MAKER;
@@ -43,7 +44,10 @@ public class Driver {
 		mainMenu.add("Schedule set-up", 
 				() -> scheduleMenu.selection());
 		mainMenu.add("Exit program",
-				() -> endMenu.selection());
+				() -> {
+					workingSet.save(FileManager.SF.ON_EXIT);
+					System.exit(0);
+				});
 		
 		scheduleMenu = new Menu("Schedule Set-Up");
 		scheduleMenu.add("Set-up days/shifts/priority", 
@@ -63,14 +67,14 @@ public class Driver {
 				() -> mainMenu.selection(),
 				null); // Do nothing after this.
 		
-		endMenu = new Menu("Ending program...", 
-				() -> System.exit(0));
-		endMenu.add("Save the set-up", null); // TODO
-		endMenu.add("Save the schedule", null); // TODO
-		endMenu.add("Save the server list", null); // TODO
-		endMenu.add("Save the restuarant", null); // TODO
-		endMenu.add("Save everything", null); // TODO
-		endMenu.add("Exit", () -> System.exit(0));
+//		endMenu = new Menu("Ending program...", 
+//				() -> System.exit(0));
+//		endMenu.add("Save the set-up", null); // TODO
+//		endMenu.add("Save the schedule", null); // TODO
+//		endMenu.add("Save the server list", null); // TODO
+//		endMenu.add("Save the restuarant", null); // TODO
+//		endMenu.add("Save everything", null); // TODO
+//		endMenu.add("Exit", () -> System.exit(0));
 	}
 	
 	void begin() {
