@@ -3,6 +3,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.logging.Level;
 
 import Menu.Menu;
 import MyTime.Day;
@@ -60,13 +61,14 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 	
 	Employee(String name, int ID, LocalDate startDate, ArrayList<PositionType> possibleShifts) {
 		this (name, ID, startDate, getDefaultAvail(), 0, 40, 35, 0, possibleShifts);
+		Driver.empLog.log(Level.CONFIG, "Generated generic employee {0}", name);
 	}
 	
 	Employee(String name, int ID, LocalDate startDate, boolean[][] possibleHours,
 			double pay, int maxHours, int desiredHours, int minHours,
 			ArrayList<PositionType> possibleShifts)
 	{
-		this.NAME = name;
+		this.NAME = Character.toUpperCase(name.charAt(0)) + name.substring(1, name.length());
 		this.ID = ID;
 		this.POSSIBLE_HOURS = possibleHours;
 		this.availableHours = ArrayTools.copy2D(possibleHours);
@@ -99,14 +101,17 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 	}
 	
 	public void lowPromote() {
+		Driver.empLog.fine("Low promote: " + NAME);
 		employeePriority.internalSetGrace(EmployeePriority.LOW_PROMOTE_GRACE);
 	}
 	
 	public void promote() {
+		Driver.empLog.fine("Promote: " + NAME);
 		employeePriority.internalSetGrace(EmployeePriority.MID_PROMOTE_GRACE);
 	}
 	
 	public void fastPromote() {
+		Driver.empLog.fine("Fast promote: " + NAME);
 		employeePriority.internalSetGrace(EmployeePriority.HIGH_PROMOTE_GRACE);
 	}
 	
@@ -115,6 +120,7 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 	}
 	
 	public String toCSV() {
+		Driver.empLog.finest("toCSV for " + NAME);
 		return ID + "," + NAME + "," + START_DATE + ","  + PAY + ","
 				+ ArrayTools.print2D(POSSIBLE_HOURS, false) + ","
 				+ currentHours + "," + MAX_HOURS + "," + DESIRED_HOURS + "," + MIN_HOURS + ","
@@ -125,51 +131,50 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 		if (employeeType.equals(Server.class)) {
 			return Server.fromCSV(employeeType);
 		}
-		throw new Error("Bottomed out in Employee.fromCSV()");
+		Error e =  new Error("Bottomed out in Employee.fromCSV()");
+		Driver.empLog.log(Level.SEVERE, e.getMessage(), e);
+		throw e;
 	}
 	
 	public boolean everAvailableFor(PositionID<? extends Employee> ID) {
-		if (Driver.debugging) System.out.println("   Testing: " + NAME + " ever available for " + ID);
+		Driver.empLog.finer("Testing: " + NAME + " EVER available for " + ID);
+		boolean test = false;
 		if (POSSIBLE_HOURS[ID.getDay().dayOfWeek][ID.getShiftType().ordinal()]) {
-			if (Driver.debugging) System.out.println("    PASS");
-			return true;
+			test = true;
 		}
-		// else
-		if (Driver.debugging) System.out.println("    FAIL");
-		return false;
+		Driver.empLog.finer(test + "");
+		return test;
 	}
 	
 	public boolean currentlyAvailableFor(PositionID<? extends Employee> ID) {
-		if (Driver.debugging) System.out.println("   Testing: " + NAME + " currenlty available for " + ID);
+		Driver.empLog.finer("Testing: " + NAME + " currenlty available for " + ID);
+		boolean test = false;
 		if (availableHours[ID.getDay().dayOfWeek][ID.getShiftType().ordinal()]) {
-			if (Driver.debugging) System.out.println("    PASS");
-			return true;
+			test = true;
 		}
-		// else
-		if (Driver.debugging) System.out.println("    FAIL");
-		return false;
+		Driver.empLog.finer(test + "");
+		return test;
 	}
 	
 	public boolean qualifiedFor(PositionID<? extends Employee> ID) {
-		if (Driver.debugging) System.out.println("   Testing: " + NAME + " can work a " + ID.getPositionType() + " shift");
+		Driver.empLog.finer("Testing: " + NAME + " can work a " + ID.getPositionType() + " shift");
+		boolean test = false;
 		if (qualifiedFor.contains(ID.getPositionType())) {
-			if (Driver.debugging) System.out.println("    PASS");
-			return true;
+			test = true;
 		}
-		// else
-		if (Driver.debugging) System.out.println("    FAIL");
-		return false;
+		Driver.empLog.finer(test + "");
+		return test;
 	}
 	
 	public boolean canWork(PositionID<? extends Employee> ID) {
-		if (Driver.debugging) System.out.println("  Testing " + NAME + " on ID: " + ID);
+		Driver.empLog.fine("Testing " + NAME + " on ID: " + ID);
 	
 		// TESTS: TODO: If you ask can Server x work a Cook shift, will that fail?
 		if (!qualifiedFor(ID)) return false;
 		if (!currentlyAvailableFor(ID)) return false;
 		
 		// PASSED:
-		if (Driver.debugging) System.out.println("  FULL PASS:" + NAME + " can work " + ID /*+ " Presently: " +
+		Driver.empLog.fine("FULL PASS:" + NAME + " can work " + ID /*+ " Presently: " +
 					this.availableHours[ID.getDay().dayOfWeek][ID.getShiftType().ordinal()]*/);
 		return true;
 	}
@@ -195,19 +200,15 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 	public abstract void markUnavailable(PositionID<? extends Employee> ID);
 	
 	public void changeQualifications() {
-		if (Driver.debugging) {
-			System.out.println("Changing " + NAME + " qualifications. Present:\n  ");
-			qualifiedFor.stream().forEach(s-> System.out.print(s.toString()));
-			System.out.println();
-		}
+		StringBuffer buffer = new StringBuffer();
+		qualifiedFor.stream().forEach(s -> buffer.append(s));
+		Driver.empLog.config("Changing " + NAME + " qualifications. Present:\n\t" + buffer.toString());
 		
 		qualifiedFor = PositionType.buildServerPositions();
 		
-		if (Driver.debugging) {
-			System.out.println("Changied " + NAME + " qualifications to\n  ");
-				qualifiedFor.stream().forEach(s-> System.out.print(s.toString()));
-				System.out.println();
-		}
+		StringBuffer buffer2 = new StringBuffer();
+		qualifiedFor.stream().forEach(s-> buffer2.append(s));
+		Driver.empLog.config("Changied " + NAME + " qualifications to\n\t" + buffer.toString());
 	}
 	
 	@Override

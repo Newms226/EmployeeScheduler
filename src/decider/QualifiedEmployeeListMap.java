@@ -1,6 +1,7 @@
 package decider;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.logging.Level;
 
 import database.EmployeeSet;
 import database.PositionID;
@@ -25,26 +26,37 @@ public class QualifiedEmployeeListMap<E extends Employee> {
 	// Would it be faster to just work from a Map<PositionID, List> ???
 	@SuppressWarnings("unchecked")
 	QualifiedEmployeeList<? extends Employee> getList(PositionID<? extends Employee> ID) {
-		ClassNotEqualException.assertEqual(list.employeeType, ID.employeeType);
+		try {
+			ClassNotEqualException.assertEqual(list.employeeType, ID.employeeType);
+		} catch (ClassNotEqualException e) {
+			Driver.deciderLog.log(Level.SEVERE, e.getMessage(), e);
+			throw e;
+		}
 		
 		ShiftID tempID = ID.extractShiftID();
-		if (Driver.debugging) System.out.println("  In getMap() for " + tempID);
+		Driver.deciderLog.log(Level.FINER, "ENTERNG: QualifiedEmployeeListMap.getList({0})", ID);
 		QualifiedEmployeeList<E> toReturn = availabilityMap.get(tempID);
 		if (toReturn == null) {
-			if (Driver.debugging) System.out.println("" + ID + " map is NOT present");
+			Driver.deciderLog.log(Level.WARNING, "Mapping for {0} is not present", tempID);
 			toReturn = new QualifiedEmployeeList<E>(list, (PositionID<E>) ID, globalMax);
 			availabilityMap.put(tempID, toReturn);
 		} else {
-			if (Driver.debugging) System.out.println("   " + ID + " map is present");
+			Driver.deciderLog.log(Level.FINE, "{0} map is present", tempID);
 		}
+		Driver.deciderLog.log(Level.FINER, "RETURNING: QualifiedEmployeeListMap.getList({0})", ID);
 		return toReturn;
 	}
 	
 	public String toCSV() {
-		if (availabilityMap.isEmpty()) return "EMPTY MAP\n";
+		Driver.deciderLog.entering(QualifiedEmployeeListMap.class.getName(), "toCSV");
+		if (availabilityMap.isEmpty()) {
+			Driver.deciderLog.warning("EMPTY MAP!");
+			return "EMPTY MAP\n";
+		}
 		StringBuffer buffer = new StringBuffer();
 		availabilityMap.entrySet().stream()
 			.forEach(entry -> buffer.append(entry.getKey().toCSV() + entry.getValue().toCSV() + "\n" ));
+		Driver.deciderLog.exiting(QualifiedEmployeeListMap.class.getName(), "toCSV");
 		return buffer.toString();
 	}
 	

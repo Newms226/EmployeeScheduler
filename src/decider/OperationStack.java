@@ -3,6 +3,7 @@ package decider;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
 import java.util.stream.Collectors;
 
 import database.EmployeeSet;
@@ -27,19 +28,23 @@ public class OperationStack implements Cloneable, Serializable {
 	}
 	
 	public Operation<?> pop() {
-		return stack.remove(stack.size() - 1);
+		Operation<?> toPop = stack.get(stack.size() - 1);
+		Driver.deciderLog.log(Level.FINER, "poped", toPop);
+		stack.remove(toPop);
+		return toPop;
 	}
 	
 	public Operation<?> push(Operation<?> operation) {
+		Driver.deciderLog.log(Level.FINER, "pusing", operation);
 		stack.add(operation);
 		return operation;
 	}
 	
 	// TODO: Save before? FileManager enum like "BEFORE_ROLL_BACK"
 	OperationStack rollBack(Operation<? extends Cloneable> op) {
-		if (Driver.debugging) System.out.println(FileTools.LINE_BREAK + "ATTEMPTING TO ROLL BACK TO: " + op);
+		Driver.deciderLog.log(Level.INFO, "ATTEMPTING TO ROLL BACK TO: {0}",  op);
 		if (stack.isEmpty()) {
-			if (Driver.debugging) System.out.println("ERROR: Cannot roll back, empty operation stack");
+			Driver.deciderLog.severe("Cannot roll back, empty operation stack");
 			return null;
 		}
 		
@@ -50,38 +55,46 @@ public class OperationStack implements Cloneable, Serializable {
 			toExamine = clone.pop();
 			toExamine.rollback(); // NOTE: This process returns an opstack WITHOUT op
 			if (toExamine.equals(op)) {
-				if (Driver.debugging) System.out.println(" FOUND: " + toExamine);
+				Driver.deciderLog.log(Level.INFO, "Found: {0}", toExamine);
 				break;
 			}
 		}
 		
-		if (Driver.debugging && clone.stack.isEmpty()) {
-			System.out.println("ERROR: " + op + " was not present in the list, returning an empty operation stack");
+		if (clone.stack.isEmpty()) {
+			Driver.deciderLog.log(Level.SEVERE,
+					"ERROR: {0} was not present in the list, returning an empty operation stack",
+					op);
 		}
-		
 		
 		return clone; // TODO: Return empty clone or null?
 	}
 	
 	public String toCSV() {
+		Driver.databaseLog.entering(OperationStack.class.getName(), "toCSV");
 		if (stack.size() == 0) {
+			Driver.deciderLog.warning("EMPTY STACK");
 			return "EMPTY STACK";
 		}
 		StringBuffer buffer = new StringBuffer();
 		stack.stream()
 			.forEach(o -> buffer.append(o.toCSV() + "\n"));
+		Driver.databaseLog.exiting(OperationStack.class.getName(), "toCSV");
 		return buffer.toString();
 	}
 	
 	public static OperationStack fromCSV(String[] csvFileLines, EmployeeSet<? extends Employee> list){
+		Driver.databaseLog.entering(OperationStack.class.getName(), "fromCSV");
 		OperationStack toReturn = new OperationStack();
 		for (int i = csvFileLines.length - 1; i >= 0; i--) {
 			if (csvFileLines[i].split(",")[0].equals(AssignmentOperation.class.getCanonicalName())) {
 				toReturn.push(AssignmentOperation.fromCSV(csvFileLines[i], list));
 			} else {
-				throw new Error("Bottomed out in OperationStack.fromCSV: " + csvFileLines[i].split(",")[0]);
+				Error e = new Error("Bottomed out in OperationStack.fromCSV: " + csvFileLines[i].split(",")[0]);
+				Driver.deciderLog.log(Level.SEVERE, e.getMessage(), e);
+				throw e;
 			}
 		}
+		Driver.databaseLog.exiting(OperationStack.class.getName(), "fromCSV");
 		return toReturn;
 	}
 	
@@ -91,7 +104,7 @@ public class OperationStack implements Cloneable, Serializable {
 	}
 	
 	public List<PositionID<? extends Employee>> extractPositionIDs(){
-		if (Driver.debugging) System.out.println("EXTRACTING...");
+		Driver.databaseLog.entering(OperationStack.class.getName(), "extractPositionIDs");
 		return stack.stream()
 			.filter(o -> o.getClass().equals(AssignmentOperation.class))
 			.map(a -> ((AssignmentOperation)a).getPositionID())

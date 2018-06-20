@@ -23,10 +23,13 @@ public class Scheduler<E extends Employee> {
 	
 	@SuppressWarnings("unchecked")
 	public void run() {
+		Driver.deciderLog.entering(this.getClass().getName(), "run");
 		long startTime = System.nanoTime();
 		List<PositionID<? extends Employee>> positionIDs = workingSet.setUp.getPositionIDsCOPY();
+		Driver.deciderLog.finest("Copied PositionIDs");
 		
 		if (positionIDs.isEmpty()) {
+			Driver.deciderLog.severe("PositionIDs are empty: Likely copy failed");
 			throw new IllegalArgumentException("ERROR: PositionIDs is empty!");
 		}
 		workingSet.save(FileManager.SF.BEFORE_SCHEDULE);
@@ -37,14 +40,12 @@ public class Scheduler<E extends Employee> {
 		averager = new Averager();
 		PositionID<? extends Employee> ID;
 		positionIDs.sort(PositionID.DESCENDING_PRIORITY_ORDER);
-		if (Driver.debugging) {
-			System.out.println("CURRENT LIST: ");
-			positionIDs.stream().forEachOrdered(i -> System.out.println(i));
-		}
-		if (Driver.debugging) System.out.println(FileTools.LINE_BREAK + "BEGIN: Scheudler" + FileTools.LINE_BREAK);
+		Driver.deciderLog.finest("Current List: ");
+		positionIDs.stream().forEachOrdered(i -> Driver.deciderLog.finest(i.toString()));
+		Driver.deciderLog.info("Begin schedule");
 		for (Iterator<PositionID<? extends Employee>> it = positionIDs.iterator(); it.hasNext(); ) {
 			ID = it.next();
-			if (Driver.debugging) System.out.println("ASSIGNING: " + ID);
+			Driver.deciderLog.info("ASSIGNING: " + ID);
 			workingSet.opStack.push(new AssignmentOperation(ID, 
 					                                        workingSet.queueMap.getList((PositionID<E>) ID),
 					                                        averager)).run();
@@ -54,9 +55,7 @@ public class Scheduler<E extends Employee> {
 //			}
 		}
 		long endTime = System.nanoTime();
-		if (Driver.debugging) System.out.println(FileTools.LINE_BREAK 
-				+ "COMPLETE: Scheudler\n  IN: " + StopWatch.nanosecondsToString(endTime - startTime) 
-				+ FileTools.LINE_BREAK);
+		Driver.deciderLog.info("COMPLETE: Scheudler\n  IN: " + StopWatch.nanosecondsToString(endTime - startTime));
 		workingSet.setSchedule(workingSet.opStack.extractPositionIDs());
 		workingSet.save(FileManager.SF.AFTER_SCHEDULE);
 		/* > Get list of PositionIDs

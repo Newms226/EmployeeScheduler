@@ -2,6 +2,7 @@ package decider;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.logging.Level;
 
 import database.EmployeeSet;
 import database.PositionID;
@@ -23,8 +24,15 @@ public class AssignmentOperation implements Operation<PositionID<? extends Emplo
 	AssignmentOperation(PositionID<?> ID,
 			            QualifiedEmployeeList<?> list,
 			            Averager avg) {
-		
-		ClassNotEqualException.assertEqual(ID.employeeType, list.employeeType());
+		Driver.deciderLog.log(Level.FINER,
+				"Building new AssignmentOperation", 
+				new Object[] {ID, list, avg});
+		try {
+			ClassNotEqualException.assertEqual(ID.employeeType, list.employeeType());
+		} catch (ClassNotEqualException e) {
+			Driver.deciderLog.log(Level.SEVERE, e.getMessage(), e);
+			throw e;
+		}
 		
 		this.ID = ID;
 		this.list = list;
@@ -34,6 +42,7 @@ public class AssignmentOperation implements Operation<PositionID<? extends Emplo
 
 	@Override
 	public PositionID<? extends Employee> run() {
+		Driver.deciderLog.entering(AssignmentOperation.class.getName(), "run");
 		employee = list.getEmployee();
 		if (employee == null) {
 			ID = new PositionID<HouseShift>(HouseShift.class,
@@ -43,12 +52,14 @@ public class AssignmentOperation implements Operation<PositionID<? extends Emplo
 					                        ID.getPriority());
 			employee = new HouseShift();
 			ID.assignEmployee(employee);
-			if (Driver.debugging) System.out.println("HOUSE ASSINGMENT: " + ID);
+			Driver.deciderLog.log(Level.WARNING, "HOUSE ASSINGMENT: {0}", ID);
 		} else {
+			Driver.deciderLog.log(Level.FINE, "Regular assignment: {0}", ID);
 			employee.accept(ID);
 			averager.update(employee.updateEmployeePriority(currentAverage));
 		}
 		time = LocalDateTime.now();
+		Driver.deciderLog.exiting(AssignmentOperation.class.getName(), "run");
 		return ID;
 	}
 
@@ -57,8 +68,9 @@ public class AssignmentOperation implements Operation<PositionID<? extends Emplo
 		Employee temp = ID.getEmplyee();
 		temp.markAvailable(ID);
 		ID.removeEmployee();
-		if (Driver.debugging) System.out.println("  " + ID + " was rolled back."
-				+ "\n    " + temp + " is now available (" + temp.currentlyAvailableFor(ID) + ")" );
+		Driver.deciderLog.log(Level.FINE,
+				"{0} was rolled back. {1} is now available ({3})",
+				new Object[] {ID, temp, temp.currentlyAvailableFor(ID)});
 		return true;
 	}
 
@@ -99,7 +111,7 @@ public class AssignmentOperation implements Operation<PositionID<? extends Emplo
 
 	@Override
 	public String toCSV() {
-//		if (Driver.debugging) System.out.println("TO CSV: " + ID);
+		Driver.deciderLog.finer("TO CSV: " + ID);
 		return getClass().getCanonicalName() + "," + time + "," + employee.ID 
 				+ ",{" + ID.toCSV() + "},{" + list.toCSV() + "}";
 	}

@@ -16,17 +16,13 @@ public class Restaurant {
 	public Restaurant(String name, LocalDate openDay, int globalMaxHours) {
 		OPEN_DAY = openDay;
 		NAME = name;
-		if (Driver.debugging) {
-			System.out.println(LocalDate.now().toString());
-			System.out.println(name + " has been open for " + NumberTools.format(getDaysSinceOpen()) + " days");
-		}
+		Driver.driverLog.config(name + " has been open for " + NumberTools.format(getDaysSinceOpen()) + " days");
 		this.globalMaxHours = globalMaxHours;
 	}
 	
 	public int getDaysSinceOpen() {
-		if (Driver.debugging) System.out.println("In getDaysSinceOpen");
 		if (!validDaysSinceOpenCount) {
-			if (Driver.debugging) System.out.println("Invalid count. Revalidating");
+			Driver.driverLog.config("Invalid daysSinceOpenCount. Revalidating");
 			daysSinceOpen = (int) OPEN_DAY.until(LocalDate.now(), ChronoUnit.DAYS);
 			validDaysSinceOpenCount = true;
 		}

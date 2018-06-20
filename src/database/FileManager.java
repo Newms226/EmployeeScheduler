@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.logging.Level;
 import java.util.regex.Pattern;
 
 import decider.OperationStack;
@@ -26,11 +27,13 @@ public class FileManager {
 	public static final String ARRAY_REGREX = "\\{(\\[)([^\\s]+)(,*)([^\\s]*)(\\])\\}";
 	public static final Pattern ARRAY_REGREX_MATCHER = Pattern.compile(ARRAY_ELEMENT_REGREX);
 	
+	public static final String WORKING_FOLDER = "/Users/Michael/gitHub/EmployeeScheduler/";
 	static final String resourceFolder = "/Users/Michael/gitHub/EmployeeScheduler/WorkingSets"; 
 	
 	public static final String LINE_BREAK_CHAR = "_\\n_";
 			            
 	static String setID;
+	
 	private static File workingFile;
 	private static PrintWriter writer; // TODO
 	
@@ -49,7 +52,6 @@ public class FileManager {
 			ID_CODE = ID;
 		}
 	}
-
 	
 	public final static SimpleDateFormat fileFormat = new SimpleDateFormat("MMddyy.kkmm.ss.SSSS"); 
 	static final String workingSetChar = "#w",
@@ -70,7 +72,7 @@ public class FileManager {
 		try {
 			writer = new PrintWriter(workingFile);
 		} catch (FileNotFoundException e ) {
-			if (Driver.debugging) System.out.println("FAILED TO INITIATE PRINTWRITER");
+			Driver.databaseLog.severe("FAILED TO INITIATE PRINTWRITER AT " + workingFile);
 			e.printStackTrace();
 			throw new Error();
 		}
@@ -87,38 +89,38 @@ public class FileManager {
 	}
 	
 	private static <E extends Employee> void saveEmployeeList(EmployeeSet<E> list) {
-		if (Driver.debugging) System.out.println("  Writing Employee List");
+		Driver.databaseLog.info("Writing Employee List");
 		writer.append(listChar + " " + list.count() + "\n" + list.toCSV());
-		if (Driver.debugging) System.out.println("    DONE");
+		Driver.databaseLog.info("Finished writing Employee List");
 	}
 	
 	private static <E extends Employee> void saveOperationsStack(OperationStack opStack) {
-		if (Driver.debugging) System.out.println("  Writing OperationStack");
+		Driver.databaseLog.info("Writing Operation stack");
 		writer.append(opStackChar + " " + opStack.count() + "\n" + opStack.toCSV());
-		if (Driver.debugging) System.out.println("    DONE");
+		Driver.databaseLog.info("Finished writing Operation stack");
 		// TODO
 	}
 	
 	private static <E extends Employee> void saveSetUp(ScheduleSetUp<E> setUp) {
-		if (Driver.debugging) System.out.println("  Writing set-up");
+		Driver.databaseLog.info("Writing set-up");
 		writer.append(setUpChar + " " + setUp.positionIDCount() + "\n" + setUp.getMaxHours() + "\n" + setUp.toCSV());
-		if (Driver.debugging) System.out.println("    DONE");
+		Driver.databaseLog.info("Finished writing set-up");
 	}
 	
 	private static <E extends Employee> void saveQueueMap(QualifiedEmployeeListMap<E> queueMap) {
-		if (Driver.debugging) System.out.println("  Writing queue-map");
+		Driver.databaseLog.info("Writing queue-map");
 		writer.append(queueMapChar + " " + queueMap.getQueueCount() + "\n" + queueMap.toCSV());
-		if (Driver.debugging) System.out.println("    DONE");
+		Driver.databaseLog.info("Finished writing queue-map");
 	}
 	
 	private static <E extends Employee> void saveSchedule(Schedule schedule) {
-		if (Driver.debugging) System.out.println("  Writing Schedule");
+		Driver.databaseLog.info("Writing Schedule");
 		if (schedule == null) {
-			if (Driver.debugging) System.out.println("   SCHEDULE NULL");
+			Driver.databaseLog.warning("Schedule null");
 			return;
 		}
 		writer.append(scheduleChar + " " + schedule.getPositionIDCount() + "\n" + schedule.toCSV());
-		if (Driver.debugging) System.out.println("    DONE");
+		Driver.databaseLog.info("Finished writing schedule");
 	}
 	
 	public static WorkingSet<? extends Employee> readWorkingSet(File file) {
@@ -184,6 +186,24 @@ public class FileManager {
 	
 	private static <E extends Employee> ScheduleSetUp<E> readScheduleSetUp(String str) {
 		// TODO
+//		if (lines[0].contains(FileManager.setUpChar)) {
+//			Driver.databaseLog.fine("Correct call to ScheduleSetUp.fromCSV()");
+//		} else {
+//			IllegalArgumentException e = new IllegalArgumentException("Invalid call to ScheduleSetUp.fromCSV(): " + lines[0]);
+//			Driver.databaseLog.log(Level.SEVERE, e.getMessage(), e);
+//			throw e;
+//		}
+//		
+//		int maxHours = 0, numberOfLines = 0;
+//		try {
+//			maxHours = Integer.parseInt(lines[1]);
+//			Driver.databaseLog.log(Level.FINEST, "Validly parsed max hours", maxHours);
+//			numberOfLines = Integer.parseInt(lines[0].split(" ")[1]);
+//			Driver.databaseLog.log(Level.FINEST, "Validly parsed number of lines", numberOfLines);
+//		} catch (NumberFormatException e) {
+//			Driver.databaseLog.log(Level.SEVERE, e.getMessage(), e);
+//			throw e;
+//		}
 		return null;
 	}
 	

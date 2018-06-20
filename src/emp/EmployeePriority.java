@@ -62,7 +62,7 @@ public class EmployeePriority implements Comparable<EmployeePriority> {
 	//				}
 		double fillDouble = FILLED_FACTOR * getFillDouble(currentAverageFill);
 		currentPriority = staticPriority + fillDouble;
-		if (Driver.debugging) System.out.println("   " + employee.NAME + "'s current priority is " + NumberTools.format(currentPriority)
+		Driver.empLog.config(employee.NAME + "'s current priority is " + NumberTools.format(currentPriority)
 				+ " from " + NumberTools.format(staticPriority) + " - (" + 
 				NumberTools.format(FILLED_FACTOR) + " * " +  NumberTools.format(fillDouble)
 				+ ")");
@@ -71,14 +71,10 @@ public class EmployeePriority implements Comparable<EmployeePriority> {
 	}
 	
 	private double getFillDouble(double averageCount) {
-		if (Driver.debugging) {
-			System.out.println("   Getting fill factor for:" + employee.NAME + ". Fill: " + NumberTools.format(employee.filledShifts)
+		Driver.empLog.finer("Getting fill factor for:" + employee.NAME + ". Fill: " + NumberTools.format(employee.filledShifts)
 				+ " AverageFill: " + NumberTools.format(averageCount));
-		}
 		if (employee.filledShifts == averageCount) {
-			if (Driver.debugging) {
-				System.out.println(employee.NAME + " has the same number of shfits as the average. No change from fill double");
-			}
+			Driver.empLog.finer(employee.NAME + " has the same number of shfits as the average. No change from fill double");
 			return 0;
 		}
 		
@@ -86,10 +82,8 @@ public class EmployeePriority implements Comparable<EmployeePriority> {
 		       y = x * x * FILLED_FACTOR;
 		if (x > 0) y	 = -y;
 		
-		if (Driver.debugging) {
-			System.out.println("   " + Character.toString((char) 402) + "(" + NumberTools.format(employee.filledShifts) + " - " + NumberTools.format(averageCount) 
+		Driver.empLog.finer(Character.toString((char) 402) + "(" + NumberTools.format(employee.filledShifts) + " - " + NumberTools.format(averageCount) 
 				+ ") = "+ NumberTools.format(y));
-		}
 		return y;
 	}
 	
@@ -109,33 +103,31 @@ public class EmployeePriority implements Comparable<EmployeePriority> {
 	}
 	
 	double calculateStaticPriority() {
-		if (Driver.debugging) {
-			double dateDouble = getDateDouble(),
+		double dateDouble = getDateDouble(),
 				   graceDouble = getGraceDouble(),
 				   qualDouble = getQualDouble(),
 				   toReturn = dateDouble + graceDouble + qualDouble;
-			System.out.print("Calculated static Priority of " + employee.NAME + " at " + NumberTools.format(toReturn)
-					+ " from:"
-				+ "\n  Date"
-				+ "\n     Value: " + employee.START_DATE.until(LocalDate.now(), ChronoUnit.DAYS)
-				+ "\n     Normalized from range: [0, " + NumberTools.format(employee.restaurant.getDaysSinceOpen()) + "]"
-				+ "\n     Resulting in: " + NumberTools.format(dateDouble)
-				+ "\n  Grace:"
-				+ "\n     Value: " + grace
-				+ "\n     Normalized from range: [0, 10]"
-				+ "\n     Resulting in: " + NumberTools.format(graceDouble)
-				+ "\n  Qualification:"
-				+ "\n     Qualified For: ");
-				employee.qualifiedFor.stream().forEach(s-> System.out.print(s.toString() + " ") );
-				System.out.println(
-				  "\n     Normalized from range: [0," + PositionType.MAX_POSITION_VALUE +  "]"
-				+ "\n     Resulting in: " + NumberTools.format(qualDouble)
-			);
-			currentPriority = staticPriority = toReturn;
-			return toReturn;
-		}
-		currentPriority = staticPriority = getGraceDouble() + getQualDouble() + getDateDouble();
-		return staticPriority;
+			
+		Driver.empLog.config("Calculated static Priority of " + employee.NAME + " at " + NumberTools.format(toReturn)
+				+ " from:"
+			+ "\n  Date"
+			+ "\n     Value: " + employee.START_DATE.until(LocalDate.now(), ChronoUnit.DAYS)
+			+ "\n     Normalized from range: [0, " + NumberTools.format(employee.restaurant.getDaysSinceOpen()) + "]"
+			+ "\n     Resulting in: " + NumberTools.format(dateDouble)
+			+ "\n  Grace:"
+			+ "\n     Value: " + grace
+			+ "\n     Normalized from range: [0, 10]"
+			+ "\n     Resulting in: " + NumberTools.format(graceDouble)
+			+ "\n  Qualification:"
+			+ "\n     Qualified For: ");
+			employee.qualifiedFor.stream().forEach(s-> System.out.print(s.toString() + " ") );
+			System.out.println(
+			  "\n     Normalized from range: [0," + PositionType.MAX_POSITION_VALUE +  "]"
+			+ "\n     Resulting in: " + NumberTools.format(qualDouble)
+		);
+		
+		currentPriority = staticPriority = toReturn;
+		return toReturn;
 	}
 	
 	public void setGrace(double newGrace) {

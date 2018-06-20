@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 import java.util.function.Predicate;
+import java.util.logging.Level;
 
 import database.EmployeeSet;
 import database.PositionID;
@@ -23,7 +24,7 @@ public class QualifiedEmployeeList<E extends Employee> {
 	public enum SF {BELLOW_DESIRED, BELLOW_PERSONAL_MAX, BELLOW_GLOBAL_MAX, HOUSE_ONLY}
 	
 	QualifiedEmployeeList(EmployeeSet<E> list, PositionID<E> ID, int globalMax) {
-		if (Driver.debugging) new RuntimeException(" CREATING LIST FOR: " + ID).printStackTrace();
+		Driver.deciderLog.log(Level.CONFIG, "Creating Qualified Employee list for {0}", ID);
 		statusFlag = SF.BELLOW_DESIRED;
 		this.ID = ID;
 		this.employeeType = list.employeeType;
@@ -32,35 +33,45 @@ public class QualifiedEmployeeList<E extends Employee> {
 	}
 	
 	Set<E> fill(EmployeeSet<E> list) {
+		Driver.deciderLog.log(Level.FINER, "ENTERING: QualifiedEmployeeList.fill()");
 		return list.filter(s -> s.canWork(ID));
 	}
 
 	Employee getEmployee() {
-		Optional<E> optionalEmployee;
+		Driver.deciderLog.log(Level.FINER, 
+				"ENTERING: getEmployee for {0} presently {1}", 
+				new Object[] {ID, statusFlag});
+		Optional<E> optionalEmployee = Optional.empty();
 		if (statusFlag.equals(SF.BELLOW_DESIRED)) {
 			optionalEmployee = conditionalFill(emp -> emp.currentlyAvailableFor(ID));
-			if (optionalEmployee.isPresent()) {
-				return optionalEmployee.get();
-			} else {
+			if (!optionalEmployee.isPresent()) {
 				statusFlag = SF.BELLOW_PERSONAL_MAX;
 			}
 		}
 		if (statusFlag.equals(SF.BELLOW_PERSONAL_MAX)) {
 			optionalEmployee = conditionalFill(emp -> emp.currentlyAvailableFor(ID) && emp.bellowPersonalMax());
-			if (optionalEmployee.isPresent()) {
-				return optionalEmployee.get();
-			} else {
+			if (!optionalEmployee.isPresent()) {
 				statusFlag = SF.BELLOW_GLOBAL_MAX;
 			}
 		}
 		if (statusFlag.equals(SF.BELLOW_GLOBAL_MAX)) {
 			optionalEmployee = conditionalFill(emp -> emp.currentlyAvailableFor(ID) && emp.bellowGlobalMax(globalMax));
-			if (optionalEmployee.isPresent()) {
-				return optionalEmployee.get();
+			if (!optionalEmployee.isPresent()) {
+				statusFlag = (SF.HOUSE_ONLY);
 			}
 		}
 		
-		return null;
+		Driver.deciderLog.log(Level.FINER, 
+				"Leaving: getEmployee for {0} presently {1} found {2}", 
+				new Object[] {ID, 
+						statusFlag, 
+						optionalEmployee.isPresent()});
+		
+		if (optionalEmployee.isPresent()) {
+			return optionalEmployee.get();
+		} else {
+			return null;
+		}
 	}
 	
 	Optional<E> conditionalFill(Predicate<E> predicate) {

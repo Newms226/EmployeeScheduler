@@ -1,4 +1,10 @@
 package driver;
+
+import java.io.IOException;
+import java.time.LocalDate;
+import java.util.Date;
+import java.util.logging.*;
+
 import Menu.Menu;
 import database.FileManager;
 import decider.Scheduler;
@@ -7,7 +13,39 @@ import emp.Server;
 import tools.CollectionTools;
 
 public class Driver {
-	public static final boolean debugging = true; 
+	//public static final boolean debugging = true; 
+	public static Logger driverLog, empLog, deciderLog, databaseLog;
+	static {
+		driverLog = Logger.getLogger("");
+		Handler[] handlers = driverLog.getHandlers();
+		if (handlers[0] instanceof ConsoleHandler) {
+			driverLog.removeHandler(handlers[0]);
+		}
+		Handler console = new ConsoleHandler();
+		console.setLevel(Level.SEVERE);
+		SimpleFormatter formater = new SimpleFormatter();
+		console.setFormatter(formater);
+		FileHandler file = null;
+		try {
+			file = new FileHandler("/Users/Michael/gitHub/EmployeeScheduler/logs/"
+					+ FileManager.fileFormat.format(new Date()) + ".txt");
+		} catch (SecurityException | IOException e) {
+			throw new Error();
+		}
+		file.setFormatter(formater);
+		driverLog.setLevel(Level.ALL);
+		driverLog.addHandler(console);
+		driverLog.addHandler(file);
+		
+		deciderLog = Logger.getLogger("decider");
+		deciderLog.setUseParentHandlers(true);
+		
+		empLog = Logger.getLogger("emp");
+		empLog.setUseParentHandlers(true);
+		
+		databaseLog = Logger.getLogger("database");
+		databaseLog.setUseParentHandlers(true);
+	}
 	
 	private String intro;
 	private Menu beginningInput, mainMenu, scheduleMenu, employeeMenu, scheduleViewer;
@@ -16,7 +54,7 @@ public class Driver {
 	Scheduler<Server> DA_KING_MAKER;
 	WorkingSet<Server> workingSet;
 	
-	public Driver() {
+	public Driver() throws SecurityException, IOException {
 		intro =  "+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+"
 		     + "\n|                                                |"
 		 	 + "\n|                                                |"
@@ -84,31 +122,40 @@ public class Driver {
 //		endMenu.add("Save the restuarant", null); // TODO
 //		endMenu.add("Save everything", null); // TODO
 //		endMenu.add("Exit", () -> System.exit(0));
+		//logSetUp();
+	}
+	
+	void logSetUp() throws SecurityException, IOException {
+		
 	}
 	
 	void begin() {
+		driverLog.finest("Began program, in begin()");
 		System.out.println(intro);
 		beginningInput.selection();
 	}
 	
 	void buildTestingMaterial() {
+		driverLog.config("Building testing material from Driver.buildTestingMaterial()");
 		workingSet = WorkingSet.serverTrainingData();
+		driverLog.config("Successfully built testing material from Driver.buildTestingMaterial()");
 	}
 
 	void schedule() {
+		driverLog.info("Began scheduling process from driver");
 		if (workingSet.employeeList.count() == 0) {
-			if (Driver.debugging) System.out.println("Employee list is empty");
-			throw new Error(); // TODO
+			driverLog.severe("Employee list is empty");
 		}
 		if (workingSet.setUp.positionIDCount() == 0) {
-			if (Driver.debugging) System.out.println("Schedule is not set-up");
-			workingSet.setUp.dayMenu();
+			driverLog.severe("Schedule is not set-up");
+//			workingSet.setUp.dayMenu();
+			throw new Error();
 		}
 		
-		if (Driver.debugging) System.out.println("HANDING OFF TO SCHEDULER...\n\n");
+		driverLog.log(Level.INFO, "HANDING OFF TO SCHEDULER");
 		DA_KING_MAKER = new Scheduler<>(workingSet);
 		DA_KING_MAKER.run();
-		if(Driver.debugging) System.out.println("\nRETURNED TO DRIVER\n");
+		driverLog.log(Level.INFO, "RETURNED TO DRIVER");
 		
 	}
 	
@@ -116,7 +163,7 @@ public class Driver {
 		return workingSet.getSchedule().viewAll();
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SecurityException, IOException {
 		Driver work = new Driver();
 		work.begin();
 	}

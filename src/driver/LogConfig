@@ -1,0 +1,15 @@
+handlers = java.util.logging.FileHandler, java.util.logging.ConsoleHandler
+
+# Loggers
+
+
+# Override of global logging level 
+java.util.logging.ConsoleHandler.level=SEVERE 
+java.util.logging.ConsoleHandler.formatter=java.util.logging.SimpleFormatter
+
+# --- FileHandler --- 
+# Override of global logging level 
+java.util.logging.FileHandler.level=ALL
+
+java.util.logging.FileHandler.pattern=/Users/Michael/gitHub/EmployeeScheduler/logs/%u.txt
+java.util.logging.FileHandler.append=true

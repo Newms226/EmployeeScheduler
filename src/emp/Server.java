@@ -2,6 +2,7 @@ package emp;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
 
 import database.PositionID;
 import driver.Driver;
@@ -53,7 +54,9 @@ public class Server extends Employee {
 		ClassNotEqualException.assertEqual(Server.class, ID.employeeType);
 		
 		if (this.availableHours[ID.getDay().dayOfWeek][ID.getShiftType().ordinal()] == false) {
-			throw new IllegalArgumentException("EROR: " + NAME + " is marked as unavailable for " + ID + "\n" + printAvailability());
+			IllegalArgumentException e = new IllegalArgumentException("EROR: " + NAME + " is marked as unavailable for " + ID + "\n" + printAvailability());
+			Driver.empLog.log(Level.SEVERE, e.getMessage(), e);
+			throw e;
 		}
 		this.availableHours[ID.getDay().dayOfWeek][ID.getShiftType().ordinal()] = false;
 	}
@@ -66,12 +69,12 @@ public class Server extends Employee {
 	
 	@Override
 	public void accept(PositionID<? extends Employee> ID) {
-		new Exception("  IN ACCEPT: " + NAME + " to " + ID).printStackTrace();
+//		new Exception("  IN ACCEPT: " + NAME + " to " + ID).printStackTrace();
 		ClassNotEqualException.assertEqual(Server.class, ID.employeeType);
 		
 		filledShifts++; // TODO: Change for hours
 		ID.assignEmployee(this);
-		if (Driver.debugging) System.out.println("Accepted " + NAME + " to " + ID 
+		Driver.empLog.info("Accepted " + NAME + " to " + ID 
 			/*+ "\n" + printAvailability()*/);
 		markUnavailable(ID);
 		assignedShifts.add(ID);

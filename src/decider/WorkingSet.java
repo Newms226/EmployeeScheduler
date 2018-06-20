@@ -28,6 +28,8 @@ public class WorkingSet <E extends Employee> {
 	private Schedule schedule;
 	
 	public WorkingSet(Class<E> E_TYPE, int globalMax) {
+		Driver.deciderLog.config("Generated empty working set from constructor of type "
+				+ E_TYPE.getName() + " with " + globalMax + " global max hours");
 		employeeType = E_TYPE;
 		employeeList = new EmployeeSet<E>(E_TYPE);
 		setUp = new ScheduleSetUp<E>();
@@ -40,6 +42,7 @@ public class WorkingSet <E extends Employee> {
 			   ScheduleSetUp<E> setUp, 
 			   OperationStack opStack,
 			   QualifiedEmployeeListMap<E> queueMap){
+		Driver.deciderLog.config("Generated working set from specified paramters");
 		this.employeeList = employeeList;
 		this.setUp = setUp;
 		this.opStack = opStack;
@@ -49,6 +52,7 @@ public class WorkingSet <E extends Employee> {
 	}
 	
 	public void save(FileManager.SF statusFlag) {
+		Driver.deciderLog.finest("WorkingSet.save(" + statusFlag.name() + ")");
 		FileManager.saveAll(this, statusFlag);
 	}
 	
@@ -73,6 +77,7 @@ public class WorkingSet <E extends Employee> {
 	}
 	
 	public void setSchedule(Collection<PositionID<? extends Employee>> completedIDs) {
+		Driver.deciderLog.entering(WorkingSet.class.getName(), "setSchedule");
 		setSchedule(new Schedule(completedIDs));
 	}
 	
@@ -81,14 +86,15 @@ public class WorkingSet <E extends Employee> {
 	}
 	
 	public Schedule getSchedule() {
-		if (schedule == null && Driver.debugging) {
-			System.out.println("WARNING: Attempted to get schedule when object is null");
+		if (schedule == null) {
+			Driver.deciderLog.severe("WARNING: Attempted to get schedule when object is null");
 //			throw new Error();
 		}
 		return schedule;
 	}
 
 	public static WorkingSet<Server> serverTrainingData(){
+		Driver.deciderLog.config("Generating serverTrainingData from WorkingSet");
 		
 		Server kim = new Server("Kim",1,  LocalDate.of(2017, 1, 1), PositionType.getKing());
 		Server wade = new Server("wade",2,  LocalDate.of(2000, 1, 1), PositionType.getBarOnly());
@@ -129,6 +135,7 @@ public class WorkingSet <E extends Employee> {
 		workingSet.employeeList.addMultipleEmployees(servers);
 		workingSet.setUp.trainingData();
 		
+		Driver.deciderLog.config("RETURNING: WorkingSet.serverTrainingData");
 		return workingSet;
 	}
 	

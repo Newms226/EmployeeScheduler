@@ -7,11 +7,19 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Level;
 import java.util.stream.Collectors;
+
+import javax.swing.plaf.synth.SynthSeparatorUI;
+
+import com.sun.org.apache.xerces.internal.impl.dv.dtd.NMTOKENDatatypeValidator;
 
 import Menu.Menu;
 import MyTime.Day;
+import driver.Driver;
+import emp.ClassNotEqualException;
 import emp.Employee;
 import emp.Server;
 import tools.FileTools;
@@ -75,13 +83,20 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 		dayMenu.selection();
 	}
 	
+	public void addPositonID(PositionID<? extends Employee> ID) {
+		Driver.databaseLog.log(Level.FINER, "Adding PositionID from ScheduleSetUp.addPositionID", ID);
+		positionIDs.add(ID);
+	}
+	
 	String viewDay(Day day) {
+		Driver.databaseLog.log(Level.FINEST, "Viewing day", day);
 		StringBuffer buffer = new StringBuffer(day.toString() + "\n");
 		List<PositionID<? extends Employee>> dayList = positionIDs
 				.stream()
 				.sorted(PositionID.DAY_ORDER)
 				.filter(i -> i.getDay().equals(day)).collect(Collectors.toList());
 		if (dayList.size() == 0) {
+			Driver.databaseLog.log(Level.WARNING, "No shifts are currently set up", day);
 			buffer.append("No shifts are set up for " + day);
 		} else {
 			for (int i = 0; i < dayList.size(); i++) {
@@ -92,6 +107,7 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	}
 	
 	void modifyDay(Day day) {
+		Driver.databaseLog.log(Level.FINEST, "Modifying day", day);
 		setupMenu = new Menu("Schedule Modifier for " + day);
 		setupMenu.add("Add a new shift", 
 			() -> {
@@ -132,8 +148,12 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	}
 	
 	void setMaxHours(int maxHours) {
-		if (0 >= maxHours)
-			throw new IllegalArgumentException("Max hours must be at least 1:" + maxHours);
+		Driver.databaseLog.log(Level.FINEST, "Setting max hours", maxHours);
+		if (0 >= maxHours) {
+			IllegalArgumentException e = new IllegalArgumentException("Max hours must be at least 1:" + maxHours);
+			Driver.databaseLog.log(Level.SEVERE, "Max hours must be at least one", e);
+			throw e;
+		}
 		this.GLOBAL_MAX_HOURS = maxHours;
 	}
 	
@@ -142,7 +162,7 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	}
 	
 	public void trainingData() {
-		fromCSV(TRAINING_FILE);
+		fromCSV(TRAINING_FILE); // TODO!
 	}
 	
 	public void fromCSV(File importDoc) {
@@ -160,6 +180,30 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 		}
 	}
 	
+	String toCSV() {
+		StringBuffer buffer = new StringBuffer();
+		positionIDs.stream()
+			.forEach(ID -> buffer.append(ID.toCSV() + "\n"));
+		return buffer.toString();
+	}
+	
+	public static <E extends Employee> ScheduleSetUp<E> fromCSV(String[] lines, int expectedLines, int maxHours) {
+		Driver.databaseLog.entering(ScheduleSetUp.class.getName(), "fromCSV()");
+		
+		ScheduleSetUp<E> toReturn = new ScheduleSetUp<>(maxHours);
+		for (String line: lines) {
+			toReturn.addPositonID(PositionID.fromCSV(line));
+		}
+		
+		if(expectedLines != toReturn.positionIDCount())
+			Driver.databaseLog.log(Level.SEVERE, 
+					"ScheduleSetUp.fromCSV() did not find the right amount of lines. Expected: {0} Found: {1}",
+					new Object[] {expectedLines, toReturn.positionIDCount()});
+		
+		Driver.databaseLog.exiting(ScheduleSetUp.class.getName(), "fromCSV()");
+		return toReturn;
+	}
+	
 	void save() {
 		save(TRAINING_FILE);
 	}
@@ -173,12 +217,7 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 		}
 	}
 	
-	String toCSV() {
-		StringBuffer buffer = new StringBuffer();
-		positionIDs.stream()
-			.forEach(ID -> buffer.append("[" + ID.toCSV() + "]\n"));
-		return buffer.toString();
-	}
+	
 	
 	List<PositionID<? extends Employee>> getPositionIDsMUTATIVE() {
 		return positionIDs;
@@ -187,7 +226,9 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	
 	public List<PositionID<? extends Employee>> getPositionIDsCOPY() {
 		if (positionIDs.size() == 0) {
-			throw new NullPointerException("PositionIDs have not been filled");
+			NullPointerException e = new NullPointerException("PositionIDs have not been filled");
+			Driver.databaseLog.log(Level.SEVERE, e.getMessage(), e);
+			throw e;
 		}
 		return positionIDs.stream()
 					.map(PositionID::clone)
@@ -221,6 +262,7 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	
 	@Override
 	public ScheduleSetUp<E> clone() {
+		Driver.databaseLog.finest("ENTERING: " + ScheduleSetUp.class.getName() + ".clone()");
 		ScheduleSetUp<E> clone = new ScheduleSetUp<E>();
 		clone.GLOBAL_MAX_HOURS = GLOBAL_MAX_HOURS;
 		clone.positionIDs = getPositionIDsCOPY();
@@ -310,65 +352,67 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 		test.dayMenu.selection();
 	}
 	
-	@SuppressWarnings("unused")
-	private void resetTrainingFileToCSV() {
-		try (PrintWriter write = new PrintWriter(TRAINING_FILE)){
-			write.write("1\n"
-					+ "1,1,b,4.9\n" + 
-					"1,1,b,4.9\n" + 
-					"1,1,t,4.6\n" + 
-					"1,1,t,4.6\n" + 
-					"1,1,c,4.6\n" + 
-					"1,1,c,4.6\n" + 
-					"1,1,h,4.3\n" + 
-					"1,1,h,4.3\n" + 
-					"1,1,s,4.0\n" + 
-					"1,1,s,4.0\n" + 
-					"1,1,s,3.7\n" + 
-					"1,1,s,3.4\n" + 
-					"1,1,s,3.4\n" + 
-					"1,1,s,3.1\n" + 
-					"4,1,b,4.6\n" + 
-					"4,1,b,4.6\n" + 
-					"4,1,t,4.3\n" + 
-					"4,1,t,4.3\n" + 
-					"4,1,c,4.3\n" + 
-					"4,1,c,4.3\n" + 
-					"4,1,h,4.3\n" + 
-					"4,1,h,4.3\n" + 
-					"4,1,s,3.4\n" + 
-					"4,1,s,3.4\n" + 
-					"4,1,s,3.4\n" + 
-					"4,1,s,2.8\n" + 
-					"4,1,s,2.8\n" + 
-					"4,1,s,2.5\n" + 
-					"4,1,s,2.2\n" + 
-					"4,1,s,2.2\n" + 
-					"5,1,b,4.3\n" + 
-					"5,1,b,4.0\n" + 
-					"5,1,b,3.7\n" + 
-					"5,1,t,4.3\n" + 
-					"5,1,t,4.3\n" + 
-					"5,1,c,4.0\n" + 
-					"5,1,c,4.0\n" + 
-					"5,1,h,3.7\n" + 
-					"5,1,h,3.7\n" + 
-					"5,1,s,3.7\n" + 
-					"5,1,s,3.7\n" + 
-					"5,1,s,3.7\n" + 
-					"5,1,s,3.7\n" + 
-					"5,1,s,3.7\n" + 
-					"5,1,s,3.7\n" + 
-					"5,1,s,3.7\n" + 
-					"5,1,s,3.7\n" + 
-					"");
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+//	@SuppressWarnings("unused")
+//	private void resetTrainingFileToCSV() {
+//		Driver.databaseLog.config("Reseting Schedule);
+//		try (PrintWriter write = new PrintWriter(TRAINING_FILE)){
+//			write.write("1\n"
+//					+ "1,1,b,4.9\n" + 
+//					"1,1,b,4.9\n" + 
+//					"1,1,t,4.6\n" + 
+//					"1,1,t,4.6\n" + 
+//					"1,1,c,4.6\n" + 
+//					"1,1,c,4.6\n" + 
+//					"1,1,h,4.3\n" + 
+//					"1,1,h,4.3\n" + 
+//					"1,1,s,4.0\n" + 
+//					"1,1,s,4.0\n" + 
+//					"1,1,s,3.7\n" + 
+//					"1,1,s,3.4\n" + 
+//					"1,1,s,3.4\n" + 
+//					"1,1,s,3.1\n" + 
+//					"4,1,b,4.6\n" + 
+//					"4,1,b,4.6\n" + 
+//					"4,1,t,4.3\n" + 
+//					"4,1,t,4.3\n" + 
+//					"4,1,c,4.3\n" + 
+//					"4,1,c,4.3\n" + 
+//					"4,1,h,4.3\n" + 
+//					"4,1,h,4.3\n" + 
+//					"4,1,s,3.4\n" + 
+//					"4,1,s,3.4\n" + 
+//					"4,1,s,3.4\n" + 
+//					"4,1,s,2.8\n" + 
+//					"4,1,s,2.8\n" + 
+//					"4,1,s,2.5\n" + 
+//					"4,1,s,2.2\n" + 
+//					"4,1,s,2.2\n" + 
+//					"5,1,b,4.3\n" + 
+//					"5,1,b,4.0\n" + 
+//					"5,1,b,3.7\n" + 
+//					"5,1,t,4.3\n" + 
+//					"5,1,t,4.3\n" + 
+//					"5,1,c,4.0\n" + 
+//					"5,1,c,4.0\n" + 
+//					"5,1,h,3.7\n" + 
+//					"5,1,h,3.7\n" + 
+//					"5,1,s,3.7\n" + 
+//					"5,1,s,3.7\n" + 
+//					"5,1,s,3.7\n" + 
+//					"5,1,s,3.7\n" + 
+//					"5,1,s,3.7\n" + 
+//					"5,1,s,3.7\n" + 
+//					"5,1,s,3.7\n" + 
+//					"5,1,s,3.7\n" + 
+//					"");
+//		} catch (FileNotFoundException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	}
 	
 	public static void main(String[] args) {
-		testClone();
+		String toSplit = "#s 47";
+		System.out.println(Integer.parseInt(toSplit.split(" ")[1]));
 	}
 }

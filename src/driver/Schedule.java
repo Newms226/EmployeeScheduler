@@ -3,6 +3,7 @@ package driver;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.logging.Level;
 
 import database.PositionID;
 import emp.Employee;
@@ -11,9 +12,12 @@ import tools.FileTools;
 public class Schedule {
 	public boolean valid;
 	private Set<PositionID<? extends Employee>> completedIDs;
+	private final String numberedSchedule;
 	
 	public Schedule(Collection<PositionID<? extends Employee>> completedIDs) {
+		Driver.driverLog.config("Called constructor for Schedule");
 		this.completedIDs = new HashSet<>(completedIDs);
+		numberedSchedule = generateNumberedSchedule();
 //		if (!verify()) {
 //			if (Driver.debugging) System.out.println("WARNING: Schedule is invald!");
 //		}
@@ -21,15 +25,10 @@ public class Schedule {
 	
 	public boolean verify() {
 		boolean completeSuccess = true;
-		if (Driver.debugging) System.out.println(FileTools.LINE_BREAK + "Verifing Schedule..." );
+		Driver.driverLog.finer("Verifying Schedule");
 		if (!verifiyQualifiation()) completeSuccess = false;
-		else {
-			if (Driver.debugging) System.out.println("PASSED: Qual Test");
-		}
 		if (!verifyAvailabilty()) completeSuccess = false;
-		else {
-			if (Driver.debugging) System.out.println("PASSED: Qual Test");
-		}
+		Driver.driverLog.log(Level.CONFIG, "Evaluated the schedule as {0}", completeSuccess);
 		return completeSuccess;
 	}
 	
@@ -37,10 +36,8 @@ public class Schedule {
 		boolean toReturn = completedIDs.stream()
 			.allMatch(ID -> {
 				boolean test = ID.getEmplyee().qualifiedFor(ID);
-				if (Driver.debugging) {
-					if (!test) System.out.println("ERROR" + ID.getEmplyee() + " FAILED the qual test for " + ID);
-					else System.out.println("  " + ID.getEmplyee() + " passed the qual test for " + ID);
-				}
+				if (!test) Driver.driverLog.severe(ID.getEmplyee() + " FAILED the qual test for " + ID);
+				else Driver.driverLog.finest(ID.getEmplyee() + " passed the qual test for " + ID);
 				return test;
 			});
 		return toReturn;
@@ -50,16 +47,14 @@ public class Schedule {
 		boolean toReturn = completedIDs.stream()
 			.allMatch(ID -> {
 				boolean test = ID.getEmplyee().everAvailableFor(ID);
-				if (Driver.debugging) {
-					if (!test) System.out.println("ERROR" + ID.getEmplyee() + " FAILED the avail test for " + ID);
-					else System.out.println("  " + ID.getEmplyee() + " passed the avail test for " + ID);
-				}
+				if (!test) Driver.driverLog.severe(ID.getEmplyee() + " FAILED the avail test for " + ID);
+				else Driver.driverLog.finest(ID.getEmplyee() + " passed the avail test for " + ID);
 				return test;
 			});
 		return toReturn;
 	}
 	
-	public String viewAll() {
+	private String generateNumberedSchedule() {
 		StringBuffer buffer = new StringBuffer();
 		completedIDs
 			.stream()
@@ -68,6 +63,10 @@ public class Schedule {
 				buffer.append(s + " TYPE: " + s.employeeType + "\n");
 			});
 		return buffer.toString();
+	}
+	
+	public String viewAll() {
+		return numberedSchedule;
 	}
 	
 	public int getPositionIDCount() {
@@ -81,8 +80,6 @@ public class Schedule {
 			.forEach(id ->{
 				buffer.append(id.toCSV() + "," + id.getEmplyee().ID + "\n" );
 			});
-					
-		
 		return buffer.toString();
 	}
 	

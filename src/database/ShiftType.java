@@ -1,6 +1,8 @@
 package database;
 import java.io.Serializable;
+import java.util.logging.Level;
 
+import driver.Driver;
 import tools.NumberTools;
 
 public enum ShiftType implements Serializable {
@@ -8,6 +10,7 @@ public enum ShiftType implements Serializable {
 	DINNER;
 	
 	public static ShiftType buildShiftType() {
+		Driver.databaseLog.finest("Building shift type");
 		while (true) {
 			try {
 				System.out.println("Which shift type would you like to add?");
@@ -22,11 +25,14 @@ public enum ShiftType implements Serializable {
 	}
 	
 	static ShiftType getFromInt(int x) {
+		Driver.databaseLog.log(Level.FINER, "In getFromInt({0})", x);
 		switch (x) {
 			case 0: return LUNCH;
 			case 1: return DINNER;
 			default:
-				throw new IllegalArgumentException("Invalid entry: " + x + " [0," + (values().length - 1) + "]");
+				IllegalArgumentException e =  new IllegalArgumentException("Invalid entry: " + x + " [0," + (values().length - 1) + "]");
+				Driver.databaseLog.log(Level.SEVERE, e.getMessage(), e);
+				throw e;
 		}
 	}
 }

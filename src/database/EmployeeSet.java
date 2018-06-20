@@ -20,15 +20,13 @@ public class EmployeeSet<E extends Employee> {
 	public final Class<? extends Employee> employeeType;
 	
 	public EmployeeSet(Class<? extends Employee> employeeType) {
-		if (Driver.debugging) {
-			System.out.println("Intalizing ServerList Object");
-		}
+		Driver.databaseLog.config("Intalizing ServerList Object");
 		this.employeeType = employeeType;
 		employeeSet = new ArrayList<>();
 	}
 	
 	public boolean addEmployee(E employee) {
-		if (Driver.debugging) System.out.println("  Adding " + employee + " to ServerList");
+		Driver.databaseLog.info("Adding " + employee + " to ServerList");
 		if (employeeSet.contains(employee)) {
 			return false;
 		}
@@ -38,8 +36,11 @@ public class EmployeeSet<E extends Employee> {
 	
 	public void addMultipleEmployees(Collection<? extends E> collection) {
 		collection.stream().forEach(s -> {
-			boolean pass = addEmployee(s);
-			if (Driver.debugging) System.out.println(s + ((pass) ? " passed" : " failed"));
+			if(addEmployee(s)) {
+				Driver.databaseLog.info(s + " passed adding from addingMultipleEmployee");
+			} else {
+				Driver.databaseLog.severe(s + " FAILED from addingMultipleEmployee");
+			}
 		});
 	}
 	
@@ -56,6 +57,7 @@ public class EmployeeSet<E extends Employee> {
 	}
 	
 	double getAverageFill() {
+		Driver.databaseLog.finer("In average fill");
 		return employeeSet
 			.stream()
 			.mapToDouble(s -> s.getFillCount())
@@ -64,6 +66,7 @@ public class EmployeeSet<E extends Employee> {
 	}
 	
 	void updatePriorities(double averageFill) {
+		Driver.databaseLog.finer("In update priorites");
 		employeeSet
 			.stream()
 			.peek(s -> s.updateEmployeePriority(averageFill));
@@ -74,6 +77,7 @@ public class EmployeeSet<E extends Employee> {
 	}
 	
 	public String toCSV() {
+		Driver.databaseLog.finer("In toCSV of EmployeeSet");
 		StringBuffer buffer = new StringBuffer();
 		
 		employeeSet.stream()
@@ -83,6 +87,7 @@ public class EmployeeSet<E extends Employee> {
 	}
 	
 	public static <E extends Employee> EmployeeSet<E> fromCSV(String[] csvString, Class<E> employeeType) {
+		Driver.databaseLog.finer("In fromCSV of EmployeeSet");
 		EmployeeSet<E> toReturn = new EmployeeSet<>(employeeType);
 		Arrays.asList(csvString).stream()
 			.forEach(str -> toReturn.addEmployee(Employee.fromCSV(employeeType)));
@@ -90,12 +95,14 @@ public class EmployeeSet<E extends Employee> {
 	}
 	
 	public Set<E> filter(Predicate<? super Employee> predicate){
+		Driver.databaseLog.finer("In filter of EmployeeSet");
 		return employeeSet.stream()
 			.filter(predicate)
 			.collect(Collectors.toSet());
 	}
 	
 	public void viewServerPositions() {
+		Driver.databaseLog.finer("In viewServerPositions of EmployeeSet");
 		employeeSet.get(NumberTools.generateInt(
 				"Which server should you like to view?"
 					+ "\n" + CollectionTools.collectionPrinter(employeeSet, true),
