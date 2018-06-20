@@ -1,0 +1,342 @@
+Jun 20, 2018 2:42:53 AM database.EmployeeSet addEmployee
+INFO: Adding Kim to ServerList
+Jun 20, 2018 2:42:53 AM database.EmployeeSet lambda$0
+INFO: Kim passed adding from addingMultipleEmployee
+Jun 20, 2018 2:42:53 AM database.EmployeeSet addEmployee
+INFO: Adding wade to ServerList
+Jun 20, 2018 2:42:53 AM database.EmployeeSet lambda$0
+INFO: wade passed adding from addingMultipleEmployee
+Jun 20, 2018 2:42:53 AM database.EmployeeSet addEmployee
+INFO: Adding Chris to ServerList
+Jun 20, 2018 2:42:53 AM database.EmployeeSet lambda$0
+INFO: Chris passed adding from addingMultipleEmployee
+Jun 20, 2018 2:42:53 AM database.EmployeeSet addEmployee
+INFO: Adding blake to ServerList
+Jun 20, 2018 2:42:53 AM database.EmployeeSet lambda$0
+INFO: blake passed adding from addingMultipleEmployee
+Jun 20, 2018 2:42:53 AM database.EmployeeSet addEmployee
+INFO: Adding chels to ServerList
+Jun 20, 2018 2:42:53 AM database.EmployeeSet lambda$0
+INFO: chels passed adding from addingMultipleEmployee
+Jun 20, 2018 2:42:53 AM database.EmployeeSet addEmployee
+INFO: Adding brandon to ServerList
+Jun 20, 2018 2:42:53 AM database.EmployeeSet lambda$0
+INFO: brandon passed adding from addingMultipleEmployee
+Jun 20, 2018 2:42:53 AM database.EmployeeSet addEmployee
+INFO: Adding Dena to ServerList
+Jun 20, 2018 2:42:53 AM database.EmployeeSet lambda$0
+INFO: Dena passed adding from addingMultipleEmployee
+Jun 20, 2018 2:42:53 AM database.EmployeeSet addEmployee
+INFO: Adding Olson to ServerList
+Jun 20, 2018 2:42:53 AM database.EmployeeSet lambda$0
+INFO: Olson passed adding from addingMultipleEmployee
+Jun 20, 2018 2:42:53 AM database.EmployeeSet addEmployee
+INFO: Adding me to ServerList
+Jun 20, 2018 2:42:53 AM database.EmployeeSet lambda$0
+INFO: me passed adding from addingMultipleEmployee
+Jun 20, 2018 2:42:53 AM database.EmployeeSet addEmployee
+INFO: Adding alecia to ServerList
+Jun 20, 2018 2:42:53 AM database.EmployeeSet lambda$0
+INFO: alecia passed adding from addingMultipleEmployee
+Jun 20, 2018 2:42:53 AM database.EmployeeSet addEmployee
+INFO: Adding Marcy to ServerList
+Jun 20, 2018 2:42:53 AM database.EmployeeSet lambda$0
+INFO: Marcy passed adding from addingMultipleEmployee
+Jun 20, 2018 2:42:53 AM database.EmployeeSet addEmployee
+INFO: Adding Paul 3 to ServerList
+Jun 20, 2018 2:42:53 AM database.EmployeeSet lambda$0
+INFO: Paul 3 passed adding from addingMultipleEmployee
+Jun 20, 2018 2:42:53 AM database.EmployeeSet addEmployee
+INFO: Adding Paul 2 to ServerList
+Jun 20, 2018 2:42:53 AM database.EmployeeSet lambda$0
+INFO: Paul 2 passed adding from addingMultipleEmployee
+Jun 20, 2018 2:42:53 AM database.EmployeeSet addEmployee
+INFO: Adding Gregs to ServerList
+Jun 20, 2018 2:42:53 AM database.EmployeeSet lambda$0
+INFO: Gregs passed adding from addingMultipleEmployee
+Jun 20, 2018 2:42:53 AM java.util.logging.LogManager$RootLogger log
+INFO: Began scheduling process from driver
+Jun 20, 2018 2:42:53 AM java.util.logging.LogManager$RootLogger log
+INFO: HANDING OFF TO SCHEDULER
+Jun 20, 2018 2:42:53 AM database.FileManager saveEmployeeList
+INFO: Writing Employee List
+Jun 20, 2018 2:42:53 AM database.FileManager saveEmployeeList
+INFO: Finished writing Employee List
+Jun 20, 2018 2:42:53 AM database.FileManager saveSetUp
+INFO: Writing set-up
+Jun 20, 2018 2:42:53 AM database.FileManager saveSetUp
+INFO: Finished writing set-up
+Jun 20, 2018 2:42:53 AM database.FileManager saveQueueMap
+INFO: Writing queue-map
+Jun 20, 2018 2:42:53 AM decider.QualifiedEmployeeListMap toCSV
+WARNING: EMPTY MAP!
+Jun 20, 2018 2:42:53 AM database.FileManager saveQueueMap
+INFO: Finished writing queue-map
+Jun 20, 2018 2:42:53 AM database.FileManager saveOperationsStack
+INFO: Writing Operation stack
+Jun 20, 2018 2:42:53 AM decider.OperationStack toCSV
+WARNING: EMPTY STACK
+Jun 20, 2018 2:42:53 AM database.FileManager saveOperationsStack
+INFO: Finished writing Operation stack
+Jun 20, 2018 2:42:53 AM decider.WorkingSet getSchedule
+SEVERE: WARNING: Attempted to get schedule when object is null
+Jun 20, 2018 2:42:53 AM database.FileManager saveSchedule
+INFO: Writing Schedule
+Jun 20, 2018 2:42:53 AM database.FileManager saveSchedule
+WARNING: Schedule null
+Jun 20, 2018 2:42:53 AM decider.Scheduler run
+INFO: Begin schedule
+Jun 20, 2018 2:42:53 AM decider.Scheduler run
+INFO: ASSIGNING: Friday DINNER Bar 10.0
+Jun 20, 2018 2:42:53 AM decider.QualifiedEmployeeListMap getList
+WARNING: Mapping for Friday DINNER Bar is not present
+Jun 20, 2018 2:42:53 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:53 AM emp.Server accept
+INFO: Accepted wade to Friday DINNER Bar 10.0
+  wade
+Jun 20, 2018 2:42:53 AM decider.Scheduler run
+INFO: ASSIGNING: Friday DINNER Bar 10.0
+Jun 20, 2018 2:42:53 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:53 AM emp.Server accept
+INFO: Accepted Chris to Friday DINNER Bar 10.0
+  Chris
+Jun 20, 2018 2:42:53 AM decider.Scheduler run
+INFO: ASSIGNING: Friday DINNER Cocktail 10.0
+Jun 20, 2018 2:42:53 AM decider.QualifiedEmployeeListMap getList
+WARNING: Mapping for Friday DINNER Cocktail is not present
+Jun 20, 2018 2:42:53 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:53 AM emp.Server accept
+INFO: Accepted Dena to Friday DINNER Cocktail 10.0
+  Dena
+Jun 20, 2018 2:42:53 AM decider.Scheduler run
+INFO: ASSIGNING: Friday DINNER Cocktail 10.0
+Jun 20, 2018 2:42:53 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:53 AM emp.Server accept
+INFO: Accepted Kim to Friday DINNER Cocktail 10.0
+  Kim
+Jun 20, 2018 2:42:53 AM decider.Scheduler run
+INFO: ASSIGNING: Friday DINNER Closer 10.0
+Jun 20, 2018 2:42:53 AM decider.QualifiedEmployeeListMap getList
+WARNING: Mapping for Friday DINNER Closer is not present
+Jun 20, 2018 2:42:53 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:53 AM emp.Server accept
+INFO: Accepted Gregs to Friday DINNER Closer 10.0
+  Gregs
+Jun 20, 2018 2:42:53 AM decider.Scheduler run
+INFO: ASSIGNING: Thursday DINNER Bar 9.0
+Jun 20, 2018 2:42:53 AM decider.QualifiedEmployeeListMap getList
+WARNING: Mapping for Thursday DINNER Bar is not present
+Jun 20, 2018 2:42:53 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:53 AM emp.Server accept
+INFO: Accepted Olson to Thursday DINNER Bar 9.0
+  Olson
+Jun 20, 2018 2:42:53 AM decider.Scheduler run
+INFO: ASSIGNING: Friday DINNER Bar 9.0
+Jun 20, 2018 2:42:53 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:53 AM emp.Server accept
+INFO: Accepted Olson to Friday DINNER Bar 9.0
+  Olson
+Jun 20, 2018 2:42:53 AM decider.Scheduler run
+INFO: ASSIGNING: Thursday DINNER Cocktail 9.0
+Jun 20, 2018 2:42:54 AM decider.QualifiedEmployeeListMap getList
+WARNING: Mapping for Thursday DINNER Cocktail is not present
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted chels to Thursday DINNER Cocktail 9.0
+  chels
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Thursday DINNER Closer 9.0
+Jun 20, 2018 2:42:54 AM decider.QualifiedEmployeeListMap getList
+WARNING: Mapping for Thursday DINNER Closer is not present
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted me to Thursday DINNER Closer 9.0
+  me
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Friday DINNER Closer 9.0
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted me to Friday DINNER Closer 9.0
+  me
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Friday DINNER Head_Wait 9.0
+Jun 20, 2018 2:42:54 AM decider.QualifiedEmployeeListMap getList
+WARNING: Mapping for Friday DINNER Head_Wait is not present
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted brandon to Friday DINNER Head_Wait 9.0
+  brandon
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Thursday DINNER Bar 8.0
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted alecia to Thursday DINNER Bar 8.0
+  alecia
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Thursday DINNER Cocktail 8.0
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted blake to Thursday DINNER Cocktail 8.0
+  blake
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Thursday DINNER Closer 8.0
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted brandon to Thursday DINNER Closer 8.0
+  brandon
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Thursday DINNER Head_Wait 8.0
+Jun 20, 2018 2:42:54 AM decider.QualifiedEmployeeListMap getList
+WARNING: Mapping for Thursday DINNER Head_Wait is not present
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted Kim to Thursday DINNER Head_Wait 8.0
+  Kim
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Friday DINNER Head_Wait 8.0
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted blake to Friday DINNER Head_Wait 8.0
+  blake
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Friday DINNER Sales 8.0
+Jun 20, 2018 2:42:54 AM decider.QualifiedEmployeeListMap getList
+WARNING: Mapping for Friday DINNER Sales is not present
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted Marcy to Friday DINNER Sales 8.0
+  Marcy
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Thursday DINNER Head_Wait 7.0
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted Paul 2 to Thursday DINNER Head_Wait 7.0
+  Paul 2
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Friday DINNER Sales 7.0
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted Paul 2 to Friday DINNER Sales 7.0
+  Paul 2
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Monday DINNER Bar 6.0
+Jun 20, 2018 2:42:54 AM decider.QualifiedEmployeeListMap getList
+WARNING: Mapping for Monday DINNER Bar is not present
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted Olson to Monday DINNER Bar 6.0
+  Olson
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Monday DINNER Bar 6.0
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted blake to Monday DINNER Bar 6.0
+  blake
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Monday DINNER Cocktail 6.0
+Jun 20, 2018 2:42:54 AM decider.QualifiedEmployeeListMap getList
+WARNING: Mapping for Monday DINNER Cocktail is not present
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted me to Monday DINNER Cocktail 6.0
+  me
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Monday DINNER Cocktail 6.0
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted brandon to Monday DINNER Cocktail 6.0
+  brandon
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Monday DINNER Closer 6.0
+Jun 20, 2018 2:42:54 AM decider.QualifiedEmployeeListMap getList
+WARNING: Mapping for Monday DINNER Closer is not present
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted Kim to Monday DINNER Closer 6.0
+  Kim
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Monday DINNER Closer 6.0
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted Paul 2 to Monday DINNER Closer 6.0
+  Paul 2
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Friday DINNER Sales 6.0
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted chels to Friday DINNER Sales 6.0
+  chels
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Friday DINNER Sales 6.0
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted Paul 3 to Friday DINNER Sales 6.0
+  Paul 3
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Monday DINNER Head_Wait 5.0
+Jun 20, 2018 2:42:54 AM decider.QualifiedEmployeeListMap getList
+WARNING: Mapping for Monday DINNER Head_Wait is not present
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted chels to Monday DINNER Head_Wait 5.0
+  chels
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Monday DINNER Head_Wait 5.0
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted Gregs to Monday DINNER Head_Wait 5.0
+  Gregs
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Thursday DINNER Sales 5.0
+Jun 20, 2018 2:42:54 AM decider.QualifiedEmployeeListMap getList
+WARNING: Mapping for Thursday DINNER Sales is not present
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted Marcy to Thursday DINNER Sales 5.0
+  Marcy
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Thursday DINNER Sales 5.0
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM emp.Server accept
+INFO: Accepted Paul 3 to Thursday DINNER Sales 5.0
+  Paul 3
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Friday DINNER Sales 5.0
+Jun 20, 2018 2:42:54 AM database.PositionID assignEmployee
+INFO: Assigning server to ShiftID FROM SHIFT ID
+Jun 20, 2018 2:42:54 AM decider.AssignmentOperation run
+WARNING: HOUSE ASSINGMENT: Friday DINNER Sales 5.0
+  House Shift
+Jun 20, 2018 2:42:54 AM decider.Scheduler run
+INFO: ASSIGNING: Friday DINNER Sales 5.0
