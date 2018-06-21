@@ -1,14 +1,14 @@
-package decider;
+package WorkingSet;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.logging.Level;
 
-import database.PositionID;
-import database.PositionID.ShiftID;
 import driver.Driver;
 import emp.ClassNotEqualException;
 import emp.Employee;
 import emp.EmployeeSet;
+import restaurant.PositionID;
+import restaurant.PositionID.ShiftID;
 
 public class QualifiedEmployeeListMap<E extends Employee> {
 
@@ -16,7 +16,7 @@ public class QualifiedEmployeeListMap<E extends Employee> {
 	EmployeeSet<E> list;
 	final int globalMax;
 	
-	QualifiedEmployeeListMap(EmployeeSet<E> list, int globalMax) {
+	public QualifiedEmployeeListMap(EmployeeSet<E> list, int globalMax) {
 		this.list = list;
 		availabilityMap = new TreeMap<ShiftID, QualifiedEmployeeList<E>>(PositionID.SHIFT_ID_ORDER);
 		this.globalMax = globalMax;
@@ -25,7 +25,7 @@ public class QualifiedEmployeeListMap<E extends Employee> {
 	// TODO: Thought: You could generate all the possible mappings at once with stream.map
 	// Would it be faster to just work from a Map<PositionID, List> ???
 	@SuppressWarnings("unchecked")
-	QualifiedEmployeeList<? extends Employee> getList(PositionID<? extends Employee> ID) {
+	public QualifiedEmployeeList<? extends Employee> getList(PositionID<? extends Employee> ID) {
 		try {
 			ClassNotEqualException.assertEqual(list.employeeType, ID.employeeType);
 		} catch (ClassNotEqualException e) {

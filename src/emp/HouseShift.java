@@ -1,7 +1,8 @@
 package emp;
 import java.time.LocalDate;
 
-import database.PositionID;
+import restaurant.PositionID;
+import restaurant.PositionType;
 
 public class HouseShift extends Server {
 	private static final long serialVersionUID = 50945142347011571L;

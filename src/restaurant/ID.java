@@ -1,4 +1,4 @@
-package database;
+package restaurant;
 
 public interface ID {
 

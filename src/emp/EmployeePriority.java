@@ -3,6 +3,7 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
 import driver.Driver;
+import restaurant.PositionType;
 import tools.NumberTools;
 
 public class EmployeePriority implements Comparable<EmployeePriority> {

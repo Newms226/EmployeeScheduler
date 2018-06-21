@@ -6,11 +6,9 @@ import java.util.Date;
 import java.util.logging.*;
 
 import Menu.Menu;
-import database.FileManager;
-import decider.Scheduler;
-import decider.WorkingSet;
-import emp.Restaurant;
+import WorkingSet.WorkingSet;
 import emp.Server;
+import restaurant.Restaurant;
 import tools.CollectionTools;
 
 public class Driver {

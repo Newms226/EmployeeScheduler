@@ -1,4 +1,4 @@
-package decider;
+package WorkingSet;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -9,15 +9,14 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
-import database.FileManager;
-import database.PositionID;
-import database.ScheduleSetUp;
 import driver.Driver;
+import driver.FileManager;
 import emp.Employee;
 import emp.EmployeeSet;
-import emp.PositionType;
-import emp.Restaurant;
 import emp.Server;
+import restaurant.PositionID;
+import restaurant.PositionType;
+import restaurant.Restaurant;
 
 public class WorkingSet <E extends Employee> {
 	public final EmployeeSet<E> employeeList;
@@ -26,6 +25,7 @@ public class WorkingSet <E extends Employee> {
 	public final Class<E> employeeType;
 	private String workingSetID;
 	private ResultSet results;
+	private boolean accurate;
 	
 	public WorkingSet(Restaurant restaurant, Class<E> E_TYPE, int globalMax) {
 		Driver.deciderLog.config("Generated empty working set from constructor of type "
@@ -52,6 +52,7 @@ public class WorkingSet <E extends Employee> {
 	public void save(FileManager.SF statusFlag) {
 		Driver.deciderLog.finest("WorkingSet.save(" + statusFlag.name() + ")");
 		FileManager.saveWorkingSet(this, statusFlag);
+		accurate = true;
 	}
 	
 	public static <E extends Employee> WorkingSet<E> readFromFile(File input) {
@@ -88,6 +89,7 @@ public class WorkingSet <E extends Employee> {
 	
 	public void setResultSet(ResultSet results) {
 		this.results = results;
+		accurate = false;
 	}
 	
 	public void setResultSet(OperationStack opStack, 
@@ -101,6 +103,7 @@ public class WorkingSet <E extends Employee> {
 			Driver.deciderLog.severe("Tried to get result set when it was null. Returned null");
 			return null;
 		}
+		accurate = false;
 		return results;
 	}
 	
@@ -109,6 +112,7 @@ public class WorkingSet <E extends Employee> {
 			Driver.deciderLog.severe("Tried to get scheudle when it was null. Returned null");
 			return null;
 		}
+		accurate = false;
 		return results.schedule;
 	}
 	

@@ -1,15 +1,15 @@
-package decider;
+package WorkingSet;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.logging.Level;
 
-import database.PositionID;
 import driver.Driver;
 import emp.ClassNotEqualException;
 import emp.Employee;
 import emp.EmployeeSet;
 import emp.HouseShift;
+import restaurant.PositionID;
 import tools.StringTools;
 import util.Averager;
 
@@ -21,7 +21,7 @@ public class AssignmentOperation implements Operation<PositionID<? extends Emplo
 	private final Averager averager;
 	public final double currentAverage;
 	
-	AssignmentOperation(PositionID<?> ID,
+	public AssignmentOperation(PositionID<?> ID,
 			            QualifiedEmployeeList<?> list,
 			            Averager avg) {
 		Driver.deciderLog.log(Level.FINER,

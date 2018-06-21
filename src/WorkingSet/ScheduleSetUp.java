@@ -1,4 +1,4 @@
-package database;
+package WorkingSet;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -22,6 +22,7 @@ import driver.Driver;
 import emp.ClassNotEqualException;
 import emp.Employee;
 import emp.Server;
+import restaurant.PositionID;
 import tools.FileTools;
 import tools.NumberTools;
 import tools.StringTools;
@@ -180,7 +181,7 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 		}
 	}
 	
-	String toCSV() {
+	public String toCSV() {
 		StringBuffer buffer = new StringBuffer();
 		positionIDs.stream()
 			.forEach(ID -> buffer.append(ID.toCSV() + "\n"));

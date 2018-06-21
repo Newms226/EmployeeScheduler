@@ -1,4 +1,4 @@
-package database;
+package restaurant;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -12,7 +12,6 @@ import driver.Driver;
 import emp.ClassNotEqualException;
 import emp.Employee;
 import emp.EmployeeType;
-import emp.PositionType;
 import emp.Server;
 import tools.NumberTools;
 
@@ -106,7 +105,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 		Driver.databaseLog.log(Level.FINEST, "Created new positionID from String constructor", new Object[] {day, shiftType, positionType, shiftPriority});;
 	}
 	
-	static <E extends Employee> PositionID<E> build() {
+	public static <E extends Employee> PositionID<E> build() {
 		return build(EmployeeType.build().classType, Day.build());
 	}
 	

@@ -1,9 +1,10 @@
-package emp;
+package restaurant;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
+import emp.EmployeeType;
 import tools.DriverTools;
 import tools.NumberTools;
 

@@ -7,8 +7,10 @@ import java.util.logging.Level;
 
 import Menu.Menu;
 import MyTime.Day;
-import database.PositionID;
 import driver.Driver;
+import restaurant.PositionID;
+import restaurant.PositionType;
+import restaurant.Restaurant;
 import tools.ArrayTools;
 import tools.CollectionTools;
 

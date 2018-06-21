@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 
-import database.PositionID;
 import driver.Driver;
+import restaurant.PositionID;
+import restaurant.PositionType;
 import tools.DriverTools;
 import tools.NumberTools;
 

@@ -5,4 +5,4 @@
  * @author Michael
  *
  */
-package database;
+package restaurant;
