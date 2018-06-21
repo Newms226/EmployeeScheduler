@@ -6,6 +6,7 @@ import java.util.List;
 
 import database.FileManager;
 import database.PositionID;
+import database.FileManager.SF;
 import driver.Driver;
 import emp.Employee;
 import racer.StopWatch;
@@ -51,27 +52,13 @@ public class Scheduler<E extends Employee> {
 			opStack.push(new AssignmentOperation(ID, 
 					                             qualMap.getList((PositionID<E>) ID),
 					                             averager)).run();
-//			if (Driver.debugging) {
-//				System.out.println("CURRENT LIST: ");
-//				positionIDs.stream().forEachOrdered(i -> System.out.println(i));
-//			}
 		}
 		long endTime = System.nanoTime();
 		Driver.deciderLog.info("COMPLETE: Scheudler\n  IN: " + StopWatch.nanosecondsToString(endTime - startTime));
 		workingSet.setResultSet(opStack, qualMap, opStack.extractPositionIDs());
+		workingSet.save(SF.AFTER_SCHEDULE);
 		
-		/* > Get list of PositionIDs
-		 * > Sort list according to priority
-		 * > Work through the list
-		 *   1. Get the matching priority queue
-		 *   2. Sort
-		 *   3. Assign the Server
-		 *      a. Mark the server unavailable
-		 *      b. Update that positionID
-		 *      c. Calculate new average fill
-		 *      d. Update the servers current priority
-		 * > Return list of completed positionIDs
-		 * 
-		 */
+		// Avoid loitering
+		positionIDs = null;
 	}
 }

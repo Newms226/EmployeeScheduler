@@ -77,7 +77,8 @@ public class FileManager {
 		writer.write(set.getSetID()                               // 0
 				+ "\n" + statusFlag.name()                        // 1
 				+ "\n" + set.getEmployeeType().getCanonicalName() // 2
-				+ "\n" + set.restaurant.toCSV() + "\n");          // 3
+				+ "\n" + set.restaurant.toCSV()                   // 3
+				+ "\n" + set.resultsArePresent() + "\n");         // 4
 		
 		saveEmployeeList(set.employeeList);
 		saveSetUp(set.setUp);
@@ -100,7 +101,7 @@ public class FileManager {
 	
 	private static <E extends Employee> void saveSetUp(ScheduleSetUp<E> setUp) {
 		Driver.databaseLog.info("Writing set-up");
-		writer.append(setUpChar + " " + setUp.positionIDCount() + "\n" + setUp.getMaxHours() + "\n" + setUp.toCSV());
+		writer.append(setUpChar + " " + setUp.positionIDCount() + "\n" + setUp.toCSV());
 		Driver.databaseLog.info("Finished writing set-up");
 	}
 	
@@ -216,6 +217,21 @@ public class FileManager {
 //		// TODO
 //		return null;
 //	}
+	
+	public static void numberFileLines(File toNumber, File writeTo) {
+		try (BufferedReader reader = new BufferedReader(new FileReader(toNumber));
+		     PrintWriter writer = new PrintWriter(writeTo))
+		{
+			String str;
+			int i = 0;
+			while( (str = reader.readLine()) != null) {
+				writer.write(i + ": " + str + "\n");
+				i++;
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 	
 	public static void main(String[] args) {}
 }
