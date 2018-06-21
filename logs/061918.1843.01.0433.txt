@@ -1,6 +1,0 @@
-Jun 19, 2018 6:43:04 PM java.util.logging.LogManager$RootLogger log
-INFO: HANDING OFF TO SCHEDULER
-Jun 19, 2018 6:43:04 PM java.util.logging.LogManager$RootLogger log
-INFO: RETURNED TO DRIVER
-Jun 19, 2018 6:43:04 PM java.util.logging.LogManager$RootLogger log
-SEVERE: TEST CONSOLE OUTPUT
