@@ -85,19 +85,19 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	}
 	
 	public void addPositonID(PositionID<? extends Employee> ID) {
-		Driver.databaseLog.log(Level.FINER, "Adding PositionID from ScheduleSetUp.addPositionID", ID);
+		Driver.setUpLog.log(Level.FINER, "Adding PositionID from ScheduleSetUp.addPositionID", ID);
 		positionIDs.add(ID);
 	}
 	
 	String viewDay(Day day) {
-		Driver.databaseLog.log(Level.FINEST, "Viewing day", day);
+		Driver.masterLog.log(Level.FINEST, "Viewing day", day);
 		StringBuffer buffer = new StringBuffer(day.toString() + "\n");
 		List<PositionID<? extends Employee>> dayList = positionIDs
 				.stream()
 				.sorted(PositionID.DAY_ORDER)
 				.filter(i -> i.getDay().equals(day)).collect(Collectors.toList());
 		if (dayList.size() == 0) {
-			Driver.databaseLog.log(Level.WARNING, "No shifts are currently set up", day);
+			Driver.masterLog.log(Level.WARNING, "No shifts are currently set up", day);
 			buffer.append("No shifts are set up for " + day);
 		} else {
 			for (int i = 0; i < dayList.size(); i++) {
@@ -108,7 +108,7 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	}
 	
 	void modifyDay(Day day) {
-		Driver.databaseLog.log(Level.FINEST, "Modifying day", day);
+		Driver.setUpLog.log(Level.FINEST, "Modifying day", day);
 		setupMenu = new Menu("Schedule Modifier for " + day);
 		setupMenu.add("Add a new shift", 
 			() -> {
@@ -149,10 +149,10 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	}
 	
 	void setMaxHours(int maxHours) {
-		Driver.databaseLog.log(Level.FINEST, "Setting max hours", maxHours);
+		Driver.setUpLog.log(Level.FINEST, "Setting max hours", maxHours);
 		if (0 >= maxHours) {
 			IllegalArgumentException e = new IllegalArgumentException("Max hours must be at least 1:" + maxHours);
-			Driver.databaseLog.log(Level.SEVERE, "Max hours must be at least one", e);
+			Driver.setUpLog.log(Level.SEVERE, "Max hours must be at least one", e);
 			throw e;
 		}
 		this.GLOBAL_MAX_HOURS = maxHours;
@@ -189,7 +189,7 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	}
 	
 	public static <E extends Employee> ScheduleSetUp<E> fromCSV(String[] lines, int expectedLines, int maxHours) {
-		Driver.databaseLog.entering(ScheduleSetUp.class.getName(), "fromCSV()");
+		Driver.fileManagerLog.entering(ScheduleSetUp.class.getName(), "fromCSV()");
 		
 		ScheduleSetUp<E> toReturn = new ScheduleSetUp<>(maxHours);
 		for (String line: lines) {
@@ -197,11 +197,11 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 		}
 		
 		if(expectedLines != toReturn.positionIDCount())
-			Driver.databaseLog.log(Level.SEVERE, 
+			Driver.fileManagerLog.log(Level.SEVERE, 
 					"ScheduleSetUp.fromCSV() did not find the right amount of lines. Expected: {0} Found: {1}",
 					new Object[] {expectedLines, toReturn.positionIDCount()});
 		
-		Driver.databaseLog.exiting(ScheduleSetUp.class.getName(), "fromCSV()");
+		Driver.fileManagerLog.exiting(ScheduleSetUp.class.getName(), "fromCSV()");
 		return toReturn;
 	}
 	
@@ -228,7 +228,7 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	public List<PositionID<? extends Employee>> getPositionIDsCOPY() {
 		if (positionIDs.size() == 0) {
 			NullPointerException e = new NullPointerException("PositionIDs have not been filled");
-			Driver.databaseLog.log(Level.SEVERE, e.getMessage(), e);
+			Driver.masterLog.log(Level.SEVERE, e.getMessage(), e);
 			throw e;
 		}
 		return positionIDs.stream()
@@ -263,7 +263,7 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	
 	@Override
 	public ScheduleSetUp<E> clone() {
-		Driver.databaseLog.finest("ENTERING: " + ScheduleSetUp.class.getName() + ".clone()");
+		Driver.masterLog.finest("ENTERING: " + ScheduleSetUp.class.getName() + ".clone()");
 		ScheduleSetUp<E> clone = new ScheduleSetUp<E>();
 		clone.GLOBAL_MAX_HOURS = GLOBAL_MAX_HOURS;
 		clone.positionIDs = getPositionIDsCOPY();

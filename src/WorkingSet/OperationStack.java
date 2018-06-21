@@ -70,7 +70,7 @@ public class OperationStack implements Cloneable, Serializable {
 	}
 	
 	public String toCSV() {
-		Driver.databaseLog.entering(OperationStack.class.getName(), "toCSV");
+		Driver.fileManagerLog.entering(OperationStack.class.getName(), "toCSV");
 		if (stack.size() == 0) {
 			Driver.deciderLog.warning("EMPTY STACK");
 			return "EMPTY STACK";
@@ -78,12 +78,12 @@ public class OperationStack implements Cloneable, Serializable {
 		StringBuffer buffer = new StringBuffer();
 		stack.stream()
 			.forEach(o -> buffer.append(o.toCSV() + "\n"));
-		Driver.databaseLog.exiting(OperationStack.class.getName(), "toCSV");
+		Driver.fileManagerLog.exiting(OperationStack.class.getName(), "toCSV");
 		return buffer.toString();
 	}
 	
 	public static OperationStack fromCSV(String[] csvFileLines, EmployeeSet<? extends Employee> list){
-		Driver.databaseLog.entering(OperationStack.class.getName(), "fromCSV");
+		Driver.fileManagerLog.entering(OperationStack.class.getName(), "fromCSV");
 		OperationStack toReturn = new OperationStack();
 		for (int i = csvFileLines.length - 1; i >= 0; i--) {
 			if (csvFileLines[i].split(",")[0].equals(AssignmentOperation.class.getCanonicalName())) {
@@ -94,7 +94,7 @@ public class OperationStack implements Cloneable, Serializable {
 				throw e;
 			}
 		}
-		Driver.databaseLog.exiting(OperationStack.class.getName(), "fromCSV");
+		Driver.fileManagerLog.exiting(OperationStack.class.getName(), "fromCSV");
 		return toReturn;
 	}
 	
@@ -104,7 +104,7 @@ public class OperationStack implements Cloneable, Serializable {
 	}
 	
 	public List<PositionID<? extends Employee>> extractPositionIDs(){
-		Driver.databaseLog.entering(OperationStack.class.getName(), "extractPositionIDs");
+		Driver.deciderLog.entering(OperationStack.class.getName(), "extractPositionIDs");
 		return stack.stream()
 			.filter(o -> o.getClass().equals(AssignmentOperation.class))
 			.map(a -> ((AssignmentOperation)a).getPositionID())

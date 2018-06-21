@@ -56,7 +56,7 @@ public class Server extends Employee {
 		
 		if (this.availableHours[ID.getDay().dayOfWeek][ID.getShiftType().ordinal()] == false) {
 			IllegalArgumentException e = new IllegalArgumentException("EROR: " + NAME + " is marked as unavailable for " + ID + "\n" + printAvailability());
-			Driver.empLog.log(Level.SEVERE, e.getMessage(), e);
+			Driver.deciderLog.log(Level.SEVERE, e.getMessage(), e);
 			throw e;
 		}
 		this.availableHours[ID.getDay().dayOfWeek][ID.getShiftType().ordinal()] = false;
@@ -75,7 +75,7 @@ public class Server extends Employee {
 		
 		filledShifts++; // TODO: Change for hours
 		ID.assignEmployee(this);
-		Driver.empLog.info("Accepted " + NAME + " to " + ID 
+		Driver.deciderLog.info("Accepted " + NAME + " to " + ID 
 			/*+ "\n" + printAvailability()*/);
 		markUnavailable(ID);
 		assignedShifts.add(ID);

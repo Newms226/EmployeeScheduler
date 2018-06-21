@@ -1,5 +1,6 @@
 package driver;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Date;
@@ -13,37 +14,72 @@ import tools.CollectionTools;
 
 public class Driver {
 	//public static final boolean debugging = true; 
-	public static Logger driverLog, empLog, deciderLog, databaseLog;
+	public static Logger driverLog, deciderLog, setUpLog, fileManagerLog, masterLog;
+	public static final String LOG_DIRECTORY = "/Users/Michael/gitHub/EmployeeScheduler/logs/";
 	static {
-		driverLog = Logger.getLogger("");
-		Handler[] handlers = driverLog.getHandlers();
+		masterLog = Logger.getLogger("");
+		Handler[] handlers = masterLog.getHandlers();
 		if (handlers[0] instanceof ConsoleHandler) {
-			driverLog.removeHandler(handlers[0]);
+			masterLog.removeHandler(handlers[0]);
 		}
+		
+		File workingDir = new File(LOG_DIRECTORY + FileManager.fileFormat.format(new Date()));
+		if (!workingDir.mkdirs()) {
+			throw new Error("COULD NOT MAKE DIRECTORIES AT:\n\t" + workingDir);
+		}
+		
+		FileHandler driverFile = null,
+			    deciderFile = null,
+			    setUpFile = null,
+			    fileManagerFile = null,
+			    masterFile = null;
+		try {
+			masterFile = new FileHandler(workingDir + "%u.MASTER_LOG.txt");
+			driverFile = new FileHandler(workingDir + "%u.driverLog.txt");
+			deciderFile = new FileHandler(workingDir + "%u.schedulerLog.txt");
+			setUpFile = new FileHandler(workingDir + "%u.setUpLog.txt");
+			fileManagerFile = new FileHandler(workingDir + "%u.driverLog.txt");
+		} catch (SecurityException | IOException e) {
+			throw new Error(e.getMessage() + " @ " + e.getStackTrace()[0]);
+		}
+		
 		Handler console = new ConsoleHandler();
-		console.setLevel(Level.SEVERE);
 		SimpleFormatter formater = new SimpleFormatter();
 		console.setFormatter(formater);
-		FileHandler file = null;
-		try {
-			file = new FileHandler("/Users/Michael/gitHub/EmployeeScheduler/logs/"
-					+ FileManager.fileFormat.format(new Date()) + ".txt");
-		} catch (SecurityException | IOException e) {
-			throw new Error();
-		}
-		file.setFormatter(formater);
-		driverLog.setLevel(Level.ALL);
+		console.setLevel(Level.WARNING);
+		
+		masterFile.setFormatter(formater);
+		masterFile.setLevel(Level.ALL);
+		masterLog.addHandler(masterFile);
+		masterLog.addHandler(console);
+		
+		driverFile.setFormatter(formater);
+		driverFile.setLevel(Level.ALL);
+		driverLog = Logger.getLogger("driver");
+		driverLog.setUseParentHandlers(false);
+		driverLog.addHandler(driverFile);
 		driverLog.addHandler(console);
-		driverLog.addHandler(file);
 		
+		deciderFile.setFormatter(formater);
+		deciderFile.setLevel(Level.ALL);
 		deciderLog = Logger.getLogger("decider");
-		deciderLog.setUseParentHandlers(true);
+		deciderLog.setUseParentHandlers(false);
+		deciderLog.addHandler(deciderFile);
+		deciderLog.addHandler(console);
 		
-		empLog = Logger.getLogger("emp");
-		empLog.setUseParentHandlers(true);
+		setUpFile.setFormatter(formater);
+		setUpFile.setLevel(Level.ALL);
+		setUpLog = Logger.getLogger("setUp");
+		setUpLog.setUseParentHandlers(false);
+		setUpLog.addHandler(setUpFile);
+		setUpLog.addHandler(console);
 		
-		databaseLog = Logger.getLogger("database");
-		databaseLog.setUseParentHandlers(true);
+		fileManagerFile.setFormatter(formater);
+		fileManagerFile.setLevel(Level.ALL);
+		fileManagerLog = Logger.getLogger("fileManger");
+		fileManagerLog.setUseParentHandlers(false);
+		fileManagerLog.addHandler(fileManagerFile);
+		fileManagerLog.addHandler(console);
 	}
 	
 	private String intro;

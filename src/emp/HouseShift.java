@@ -1,6 +1,7 @@
 package emp;
 import java.time.LocalDate;
 
+import driver.Driver;
 import restaurant.PositionID;
 import restaurant.PositionType;
 
@@ -10,6 +11,7 @@ public class HouseShift extends Server {
 	public HouseShift() {
 		super("House Shift", -1, LocalDate.now(), PositionType.getHouseQualList());
 		employeeType = EmployeeType.House;
+		Driver.deciderLog.fine("Generated new house shift");
 	}
 	
 	@Override

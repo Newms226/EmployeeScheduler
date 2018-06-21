@@ -62,7 +62,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	public final Class<? extends Employee> employeeType;
 	
 	public PositionID(Class<? extends Employee> employeeType, Day day, PositionType positionType, ShiftType shiftType, double shiftPriority) {
-		Driver.databaseLog.log(Level.FINEST, "Created new PositionID", new Object[] {employeeType, day, positionType, shiftType, shiftPriority});
+		Driver.setUpLog.log(Level.FINEST, "Created new PositionID", new Object[] {employeeType, day, positionType, shiftType, shiftPriority});
 		this.day = day.clone();
 		this.positionType = positionType;
 		this.shiftType = shiftType;
@@ -102,7 +102,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 				PositionType.parse(positionType.toCharArray()[0]), 
 				ShiftType.getFromInt(Integer.parseInt(shiftType)), 
 				Double.parseDouble(shiftPriority));
-		Driver.databaseLog.log(Level.FINEST, "Created new positionID from String constructor", new Object[] {day, shiftType, positionType, shiftPriority});;
+		Driver.setUpLog.log(Level.FINEST, "Created new positionID from String constructor", new Object[] {day, shiftType, positionType, shiftPriority});;
 	}
 	
 	public static <E extends Employee> PositionID<E> build() {
@@ -110,7 +110,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	}
 	
 	static <E extends Employee> PositionID<E> build(Class<? extends Employee> employeeType, Day day) { 
-		Driver.databaseLog.log(Level.FINEST, "Building new PositionID with day & employee type", new Object[] {employeeType, day});
+		Driver.setUpLog.log(Level.FINEST, "Building new PositionID with day & employee type", new Object[] {employeeType, day});
 		return new PositionID<E>(
 				employeeType,
 				day,
@@ -127,7 +127,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	}
 
 	public void setPositionType(PositionType positionType) {
-		Driver.databaseLog.log(Level.FINE, "setPositionType", positionType);
+		Driver.setUpLog.log(Level.FINE, "setPositionType", positionType);
 		this.positionType = positionType;
 	}
 
@@ -168,7 +168,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	}
 
 	public void setShiftType(ShiftType shiftType) {
-		Driver.databaseLog.log(Level.FINE, "set shiftType", shiftType);
+		Driver.setUpLog.log(Level.FINE, "set shiftType", shiftType);
 		this.shiftType = shiftType;
 	}
 
@@ -177,7 +177,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	}
 
 	public void setDay(Day day) {
-		Driver.databaseLog.log(Level.FINE, "set day", day);
+		Driver.setUpLog.log(Level.FINE, "set day", day);
 		this.day = day;
 	}
 
@@ -188,11 +188,11 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 		ClassNotEqualException.assertEqual(employeeType, employee.getClass());
 		
 		if (this.employee != null) {
-			Driver.databaseLog.severe("WARNING: Assigned " + employee + " to " 
+			Driver.deciderLog.severe("WARNING: Assigned " + employee + " to " 
 					+ toString() + " when " + this.employee + " was already assigned");
 		}
 		
-		Driver.databaseLog.info("Assigning server to ShiftID FROM SHIFT ID");
+		Driver.deciderLog.info("Assigning server to ShiftID FROM SHIFT ID");
 		this.employee = (E) employee;
 	}
 	
@@ -201,7 +201,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	}
 	
 	public void removeEmployee() {
-		Driver.databaseLog.log(Level.INFO, "Removing employee", employee);
+		Driver.deciderLog.log(Level.INFO, "Removing employee", employee);
 		employee = null;
 	}
 	
@@ -217,14 +217,14 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	@SuppressWarnings("unchecked")
 	@Override
 	public boolean equals(Object that) {
-		Driver.databaseLog.log(Level.FINEST, "In equals for PositionID", that);
+		Driver.masterLog.log(Level.FINEST, "In equals for PositionID", that);
 		if (that == null) return false;
 		if (this == that) {
-			Driver.databaseLog.finest("TRUE: PositionID.equals(that) compared the same object");
+			Driver.masterLog.finest("TRUE: PositionID.equals(that) compared the same object");
 			return true;
 		}
 		if (!this.getClass().equals(that.getClass())) {
-			Driver.databaseLog.finest("FALSE: Class doesnt match");
+			Driver.masterLog.finest("FALSE: Class doesnt match");
 			return false;
 		}
 		
@@ -232,32 +232,32 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 		try {
 			temp = (PositionID<E>) that;
 		} catch (ClassCastException e) {
-			Driver.databaseLog.finest("FALSE: ClassCastException");
+			Driver.masterLog.finest("FALSE: ClassCastException");
 			return false;
 		}
 		
 		if (this.priority != temp.priority) {
-			Driver.databaseLog.finest("FALSE: Priority doesnt match. "
+			Driver.masterLog.finest("FALSE: Priority doesnt match. "
 					+ "This: " + this.priority + " that: " + temp.priority);
 			return false;
 		}
 		
 		if (this.employee == null && temp.employee != null) {
-			Driver.databaseLog.finest("FALSE: this.employee == null && temp.employee != null");
+			Driver.masterLog.finest("FALSE: this.employee == null && temp.employee != null");
 			return false;
 		}
 		if (this.employee != null) {
-			Driver.databaseLog.finest("In this.employee != null");
+			Driver.masterLog.finest("In this.employee != null");
 			if (temp.employee == null) {
-				Driver.databaseLog.finest("FALSE: this.employee != null & temp.employee == null");
+				Driver.masterLog.finest("FALSE: this.employee != null & temp.employee == null");
 				return false;
 			}
 			if (!this.employee.equals(temp.employee)) {
-				Driver.databaseLog.finest("FALSE: " + this.employee + " != " + temp.employee);
+				Driver.masterLog.finest("FALSE: " + this.employee + " != " + temp.employee);
 				return false;
 			}
 		}
-		Driver.databaseLog.finest("TRUE");
+		Driver.masterLog.finest("TRUE");
 		return true;
 	}
 	
@@ -287,9 +287,9 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	}
 	
 	static <E extends Employee> PositionID<E> fromCSV(String[] split) {
-		Driver.databaseLog.finer("parsing: " + Arrays.toString(split));
+		Driver.fileManagerLog.finer("parsing: " + Arrays.toString(split));
 		PositionID<E> temp = new PositionID<E>(split[0], split[1], split[2], split[3]);
-		Driver.databaseLog.finer("parsed to " + temp);
+		Driver.fileManagerLog.finer("parsed to " + temp);
 		return temp;
 	}
 	
@@ -309,7 +309,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	}
 	
 	public void setTo(PositionID<E> setTo) {
-		Driver.databaseLog.log(Level.FINER, "Setting this positionID to", setTo);
+		Driver.masterLog.log(Level.FINER, "Setting this positionID to", setTo);
 		this.day = setTo.day.clone();
 		this.positionType = setTo.positionType;
 		this.shiftType = setTo.shiftType;
@@ -371,7 +371,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 		final int dayOfWeek, shiftTypeOrdinal, positionTypeOrdinal;
 		
 		ShiftID(int dayOfWeek, int shiftTypeOrdinal, int positionTypeOrdinal){
-			Driver.databaseLog.finest("Created ShiftID");
+			Driver.deciderLog.finest("Created ShiftID");
 			this.dayOfWeek = dayOfWeek;
 			this.shiftTypeOrdinal = shiftTypeOrdinal;
 			this.positionTypeOrdinal = positionTypeOrdinal;

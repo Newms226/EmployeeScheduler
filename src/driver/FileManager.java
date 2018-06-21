@@ -65,8 +65,9 @@ public class FileManager {
 		workingFile = new File(workingSetFolder + "/" + statusFlag.ID_CODE + "." + setID + ".txt");
 		try {
 			writer = new PrintWriter(workingFile);
+			Driver.fileManagerLog.fine("Successfully intiated PrintWriter in FileManager.setUp");
 		} catch (FileNotFoundException e ) {
-			Driver.databaseLog.log(Level.SEVERE, "FAILED TO INITIATE PRINTWRITER AT " + workingFile, e);
+			Driver.fileManagerLog.log(Level.SEVERE, "FAILED TO INITIATE PRINTWRITER AT " + workingFile, e);
 			throw new Error();
 		}
 	}
@@ -94,34 +95,34 @@ public class FileManager {
 	}
 	
 	private static <E extends Employee> void saveEmployeeList(EmployeeSet<E> list) {
-		Driver.databaseLog.info("Writing Employee List");
+		Driver.fileManagerLog.info("Writing Employee List");
 		writer.append(listChar + " " + list.count() + "\n" + list.toCSV());
-		Driver.databaseLog.info("Finished writing Employee List");
+		Driver.fileManagerLog.info("Finished writing Employee List");
 	}
 	
 	private static <E extends Employee> void saveSetUp(ScheduleSetUp<E> setUp) {
-		Driver.databaseLog.info("Writing set-up");
+		Driver.fileManagerLog.info("Writing set-up");
 		writer.append(setUpChar + " " + setUp.positionIDCount() + "\n" + setUp.toCSV());
-		Driver.databaseLog.info("Finished writing set-up");
+		Driver.fileManagerLog.info("Finished writing set-up");
 	}
 	
 	private static <E extends Employee> void saveOperationsStack(OperationStack opStack) {
-		Driver.databaseLog.info("Writing Operation stack");
+		Driver.fileManagerLog.info("Writing Operation stack");
 		writer.append(opStackChar + " " + opStack.count() + "\n" + opStack.toCSV());
-		Driver.databaseLog.info("Finished writing Operation stack");
+		Driver.fileManagerLog.info("Finished writing Operation stack");
 		// TODO
 	}
 	
 	private static <E extends Employee> void saveQueueMap(QualifiedEmployeeListMap<E> queueMap) {
-		Driver.databaseLog.info("Writing queue-map");
+		Driver.fileManagerLog.info("Writing queue-map");
 		writer.append(queueMapChar + " " + queueMap.getQueueCount() + "\n" + queueMap.toCSV());
-		Driver.databaseLog.info("Finished writing queue-map");
+		Driver.fileManagerLog.info("Finished writing queue-map");
 	}
 	
 	private static <E extends Employee> void saveSchedule(Schedule schedule) {
-		Driver.databaseLog.info("Writing Schedule");
+		Driver.fileManagerLog.info("Writing Schedule");
 		writer.append(scheduleChar + " " + schedule.getPositionIDCount() + "\n" + schedule.toCSV());
-		Driver.databaseLog.info("Finished writing schedule");
+		Driver.fileManagerLog.info("Finished writing schedule");
 	}
 	
 //	public static WorkingSet<? extends Employee> readWorkingSet(File file) {
@@ -217,6 +218,18 @@ public class FileManager {
 //		// TODO
 //		return null;
 //	}
+	
+	public static WorkingSet<? extends Employee> selectWorkingSetFromSaved(){
+		/*TODO
+		 * > Read in saved files to a File[]
+		 * > Add to a *SET* until 
+		 *   a. out of files
+		 *   b. past limit (say 10)
+		 * > Print them as numbered with an amount of info
+		 * > Return the users selection
+		 */
+		return null;
+	}
 	
 	public static void numberFileLines(File toNumber, File writeTo) {
 		try (BufferedReader reader = new BufferedReader(new FileReader(toNumber));

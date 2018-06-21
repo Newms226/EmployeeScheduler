@@ -10,7 +10,7 @@ public enum ShiftType implements Serializable {
 	DINNER;
 	
 	public static ShiftType buildShiftType() {
-		Driver.databaseLog.finest("Building shift type");
+		Driver.setUpLog.finest("Building shift type");
 		while (true) {
 			try {
 				System.out.println("Which shift type would you like to add?");
@@ -25,13 +25,13 @@ public enum ShiftType implements Serializable {
 	}
 	
 	static ShiftType getFromInt(int x) {
-		Driver.databaseLog.log(Level.FINER, "In getFromInt({0})", x);
+		Driver.setUpLog.log(Level.FINER, "In getFromInt({0})", x);
 		switch (x) {
 			case 0: return LUNCH;
 			case 1: return DINNER;
 			default:
 				IllegalArgumentException e =  new IllegalArgumentException("Invalid entry: " + x + " [0," + (values().length - 1) + "]");
-				Driver.databaseLog.log(Level.SEVERE, e.getMessage(), e);
+				Driver.setUpLog.log(Level.SEVERE, e.getMessage(), e);
 				throw e;
 		}
 	}

@@ -1,6 +1,8 @@
 package emp;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.util.Arrays;
+import java.util.logging.Level;
 
 import driver.Driver;
 import restaurant.PositionType;
@@ -63,7 +65,7 @@ public class EmployeePriority implements Comparable<EmployeePriority> {
 	//				}
 		double fillDouble = FILLED_FACTOR * getFillDouble(currentAverageFill);
 		currentPriority = staticPriority + fillDouble;
-		Driver.empLog.config(employee.NAME + "'s current priority is " + NumberTools.format(currentPriority)
+		Driver.setUpLog.config(employee.NAME + "'s current priority is " + NumberTools.format(currentPriority)
 				+ " from " + NumberTools.format(staticPriority) + " - (" + 
 				NumberTools.format(FILLED_FACTOR) + " * " +  NumberTools.format(fillDouble)
 				+ ")");
@@ -72,10 +74,10 @@ public class EmployeePriority implements Comparable<EmployeePriority> {
 	}
 	
 	private double getFillDouble(double averageCount) {
-		Driver.empLog.finer("Getting fill factor for:" + employee.NAME + ". Fill: " + NumberTools.format(employee.filledShifts)
+		Driver.deciderLog.finer("Getting fill factor for:" + employee.NAME + ". Fill: " + NumberTools.format(employee.filledShifts)
 				+ " AverageFill: " + NumberTools.format(averageCount));
 		if (employee.filledShifts == averageCount) {
-			Driver.empLog.finer(employee.NAME + " has the same number of shfits as the average. No change from fill double");
+			Driver.setUpLog.finer(employee.NAME + " has the same number of shfits as the average. No change from fill double");
 			return 0;
 		}
 		
@@ -83,7 +85,7 @@ public class EmployeePriority implements Comparable<EmployeePriority> {
 		       y = x * x * FILLED_FACTOR;
 		if (x > 0) y	 = -y;
 		
-		Driver.empLog.finer(Character.toString((char) 402) + "(" + NumberTools.format(employee.filledShifts) + " - " + NumberTools.format(averageCount) 
+		Driver.deciderLog.finer(Character.toString((char) 402) + "(" + NumberTools.format(employee.filledShifts) + " - " + NumberTools.format(averageCount) 
 				+ ") = "+ NumberTools.format(y));
 		return y;
 	}
@@ -109,7 +111,7 @@ public class EmployeePriority implements Comparable<EmployeePriority> {
 				   qualDouble = getQualDouble(),
 				   toReturn = dateDouble + graceDouble + qualDouble;
 			
-		Driver.empLog.config("Calculated static Priority of " + employee.NAME + " at " + NumberTools.format(toReturn)
+		Driver.setUpLog.config("Calculated static Priority of " + employee.NAME + " at " + NumberTools.format(toReturn)
 				+ " from:"
 			+ "\n  Date"
 			+ "\n     Value: " + employee.START_DATE.until(LocalDate.now(), ChronoUnit.DAYS)
@@ -120,10 +122,8 @@ public class EmployeePriority implements Comparable<EmployeePriority> {
 			+ "\n     Normalized from range: [0, 10]"
 			+ "\n     Resulting in: " + NumberTools.format(graceDouble)
 			+ "\n  Qualification:"
-			+ "\n     Qualified For: ");
-			employee.qualifiedFor.stream().forEach(s-> System.out.print(s.toString() + " ") );
-			System.out.println(
-			  "\n     Normalized from range: [0," + PositionType.MAX_POSITION_VALUE +  "]"
+			+ "\n     Qualified For: " + Arrays.toString(employee.qualifiedFor.toArray())
+			+ "\n     Normalized from range: [0," + PositionType.MAX_POSITION_VALUE +  "]"
 			+ "\n     Resulting in: " + NumberTools.format(qualDouble)
 		);
 		
@@ -133,13 +133,16 @@ public class EmployeePriority implements Comparable<EmployeePriority> {
 	
 	public void setGrace(double newGrace) {
 		if (newGrace < 1 || newGrace > 10) {
-			throw new IllegalArgumentException(newGrace + " is not a valid grace. [1,10]");
+			IllegalArgumentException e = new IllegalArgumentException(newGrace + " is not a valid grace. [1,10]");
+			Driver.setUpLog.log(Level.SEVERE, e.getMessage(), e);
+			throw e;
 		}
 		internalSetGrace(newGrace);
 	}
 	
 	void internalSetGrace(double newGrace) {
 		grace = newGrace;
+		Driver.setUpLog.info("Setting " + employee.NAME + "'s grace to " + newGrace);
 		calculateStaticPriority();
 	}
 	

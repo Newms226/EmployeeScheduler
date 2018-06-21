@@ -62,7 +62,7 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 	
 	Employee(String name, int ID, LocalDate startDate, ArrayList<PositionType> possibleShifts) {
 		this (name, ID, startDate, getDefaultAvail(), 0, 40, 35, 0, possibleShifts);
-		Driver.empLog.log(Level.CONFIG, "Generated generic employee {0}", name);
+		Driver.setUpLog.log(Level.CONFIG, "Generated generic employee {0}", name);
 	}
 	
 	Employee(String name, int ID, LocalDate startDate, boolean[][] possibleHours,
@@ -102,17 +102,17 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 	}
 	
 	public void lowPromote() {
-		Driver.empLog.fine("Low promote: " + NAME);
+		Driver.setUpLog.fine("Low promote: " + NAME);
 		employeePriority.internalSetGrace(EmployeePriority.LOW_PROMOTE_GRACE);
 	}
 	
 	public void promote() {
-		Driver.empLog.fine("Promote: " + NAME);
+		Driver.setUpLog.fine("Promote: " + NAME);
 		employeePriority.internalSetGrace(EmployeePriority.MID_PROMOTE_GRACE);
 	}
 	
 	public void fastPromote() {
-		Driver.empLog.fine("Fast promote: " + NAME);
+		Driver.setUpLog.fine("Fast promote: " + NAME);
 		employeePriority.internalSetGrace(EmployeePriority.HIGH_PROMOTE_GRACE);
 	}
 	
@@ -121,7 +121,7 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 	}
 	
 	public String toCSV() {
-		Driver.empLog.finest("toCSV for " + NAME);
+		Driver.fileManagerLog.finest("toCSV for " + NAME);
 		return ID + "," + NAME + "," + START_DATE + ","  + PAY + ","
 				+ ArrayTools.print2D(POSSIBLE_HOURS, false) + ","
 				+ currentHours + "," + MAX_HOURS + "," + DESIRED_HOURS + "," + MIN_HOURS + ","
@@ -133,49 +133,49 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 			return Server.fromCSV(employeeType);
 		}
 		Error e =  new Error("Bottomed out in Employee.fromCSV()");
-		Driver.empLog.log(Level.SEVERE, e.getMessage(), e);
+		Driver.fileManagerLog.log(Level.SEVERE, e.getMessage(), e);
 		throw e;
 	}
 	
 	public boolean everAvailableFor(PositionID<? extends Employee> ID) {
-		Driver.empLog.finer("Testing: " + NAME + " EVER available for " + ID);
+		Driver.deciderLog.finer("Testing: " + NAME + " EVER available for " + ID);
 		boolean test = false;
 		if (POSSIBLE_HOURS[ID.getDay().dayOfWeek][ID.getShiftType().ordinal()]) {
 			test = true;
 		}
-		Driver.empLog.finer(test + "");
+		Driver.deciderLog.finer(test + "");
 		return test;
 	}
 	
 	public boolean currentlyAvailableFor(PositionID<? extends Employee> ID) {
-		Driver.empLog.finer("Testing: " + NAME + " currenlty available for " + ID);
+		Driver.deciderLog.finer("Testing: " + NAME + " currenlty available for " + ID);
 		boolean test = false;
 		if (availableHours[ID.getDay().dayOfWeek][ID.getShiftType().ordinal()]) {
 			test = true;
 		}
-		Driver.empLog.finer(test + "");
+		Driver.deciderLog.finer(test + "");
 		return test;
 	}
 	
 	public boolean qualifiedFor(PositionID<? extends Employee> ID) {
-		Driver.empLog.finer("Testing: " + NAME + " can work a " + ID.getPositionType() + " shift");
+		Driver.deciderLog.finer("Testing: " + NAME + " can work a " + ID.getPositionType() + " shift");
 		boolean test = false;
 		if (qualifiedFor.contains(ID.getPositionType())) {
 			test = true;
 		}
-		Driver.empLog.finer(test + "");
+		Driver.deciderLog.finer(test + "");
 		return test;
 	}
 	
 	public boolean canWork(PositionID<? extends Employee> ID) {
-		Driver.empLog.fine("Testing " + NAME + " on ID: " + ID);
+		Driver.deciderLog.fine("Testing " + NAME + " on ID: " + ID);
 	
 		// TESTS: TODO: If you ask can Server x work a Cook shift, will that fail?
 		if (!qualifiedFor(ID)) return false;
 		if (!currentlyAvailableFor(ID)) return false;
 		
 		// PASSED:
-		Driver.empLog.fine("FULL PASS:" + NAME + " can work " + ID /*+ " Presently: " +
+		Driver.deciderLog.fine("FULL PASS:" + NAME + " can work " + ID /*+ " Presently: " +
 					this.availableHours[ID.getDay().dayOfWeek][ID.getShiftType().ordinal()]*/);
 		return true;
 	}
@@ -203,13 +203,13 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 	public void changeQualifications() {
 		StringBuffer buffer = new StringBuffer();
 		qualifiedFor.stream().forEach(s -> buffer.append(s));
-		Driver.empLog.config("Changing " + NAME + " qualifications. Present:\n\t" + buffer.toString());
+		Driver.setUpLog.config("Changing " + NAME + " qualifications. Present:\n\t" + buffer.toString());
 		
 		qualifiedFor = PositionType.buildServerPositions();
 		
 		StringBuffer buffer2 = new StringBuffer();
 		qualifiedFor.stream().forEach(s-> buffer2.append(s));
-		Driver.empLog.config("Changied " + NAME + " qualifications to\n\t" + buffer.toString());
+		Driver.setUpLog.config("Changied " + NAME + " qualifications to\n\t" + buffer.toString());
 	}
 	
 	@Override
