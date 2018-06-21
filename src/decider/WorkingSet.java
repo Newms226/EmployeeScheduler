@@ -6,54 +6,52 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
-import database.EmployeeSet;
 import database.FileManager;
 import database.PositionID;
 import database.ScheduleSetUp;
 import driver.Driver;
-import driver.Schedule;
 import emp.Employee;
+import emp.EmployeeSet;
 import emp.PositionType;
+import emp.Restaurant;
 import emp.Server;
 
 public class WorkingSet <E extends Employee> {
 	public final EmployeeSet<E> employeeList;
 	public final ScheduleSetUp<E> setUp;
-	public final OperationStack opStack;
-	public final QualifiedEmployeeListMap<E> queueMap;
+	public final Restaurant restaurant;
 	public final Class<E> employeeType;
+	private String workingSetID;
+	private ResultSet results;
 	
-	private Schedule schedule;
-	
-	public WorkingSet(Class<E> E_TYPE, int globalMax) {
+	public WorkingSet(Restaurant restaurant, Class<E> E_TYPE, int globalMax) {
 		Driver.deciderLog.config("Generated empty working set from constructor of type "
 				+ E_TYPE.getName() + " with " + globalMax + " global max hours");
 		employeeType = E_TYPE;
 		employeeList = new EmployeeSet<E>(E_TYPE);
 		setUp = new ScheduleSetUp<E>();
-		opStack = new OperationStack();
-		queueMap = new QualifiedEmployeeListMap<E>(employeeList, globalMax);
+		this.restaurant = restaurant;
+		workingSetID = FileManager.fileFormat.format(new Date());
 	}
 	
-	public WorkingSet(Class<E> employeeType,
-			   EmployeeSet<E> employeeList,
-			   ScheduleSetUp<E> setUp, 
-			   OperationStack opStack,
-			   QualifiedEmployeeListMap<E> queueMap){
+	public WorkingSet(Restaurant restaurant,
+			          Class<E> employeeType,
+			          EmployeeSet<E> employeeList,
+			          ScheduleSetUp<E> setUp) {
 		Driver.deciderLog.config("Generated working set from specified paramters");
 		this.employeeList = employeeList;
 		this.setUp = setUp;
-		this.opStack = opStack;
-		this.queueMap = queueMap;
 		this.employeeType = employeeType;
+		this.restaurant = restaurant;
 		// TODO writeToFile();
 	}
 	
 	public void save(FileManager.SF statusFlag) {
 		Driver.deciderLog.finest("WorkingSet.save(" + statusFlag.name() + ")");
-		FileManager.saveAll(this, statusFlag);
+		FileManager.saveWorkingSet(this, statusFlag);
 	}
 	
 	public static <E extends Employee> WorkingSet<E> readFromFile(File input) {
@@ -64,8 +62,8 @@ public class WorkingSet <E extends Employee> {
 	
 	@Override
 	public boolean equals(Object o) {
-		// TODO
 		if (this == o) return true;
+		if (o == null) return false;
 		if (!this.getClass().equals(o.getClass())) return false;
 		
 		
@@ -76,21 +74,66 @@ public class WorkingSet <E extends Employee> {
 		return employeeType;
 	}
 	
-	public void setSchedule(Collection<PositionID<? extends Employee>> completedIDs) {
-		Driver.deciderLog.entering(WorkingSet.class.getName(), "setSchedule");
-		setSchedule(new Schedule(completedIDs));
+	boolean setIDisValid() {
+		// TODO
+		return false;
 	}
 	
-	public void setSchedule(Schedule schedule) {
-		this.schedule = schedule;
+	public String getSetID() {
+		if (!setIDisValid()) {
+			workingSetID = FileManager.fileFormat.format(new Date());
+		}
+		return workingSetID;
+	}
+	
+	public void setResultSet(ResultSet results) {
+		this.results = results;
+	}
+	
+	public void setResultSet(OperationStack opStack, 
+			                 QualifiedEmployeeListMap<E> qualMap,
+			                 Collection<PositionID<? extends Employee>> completedIDs) {
+		setResultSet(new ResultSet(opStack, qualMap, completedIDs));
+	}
+	
+	public ResultSet getResultSet() {
+		if (results == null) {
+			Driver.deciderLog.severe("Tried to get result set when it was null. Returned null");
+			return null;
+		}
+		return results;
 	}
 	
 	public Schedule getSchedule() {
-		if (schedule == null) {
-			Driver.deciderLog.severe("WARNING: Attempted to get schedule when object is null");
-//			throw new Error();
+		if (results == null) {
+			Driver.deciderLog.severe("Tried to get scheudle when it was null. Returned null");
+			return null;
 		}
-		return schedule;
+		return results.schedule;
+	}
+	
+	public boolean resultsArePresent() {
+		return results != null;
+	}
+	
+	public class ResultSet {
+		public final QualifiedEmployeeListMap<E> qualMap;
+		public final OperationStack opStack;
+		public final Schedule schedule;
+		
+		ResultSet(OperationStack opStack,
+				  QualifiedEmployeeListMap<E> qualMap,
+				  Schedule schedule) {
+			this.opStack = opStack;
+			this.qualMap = qualMap;
+			this.schedule = schedule;
+		}
+		
+		ResultSet(OperationStack opStack,
+		          QualifiedEmployeeListMap<E> qualMap,
+		          Collection<PositionID<? extends Employee>> completedIDs) {
+			this(opStack, qualMap, new Schedule(completedIDs));
+		}
 	}
 
 	public static WorkingSet<Server> serverTrainingData(){
@@ -131,9 +174,11 @@ public class WorkingSet <E extends Employee> {
 		servers.add(Paul2);
 		servers.add(gregs);
 		
-		WorkingSet<Server> workingSet = new WorkingSet<>(Server.class, 60);
+		WorkingSet<Server> workingSet = new WorkingSet<>(Restaurant.HACIENDA, Server.class, 60);
 		workingSet.employeeList.addMultipleEmployees(servers);
 		workingSet.setUp.trainingData();
+		
+		servers = null;
 		
 		Driver.deciderLog.config("RETURNING: WorkingSet.serverTrainingData");
 		return workingSet;

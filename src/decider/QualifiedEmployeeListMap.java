@@ -3,12 +3,12 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.logging.Level;
 
-import database.EmployeeSet;
 import database.PositionID;
 import database.PositionID.ShiftID;
 import driver.Driver;
 import emp.ClassNotEqualException;
 import emp.Employee;
+import emp.EmployeeSet;
 
 public class QualifiedEmployeeListMap<E extends Employee> {
 

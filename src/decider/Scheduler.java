@@ -36,7 +36,9 @@ public class Scheduler<E extends Employee> {
 		
 		// TODO: This should never happen, ensured by the working set
 		// ClassNotEqualException.assertEqual(workingSet.employeeType, positionIDs.get(0).employeeType);
-	
+		OperationStack opStack = new OperationStack();
+		QualifiedEmployeeListMap<E> qualMap = new QualifiedEmployeeListMap<>(workingSet.employeeList, workingSet.restaurant.getGlobalMaxHours());
+		
 		averager = new Averager();
 		PositionID<? extends Employee> ID;
 		positionIDs.sort(PositionID.DESCENDING_PRIORITY_ORDER);
@@ -46,9 +48,9 @@ public class Scheduler<E extends Employee> {
 		for (Iterator<PositionID<? extends Employee>> it = positionIDs.iterator(); it.hasNext(); ) {
 			ID = it.next();
 			Driver.deciderLog.info("ASSIGNING: " + ID);
-			workingSet.opStack.push(new AssignmentOperation(ID, 
-					                                        workingSet.queueMap.getList((PositionID<E>) ID),
-					                                        averager)).run();
+			opStack.push(new AssignmentOperation(ID, 
+					                             qualMap.getList((PositionID<E>) ID),
+					                             averager)).run();
 //			if (Driver.debugging) {
 //				System.out.println("CURRENT LIST: ");
 //				positionIDs.stream().forEachOrdered(i -> System.out.println(i));
@@ -56,8 +58,8 @@ public class Scheduler<E extends Employee> {
 		}
 		long endTime = System.nanoTime();
 		Driver.deciderLog.info("COMPLETE: Scheudler\n  IN: " + StopWatch.nanosecondsToString(endTime - startTime));
-		workingSet.setSchedule(workingSet.opStack.extractPositionIDs());
-		workingSet.save(FileManager.SF.AFTER_SCHEDULE);
+		workingSet.setResultSet(opStack, qualMap, opStack.extractPositionIDs());
+		
 		/* > Get list of PositionIDs
 		 * > Sort list according to priority
 		 * > Work through the list

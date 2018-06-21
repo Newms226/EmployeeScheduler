@@ -1,7 +1,8 @@
-package driver;
+package emp;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
+import driver.Driver;
 import tools.NumberTools;
 
 public class Restaurant {
@@ -15,7 +16,7 @@ public class Restaurant {
 	
 	public Restaurant(String name, LocalDate openDay, int globalMaxHours) {
 		OPEN_DAY = openDay;
-		NAME = name;
+		NAME = name.trim();
 		Driver.driverLog.config(name + " has been open for " + NumberTools.format(getDaysSinceOpen()) + " days");
 		this.globalMaxHours = globalMaxHours;
 	}
@@ -31,6 +32,17 @@ public class Restaurant {
 	
 	public int getGlobalMaxHours() {
 		return globalMaxHours;
+	}
+	
+	public String toCSV() {
+		return NAME + "," + OPEN_DAY + "," + globalMaxHours;
+	}
+	
+	public Restaurant fromCSV(String csvStr) {
+		String[] components = csvStr.split(",");
+		return new Restaurant(components[0],
+				              LocalDate.parse(components[1]), 
+				              Integer.parseInt(components[2]));
 	}
 
 	public static void main(String[] args) {

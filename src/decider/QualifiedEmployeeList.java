@@ -6,10 +6,10 @@ import java.util.Set;
 import java.util.function.Predicate;
 import java.util.logging.Level;
 
-import database.EmployeeSet;
 import database.PositionID;
 import driver.Driver;
 import emp.Employee;
+import emp.EmployeeSet;
 import tools.StringTools;
 
 public class QualifiedEmployeeList<E extends Employee> {

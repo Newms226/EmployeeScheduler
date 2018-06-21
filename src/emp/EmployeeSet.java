@@ -1,4 +1,4 @@
-package database;
+package emp;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -9,8 +9,6 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 import driver.Driver;
-import emp.Employee;
-import emp.Server;
 import tools.CollectionTools;
 import tools.NumberTools;
 import tools.StringTools;

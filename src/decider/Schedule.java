@@ -1,4 +1,4 @@
-package driver;
+package decider;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -6,12 +6,14 @@ import java.util.Set;
 import java.util.logging.Level;
 
 import database.PositionID;
+import driver.Driver;
 import emp.Employee;
 import tools.FileTools;
 
 public class Schedule {
 	public boolean valid;
 	private Set<PositionID<? extends Employee>> completedIDs;
+	
 	private final String numberedSchedule;
 	
 	public Schedule(Collection<PositionID<? extends Employee>> completedIDs) {

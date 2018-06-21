@@ -6,10 +6,10 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.stream.Collectors;
 
-import database.EmployeeSet;
 import database.PositionID;
 import driver.Driver;
 import emp.Employee;
+import emp.EmployeeSet;
 import tools.FileTools;
 
 public class OperationStack implements Cloneable, Serializable {
