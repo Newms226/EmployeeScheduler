@@ -17,13 +17,13 @@ public class Restaurant {
 	public Restaurant(String name, LocalDate openDay, int globalMaxHours) {
 		OPEN_DAY = openDay;
 		NAME = name.trim();
-		Driver.driverLog.config(name + " has been open for " + NumberTools.format(getDaysSinceOpen()) + " days");
+		Driver.setUpLog.config(name + " has been open for " + NumberTools.format(getDaysSinceOpen()) + " days");
 		this.globalMaxHours = globalMaxHours;
 	}
 	
 	public int getDaysSinceOpen() {
 		if (!validDaysSinceOpenCount) {
-			Driver.driverLog.config("Invalid daysSinceOpenCount. Revalidating");
+			Driver.setUpLog.config("Invalid daysSinceOpenCount. Revalidating");
 			daysSinceOpen = (int) OPEN_DAY.until(LocalDate.now(), ChronoUnit.DAYS);
 			validDaysSinceOpenCount = true;
 		}
@@ -43,6 +43,16 @@ public class Restaurant {
 		return new Restaurant(components[0],
 				              LocalDate.parse(components[1]), 
 				              Integer.parseInt(components[2]));
+	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (null == o) return false;
+		
+		if (!toCSV().equals(((Restaurant) o).toCSV())) return false;
+		
+		return true;
 	}
 
 	public static void main(String[] args) {

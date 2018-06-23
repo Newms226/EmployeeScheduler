@@ -61,12 +61,26 @@ public class WorkingSet <E extends Employee> {
 	}
 	
 	
+	@SuppressWarnings("unchecked")
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
 		if (o == null) return false;
 		if (!this.getClass().equals(o.getClass())) return false;
 		
+		WorkingSet<E> that = null;
+		try {
+			that = (WorkingSet<E>) o;
+		} catch (ClassCastException e) {
+			return false;
+		}
+		
+		if (!employeeList.equals(that.employeeList)) return false;
+		if (!setUp.equals(that.setUp)) return false;
+		if (!restaurant.equals(that.restaurant)) return false;
+		
+		if (resultsArePresent() != that.resultsArePresent()) return false;
+		if (!results.equals(that.results)) return false;
 		
 		return true;
 	}
@@ -137,6 +151,23 @@ public class WorkingSet <E extends Employee> {
 		          QualifiedEmployeeListMap<E> qualMap,
 		          Collection<PositionID<? extends Employee>> completedIDs) {
 			this(opStack, qualMap, new Schedule(completedIDs));
+		}
+		
+		@SuppressWarnings("unchecked")
+		@Override
+		public boolean equals(Object o) {
+			if (o == this) return true;
+			if (o == null) return false;
+			
+			if (!this.getClass().equals(o.getClass())) return false;
+			
+			ResultSet that = (ResultSet) o;
+			
+			if (!qualMap.equals(that.qualMap)) return false;
+			if (!opStack.equals(that.opStack)) return false;
+			if (!schedule.equals(that.schedule)) return false;
+			
+			return true;
 		}
 	}
 

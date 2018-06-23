@@ -217,7 +217,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	@SuppressWarnings("unchecked")
 	@Override
 	public boolean equals(Object that) {
-		Driver.masterLog.log(Level.FINEST, "In equals for PositionID", that);
+		Driver.masterLog.log(Level.FINEST, "ENTERING: positionID.equals", that);
 		if (that == null) return false;
 		if (this == that) {
 			Driver.masterLog.finest("TRUE: PositionID.equals(that) compared the same object");
@@ -241,6 +241,27 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 					+ "This: " + this.priority + " that: " + temp.priority);
 			return false;
 		}
+		
+		if (!this.day.equals(temp.day)) {
+			Driver.masterLog.log(Level.FINEST, 
+					            "FALSE: this.day({0}) != that.day({1})",
+					            new Object[] {this.day, temp.day});
+			return false;
+		}
+		
+		if (!this.positionType.equals(temp.positionType)) {
+			Driver.masterLog.log(Level.FINEST, 
+		            "FALSE: this.positionType({0}) != that.positionType({1})",
+		            new Object[] {this.positionType, temp.positionType});
+			return false;
+		}
+		
+		if(!this.shiftType.equals(temp.shiftType)) {
+			Driver.masterLog.log(Level.FINEST, 
+		            "FALSE: this.shiftType({0}) != that.shiftType({1})",
+		            new Object[] {this.shiftType, temp.shiftType});
+		}
+		
 		
 		if (this.employee == null && temp.employee != null) {
 			Driver.masterLog.finest("FALSE: this.employee == null && temp.employee != null");
@@ -280,6 +301,10 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	
 	public String toCSV() {
 		return getDay().dayOfWeek  + "," + getShiftType().ordinal() + "," + getPositionType().ABR + "," + priority;
+	}
+	
+	public String toCSVWithEmployee() {
+		return toCSV() + ":" + employee.ID;
 	}
 	
 	public static <E extends Employee> PositionID<E> fromCSV(String str) {

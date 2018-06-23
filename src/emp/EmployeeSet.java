@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Predicate;
+import java.util.logging.Level;
 import java.util.stream.Collectors;
 
 import driver.Driver;
@@ -26,9 +27,15 @@ public class EmployeeSet<E extends Employee> {
 	public boolean addEmployee(E employee) {
 		Driver.setUpLog.info("Adding " + employee + " to ServerList");
 		if (employeeSet.contains(employee)) {
+			Driver.setUpLog.log(Level.WARNING,
+					            "Set already contains {0}",
+					            employee);
 			return false;
 		}
 		employeeSet.add(employee);
+		Driver.setUpLog.log(Level.FINE,
+	                        "Successfully added {0}",
+	                        employee);
 		return true;
 	}
 	
@@ -108,6 +115,23 @@ public class EmployeeSet<E extends Employee> {
 				1,
 				employeeSet.size()))
 			.viewAssignedShifts();
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Override
+	public boolean equals(Object o) {
+		if (o == this) return true;
+		if (o == null) return false;
+		
+		if (!this.getClass().equals(o.getClass())) return false;
+		
+		try {
+			if (!employeeSet.containsAll(((EmployeeSet<E>) o).employeeSet)) return false;
+		} catch (ClassCastException e) {
+			return false;
+		}
+		
+		return true;
 	}
 	
 //	void addServer() {

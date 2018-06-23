@@ -28,22 +28,22 @@ public class Driver {
 			throw new Error("COULD NOT MAKE DIRECTORIES AT:\n\t" + workingDir);
 		}
 		
+		Handler console = new ConsoleHandler();
 		FileHandler driverFile = null,
 			    deciderFile = null,
 			    setUpFile = null,
 			    fileManagerFile = null,
 			    masterFile = null;
 		try {
-			masterFile = new FileHandler(workingDir + "%u.MASTER_LOG.txt");
-			driverFile = new FileHandler(workingDir + "%u.driverLog.txt");
-			deciderFile = new FileHandler(workingDir + "%u.schedulerLog.txt");
-			setUpFile = new FileHandler(workingDir + "%u.setUpLog.txt");
-			fileManagerFile = new FileHandler(workingDir + "%u.driverLog.txt");
+			masterFile = new FileHandler(workingDir + "/%u.MASTER_LOG.txt");
+			driverFile = new FileHandler(workingDir + "/%u.driverLog.txt");
+			deciderFile = new FileHandler(workingDir + "/%u.schedulerLog.txt");
+			setUpFile = new FileHandler(workingDir + "/%u.setUpLog.txt");
+			fileManagerFile = new FileHandler(workingDir + "/%u.fileManagerLog.txt");
 		} catch (SecurityException | IOException e) {
 			throw new Error(e.getMessage() + " @ " + e.getStackTrace()[0]);
 		}
 		
-		Handler console = new ConsoleHandler();
 		SimpleFormatter formater = new SimpleFormatter();
 		console.setFormatter(formater);
 		console.setLevel(Level.WARNING);
@@ -52,34 +52,43 @@ public class Driver {
 		masterFile.setLevel(Level.ALL);
 		masterLog.addHandler(masterFile);
 		masterLog.addHandler(console);
+		masterLog.setLevel(Level.ALL);
 		
 		driverFile.setFormatter(formater);
 		driverFile.setLevel(Level.ALL);
 		driverLog = Logger.getLogger("driver");
 		driverLog.setUseParentHandlers(false);
 		driverLog.addHandler(driverFile);
+		driverLog.addHandler(masterFile);
 		driverLog.addHandler(console);
+		driverLog.setLevel(Level.ALL);
 		
 		deciderFile.setFormatter(formater);
 		deciderFile.setLevel(Level.ALL);
 		deciderLog = Logger.getLogger("decider");
 		deciderLog.setUseParentHandlers(false);
 		deciderLog.addHandler(deciderFile);
+		deciderLog.addHandler(masterFile);
 		deciderLog.addHandler(console);
+		deciderLog.setLevel(Level.ALL);
 		
 		setUpFile.setFormatter(formater);
 		setUpFile.setLevel(Level.ALL);
 		setUpLog = Logger.getLogger("setUp");
 		setUpLog.setUseParentHandlers(false);
 		setUpLog.addHandler(setUpFile);
+		setUpLog.addHandler(masterFile);
 		setUpLog.addHandler(console);
+		setUpLog.setLevel(Level.ALL);
 		
 		fileManagerFile.setFormatter(formater);
 		fileManagerFile.setLevel(Level.ALL);
 		fileManagerLog = Logger.getLogger("fileManger");
 		fileManagerLog.setUseParentHandlers(false);
 		fileManagerLog.addHandler(fileManagerFile);
+		fileManagerLog.addHandler(masterFile);
 		fileManagerLog.addHandler(console);
+		fileManagerLog.setLevel(Level.ALL);
 	}
 	
 	private String intro;
@@ -158,10 +167,6 @@ public class Driver {
 //		endMenu.add("Save everything", null); // TODO
 //		endMenu.add("Exit", () -> System.exit(0));
 		//logSetUp();
-	}
-	
-	void logSetUp() throws SecurityException, IOException {
-		
 	}
 	
 	void begin() {

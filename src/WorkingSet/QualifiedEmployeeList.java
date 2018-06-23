@@ -97,6 +97,29 @@ public class QualifiedEmployeeList<E extends Employee> {
 		return null;
 	}
 	
+	@SuppressWarnings("unchecked")
+	@Override
+	public boolean equals(Object o) {
+		if (o == this) return true;
+		if (o == null) return false;
+		
+		if (!this.getClass().equals(o.getClass())) return false;
+		
+		QualifiedEmployeeList<E> that = null;
+		try {
+			that = (QualifiedEmployeeList<E>) o;
+		} catch (ClassCastException e) {
+			return false;
+		}
+		
+		if (!statusFlag.equals(that.statusFlag)) return false;
+		if (globalMax != that.globalMax) return false;
+		if (!ID.equals(that.ID)) return false;
+		if (!workingList.equals(that.workingList)) return false;
+		
+		return true;
+	}
+	
 //	public boolean ofDay(PositionID<? extends Employee> ID) {
 //		return ID.getDay().dayOfWeek == this.ID.getDay().dayOfWeek;
 //	}

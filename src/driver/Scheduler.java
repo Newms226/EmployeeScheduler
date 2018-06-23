@@ -45,8 +45,9 @@ public class Scheduler<E extends Employee> {
 		averager = new Averager();
 		PositionID<? extends Employee> ID;
 		positionIDs.sort(PositionID.DESCENDING_PRIORITY_ORDER);
+		StringBuffer buffer = new StringBuffer("Current List: ");
+		positionIDs.stream().forEachOrdered(i -> buffer.append(i + "\n"));
 		Driver.deciderLog.finest("Current List: ");
-		positionIDs.stream().forEachOrdered(i -> Driver.deciderLog.finest(i.toString()));
 		Driver.deciderLog.info("Begin schedule");
 		for (Iterator<PositionID<? extends Employee>> it = positionIDs.iterator(); it.hasNext(); ) {
 			ID = it.next();

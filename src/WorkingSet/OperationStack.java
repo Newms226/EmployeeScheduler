@@ -114,4 +114,23 @@ public class OperationStack implements Cloneable, Serializable {
 	public int count() {
 		return stack.size();
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if (o == this) return true;
+		if (o == null) return false;
+		
+		if (!this.getClass().equals(o.getClass())) return false;
+		
+		OperationStack that = (OperationStack) o;
+		
+		if (stack.size() != that.stack.size()) return false;
+		
+		for (int i = 0; i < stack.size(); i++) {
+			if (!stack.get(i).equals(that.stack.get(i))) return false;
+		}
+		
+		
+		return true;
+	}
 }

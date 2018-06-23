@@ -98,9 +98,22 @@ public class AssignmentOperation implements Operation<PositionID<? extends Emplo
 	}
 
 	@Override
-	public boolean equals(Object that) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean equals(Object o) {
+		if (o == this) return true;
+		if (o == null) return false;
+		
+		if (!this.getClass().equals(o.getClass())) return false;
+		
+		AssignmentOperation that = (AssignmentOperation) o;
+		
+		if (!ID.equals(that.ID)) return false;
+		if (!time.equals(that.time)) return false;
+		if (!employee.equals(that.employee)) return false;
+		if (!list.equals(that.list)) return false;
+		if (!averager.equals(that.averager)) return false; // TODO: Do I really want to compare these?
+		if (currentAverage != that.currentAverage) return false;
+		
+		return true;
 	}
 
 	@Override

@@ -66,6 +66,27 @@ public class QualifiedEmployeeListMap<E extends Employee> {
 //		};
 //	}
 	
+	@SuppressWarnings("unchecked")
+	@Override
+	public boolean equals(Object o) {
+		if (o == this) return true;
+		if (o == null) return false;
+		
+		if (!this.getClass().equals(o.getClass())) return false;
+		
+		QualifiedEmployeeListMap<E> that = null;
+		try {
+			that = (QualifiedEmployeeListMap<E>) o;
+		} catch (ClassCastException e) {
+			return false;
+		}
+		
+		if (!availabilityMap.equals(that.availabilityMap)) return false;
+		if (!list.equals(that.list)) return false;
+		
+		return true;
+	}
+	
 	public int getQueueCount() {
 		return availabilityMap.size();
 	}
