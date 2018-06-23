@@ -1,0 +1,66 @@
+Jun 21, 2018 5:32:45 PM emp.EmployeePriority internalSetGrace
+INFO: Setting Kim's grace to 10.0
+Jun 21, 2018 5:32:45 PM emp.EmployeePriority internalSetGrace
+INFO: Setting Dena's grace to 10.0
+Jun 21, 2018 5:32:45 PM emp.EmployeePriority internalSetGrace
+INFO: Setting Me's grace to 9.0
+Jun 21, 2018 5:32:45 PM emp.EmployeePriority internalSetGrace
+INFO: Setting Gregs's grace to 9.0
+Jun 21, 2018 5:32:45 PM emp.EmployeePriority internalSetGrace
+INFO: Setting Brandon's grace to 9.0
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet addEmployee
+INFO: Adding Kim to ServerList
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet lambda$0
+INFO: Kim passed adding from addingMultipleEmployee
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet addEmployee
+INFO: Adding Wade to ServerList
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet lambda$0
+INFO: Wade passed adding from addingMultipleEmployee
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet addEmployee
+INFO: Adding Chris to ServerList
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet lambda$0
+INFO: Chris passed adding from addingMultipleEmployee
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet addEmployee
+INFO: Adding Blake to ServerList
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet lambda$0
+INFO: Blake passed adding from addingMultipleEmployee
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet addEmployee
+INFO: Adding Chels to ServerList
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet lambda$0
+INFO: Chels passed adding from addingMultipleEmployee
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet addEmployee
+INFO: Adding Brandon to ServerList
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet lambda$0
+INFO: Brandon passed adding from addingMultipleEmployee
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet addEmployee
+INFO: Adding Dena to ServerList
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet lambda$0
+INFO: Dena passed adding from addingMultipleEmployee
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet addEmployee
+INFO: Adding Olson to ServerList
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet lambda$0
+INFO: Olson passed adding from addingMultipleEmployee
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet addEmployee
+INFO: Adding Me to ServerList
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet lambda$0
+INFO: Me passed adding from addingMultipleEmployee
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet addEmployee
+INFO: Adding Alecia to ServerList
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet lambda$0
+INFO: Alecia passed adding from addingMultipleEmployee
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet addEmployee
+INFO: Adding Marcy to ServerList
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet lambda$0
+INFO: Marcy passed adding from addingMultipleEmployee
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet addEmployee
+INFO: Adding Paul 3 to ServerList
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet lambda$0
+INFO: Paul 3 passed adding from addingMultipleEmployee
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet addEmployee
+INFO: Adding Paul 2 to ServerList
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet lambda$0
+INFO: Paul 2 passed adding from addingMultipleEmployee
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet addEmployee
+INFO: Adding Gregs to ServerList
+Jun 21, 2018 5:32:45 PM emp.EmployeeSet lambda$0
+INFO: Gregs passed adding from addingMultipleEmployee

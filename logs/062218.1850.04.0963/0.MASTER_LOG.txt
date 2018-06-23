@@ -1,0 +1,32 @@
+Jun 22, 2018 6:50:04 PM restaurant.Restaurant getDaysSinceOpen
+CONFIG: Invalid daysSinceOpenCount. Revalidating
+Jun 22, 2018 6:50:05 PM restaurant.Restaurant <init>
+CONFIG: Hacienda has been open for 6,747 days
+Jun 22, 2018 6:50:05 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Gregs at 5.7070 from:
+  Date
+     Value: 1117
+     Normalized from range: [0, 6,747]
+     Resulting in: 0.7470
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Cocktail, Closer, Head_Wait, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.4600
+Jun 22, 2018 6:50:05 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Gregs at 5.7070 from:
+  Date
+     Value: 1117
+     Normalized from range: [0, 6,747]
+     Resulting in: 0.7470
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Cocktail, Closer, Head_Wait, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.4600

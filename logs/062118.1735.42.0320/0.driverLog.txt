@@ -1,0 +1,2 @@
+Jun 21, 2018 5:35:42 PM driver.Driver begin
+FINEST: Began program, in begin()

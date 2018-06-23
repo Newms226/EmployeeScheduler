@@ -1,0 +1,6 @@
+Jun 21, 2018 5:31:49 PM driver.Driver schedule
+INFO: Began scheduling process from driver
+Jun 21, 2018 5:31:49 PM driver.Driver schedule
+INFO: HANDING OFF TO SCHEDULER
+Jun 21, 2018 5:31:49 PM driver.Driver schedule
+INFO: RETURNED TO DRIVER
