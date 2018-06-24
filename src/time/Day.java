@@ -1,4 +1,4 @@
-package restaurant;
+package time;
 
 import java.util.logging.Level;
 
