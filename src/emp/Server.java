@@ -54,12 +54,12 @@ public class Server extends Employee {
 	public void markUnavailable(PositionID<? extends Employee> ID) {
 		ClassNotEqualException.assertEqual(Server.class, ID.employeeType);
 		
-		if (this.availableHours[ID.getDay().dayOfWeek][ID.getShiftType().ordinal()] == false) {
+		if (this.availableHours[ID.getDay().ordinal()][ID.getShiftType().ordinal()] == false) {
 			IllegalArgumentException e = new IllegalArgumentException("EROR: " + NAME + " is marked as unavailable for " + ID + "\n" + printAvailability());
 			Driver.deciderLog.log(Level.SEVERE, e.getMessage(), e);
 			throw e;
 		}
-		this.availableHours[ID.getDay().dayOfWeek][ID.getShiftType().ordinal()] = false;
+		this.availableHours[ID.getDay().ordinal()][ID.getShiftType().ordinal()] = false;
 	}
 	
 	@Override

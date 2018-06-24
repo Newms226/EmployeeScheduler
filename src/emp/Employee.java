@@ -6,8 +6,8 @@ import java.util.Comparator;
 import java.util.logging.Level;
 
 import Menu.Menu;
-import MyTime.Day;
 import driver.Driver;
+import restaurant.Day;
 import restaurant.PositionID;
 import restaurant.PositionType;
 import restaurant.Restaurant;
@@ -140,7 +140,7 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 	public boolean everAvailableFor(PositionID<? extends Employee> ID) {
 		Driver.deciderLog.finer("Testing: " + NAME + " EVER available for " + ID);
 		boolean test = false;
-		if (POSSIBLE_HOURS[ID.getDay().dayOfWeek][ID.getShiftType().ordinal()]) {
+		if (POSSIBLE_HOURS[ID.getDay().ordinal()][ID.getShiftType().ordinal()]) {
 			test = true;
 		}
 		Driver.deciderLog.finer(test + "");
@@ -150,7 +150,7 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 	public boolean currentlyAvailableFor(PositionID<? extends Employee> ID) {
 		Driver.deciderLog.finer("Testing: " + NAME + " currenlty available for " + ID);
 		boolean test = false;
-		if (availableHours[ID.getDay().dayOfWeek][ID.getShiftType().ordinal()]) {
+		if (availableHours[ID.getDay().ordinal()][ID.getShiftType().ordinal()]) {
 			test = true;
 		}
 		Driver.deciderLog.finer(test + "");

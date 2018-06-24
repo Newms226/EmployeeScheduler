@@ -17,11 +17,11 @@ import javax.swing.plaf.synth.SynthSeparatorUI;
 import com.sun.org.apache.xerces.internal.impl.dv.dtd.NMTOKENDatatypeValidator;
 
 import Menu.Menu;
-import MyTime.Day;
 import driver.Driver;
 import emp.ClassNotEqualException;
 import emp.Employee;
 import emp.Server;
+import restaurant.Day;
 import restaurant.PositionID;
 import tools.FileTools;
 import tools.NumberTools;
@@ -63,19 +63,19 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 		dayMenu.add("All days (View Only)",
 				() -> System.out.println(viewAll()));
 		dayMenu.add("Sunday",
-				() -> modifyDay(Day.sunday()));
+				() -> modifyDay(Day.SUNDAY));
 		dayMenu.add("Monday",
-				() -> modifyDay(Day.monday()));
+				() -> modifyDay(Day.MONDAY));
 		dayMenu.add("Tuesday",
-				() -> modifyDay(Day.tuesday()));
+				() -> modifyDay(Day.TUESDAY));
 		dayMenu.add("Wednesday",
-				() -> modifyDay(Day.wednesday()));
+				() -> modifyDay(Day.WEDNESDAY));
 		dayMenu.add("Thursday",
-				() -> modifyDay(Day.thursday()));
+				() -> modifyDay(Day.THURSDAY));
 		dayMenu.add("Friday",
-				() -> modifyDay(Day.friday()));
+				() -> modifyDay(Day.FRIDAY));
 		dayMenu.add("Sunday",
-				() -> modifyDay(Day.sunday()));
+				() -> modifyDay(Day.SUNDAY));
 		
 		positionIDs = new ArrayList<>();
 	}

@@ -7,7 +7,6 @@ import java.util.Comparator;
 import java.util.logging.Level;
 
 import Menu.Menu;
-import MyTime.Day;
 import driver.Driver;
 import emp.ClassNotEqualException;
 import emp.Employee;
@@ -63,7 +62,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	
 	public PositionID(Class<? extends Employee> employeeType, Day day, PositionType positionType, ShiftType shiftType, double shiftPriority) {
 		Driver.setUpLog.log(Level.FINEST, "Created new PositionID", new Object[] {employeeType, day, positionType, shiftType, shiftPriority});
-		this.day = day.clone();
+		this.day = day;
 		this.positionType = positionType;
 		this.shiftType = shiftType;
 		this.priority = shiftPriority;
@@ -300,7 +299,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	}
 	
 	public String toCSV() {
-		return getDay().dayOfWeek  + "," + getShiftType().ordinal() + "," + getPositionType().ABR + "," + priority;
+		return getDay().ordinal()  + "," + getShiftType().ordinal() + "," + getPositionType().ABR + "," + priority;
 	}
 	
 	public String toCSVWithEmployee() {
@@ -321,7 +320,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	@Override
 	public PositionID<E> clone() {
 		PositionID<E> clone =  new PositionID<E>(employeeType,
-				                                 Day.parse(day.dayOfWeek),
+				                                 day,
 				                                 positionType,
 				                                 shiftType,
 				                                 priority);
@@ -335,7 +334,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	
 	public void setTo(PositionID<E> setTo) {
 		Driver.masterLog.log(Level.FINER, "Setting this positionID to", setTo);
-		this.day = setTo.day.clone();
+		this.day = setTo.day;
 		this.positionType = setTo.positionType;
 		this.shiftType = setTo.shiftType;
 		this.employee = setTo.employee;
@@ -343,46 +342,11 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	}
 	
 	public static PositionID<Server> getExampleServerBased(){
-		return new PositionID<Server>(Server.class, Day.monday(), PositionType.Bar, ShiftType.DINNER, 10);
+		return new PositionID<Server>(Server.class, Day.MONDAY, PositionType.Bar, ShiftType.DINNER, 10);
 	}
 	
 	public double getPriority() {
 		return priority;
-	}
-	
-	@SuppressWarnings("unused")
-	private static void testEqualsWithExtract() {
-		PositionID<Server> one = new PositionID<>(Server.class, Day.monday(), PositionType.Bar, ShiftType.DINNER, 10);
-		PositionID<Server> two = new PositionID<>(Server.class, Day.monday(), PositionType.Bar, ShiftType.DINNER, 10);
-		System.out.println(one.extractShiftID().equals(two.extractShiftID()));
-	}
-	
-	@SuppressWarnings("unused")
-	private static void testEquals() {
-		PositionID<Server> one = new PositionID<>(Server.class, Day.monday(), PositionType.Bar, ShiftType.DINNER, 10);
-		PositionID<Server> two = new PositionID<>(Server.class, Day.monday(), PositionType.Bar, ShiftType.DINNER, 10);
-		ArrayList<PositionType> king = new ArrayList<>(5);
-		king.add(PositionType.Closer);
-		king.add(PositionType.Head_Wait);
-		king.add(PositionType.Cocktail);
-		king.add(PositionType.Sales);
-		two.employee = new Server("Kim",1,  LocalDate.of(2017, 1, 1), king);
-		one.employee = new Server("Kim",1,  LocalDate.of(2017, 1, 1), king);
-		System.out.println(one.equals(two));
-	}
-	
-	@SuppressWarnings("unused")
-	private static void testClone() {
-		PositionID<Server> one = new PositionID<>(Server.class, Day.monday(), PositionType.Bar, ShiftType.DINNER, 10);
-		System.out.println(one.priority);
-		PositionID<Server> two = one.clone();
-		ArrayList<PositionType> king = new ArrayList<>(5);
-		king.add(PositionType.Closer);
-		king.add(PositionType.Head_Wait);
-		king.add(PositionType.Cocktail);
-		king.add(PositionType.Sales);
-		one.employee = new Server("Kim",1,  LocalDate.of(2017, 1, 1), king);
-		System.out.println(two.employee);
 	}
 
 	@Override
@@ -403,7 +367,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 		}
 
 		ShiftID(Day clone, ShiftType shiftType, PositionType positionType) {
-			this (clone.dayOfWeek, shiftType.ordinal(), positionType.ordinal());
+			this (clone.ordinal(), shiftType.ordinal(), positionType.ordinal());
 		}
 		
 		public String toCSV() {
@@ -438,8 +402,44 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 					+ PositionType.parse(positionTypeOrdinal);
 		}
 	}
+	
+	@SuppressWarnings("unused")
+	private static void testEqualsWithExtract() {
+		PositionID<Server> one = new PositionID<>(Server.class, Day.MONDAY, PositionType.Bar, ShiftType.DINNER, 10);
+		PositionID<Server> two = new PositionID<>(Server.class, Day.MONDAY, PositionType.Bar, ShiftType.DINNER, 10);
+		System.out.println(one.extractShiftID().equals(two.extractShiftID()));
+	}
+	
+	@SuppressWarnings("unused")
+	private static void testEquals() {
+		PositionID<Server> one = new PositionID<>(Server.class, Day.MONDAY, PositionType.Bar, ShiftType.DINNER, 10);
+		PositionID<Server> two = new PositionID<>(Server.class, Day.MONDAY, PositionType.Bar, ShiftType.DINNER, 10);
+		ArrayList<PositionType> king = new ArrayList<>(5);
+		king.add(PositionType.Closer);
+		king.add(PositionType.Head_Wait);
+		king.add(PositionType.Cocktail);
+		king.add(PositionType.Sales);
+		two.employee = new Server("Kim",1,  LocalDate.of(2017, 1, 1), king);
+		one.employee = new Server("Kim",1,  LocalDate.of(2017, 1, 1), king);
+		System.out.println(one.equals(two));
+	}
+	
+	@SuppressWarnings("unused")
+	private static void testClone() {
+		PositionID<Server> one = new PositionID<>(Server.class, Day.MONDAY, PositionType.Bar, ShiftType.DINNER, 10);
+		System.out.println(one.priority);
+		PositionID<Server> two = one.clone();
+		ArrayList<PositionType> king = new ArrayList<>(5);
+		king.add(PositionType.Closer);
+		king.add(PositionType.Head_Wait);
+		king.add(PositionType.Cocktail);
+		king.add(PositionType.Sales);
+		one.employee = new Server("Kim",1,  LocalDate.of(2017, 1, 1), king);
+		System.out.println(two.employee);
+	}
+	
 	public static void testExtractShiftID() {
-		PositionID<Server> pos = new PositionID<>(Server.class, Day.monday(), PositionType.Bar, ShiftType.DINNER, 4.9);
+		PositionID<Server> pos = new PositionID<>(Server.class, Day.MONDAY, PositionType.Bar, ShiftType.DINNER, 4.9);
 		ShiftID extracted = pos.extractShiftID();
 		System.out.println(extracted.toString());
 	}
