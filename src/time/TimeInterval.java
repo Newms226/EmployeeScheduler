@@ -1,14 +1,16 @@
 package time;
 
 import java.time.temporal.ChronoUnit;
+import java.time.temporal.Temporal;
+import java.time.temporal.TemporalAccessor;
 import java.time.temporal.TemporalUnit;
 import java.util.List;
 
-public abstract class AbstractInterval <T extends LocalTime_M> implements Interval {
+public class TimeInterval <T extends Temporal & Comparable<T>> implements Interval {
 	public final T start, end;
 	protected Interval_SF statusFlag;
 	
-	public AbstractInterval(Interval_SF statusFlag, T start, T end) {
+	public TimeInterval(Interval_SF statusFlag, T start, T end) {
 		RangeException.assertValidRange(start, end);
 		this.start = start;
 		this.end = end;
@@ -42,7 +44,7 @@ public abstract class AbstractInterval <T extends LocalTime_M> implements Interv
 
 	@Override
 	public boolean contains(Interval interval) {
-		return start.toSecondOfDay() <= interval.startToSecondOfDay()
+		return start.compareTo(interval.s)
 				&& interval.endToSecondOfDay() <= end.toSecondOfDay();
 	}
 
@@ -93,9 +95,9 @@ public abstract class AbstractInterval <T extends LocalTime_M> implements Interv
 		
 		if (!this.getClass().equals(o.getClass())) return false;
 		
-		AbstractInterval<T> that = null;
+		TimeInterval<T> that = null;
 		try {
-			that = (AbstractInterval<T>) o;
+			that = (TimeInterval<T>) o;
 		} catch (ClassCastException e) {
 			return false;
 		}
@@ -110,6 +112,30 @@ public abstract class AbstractInterval <T extends LocalTime_M> implements Interv
 	
 	public String toString() {
 		return start + " - " + end;
+	}
+
+	@Override
+	public int startToSecondOfDay() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int endToSecondOfDay() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public boolean isBefore(TemporalAccessor tempral) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isAfter(TemporalAccessor tempral) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }

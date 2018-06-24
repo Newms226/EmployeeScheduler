@@ -24,23 +24,21 @@ public interface Interval extends Comparable<Interval> {
 	
 	public boolean contains(Interval interval);
 	
-	public boolean isWithin(Interval interval);
+	public abstract boolean isWithin(Interval interval);
 	
 	public boolean isBefore(Interval interval);
 	
-	public boolean isBefore(TemporalAccessor tempral);
+	public abstract boolean isBefore(TemporalAccessor tempral);
 	
 	public boolean isAfter(Interval interval);
 	
-	public boolean isAfter(TemporalAccessor tempral);
+	public abstract boolean isAfter(TemporalAccessor tempral);
 	
 	public boolean intersects(Interval interval);
 	
-	public boolean intersectsThisOnLeft(Interval interval);
+	public abstract boolean intersectsThisOnLeft(Interval interval);
 	
-	public boolean intersectsThisOnRight(Interval interval);
-	
-//	public List<? extends Interval> splitOn(Interval splitBy);
+	public abstract boolean intersectsThisOnRight(Interval interval);
 	
 	public boolean equals(Object o);
 	

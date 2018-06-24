@@ -5,7 +5,7 @@ import java.time.temporal.TemporalAccessor;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LocalTimeInterval extends AbstractInterval<LocalTime_M> {
+public class LocalTimeInterval extends TimeInterval<LocalTime_M> {
 	
 	public static LocalTimeInterval getAlwaysAvailable() {
 		return new LocalTimeInterval(Interval_SF.AVAILABLE, 

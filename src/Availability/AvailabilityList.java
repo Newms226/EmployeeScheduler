@@ -137,17 +137,27 @@ class AvailabilityList {
 		this.statusFlag = statusFlag;
 	}
 	
-	void add(LocalTimeInterval interval) {
-		// TODO: MAKE SURE TO CHECK FOR DUPLICATES AND REPORT BACK!
+	boolean add(LocalTimeInterval interval) {
+		log.entering(this.getClass().getName(), "add: SF = " + statusFlag.name());
+		NotEqualException.assertEqual(statusFlag, interval.getStatusFlag());
+		
+		if (contains(interval)) {
+			log.log(Level.SEVERE,
+					"Attempted to add {0} when it was already present",
+					interval);
+			return false;
+		}
+		
+		// else
+		log.log(Level.FINE,
+				"Added {0}",
+				interval);
+		list.add(interval);
+		return true;
 	}
 	
 	Interval_SF getStatusFlag() {
 		return statusFlag;
-	}
-	
-	LocalTimeInterval[] toAvailable(LocalTimeInterval chunk) {
-		// TODO
-		return null;
 	}
 	
 	boolean contains(LocalTimeInterval chunk) {
