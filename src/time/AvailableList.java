@@ -3,27 +3,39 @@ package time;
 class AvailableList extends AbstractAvailabilityList {
 
 	AvailableList() {
-		// TODO Auto-generated constructor stub
+		super();
+		list.add(LocalTimeInterval.getAlwaysAvailable());
 	}
 	
-	TimeChunk[] toScheduled(TimeChunk chunk) {
+	AvailableList(AvailableList listToAdd) {
+		super(listToAdd.list);
+	}
+	
+
+	LocalTimeInterval[] toScheduled(LocalTimeInterval chunk) {
 		// TODO
 		return null;
 	}
 	
-	TimeChunk[] toOutsideAvailability(TimeChunk chunk) {
+	LocalTimeInterval[] toOutsideAvailability(LocalTimeInterval chunk) {
 		// TODO
 		return null;
 	}
 	
-	TimeChunk[] toTimeOff(TimeChunk chunk) {
+	LocalTimeInterval[] toTimeOff(LocalTimeInterval chunk) {
 		// TODO
 		return null;
 	}
 
 	@Override
-	TimeChunk[] toAvailable(TimeChunk chunk) {
+	LocalTimeInterval[] toAvailable(LocalTimeInterval chunk) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	boolean contains(LocalTimeInterval chunk) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

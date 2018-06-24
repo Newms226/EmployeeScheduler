@@ -16,3 +16,8 @@
 /Interval.class
 /SF.class
 /Time_Chunk_SF.class
+/AbstractInterval.class
+/TimeUnit.class
+/LocalDateTime_M.class
+/LocalTime_M.class
+/LocalTimeInterval.class

@@ -3,14 +3,18 @@ package time;
 import java.util.*;
 
 abstract class AbstractAvailabilityList {
-	List<TimeChunk> list;
-	Time_Chunk_SF statusFlag;
+	protected List<LocalTimeInterval> list;
+	protected Time_Chunk_SF statusFlag;
 	
 	AbstractAvailabilityList() {
-		// TODO Auto-generated constructor stub
+		list = new ArrayList<>();
 	}
 	
-	abstract TimeChunk[] toAvailable(TimeChunk chunk);
+	AbstractAvailabilityList(Collection<LocalTimeInterval> toAdd) {
+		list = new ArrayList<>(toAdd);
+	}
 	
-	abstract boolean contains(TimeChunk chunk);
+	abstract LocalTimeInterval[] toAvailable(LocalTimeInterval chunk);
+	
+	abstract boolean contains(LocalTimeInterval chunk);
 }

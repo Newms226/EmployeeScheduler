@@ -8,16 +8,18 @@ import emp.Employee;
 import restaurant.PositionID;
 
 public class Availability {
-	Map <Day, Map<SF, ? extends AbstractAvailabilityList>> map;
+	public static final long AVOID_MINUTE_AMOUNT = 60; 
+	
+	Map <Day, Map<Time_Chunk_SF, ? extends AbstractAvailabilityList>> map;
 	TimeOffList timeOff;
 	OutsideAvailabilityList neverAvailableList;
 	
 	public Availability() {
 		map = new HashMap<>();
-		Map<SF, ? extends AbstractAvailabilityList> mapToAdd;
+		Map<Time_Chunk_SF, ? extends AbstractAvailabilityList> mapToAdd;
 		for (Day day: Day.values()) {
 			mapToAdd = new HashMap<>();
-			mapToAdd.put(SF.AVAILABLE, value)
+			mapToAdd.put(Time_Chunk_SF.AVAILABLE, value)
 			map.put(day, ;
 		}
 	}
