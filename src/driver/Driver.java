@@ -3,6 +3,7 @@ package driver;
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Date;
 import java.util.logging.*;
 
@@ -14,7 +15,7 @@ import tools.CollectionTools;
 
 public class Driver {
 	//public static final boolean debugging = true; 
-	public static Logger driverLog, deciderLog, setUpLog, fileManagerLog, masterLog;
+	public static Logger driverLog, deciderLog, setUpLog, fileManagerLog, masterLog, availabilityLog;
 	public static final String LOG_DIRECTORY = "/Users/Michael/gitHub/EmployeeScheduler/logs/";
 	static {
 		masterLog = Logger.getLogger("");
@@ -33,13 +34,15 @@ public class Driver {
 			    deciderFile = null,
 			    setUpFile = null,
 			    fileManagerFile = null,
-			    masterFile = null;
+			    masterFile = null,
+			    availabilityFile = null;
 		try {
 			masterFile = new FileHandler(workingDir + "/%u.MASTER_LOG.txt");
 			driverFile = new FileHandler(workingDir + "/%u.driverLog.txt");
 			deciderFile = new FileHandler(workingDir + "/%u.schedulerLog.txt");
 			setUpFile = new FileHandler(workingDir + "/%u.setUpLog.txt");
 			fileManagerFile = new FileHandler(workingDir + "/%u.fileManagerLog.txt");
+			availabilityFile = new FileHandler(workingDir + "/%u.availabilityLog.txt");
 		} catch (SecurityException | IOException e) {
 			throw new Error(e.getMessage() + " @ " + e.getStackTrace()[0]);
 		}
@@ -89,6 +92,15 @@ public class Driver {
 		fileManagerLog.addHandler(masterFile);
 		fileManagerLog.addHandler(console);
 		fileManagerLog.setLevel(Level.ALL);
+		
+		availabilityFile.setFormatter(formater);
+		availabilityFile.setLevel(Level.ALL);
+		availabilityLog = Logger.getLogger("availability");
+		availabilityLog.setUseParentHandlers(false);
+		availabilityLog.addHandler(availabilityFile);
+		availabilityLog.addHandler(masterFile);
+		availabilityLog.addHandler(console);
+		availabilityLog.setLevel(Level.ALL);
 	}
 	
 	private String intro;
@@ -204,8 +216,11 @@ public class Driver {
 	}
 	
 	public static void main(String[] args) throws SecurityException, IOException {
-		Driver work = new Driver();
-		work.begin();
+//		Driver work = new Driver();
+//		work.begin();
+		LocalTime one = LocalTime.of(5, 17);
+		LocalTime two = LocalTime.of(5, 16);
+		System.out.println(one.isAfter(two));
 	}
 
 }

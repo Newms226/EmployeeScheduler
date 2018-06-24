@@ -1,6 +1,7 @@
 package time;
 
 import java.time.LocalTime;
+import java.time.temporal.TemporalAccessor;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,21 +15,30 @@ public class LocalTimeInterval extends AbstractInterval<LocalTime_M> {
 	
 	public LocalTimeInterval(Interval_SF statusFlag, LocalTime_M start, LocalTime_M end) {
 		super(statusFlag, start, end);
-		// TODO Auto-generated constructor stub
+	}
+	
+	public LocalTimeInterval(Interval_SF statusFlag, LocalTimeInterval toClone) {
+		super(statusFlag, toClone.start, toClone.end);
 	}
 
 	@Override
-	public List<? extends Interval> schedule(Interval interval) {
-		if (!contains(interval)) {
-			throw new IllegalArgumentException(this + " does not contain " + interval);
-		}
-		
-		List<LocalTimeInterval> toReturn = new ArrayList<LocalTimeInterval>();
-		toReturn.add(new LocalTimeInterval(Interval_SF.AVIOD, start.minusMinutes(), start));
-		toReturn.add(new LocalTimeInterval(Interval_SF.AVIOD, end, end.plusMinutes()));
-		toReturn.add(new LocalTimeInterval(Interval_SF.SCHEDULED, start, end));
-		
-		return toReturn;
+	public int startToSecondOfDay() {
+		return start.toSecondOfDay();
+	}
+
+	@Override
+	public int endToSecondOfDay() {
+		return end.toSecondOfDay();
+	}
+
+	@Override
+	public boolean isBefore(TemporalAccessor temporal) {
+		return end.localTime.isBefore(LocalTime.from(temporal));
+	}
+
+	@Override
+	public boolean isAfter(TemporalAccessor temporal) {
+		return start.localTime.isAfter(LocalTime.from(temporal));
 	}
 
 }

@@ -1,5 +1,7 @@
 package Availability;
 
+import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -11,7 +13,8 @@ import time.LocalTimeInterval;
 import time.Interval_SF;
 
 public class Availability {
-	public static final long AVOID_MINUTE_AMOUNT = 60; 
+	public static final long AVOID_MINUTE_AMOUNT = 60;
+	public static final Duration AVOID_DURATION = Duration.of(AVOID_MINUTE_AMOUNT, ChronoUnit.MINUTES);
 	
 	Map <Day, Map<Interval_SF, AvailabilityList>> map;
 	

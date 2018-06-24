@@ -42,35 +42,42 @@ public abstract class AbstractInterval <T extends LocalTime_M> implements Interv
 
 	@Override
 	public boolean contains(Interval interval) {
-		// TODO Auto-generated method stub
-		return false;
+		return start.toSecondOfDay() <= interval.startToSecondOfDay()
+				&& interval.endToSecondOfDay() <= end.toSecondOfDay();
 	}
 
 	@Override
-	public boolean within(Interval interval) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean isWithin(Interval interval) {
+		return interval.startToSecondOfDay() <= start.toSecondOfDay()
+				&& end.toSecondOfDay() <= interval.endToSecondOfDay();
+	}
+	
+	@Override
+	public boolean isAfter(Interval interval) {
+		return interval.endToSecondOfDay() <= start.toSecondOfDay();
+	}
+	
+	@Override
+	public boolean isBefore(Interval interval) {
+		return end.toSecondOfDay() <= interval.startToSecondOfDay();
 	}
 
 	@Override
 	public boolean intersects(Interval interval) {
-		// TODO Auto-generated method stub
-		return false;
+		return intersectsThisOnLeft(interval) || intersectsThisOnRight(interval);
 	}
 
 	@Override
-	public boolean intersectsOnLeft(Interval interval) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean intersectsThisOnLeft(Interval interval) {
+		return interval.startToSecondOfDay() < start.toSecondOfDay()
+				&& start.toSecondOfDay() < interval.endToSecondOfDay();
 	}
 
 	@Override
-	public boolean intersectsOnRight(Interval interval) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean intersectsThisOnRight(Interval interval) {
+		return start.toSecondOfDay() < interval.startToSecondOfDay()
+				&& interval.startToSecondOfDay() < end.toSecondOfDay();
 	}
-	
-	public abstract List<? extends Interval> schedule(Interval interval);
 
 	@Override
 	public int compareTo(Interval interval) {

@@ -26,6 +26,16 @@ public class LocalTime_M implements TimeUnit {
 	public LocalTime toLocalTime() {
 		return localTime;
 	}
+	
+	@Override
+	public int toSecondOfDay() {
+		return localTime.toSecondOfDay();
+	}
+	
+	@Override
+	public int toMinuteOfDay() {
+		return (int) Math.round(((double)toSecondOfDay()) / 60.0);
+	}
 
 	@Override
 	public boolean isSupported(TemporalUnit unit) {
@@ -77,7 +87,13 @@ public class LocalTime_M implements TimeUnit {
 		return new LocalTime_M(localTime.plusMinutes(minutes));
 	}
 	
+	
 	public LocalTime_M plusMinutes() {
 		return new LocalTime_M(localTime.plusMinutes(Availability.AVOID_MINUTE_AMOUNT));
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(Math.round(5/2));
+		System.out.println(Math.round(5.0/2.0));
 	}
 }
