@@ -1,0 +1,370 @@
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [1, 1, b, 6]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to MONDAY DINNER Bar 6.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [1, 1, b, 6]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to MONDAY DINNER Bar 6.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [1, 1, t, 6]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to MONDAY DINNER Cocktail 6.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [1, 1, t, 6]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to MONDAY DINNER Cocktail 6.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [1, 1, c, 6]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to MONDAY DINNER Closer 6.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [1, 1, c, 6]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to MONDAY DINNER Closer 6.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [1, 1, h, 5]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to MONDAY DINNER Head_Wait 5.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [1, 1, h, 5]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to MONDAY DINNER Head_Wait 5.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [1, 1, s, 4]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to MONDAY DINNER Sales 4.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [1, 1, s, 4.0]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to MONDAY DINNER Sales 4.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [1, 1, s, 2]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to MONDAY DINNER Sales 2.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [1, 1, s, 2]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to MONDAY DINNER Sales 2.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [1, 1, s, 1]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to MONDAY DINNER Sales 1.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [1, 1, s, 1]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to MONDAY DINNER Sales 1.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, b, 9]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Bar 9.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, b, 8]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Bar 8.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, t, 9]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Cocktail 9.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, t, 8]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Cocktail 8.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, c, 9]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Closer 9.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, c, 8]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Closer 8.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, h, 8]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Head_Wait 8.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, h, 7]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Head_Wait 7.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, s, 5]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Sales 5.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, s, 5]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Sales 5.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, s, 4]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Sales 4.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, s, 4]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Sales 4.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, s, 3]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Sales 3.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, s, 3]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Sales 3.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, s, 2]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Sales 2.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [4, 1, s, 2]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to THURSDAY DINNER Sales 2.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, b, 10]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Bar 10.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, b, 10]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Bar 10.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, b, 9]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Bar 9.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, t, 10]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Cocktail 10.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, t, 10]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Cocktail 10.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, c, 10]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Closer 10.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, c, 9]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Closer 9.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, h, 9]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Head_Wait 9.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, h, 8]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Head_Wait 8.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, s, 8]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Sales 8.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, s, 7]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Sales 7.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, s, 6]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Sales 6.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, s, 6]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Sales 6.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, s, 5]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Sales 5.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, s, 5]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Sales 5.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, s, 4]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Sales 4.0
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsing: [5, 1, s, 4]
+Jun 23, 2018 9:53:46 PM restaurant.PositionID fromCSV
+FINER: parsed to FRIDAY DINNER Sales 4.0
+Jun 23, 2018 9:53:47 PM driver.FileManager setUp
+FINE: Successfully intiated PrintWriter in FileManager.setUp
+Jun 23, 2018 9:53:47 PM driver.FileManager saveEmployeeList
+INFO: Writing Employee List
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet toCSV
+FINER: In toCSV of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Kim
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Wade
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Chris
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Blake
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Chels
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Brandon
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Dena
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Olson
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Me
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Alecia
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Marcy
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Paul 3
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Paul 2
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Gregs
+Jun 23, 2018 9:53:47 PM driver.FileManager saveEmployeeList
+INFO: Finished writing Employee List
+Jun 23, 2018 9:53:47 PM driver.FileManager saveSetUp
+INFO: Writing set-up
+Jun 23, 2018 9:53:47 PM driver.FileManager saveSetUp
+INFO: Finished writing set-up
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet filter
+FINER: In filter of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet filter
+FINER: In filter of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet filter
+FINER: In filter of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet filter
+FINER: In filter of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet filter
+FINER: In filter of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet filter
+FINER: In filter of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet filter
+FINER: In filter of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet filter
+FINER: In filter of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet filter
+FINER: In filter of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet filter
+FINER: In filter of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet filter
+FINER: In filter of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet filter
+FINER: In filter of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet filter
+FINER: In filter of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet filter
+FINER: In filter of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet filter
+FINER: In filter of EmployeeSet
+Jun 23, 2018 9:53:47 PM driver.FileManager setUp
+FINE: Successfully intiated PrintWriter in FileManager.setUp
+Jun 23, 2018 9:53:47 PM driver.FileManager saveEmployeeList
+INFO: Writing Employee List
+Jun 23, 2018 9:53:47 PM emp.EmployeeSet toCSV
+FINER: In toCSV of EmployeeSet
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Kim
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Wade
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Chris
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Blake
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Chels
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Brandon
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Dena
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Olson
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Me
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Alecia
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Marcy
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Paul 3
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Paul 2
+Jun 23, 2018 9:53:47 PM emp.Employee toCSV
+FINEST: toCSV for Gregs
+Jun 23, 2018 9:53:47 PM driver.FileManager saveEmployeeList
+INFO: Finished writing Employee List
+Jun 23, 2018 9:53:47 PM driver.FileManager saveSetUp
+INFO: Writing set-up
+Jun 23, 2018 9:53:47 PM driver.FileManager saveSetUp
+INFO: Finished writing set-up
+Jun 23, 2018 9:53:47 PM driver.FileManager saveQueueMap
+INFO: Writing queue-map
+Jun 23, 2018 9:53:47 PM driver.FileManager saveQueueMap
+INFO: Finished writing queue-map
+Jun 23, 2018 9:53:47 PM driver.FileManager saveOperationsStack
+INFO: Writing Operation stack
+Jun 23, 2018 9:53:47 PM WorkingSet.OperationStack toCSV
+FINER: ENTRY
+Jun 23, 2018 9:53:47 PM WorkingSet.OperationStack toCSV
+FINER: RETURN
+Jun 23, 2018 9:53:47 PM driver.FileManager saveOperationsStack
+INFO: Finished writing Operation stack
+Jun 23, 2018 9:53:47 PM driver.FileManager saveSchedule
+INFO: Writing Schedule
+Jun 23, 2018 9:53:47 PM driver.FileManager saveSchedule
+INFO: Finished writing schedule
+Jun 23, 2018 9:53:49 PM driver.FileManager setUp
+FINE: Successfully intiated PrintWriter in FileManager.setUp
+Jun 23, 2018 9:53:49 PM driver.FileManager saveEmployeeList
+INFO: Writing Employee List
+Jun 23, 2018 9:53:49 PM emp.EmployeeSet toCSV
+FINER: In toCSV of EmployeeSet
+Jun 23, 2018 9:53:49 PM emp.Employee toCSV
+FINEST: toCSV for Kim
+Jun 23, 2018 9:53:49 PM emp.Employee toCSV
+FINEST: toCSV for Wade
+Jun 23, 2018 9:53:49 PM emp.Employee toCSV
+FINEST: toCSV for Chris
+Jun 23, 2018 9:53:49 PM emp.Employee toCSV
+FINEST: toCSV for Blake
+Jun 23, 2018 9:53:49 PM emp.Employee toCSV
+FINEST: toCSV for Chels
+Jun 23, 2018 9:53:49 PM emp.Employee toCSV
+FINEST: toCSV for Brandon
+Jun 23, 2018 9:53:49 PM emp.Employee toCSV
+FINEST: toCSV for Dena
+Jun 23, 2018 9:53:49 PM emp.Employee toCSV
+FINEST: toCSV for Olson
+Jun 23, 2018 9:53:49 PM emp.Employee toCSV
+FINEST: toCSV for Me
+Jun 23, 2018 9:53:49 PM emp.Employee toCSV
+FINEST: toCSV for Alecia
+Jun 23, 2018 9:53:49 PM emp.Employee toCSV
+FINEST: toCSV for Marcy
+Jun 23, 2018 9:53:49 PM emp.Employee toCSV
+FINEST: toCSV for Paul 3
+Jun 23, 2018 9:53:49 PM emp.Employee toCSV
+FINEST: toCSV for Paul 2
+Jun 23, 2018 9:53:49 PM emp.Employee toCSV
+FINEST: toCSV for Gregs
+Jun 23, 2018 9:53:49 PM driver.FileManager saveEmployeeList
+INFO: Finished writing Employee List
+Jun 23, 2018 9:53:49 PM driver.FileManager saveSetUp
+INFO: Writing set-up
+Jun 23, 2018 9:53:49 PM driver.FileManager saveSetUp
+INFO: Finished writing set-up
+Jun 23, 2018 9:53:49 PM driver.FileManager saveQueueMap
+INFO: Writing queue-map
+Jun 23, 2018 9:53:49 PM driver.FileManager saveQueueMap
+INFO: Finished writing queue-map
+Jun 23, 2018 9:53:49 PM driver.FileManager saveOperationsStack
+INFO: Writing Operation stack
+Jun 23, 2018 9:53:49 PM WorkingSet.OperationStack toCSV
+FINER: ENTRY
+Jun 23, 2018 9:53:49 PM WorkingSet.OperationStack toCSV
+FINER: RETURN
+Jun 23, 2018 9:53:49 PM driver.FileManager saveOperationsStack
+INFO: Finished writing Operation stack
+Jun 23, 2018 9:53:49 PM driver.FileManager saveSchedule
+INFO: Writing Schedule
+Jun 23, 2018 9:53:49 PM driver.FileManager saveSchedule
+INFO: Finished writing schedule

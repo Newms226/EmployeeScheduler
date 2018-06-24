@@ -1,0 +1,4 @@
+Jun 23, 2018 9:18:40 PM WorkingSet.WorkingSet serverTrainingData
+CONFIG: Generating serverTrainingData from WorkingSet
+Jun 23, 2018 9:18:40 PM WorkingSet.WorkingSet <init>
+CONFIG: Generated empty working set from constructor of type emp.Server with 60 global max hours
