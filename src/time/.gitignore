@@ -3,3 +3,16 @@
 /TimeChunk$SF.class
 /TimeChunk.class
 /Day.class
+/AvailabilityList.class
+/DayAvailability.class
+/AbstractAvailabilityList.class
+/AvailableList.class
+/TimeOffList.class
+/OutsideAvailabilityList.class
+/ScheduledList.class
+/AvoidList.class
+/RangeException.class
+/RangeException$SF.class
+/Interval.class
+/SF.class
+/Time_Chunk_SF.class

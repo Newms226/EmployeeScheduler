@@ -13,6 +13,7 @@ import emp.Employee;
 import emp.EmployeeType;
 import emp.Server;
 import time.Day;
+import time.TimeChunk;
 import tools.NumberTools;
 
 public class PositionID<E extends Employee> implements Comparable<PositionID<? extends Employee>>,
@@ -179,6 +180,15 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	public void setDay(Day day) {
 		Driver.setUpLog.log(Level.FINE, "set day", day);
 		this.day = day;
+	}
+	
+	public void setTimeChunk(TimeChunk chunk) {
+		// TODO
+	}
+	
+	public TimeChunk getTimeChunk() {
+		// TODO
+		return null;
 	}
 
 	

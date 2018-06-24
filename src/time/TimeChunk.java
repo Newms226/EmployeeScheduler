@@ -1,22 +1,19 @@
 package time;
 
-import java.time.Instant;
-import java.time.LocalTime;
+import java.time.*;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalUnit;
 
 public class TimeChunk {
-	public final LocalTime start, end;
-	private SF statusFlag;
+	public final LocalDateTime start, end;
+	private Time_Chunk_SF statusFlag;
 	
-	public static enum SF {
-		OUTSIDE_AVAILABILITY,
-		AVIOD,
-		SCHEDULED,
-		TIMEOFF
+	public static TimeChunk getAlwaysAvailableDuring(LocalDate date) {
+		return new TimeChunk(LocalDateTime.of(date, LocalTime.MIN), 
+				             LocalDateTime.of(date, LocalTime.MAX));
 	}
 	
-	public TimeChunk(LocalTime start, LocalTime end) {
+	public TimeChunk(LocalDateTime start, LocalDateTime end) {
 		if (start.compareTo(end) < 0) {
 			throw new IllegalArgumentException("Cannot create a negative TimeChunk.");
 		}
@@ -30,6 +27,14 @@ public class TimeChunk {
 	
 	public long getMinutes() {
 		return start.until(end, ChronoUnit.MINUTES);
+	}
+	
+	public void setSatusFlag(Time_Chunk_SF setTo) {
+		statusFlag = setTo;
+	}
+	
+	public Time_Chunk_SF getStatusFlag() {
+		return statusFlag;
 	}
 	
 	public boolean intersects(TimeChunk chunk) {
@@ -53,20 +58,11 @@ public class TimeChunk {
 	}
 	
 	public boolean isBefore(TimeChunk chunk) {
-		return isBefore(chunk.end);
-	}
-	
-	public boolean isBefore(LocalTime instant) {
 		// TODO
 		return false;
 	}
 	
 	public boolean isAfter(TimeChunk chunk) {
-		// TODO
-		return false;
-	}
-	
-	public boolean isAfter(LocalTime instant) {
 		// TODO
 		return false;
 	}
@@ -93,12 +89,9 @@ public class TimeChunk {
 		return false;
 	}
 	
-	public void setSatusFlag(SF setTo) {
-		statusFlag = setTo;
-	}
-	
-	public SF getStatusFlag() {
-		return statusFlag;
+	TimeChunk[] markSection(TimeChunk chunk) {
+		// TODO
+		return null;
 	}
 	
 	@Override
