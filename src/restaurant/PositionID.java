@@ -13,7 +13,7 @@ import emp.Employee;
 import emp.EmployeeType;
 import emp.Server;
 import time.Day;
-import time.TimeChunk;
+import time.LocalTimeInterval;
 import tools.NumberTools;
 
 public class PositionID<E extends Employee> implements Comparable<PositionID<? extends Employee>>,
@@ -182,11 +182,11 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 		this.day = day;
 	}
 	
-	public void setTimeChunk(TimeChunk chunk) {
+	void setInterval(LocalTimeInterval chunk) {
 		// TODO
 	}
 	
-	public TimeChunk getTimeChunk() {
+	public LocalTimeInterval getInterval() {
 		// TODO
 		return null;
 	}

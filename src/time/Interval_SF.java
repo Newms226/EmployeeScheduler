@@ -1,6 +1,6 @@
 package time;
 
-public enum Time_Chunk_SF {
+public enum Interval_SF {
 	AVAILABLE            (true),
 	OUTSIDE_AVAILABILITY (false),
 	AVIOD                (true),
@@ -9,7 +9,7 @@ public enum Time_Chunk_SF {
 	
 	public final boolean SCHEDULEABLE;
 	
-	private Time_Chunk_SF(boolean schedulable) {
+	private Interval_SF(boolean schedulable) {
 		this.SCHEDULEABLE = schedulable;
 	}
 }

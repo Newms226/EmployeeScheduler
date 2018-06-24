@@ -1,20 +1,39 @@
-package time;
+package Availability;
 
 import java.util.*;
 
-abstract class AbstractAvailabilityList {
+import time.LocalTimeInterval;
+import time.Interval_SF;
+
+class AvailabilityList {
 	protected List<LocalTimeInterval> list;
-	protected Time_Chunk_SF statusFlag;
+	protected final Interval_SF statusFlag;
 	
-	AbstractAvailabilityList() {
+	AvailabilityList(Interval_SF statusFlag) {
 		list = new ArrayList<>();
+		this.statusFlag = statusFlag;
+		if (statusFlag.equals(Interval_SF.AVAILABLE)) {
+			list.add(LocalTimeInterval.getAlwaysAvailable());
+		}
 	}
 	
-	AbstractAvailabilityList(Collection<LocalTimeInterval> toAdd) {
+	// Note: This performs a shallow clone
+	AvailabilityList(Collection<LocalTimeInterval> toAdd, Interval_SF statusFlag) {
 		list = new ArrayList<>(toAdd);
+		this.statusFlag = statusFlag;
 	}
 	
-	abstract LocalTimeInterval[] toAvailable(LocalTimeInterval chunk);
+	Interval_SF getStatusFlag() {
+		return statusFlag;
+	}
 	
-	abstract boolean contains(LocalTimeInterval chunk);
+	LocalTimeInterval[] toAvailable(LocalTimeInterval chunk) {
+		// TODO
+		return null;
+	}
+	
+	boolean contains(LocalTimeInterval chunk) {
+		// TODO
+		return false;
+	}
 }

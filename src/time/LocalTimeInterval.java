@@ -7,12 +7,12 @@ import java.util.List;
 public class LocalTimeInterval extends AbstractInterval<LocalTime_M> {
 	
 	public static LocalTimeInterval getAlwaysAvailable() {
-		return new LocalTimeInterval(Time_Chunk_SF.AVAILABLE, 
+		return new LocalTimeInterval(Interval_SF.AVAILABLE, 
 				new LocalTime_M(LocalTime.MIN), 
 				new LocalTime_M(LocalTime.MAX));
 	}
 	
-	public LocalTimeInterval(Time_Chunk_SF statusFlag, LocalTime_M start, LocalTime_M end) {
+	public LocalTimeInterval(Interval_SF statusFlag, LocalTime_M start, LocalTime_M end) {
 		super(statusFlag, start, end);
 		// TODO Auto-generated constructor stub
 	}
@@ -24,9 +24,9 @@ public class LocalTimeInterval extends AbstractInterval<LocalTime_M> {
 		}
 		
 		List<LocalTimeInterval> toReturn = new ArrayList<LocalTimeInterval>();
-		toReturn.add(new LocalTimeInterval(Time_Chunk_SF.AVIOD, start.minusMinutes(), start));
-		toReturn.add(new LocalTimeInterval(Time_Chunk_SF.AVIOD, end, end.plusMinutes()));
-		toReturn.add(new LocalTimeInterval(Time_Chunk_SF.SCHEDULED, start, end));
+		toReturn.add(new LocalTimeInterval(Interval_SF.AVIOD, start.minusMinutes(), start));
+		toReturn.add(new LocalTimeInterval(Interval_SF.AVIOD, end, end.plusMinutes()));
+		toReturn.add(new LocalTimeInterval(Interval_SF.SCHEDULED, start, end));
 		
 		return toReturn;
 	}

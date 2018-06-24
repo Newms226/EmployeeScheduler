@@ -8,6 +8,8 @@ import java.time.temporal.TemporalAmount;
 import java.time.temporal.TemporalField;
 import java.time.temporal.TemporalUnit;
 
+import Availability.Availability;
+
 public class LocalTime_M implements TimeUnit {
 	public final LocalTime localTime;
 

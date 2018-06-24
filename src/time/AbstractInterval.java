@@ -5,10 +5,10 @@ import java.time.temporal.TemporalUnit;
 import java.util.List;
 
 public abstract class AbstractInterval <T extends LocalTime_M> implements Interval {
-	protected final T start, end;
-	protected Time_Chunk_SF statusFlag;
+	public final T start, end;
+	protected Interval_SF statusFlag;
 	
-	public AbstractInterval(Time_Chunk_SF statusFlag, T start, T end) {
+	public AbstractInterval(Interval_SF statusFlag, T start, T end) {
 		RangeException.assertValidRange(start, end);
 		this.start = start;
 		this.end = end;
@@ -16,12 +16,12 @@ public abstract class AbstractInterval <T extends LocalTime_M> implements Interv
 	}
 	
 	@Override
-	public Time_Chunk_SF getStatusFlag() {
+	public Interval_SF getStatusFlag() {
 		return statusFlag;
 	}
 
 	@Override
-	public void setStatusFlag(Time_Chunk_SF sf) {
+	public void setStatusFlag(Interval_SF sf) {
 		statusFlag = sf;
 	}
 

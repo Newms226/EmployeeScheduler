@@ -4,9 +4,9 @@ import java.time.temporal.TemporalUnit;
 
 public interface Interval extends Comparable<Interval> {
 	
-	public Time_Chunk_SF getStatusFlag();
+	public Interval_SF getStatusFlag();
 	
-	public void setStatusFlag(Time_Chunk_SF sf);
+	public void setStatusFlag(Interval_SF sf);
 	
 	public long getDuration(TemporalUnit unit);
 	

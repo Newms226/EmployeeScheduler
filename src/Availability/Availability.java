@@ -1,4 +1,4 @@
-package time;
+package Availability;
 
 import java.util.HashMap;
 import java.util.List;
@@ -6,38 +6,39 @@ import java.util.Map;
 
 import emp.Employee;
 import restaurant.PositionID;
+import time.Day;
+import time.LocalTimeInterval;
+import time.Interval_SF;
 
 public class Availability {
 	public static final long AVOID_MINUTE_AMOUNT = 60; 
 	
-	Map <Day, Map<Time_Chunk_SF, ? extends AbstractAvailabilityList>> map;
-	TimeOffList timeOff;
-	OutsideAvailabilityList neverAvailableList;
+	Map <Day, Map<Interval_SF, AvailabilityList>> map;
 	
 	public Availability() {
 		map = new HashMap<>();
-		Map<Time_Chunk_SF, ? extends AbstractAvailabilityList> mapToAdd;
+		Map<Interval_SF, AvailabilityList> mapToAdd;
 		for (Day day: Day.values()) {
 			mapToAdd = new HashMap<>();
-			mapToAdd.put(Time_Chunk_SF.AVAILABLE, value)
-			map.put(day, ;
+			mapToAdd.put(Interval_SF.AVAILABLE, new AvailabilityList(Interval_SF.AVAILABLE));
+			map.put(day, mapToAdd);
 		}
 	}
 	
 	public boolean inAvailability(PositionID<? extends Employee> ID) {
-		map.get(ID.getDay())
-			.get(SF.AVAILABLE)
-				.contains(ID.getTimeChunk());
-		
+		return map.get(ID.getDay())
+			.get(Interval_SF.AVAILABLE)
+				.contains(ID.getInterval());
+	}
+	
+	public boolean markAvailable(PositionID<? extends Employee> ID) {
+		// TODO
 		return false;
 	}
 	
-	public void setAvailability(Day day, TimeChunk chunk, SF statusFlag) {
-		
-	}
-	
-	public void setAvailability(PositionID<? extends Employee> ID, TimeChunk chunk, SF statusFlag) {
-		setAvailability(ID.getDay(), chunk, statusFlag);
+	public boolean markUNAvailable(PositionID<? extends Employee> ID) {
+		// TODO
+		return false;
 	}
 	
 	public int condense() {
@@ -45,16 +46,19 @@ public class Availability {
 		return 0;
 	}
 	
-	public void buildFrom(OutsideAvailabilityList outsideAvailList,
-			              TimeOffList timeOffList) {
+	public void validateNoOverlap() {
+		
+	}
+	
+	public void buildFrom(AvailabilityList buildFrom) {
 		// TODO
 	}
 	
-	private void put(TimeChunk chunk) {
+	private void put(LocalTimeInterval chunk) {
 		// TODO
 	}
 	
-	private void put(TimeChunk[] chunks) {
-		for (TimeChunk chunk: chunks) put(chunk);
+	private void put(LocalTimeInterval[] chunks) {
+		for (LocalTimeInterval chunk: chunks) put(chunk);
 	}
 }
