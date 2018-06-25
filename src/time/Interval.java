@@ -12,9 +12,9 @@ public interface Interval extends Comparable<Interval> {
 	
 	public void setStatusFlag(Interval_SF sf);
 	
-	public int startToSecondOfDay();
+	public long startToEpochMilli();
 	
-	public int endToSecondOfDay();
+	public long endToEpochMilli();
 	
 	public long getDuration(TemporalUnit unit);
 	
@@ -28,11 +28,11 @@ public interface Interval extends Comparable<Interval> {
 	
 	public boolean isBefore(Interval interval);
 	
-	public abstract boolean isBefore(TemporalAccessor tempral);
+	public abstract boolean isBefore(TemporalAccessor temporal);
 	
 	public boolean isAfter(Interval interval);
 	
-	public abstract boolean isAfter(TemporalAccessor tempral);
+	public abstract boolean isAfter(TemporalAccessor temporal);
 	
 	public boolean intersects(Interval interval);
 	

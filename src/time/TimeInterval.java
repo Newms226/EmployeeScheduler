@@ -1,19 +1,20 @@
 package time;
 
+import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.Temporal;
 import java.time.temporal.TemporalAccessor;
 import java.time.temporal.TemporalUnit;
 import java.util.List;
 
-public class TimeInterval <T extends Temporal & Comparable<T>> implements Interval {
-	public final T start, end;
+public class TimeInterval implements Interval {
+	public final Instant start, end;
 	protected Interval_SF statusFlag;
 	
-	public TimeInterval(Interval_SF statusFlag, T start, T end) {
-		RangeException.assertValidRange(start, end);
-		this.start = start;
-		this.end = end;
+	public TimeInterval(Interval_SF statusFlag, TemporalAccessor start, TemporalAccessor end) {
+		this.start = Instant.from(start);
+		this.end = Instant.from(end);
+		RangeException.assertValidRange(this.start, this.end);
 		this.statusFlag = statusFlag;
 	}
 	
@@ -44,24 +45,23 @@ public class TimeInterval <T extends Temporal & Comparable<T>> implements Interv
 
 	@Override
 	public boolean contains(Interval interval) {
-		return start.compareTo(interval.s)
-				&& interval.endToSecondOfDay() <= end.toSecondOfDay();
+		return start.toEpochMilli() <= interval.startToEpochMilli()
+				&& interval.endToEpochMilli() <= end.toEpochMilli();
 	}
 
 	@Override
 	public boolean isWithin(Interval interval) {
-		return interval.startToSecondOfDay() <= start.toSecondOfDay()
-				&& end.toSecondOfDay() <= interval.endToSecondOfDay();
+		return interval.contains(this);
 	}
 	
 	@Override
 	public boolean isAfter(Interval interval) {
-		return interval.endToSecondOfDay() <= start.toSecondOfDay();
+		return interval.endToEpochMilli() <= start.toEpochMilli();
 	}
 	
 	@Override
 	public boolean isBefore(Interval interval) {
-		return end.toSecondOfDay() <= interval.startToSecondOfDay();
+		return end.toEpochMilli() <= interval.startToEpochMilli();
 	}
 
 	@Override
@@ -71,14 +71,14 @@ public class TimeInterval <T extends Temporal & Comparable<T>> implements Interv
 
 	@Override
 	public boolean intersectsThisOnLeft(Interval interval) {
-		return interval.startToSecondOfDay() < start.toSecondOfDay()
-				&& start.toSecondOfDay() < interval.endToSecondOfDay();
+		return interval.startToEpochMilli() < start.toEpochMilli()
+				&& start.toEpochMilli() < interval.endToEpochMilli();
 	}
 
 	@Override
 	public boolean intersectsThisOnRight(Interval interval) {
-		return start.toSecondOfDay() < interval.startToSecondOfDay()
-				&& interval.startToSecondOfDay() < end.toSecondOfDay();
+		return start.toEpochMilli() < interval.startToEpochMilli()
+				&& interval.startToEpochMilli() < end.toEpochMilli();
 	}
 
 	@Override
@@ -87,7 +87,6 @@ public class TimeInterval <T extends Temporal & Comparable<T>> implements Interv
 		return 0;
 	}
 	
-	@SuppressWarnings("unchecked")
 	@Override
 	public boolean equals(Object o) {
 		if (o == this) return true;
@@ -95,13 +94,7 @@ public class TimeInterval <T extends Temporal & Comparable<T>> implements Interv
 		
 		if (!this.getClass().equals(o.getClass())) return false;
 		
-		TimeInterval<T> that = null;
-		try {
-			that = (TimeInterval<T>) o;
-		} catch (ClassCastException e) {
-			return false;
-		}
-		
+		TimeInterval that = (TimeInterval) o; 
 		
 		if (start.compareTo(that.start) != 0) return false;
 		if (end.compareTo(that.end) != 0) return false;
@@ -115,27 +108,23 @@ public class TimeInterval <T extends Temporal & Comparable<T>> implements Interv
 	}
 
 	@Override
-	public int startToSecondOfDay() {
-		// TODO Auto-generated method stub
-		return 0;
+	public long startToEpochMilli() {
+		return start.toEpochMilli();
 	}
 
 	@Override
-	public int endToSecondOfDay() {
-		// TODO Auto-generated method stub
-		return 0;
+	public long endToEpochMilli() {
+		return end.toEpochMilli();
 	}
 
 	@Override
-	public boolean isBefore(TemporalAccessor tempral) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean isBefore(TemporalAccessor temporal) {
+		return end.toEpochMilli() <= Instant.from(temporal).toEpochMilli();
 	}
 
 	@Override
-	public boolean isAfter(TemporalAccessor tempral) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean isAfter(TemporalAccessor temporal) {
+		return Instant.from(temporal).toEpochMilli() <= start.toEpochMilli();
 	}
 
 }
