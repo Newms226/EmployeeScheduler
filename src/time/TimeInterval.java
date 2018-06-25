@@ -2,6 +2,8 @@ package time;
 
 import java.time.Duration;
 import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
@@ -11,12 +13,12 @@ import java.time.temporal.TemporalUnit;
 import java.util.List;
 
 public class TimeInterval implements Interval {
-	public final Instant start, end;
+	public final LocalDateTime start, end;
 	protected Interval_SF statusFlag;
 	
 	public TimeInterval(Interval_SF statusFlag, TemporalAccessor start, TemporalAccessor end) {
-		this.start = Instant.from(start);
-		this.end = Instant.from(end);
+		this.start = LocalDateTime.from(start);
+		this.end = LocalDateTime.from(end);
 		RangeException.assertValidRange(this.start, this.end);
 		this.statusFlag = statusFlag;
 	}
@@ -42,8 +44,8 @@ public class TimeInterval implements Interval {
 	}
 	
 	@Override
-	public boolean spansDays() {
-		return start.get(ChronoField.DAY_OF_WEEK) == end.get(ChronoField.DAY_OF_WEEK)
+	public boolean spansOvernight() {
+		return start.get(ChronoField.DAY_OF_WEEK) != end.get(ChronoField.DAY_OF_WEEK)
 				&& start.until(end, ChronoUnit.DAYS) < 1.5;
 	}
 
@@ -59,8 +61,8 @@ public class TimeInterval implements Interval {
 
 	@Override
 	public boolean contains(Interval interval) {
-		return start.toEpochMilli() <= interval.startToEpochMilli()
-				&& interval.endToEpochMilli() <= end.toEpochMilli();
+		return start.compareTo(interval.startToLocalDateTime()) <= 0
+				&& interval.endToLocalDateTime().compareTo(end) <= 0;
 	}
 
 	@Override
@@ -70,12 +72,12 @@ public class TimeInterval implements Interval {
 	
 	@Override
 	public boolean isAfter(Interval interval) {
-		return interval.endToEpochMilli() <= start.toEpochMilli();
+		return interval.endToLocalDateTime().compareTo(start) <= 0;
 	}
 	
 	@Override
 	public boolean isBefore(Interval interval) {
-		return end.toEpochMilli() <= interval.startToEpochMilli();
+		return end.compareTo(interval.startToLocalDateTime()) <= 0;
 	}
 
 	@Override
@@ -85,14 +87,14 @@ public class TimeInterval implements Interval {
 
 	@Override
 	public boolean intersectsThisOnLeft(Interval interval) {
-		return interval.startToEpochMilli() < start.toEpochMilli()
-				&& start.toEpochMilli() < interval.endToEpochMilli();
+		return interval.startToLocalDateTime().compareTo(start) < 0
+				&& start.compareTo(interval.endToLocalDateTime()) < 0;
 	}
 
 	@Override
 	public boolean intersectsThisOnRight(Interval interval) {
-		return start.toEpochMilli() < interval.startToEpochMilli()
-				&& interval.startToEpochMilli() < end.toEpochMilli();
+		return start.compareTo(interval.startToLocalDateTime()) < 0
+				&& interval.startToLocalDateTime().compareTo(end) < 0;
 	}
 
 	@Override
@@ -122,23 +124,13 @@ public class TimeInterval implements Interval {
 	}
 
 	@Override
-	public long startToEpochMilli() {
-		return start.toEpochMilli();
-	}
-
-	@Override
-	public long endToEpochMilli() {
-		return end.toEpochMilli();
-	}
-
-	@Override
 	public boolean isBefore(TemporalAccessor temporal) {
-		return end.toEpochMilli() <= Instant.from(temporal).toEpochMilli();
+		return end.compareTo(LocalDateTime.from(temporal)) <= 0;
 	}
 
 	@Override
 	public boolean isAfter(TemporalAccessor temporal) {
-		return Instant.from(temporal).toEpochMilli() <= start.toEpochMilli();
+		return LocalDateTime.from(temporal).compareTo(start) <= 0;
 	}
 
 	@Override
@@ -146,5 +138,40 @@ public class TimeInterval implements Interval {
 		throw new UnsupportedOperationException("getPeriod is not a valid option. "
 				+ "TimeInterval is time-based, not date based. ");
 	}
+	
+	@Override
+	public LocalDateTime startToLocalDateTime() {
+		return start;
+	}
+
+	@Override
+	public LocalDateTime endToLocalDateTime() {
+		return end;
+	}
+	
+	private static void testOvernight() {
+		TimeInterval interval = new TimeInterval(Interval_SF.AVAILABLE,
+				LocalDateTime.of(2018, 2, 2, 20, 0),
+				LocalDateTime.of(2018, 2, 9, 2, 0));
+		System.out.println("EXPECT FALSE: " + interval.spansOvernight());
+		
+		TimeInterval interval2 = new TimeInterval(Interval_SF.AVAILABLE,
+				LocalDateTime.of(2018, 2, 2, 20, 0),
+				LocalDateTime.of(2018, 2, 3, 2, 0));
+		System.out.println("EXTPECT TRUE: " + interval2.spansOvernight());
+	}
+	
+	private static void testGetDurationAsUnit() {
+		TimeInterval interval = new TimeInterval(Interval_SF.AVAILABLE,
+				LocalDateTime.of(2018, 2, 2, 20, 0),
+				LocalDateTime.of(2018, 2, 3, 2, 0));
+		System.out.println("~6: " + interval.getDurationAsUnit(ChronoUnit.HOURS));
+	}
+	
+	public static void main(String[] args ) {
+		testGetDurationAsUnit();
+	}
+
+	
 
 }

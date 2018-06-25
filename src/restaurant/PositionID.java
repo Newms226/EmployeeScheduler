@@ -14,6 +14,7 @@ import emp.EmployeeType;
 import emp.Server;
 import time.Day;
 import time.LocalTimeInterval;
+import time.TimeInterval;
 import tools.NumberTools;
 
 public class PositionID<E extends Employee> implements Comparable<PositionID<? extends Employee>>,
@@ -182,11 +183,11 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 		this.day = day;
 	}
 	
-	void setInterval(LocalTimeInterval chunk) {
+	void setInterval(TimeInterval chunk) {
 		// TODO
 	}
 	
-	public LocalTimeInterval getInterval() {
+	public TimeInterval getInterval() {
 		// TODO
 		return null;
 	}

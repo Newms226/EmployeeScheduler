@@ -2,6 +2,7 @@ package time;
 
 import java.time.Duration;
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAccessor;
@@ -14,9 +15,9 @@ public interface Interval extends Comparable<Interval> {
 	
 	public void setStatusFlag(Interval_SF sf);
 	
-	public long startToEpochMilli();
-	
-	public long endToEpochMilli();
+//	public long startToEpochMilli();
+//	
+//	public long endToEpochMilli();
 	
 	public long getDurationAsUnit(TemporalUnit unit);
 	
@@ -24,7 +25,11 @@ public interface Interval extends Comparable<Interval> {
 	
 	public abstract Period getPeriod();
 	
-	public boolean spansDays();
+	public LocalDateTime startToLocalDateTime();
+	
+	public LocalDateTime endToLocalDateTime();
+	
+	public boolean spansOvernight();
 	
 	public abstract long getMinutes();
 	

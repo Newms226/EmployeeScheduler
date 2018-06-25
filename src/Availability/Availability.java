@@ -33,9 +33,13 @@ public class Availability {
 	
 	public boolean inAvailability(PositionID<? extends Employee> ID) {
 		log.entering("Availability", "inAvailability(" + ID + ")");
-		return map.get(ID.getDay())
-			.get(Interval_SF.AVAILABLE)
-				.contains(ID.getInterval());
+		if (ID.getInterval().spansOvernight()) {
+			
+		} else {
+			return map.get(ID.getDay())
+				.get(Interval_SF.AVAILABLE)
+					.contains(ID.getInterval());
+		}
 	}
 	
 	public boolean markAvailable(PositionID<? extends Employee> ID) {
