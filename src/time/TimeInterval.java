@@ -1,18 +1,24 @@
 package time;
 
+import java.time.DayOfWeek;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.Period;
 import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.Temporal;
 import java.time.temporal.TemporalAccessor;
 import java.time.temporal.TemporalUnit;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class TimeInterval implements Interval {
+	public static final Comparator<TimeInterval> NATURAL_ORDER = (a, b) -> a.compareTo(b);
+	
 	public final LocalDateTime start, end;
 	protected Interval_SF statusFlag;
 	
@@ -46,7 +52,42 @@ public class TimeInterval implements Interval {
 	@Override
 	public boolean spansOvernight() {
 		return start.get(ChronoField.DAY_OF_WEEK) != end.get(ChronoField.DAY_OF_WEEK)
-				&& start.until(end, ChronoUnit.DAYS) < 1.5;
+				&& start.until(end, ChronoUnit.DAYS) < 2;
+	}
+	
+	public DayOfWeek getDayOfWeek() {
+		return start.getDayOfWeek();
+	}
+	
+	public TimeInterval[] splitByDay() {
+		ArrayList<TimeInterval> list = null;
+		
+		LocalDate startDate = start.toLocalDate(),
+				  endDate = end.toLocalDate();
+		
+		if (startDate.compareTo(endDate) == 0) { // Same day
+			return new TimeInterval[] {this}; 
+		} else if (startDate.compareTo(endDate.minusDays(1)) == 0) { // Overnight
+			return new TimeInterval[] {
+					new TimeInterval(statusFlag, start, LocalDateTime.of(startDate, LocalTime.MAX)),
+					new TimeInterval(statusFlag, LocalDateTime.of(endDate, LocalTime.MIDNIGHT), end)
+			};
+		}
+		
+		// else:
+		list = new ArrayList<>();
+		list.add(new TimeInterval(statusFlag, start, LocalDateTime.of(startDate, LocalTime.MAX)));
+		
+		LocalDate workingDate = startDate.plusDays(1);
+		while (workingDate.compareTo(endDate) == 0) {
+			list.add(new TimeInterval(statusFlag, 
+					LocalDateTime.of(workingDate, LocalTime.MIN),
+					LocalDateTime.of(workingDate, LocalTime.MAX)));
+			workingDate = startDate.plusDays(1);
+		} 
+		list.add(new TimeInterval(statusFlag, LocalDateTime.of(endDate, LocalTime.MIDNIGHT), end));
+		
+		return list.toArray(new TimeInterval[] {});
 	}
 
 	@Override
@@ -164,12 +205,18 @@ public class TimeInterval implements Interval {
 	private static void testGetDurationAsUnit() {
 		TimeInterval interval = new TimeInterval(Interval_SF.AVAILABLE,
 				LocalDateTime.of(2018, 2, 2, 20, 0),
-				LocalDateTime.of(2018, 2, 3, 2, 0));
-		System.out.println("~6: " + interval.getDurationAsUnit(ChronoUnit.HOURS));
+				LocalDateTime.of(2018, 2, 4, 2, 0));
+		System.out.println("~6: " + interval.getDurationAsUnit(ChronoUnit.DAYS));
+	}
+	
+	private static void testLocalTimeUnit() {
+		LocalDate one = LocalDateTime.of(2018, 2, 2, 20, 0).toLocalDate();
+		LocalDate two = LocalDateTime.of(2018, 2, 4, 2, 0).toLocalDate();
+		System.out.println(one + "\n" + two + "\n3: " + one.until(two, ChronoUnit.DAYS));
 	}
 	
 	public static void main(String[] args ) {
-		testGetDurationAsUnit();
+		testLocalTimeUnit();
 	}
 
 	

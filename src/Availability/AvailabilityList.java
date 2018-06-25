@@ -7,7 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import driver.Driver;
-import time.LocalTimeInterval;
+import racer.StopWatch;
 import time.TimeInterval;
 import time.Interval_SF;
 
@@ -21,7 +21,7 @@ class AvailabilityList {
 		list = new ArrayList<>();
 		this.statusFlag = statusFlag;
 		if (statusFlag.equals(Interval_SF.AVAILABLE)) {
-			list.add(LocalTimeInterval.getAlwaysAvailable());
+			list.add(TimeInterval.getAlwaysAvailable());
 		}
 	}
 	
@@ -47,6 +47,12 @@ class AvailabilityList {
 				"Added {0}",
 				interval);
 		list.add(interval);
+		
+		long startTime = System.nanoTime();
+		list.sort(TimeInterval.NATURAL_ORDER);
+		long endTime = System.nanoTime();
+		log.info("Sorted list in " + StopWatch.nanosecondsToString(endTime - startTime));
+		
 		return true;
 	}
 	
@@ -54,8 +60,10 @@ class AvailabilityList {
 		return statusFlag;
 	}
 	
-	boolean contains(TimeInterval chunk) {
-		// TODO
+	boolean contains(TimeInterval searchFor) {
+		for (TimeInterval interval: list) {
+			if (interval.contains(searchFor)) return true;
+		}
 		return false;
 	}
 }

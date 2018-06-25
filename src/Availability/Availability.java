@@ -1,5 +1,6 @@
 package Availability;
 
+import java.time.DayOfWeek;
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 import java.util.HashMap;
@@ -12,6 +13,7 @@ import emp.Employee;
 import restaurant.PositionID;
 import time.Day;
 import time.LocalTimeInterval;
+import time.TimeInterval;
 import time.Interval_SF;
 
 public class Availability {
@@ -19,12 +21,12 @@ public class Availability {
 	public static final Duration AVOID_DURATION = Duration.of(AVOID_MINUTE_AMOUNT, ChronoUnit.MINUTES);
 	private static final Logger log = Driver.availabilityLog;
 	
-	Map <Day, Map<Interval_SF, AvailabilityList>> map;
+	Map <DayOfWeek, Map<Interval_SF, AvailabilityList>> map;
 	
 	public Availability() {
 		map = new HashMap<>();
 		Map<Interval_SF, AvailabilityList> mapToAdd;
-		for (Day day: Day.values()) {
+		for (DayOfWeek day: DayOfWeek.values()) {
 			mapToAdd = new HashMap<>();
 			mapToAdd.put(Interval_SF.AVAILABLE, new AvailabilityList(Interval_SF.AVAILABLE));
 			map.put(day, mapToAdd);
@@ -33,13 +35,24 @@ public class Availability {
 	
 	public boolean inAvailability(PositionID<? extends Employee> ID) {
 		log.entering("Availability", "inAvailability(" + ID + ")");
-		if (ID.getInterval().spansOvernight()) {
-			
-		} else {
-			return map.get(ID.getDay())
-				.get(Interval_SF.AVAILABLE)
-					.contains(ID.getInterval());
+		return query(Interval_SF.AVAILABLE, ID.getInterval());
+	}
+	
+	public boolean query(Interval_SF statusFlag, TimeInterval interval) {
+		if (interval.spansOvernight()) {
+			return queryMultiple(statusFlag, interval.splitByDay());
 		}
+		
+		return map.get(interval.getDayOfWeek())
+					.get(statusFlag)
+						.contains(interval);
+	}
+	
+	public boolean queryMultiple(Interval_SF statusFlag, TimeInterval[] intervals) {
+		for(TimeInterval interval: intervals) {
+			if (!query(statusFlag, interval)) return false;
+		}
+		return true;
 	}
 	
 	public boolean markAvailable(PositionID<? extends Employee> ID) {
