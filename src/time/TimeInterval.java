@@ -1,6 +1,9 @@
 package time;
 
+import java.time.Duration;
 import java.time.Instant;
+import java.time.Period;
+import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.Temporal;
 import java.time.temporal.TemporalAccessor;
@@ -29,8 +32,19 @@ public class TimeInterval implements Interval {
 	}
 
 	@Override
-	public long getDuration(TemporalUnit unit) {
+	public long getDurationAsUnit(TemporalUnit unit) {
 		return start.until(end, unit);
+	}
+	
+	@Override
+	public Duration getDuration() {
+		return Duration.between(start, end);
+	}
+	
+	@Override
+	public boolean spansDays() {
+		return start.get(ChronoField.DAY_OF_WEEK) == end.get(ChronoField.DAY_OF_WEEK)
+				&& start.until(end, ChronoUnit.DAYS) < 1.5;
 	}
 
 	@Override
@@ -125,6 +139,12 @@ public class TimeInterval implements Interval {
 	@Override
 	public boolean isAfter(TemporalAccessor temporal) {
 		return Instant.from(temporal).toEpochMilli() <= start.toEpochMilli();
+	}
+
+	@Override
+	public Period getPeriod() {
+		throw new UnsupportedOperationException("getPeriod is not a valid option. "
+				+ "TimeInterval is time-based, not date based. ");
 	}
 
 }

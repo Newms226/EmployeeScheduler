@@ -1,6 +1,8 @@
 package time;
 
+import java.time.Duration;
 import java.time.Instant;
+import java.time.Period;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAccessor;
 import java.time.temporal.TemporalUnit;
@@ -16,7 +18,13 @@ public interface Interval extends Comparable<Interval> {
 	
 	public long endToEpochMilli();
 	
-	public long getDuration(TemporalUnit unit);
+	public long getDurationAsUnit(TemporalUnit unit);
+	
+	public abstract Duration getDuration();
+	
+	public abstract Period getPeriod();
+	
+	public boolean spansDays();
 	
 	public abstract long getMinutes();
 	
