@@ -2,8 +2,8 @@ package time;
 
 public enum Interval_SF {
 	AVAILABLE            (true),
+	STRICTLY_AVAILABLE   (true),
 	OUTSIDE_AVAILABILITY (false),
-	AVIOD                (true),
 	SCHEDULED            (false),
 	TIMEOFF              (false);
 	

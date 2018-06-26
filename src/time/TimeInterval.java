@@ -16,6 +16,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+import restaurant.Restaurant;
+
 public class TimeInterval implements Interval {
 	public static final Comparator<TimeInterval> NATURAL_ORDER = (a, b) -> a.compareTo(b);
 	
@@ -217,6 +219,12 @@ public class TimeInterval implements Interval {
 	
 	public static void main(String[] args ) {
 		testLocalTimeUnit();
+	}
+
+	public static TimeInterval getAlwaysAvailable(Restaurant restaurant, LocalDate date) {
+		return new TimeInterval(Interval_SF.AVAILABLE, 
+								LocalDateTime.of(date, restaurant.dayStart),
+								LocalDateTime.of(date, restaurant.dayEnd));
 	}
 
 	

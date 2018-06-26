@@ -11,8 +11,7 @@ import java.util.logging.Logger;
 import driver.Driver;
 import emp.Employee;
 import restaurant.PositionID;
-import time.Day;
-import time.LocalTimeInterval;
+//import time.Day;
 import time.TimeInterval;
 import time.Interval_SF;
 
@@ -27,9 +26,11 @@ public class Availability {
 		map = new HashMap<>();
 		Map<Interval_SF, AvailabilityList> mapToAdd;
 		for (DayOfWeek day: DayOfWeek.values()) {
-			mapToAdd = new HashMap<>();
-			mapToAdd.put(Interval_SF.AVAILABLE, new AvailabilityList(Interval_SF.AVAILABLE));
-			map.put(day, mapToAdd);
+			for (Interval_SF SF: Interval_SF.values()) {
+				mapToAdd = new HashMap<>();
+				mapToAdd.put(SF, new AvailabilityList(SF));
+				map.put(day, mapToAdd);
+			}
 		}
 	}
 	
@@ -39,9 +40,9 @@ public class Availability {
 	}
 	
 	public boolean query(Interval_SF statusFlag, TimeInterval interval) {
-		if (interval.spansOvernight()) {
-			return queryMultiple(statusFlag, interval.splitByDay());
-		}
+//		if (interval.spansOvernight()) {
+//			return queryMultiple(statusFlag, interval.splitByDay());
+//		}
 		
 		return map.get(interval.getDayOfWeek())
 					.get(statusFlag)
@@ -54,6 +55,8 @@ public class Availability {
 		}
 		return true;
 	}
+	
+	public boolean queryAllStatusFlags(TimeInterval
 	
 	public boolean markAvailable(PositionID<? extends Employee> ID) {
 		// TODO
@@ -78,11 +81,11 @@ public class Availability {
 		// TODO
 	}
 	
-	private void put(LocalTimeInterval chunk) {
+	private void put(TimeInterval chunk) {
 		// TODO
 	}
 	
-	private void put(LocalTimeInterval[] chunks) {
-		for (LocalTimeInterval chunk: chunks) put(chunk);
+	private void put(TimeInterval[] chunks) {
+		for (TimeInterval chunk: chunks) put(chunk);
 	}
 }

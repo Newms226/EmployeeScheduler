@@ -1,6 +1,7 @@
 package Availability;
 
 import java.time.Duration;
+import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.logging.Level;
@@ -20,15 +21,19 @@ class AvailabilityList {
 	AvailabilityList(Interval_SF statusFlag) {
 		list = new ArrayList<>();
 		this.statusFlag = statusFlag;
-		if (statusFlag.equals(Interval_SF.AVAILABLE)) {
-			list.add(TimeInterval.getAlwaysAvailable());
-		}
+		
 	}
 	
 	// Note: This performs a shallow clone
 	AvailabilityList(Collection<TimeInterval> toAdd, Interval_SF statusFlag) {
 		list = new ArrayList<>();
 		this.statusFlag = statusFlag;
+	}
+	
+	void addGeneric(LocalDate date) {
+		if (statusFlag == Interval_SF.AVAILABLE) {
+			list.add(TimeInterval.getAlwaysAvailable(date));
+		}
 	}
 	
 	boolean add(TimeInterval interval) {

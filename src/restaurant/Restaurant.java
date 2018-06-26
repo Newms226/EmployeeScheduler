@@ -1,29 +1,39 @@
 package restaurant;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 
 import driver.Driver;
 import tools.NumberTools;
 
 public class Restaurant {
-	public static final Restaurant HACIENDA = new Restaurant("Hacienda", LocalDate.of(2000, 1, 1), 60);
+	public static final Restaurant HACIENDA = new Restaurant("Hacienda", 
+													LocalDate.of(2000, 1, 1),
+													60,
+													LocalTime.of(5, 0),
+													LocalTime.MAX);
 	
 	public final LocalDate OPEN_DAY;
 	private int daysSinceOpen;
 	private boolean validDaysSinceOpenCount;
 	public final String NAME;
-	private int globalMaxHours;
+	public final int globalMaxHours;
+	public final LocalTime dayStart, dayEnd;
 	
-	public Restaurant(String name, LocalDate openDay, int globalMaxHours) {
+	public Restaurant(String name, LocalDate openDay, int globalMaxHours,
+					  LocalTime dayStart, LocalTime dayEnd) {
 		OPEN_DAY = openDay;
 		NAME = name.trim();
-		Driver.setUpLog.config(name + " has been open for " + NumberTools.format(getDaysSinceOpen()) + " days");
+		Driver.setUpLog.config(name + " has been open for " 
+					+ NumberTools.format(getDaysSinceOpen()) + " days");
 		this.globalMaxHours = globalMaxHours;
+		this.dayEnd = dayEnd;
+		this.dayStart = dayStart;
 	}
 	
 	public int getDaysSinceOpen() {
 		if (!validDaysSinceOpenCount) {
-			Driver.setUpLog.config("Invalid daysSinceOpenCount. Revalidating");
+			Driver.setUpLog.warning("Invalid daysSinceOpenCount. Revalidating");
 			daysSinceOpen = (int) OPEN_DAY.until(LocalDate.now(), ChronoUnit.DAYS);
 			validDaysSinceOpenCount = true;
 		}
@@ -34,23 +44,28 @@ public class Restaurant {
 		return globalMaxHours;
 	}
 	
-	public String toCSV() {
-		return NAME + "," + OPEN_DAY + "," + globalMaxHours;
-	}
-	
-	public Restaurant fromCSV(String csvStr) {
-		String[] components = csvStr.split(",");
-		return new Restaurant(components[0],
-				              LocalDate.parse(components[1]), 
-				              Integer.parseInt(components[2]));
-	}
+//	public String toCSV() {
+//		return NAME + "," + OPEN_DAY + "," + globalMaxHours;
+//	}
+//	
+//	public Restaurant fromCSV(String csvStr) {
+//		String[] components = csvStr.split(",");
+//		return new Restaurant(components[0],
+//				              LocalDate.parse(components[1]), 
+//				              Integer.parseInt(components[2]));
+//	}
 	
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
 		if (null == o) return false;
 		
-		if (!toCSV().equals(((Restaurant) o).toCSV())) return false;
+		Restaurant that = (Restaurant) o;
+		if (!NAME.equals(that.NAME)) return false;
+		if (!OPEN_DAY.equals(that.OPEN_DAY)) return false;
+		if (globalMaxHours != that.globalMaxHours) return false;
+		if (!dayStart.equals(that.dayStart)) return false;
+		if (!dayEnd.equals(that.dayEnd)) return false;
 		
 		return true;
 	}
