@@ -74,6 +74,19 @@ public class Week implements Serializable {
 		return buffer.toString();
 	}
 	
+	public DayOfWeek[] getDaysOfWeek() {
+		if (dayCount >= 7) {
+			return DayOfWeek.values();
+		}
+		
+		// else
+		DayOfWeek[] toReturn = new DayOfWeek[dayCount];
+		for(int i = 0; i < dayCount; i++) {
+			toReturn[i] = dates[i].getDayOfWeek();
+		}
+		return toReturn;
+	}
+	
 	public String toString() {
 		return SUMMARY;
 	}

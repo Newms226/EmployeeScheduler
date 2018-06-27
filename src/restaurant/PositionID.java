@@ -1,18 +1,19 @@
 package restaurant;
 import java.io.Serializable;
+import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.logging.Level;
 
-import Menu.Menu;
 import driver.Driver;
 import emp.ClassNotEqualException;
 import emp.Employee;
 import emp.EmployeeType;
 import emp.Server;
-import time.Day;
+import time.DayOfWeekBuilder;
 import time.LocalTimeInterval;
 import tools.NumberTools;
 
@@ -36,8 +37,8 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	public static final Comparator<PositionID<?>> NATURAL_ORDER = (a, b) -> a.compareTo(b);
 	public static final Comparator<PositionID<?>> DAY_ORDER = 
 		(a, b) -> { 
-			if (a.day.compareTo(b.day) > 0) return -1;
-			if (a.day.compareTo(b.day) < 0) return 1;
+			if (a.localDate.compareTo(b.localDate) > 0) return -1;
+			if (a.localDate.compareTo(b.localDate) < 0) return 1;
 			if (a.shiftType.compareTo(b.shiftType) < 0) return -1;
 			if (a.shiftType.compareTo(b.shiftType) > 0) return 1;
 			if (a.positionType.compareTo(b.positionType) < 0) return -1;
@@ -52,24 +53,23 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 			(a,b) -> a.compareTo(b);
 	
 			
-	protected Day day;
+	protected LocalDate localDate;
 	protected PositionType positionType;
 	protected ShiftType shiftType;
 	
 	double priority;
 	Employee employee;
-	transient Menu modify;
-	private boolean debugging;
+	transient CMenu modify;
 	public final Class<? extends Employee> employeeType;
 	final LocalTimeInterval timeInterval;
 	
-	public PositionID(Class<? extends Employee> employeeType, Day day, PositionType positionType, ShiftType shiftType, double shiftPriority) {
+	public PositionID(Class<? extends Employee> employeeType, LocalDate day, PositionType positionType, ShiftType shiftType, double shiftPriority) {
 		this(employeeType, day, positionType, shiftType, shiftPriority, LocalTimeInterval.getAlwaysAvailabile());
 	}
 	
-	public PositionID(Class<? extends Employee> employeeType, Day day, PositionType positionType, ShiftType shiftType, double shiftPriority, LocalTimeInterval interval) {
+	public PositionID(Class<? extends Employee> employeeType, LocalDate day, PositionType positionType, ShiftType shiftType, double shiftPriority, LocalTimeInterval interval) {
 		Driver.setUpLog.log(Level.FINEST, "Created new PositionID", new Object[] {employeeType, day, positionType, shiftType, shiftPriority});
-		this.day = day;
+		this.localDate = day;
 		this.positionType = positionType;
 		this.shiftType = shiftType;
 		this.priority = shiftPriority;
@@ -77,7 +77,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 		this.timeInterval = interval;
 //		calculatePriority(shiftPriority);
 		
-		modify = new Menu(this + "\nWhat would you like to change?", 
+		modify = new CMenu(this + "\nWhat would you like to change?", 
 				() -> System.out.println("Now: " + this));
 		modify.add("Position Type (Closer, Cocktail, etc.)", () -> {
 			this.setPositionType(PositionType.build());
@@ -87,10 +87,11 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 			this.setShiftType(ShiftType.buildShiftType());
 			modify.selection();
 		});
-		modify.add("Day", () -> {
-			this.setDay(Day.build());
-			modify.selection();
-		});
+		// TODO!
+//		modify.add("Day", () -> {
+//			this.setDay(Day.build());
+//			modify.selection();
+//		});
 		modify.add("Priority", 
 			() -> {
 				NumberTools.generateDouble("What do you want to change the priority to?",
@@ -105,29 +106,30 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	
 	private PositionID(String day, String shiftType, String positionType, String shiftPriority) {
 		this (Server.class, 
-				Day.parse(Integer.parseInt(day)), 
+				LocalDate.parse(day), 
 				PositionType.parse(positionType.toCharArray()[0]), 
 				ShiftType.getFromInt(Integer.parseInt(shiftType)), 
 				Double.parseDouble(shiftPriority));
 		Driver.setUpLog.log(Level.FINEST, "Created new positionID from String constructor", new Object[] {day, shiftType, positionType, shiftPriority});;
 	}
 	
-	public static <E extends Employee> PositionID<E> build() {
-		return build(EmployeeType.build().classType, Day.build());
-	}
-	
-	static <E extends Employee> PositionID<E> build(Class<? extends Employee> employeeType, Day day) { 
-		Driver.setUpLog.log(Level.FINEST, "Building new PositionID with day & employee type", new Object[] {employeeType, day});
-		return new PositionID<E>(
-				employeeType,
-				day,
-				PositionType.build(),
-				ShiftType.buildShiftType(),
-				NumberTools.generateDouble("What is the priority of this shift?",
-						  true, 
-						  1, 
-						  10));
-	}
+	// TODO: LocalDateBuilder class
+//	public static <E extends Employee> PositionID<E> build() {
+//		return build(EmployeeType.build().classType, DayOfWeekBuilder.build());
+//	}
+//	
+//	static <E extends Employee> PositionID<E> build(Class<? extends Employee> employeeType, Day day) { 
+//		Driver.setUpLog.log(Level.FINEST, "Building new PositionID with day & employee type", new Object[] {employeeType, day});
+//		return new PositionID<E>(
+//				employeeType,
+//				day,
+//				PositionType.build(),
+//				ShiftType.buildShiftType(),
+//				NumberTools.generateDouble("What is the priority of this shift?",
+//						  true, 
+//						  1, 
+//						  10));
+//	}
 	
 	public PositionType getPositionType() {
 		return positionType;
@@ -179,25 +181,19 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 		this.shiftType = shiftType;
 	}
 
-	public Day getDay() {
-		return day;
+	public LocalDate getDay() {
+		return localDate;
 	}
 
-	public void setDay(Day day) {
+	public void setDay(LocalDate day) {
 		Driver.setUpLog.log(Level.FINE, "set day", day);
-		this.day = day;
-	}
-	
-	void setInterval(LocalTimeInterval chunk) {
-		// TODO
+		this.localDate = day;
 	}
 	
 	public LocalTimeInterval getInterval() {
-		// TODO
-		return null;
+		return timeInterval;
 	}
 
-	
 	@SuppressWarnings("unchecked")
 	public <e extends Employee> void assignEmployee(e employee) {
 		if (employee == null) throw new IllegalArgumentException("Must provide non-null server");
@@ -258,10 +254,10 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 			return false;
 		}
 		
-		if (!this.day.equals(temp.day)) {
+		if (!this.localDate.equals(temp.localDate)) {
 			Driver.masterLog.log(Level.FINEST, 
 					            "FALSE: this.day({0}) != that.day({1})",
-					            new Object[] {this.day, temp.day});
+					            new Object[] {this.localDate, temp.localDate});
 			return false;
 		}
 		
@@ -307,7 +303,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 //	}
 	
 	public String toString() {
-		return day + " " + shiftType.name() + " " + positionType.name() 
+		return localDate + " " + shiftType.name() + " " + positionType.name() 
 			+ " " + priority + ((employee == null) ? "" : "\n  " + employee.toString());
 	}
 	
@@ -315,29 +311,29 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 		modify.selection();
 	}
 	
-	public String toCSV() {
-		return getDay().ordinal()  + "," + getShiftType().ordinal() + "," + getPositionType().ABR + "," + priority;
-	}
-	
-	public String toCSVWithEmployee() {
-		return toCSV() + ":" + employee.ID;
-	}
-	
-	public static <E extends Employee> PositionID<E> fromCSV(String str) {
-		return fromCSV(str.split(","));
-	}
-	
-	static <E extends Employee> PositionID<E> fromCSV(String[] split) {
-		Driver.fileManagerLog.finer("parsing: " + Arrays.toString(split));
-		PositionID<E> temp = new PositionID<E>(split[0], split[1], split[2], split[3]);
-		Driver.fileManagerLog.finer("parsed to " + temp);
-		return temp;
-	}
+//	public String toCSV() {
+//		return getDay().ordinal()  + "," + getShiftType().ordinal() + "," + getPositionType().ABR + "," + priority;
+//	}
+//	
+//	public String toCSVWithEmployee() {
+//		return toCSV() + ":" + employee.ID;
+//	}
+//	
+//	public static <E extends Employee> PositionID<E> fromCSV(String str) {
+//		return fromCSV(str.split(","));
+//	}
+//	
+//	static <E extends Employee> PositionID<E> fromCSV(String[] split) {
+//		Driver.fileManagerLog.finer("parsing: " + Arrays.toString(split));
+//		PositionID<E> temp = new PositionID<E>(split[0], split[1], split[2], split[3]);
+//		Driver.fileManagerLog.finer("parsed to " + temp);
+//		return temp;
+//	}
 	
 	@Override
 	public PositionID<E> clone() {
 		PositionID<E> clone =  new PositionID<E>(employeeType,
-				                                 day,
+				                                 localDate,
 				                                 positionType,
 				                                 shiftType,
 				                                 priority);
@@ -346,12 +342,12 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	}
 	
 	public ShiftID extractShiftID() {
-		return new ShiftID(day, shiftType, positionType);
+		return new ShiftID(localDate, shiftType, positionType);
 	}
 	
 	public void setTo(PositionID<E> setTo) {
 		Driver.masterLog.log(Level.FINER, "Setting this positionID to", setTo);
-		this.day = setTo.day;
+		this.localDate = setTo.localDate;
 		this.positionType = setTo.positionType;
 		this.shiftType = setTo.shiftType;
 		this.employee = setTo.employee;
@@ -359,7 +355,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	}
 	
 	public static PositionID<Server> getExampleServerBased(){
-		return new PositionID<Server>(Server.class, Day.MONDAY, PositionType.Bar, ShiftType.DINNER, 10);
+		return new PositionID<Server>(Server.class, LocalDate.now(), PositionType.Bar, ShiftType.DINNER, 10);
 	}
 	
 	public double getPriority() {
@@ -374,22 +370,23 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	}
 	
 	public static class ShiftID implements Comparable<Object> {
-		final int dayOfWeek, shiftTypeOrdinal, positionTypeOrdinal;
+		final int shiftTypeOrdinal, positionTypeOrdinal;
+		final String dayOfWeekInStandardISO;
 		
-		ShiftID(int dayOfWeek, int shiftTypeOrdinal, int positionTypeOrdinal){
+		ShiftID(String dayOfWeek, int shiftTypeOrdinal, int positionTypeOrdinal){
 			Driver.deciderLog.finest("Created ShiftID");
-			this.dayOfWeek = dayOfWeek;
+			this.dayOfWeekInStandardISO = dayOfWeek;
 			this.shiftTypeOrdinal = shiftTypeOrdinal;
 			this.positionTypeOrdinal = positionTypeOrdinal;
 		}
 
-		ShiftID(Day clone, ShiftType shiftType, PositionType positionType) {
-			this (clone.ordinal(), shiftType.ordinal(), positionType.ordinal());
+		ShiftID(LocalDate clone, ShiftType shiftType, PositionType positionType) {
+			this (DateTimeFormatter.BASIC_ISO_DATE.format(clone), shiftType.ordinal(), positionType.ordinal());
 		}
 		
-		public String toCSV() {
-			return dayOfWeek + "," + shiftTypeOrdinal + "," + positionTypeOrdinal;
-		}
+//		public String toCSV() {
+//			return dayOfWeekInStandardISO + "," + shiftTypeOrdinal + "," + positionTypeOrdinal;
+//		}
 
 		@Override
 		public int compareTo(Object o) {
@@ -403,8 +400,8 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 				id = (ShiftID) o;
 			}
 			
-			if (dayOfWeek < id.dayOfWeek) return -1;
-			if (dayOfWeek > id.dayOfWeek) return 1;
+			if (dayOfWeekInStandardISO.compareTo(id.dayOfWeekInStandardISO) < 0) return -1;
+			if (dayOfWeekInStandardISO.compareTo(id.dayOfWeekInStandardISO) > 0) return 1;
 			if (shiftTypeOrdinal < id.shiftTypeOrdinal) return -1;
 			if (shiftTypeOrdinal > id.shiftTypeOrdinal) return 1;
 			if (positionTypeOrdinal < id.positionTypeOrdinal) return -1;
@@ -414,7 +411,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 		
 		@Override
 		public String toString() {
-			return Day.parse(dayOfWeek) + " " 
+			return dayOfWeekInStandardISO + " " 
 					+ (shiftTypeOrdinal == 0 ? "LUNCH" : "DINNER") + " "
 					+ PositionType.parse(positionTypeOrdinal);
 		}
@@ -422,15 +419,15 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	
 	@SuppressWarnings("unused")
 	private static void testEqualsWithExtract() {
-		PositionID<Server> one = new PositionID<>(Server.class, Day.MONDAY, PositionType.Bar, ShiftType.DINNER, 10);
-		PositionID<Server> two = new PositionID<>(Server.class, Day.MONDAY, PositionType.Bar, ShiftType.DINNER, 10);
+		PositionID<Server> one = new PositionID<>(Server.class, LocalDate.now(), PositionType.Bar, ShiftType.DINNER, 10);
+		PositionID<Server> two = new PositionID<>(Server.class, LocalDate.now(), PositionType.Bar, ShiftType.DINNER, 10);
 		System.out.println(one.extractShiftID().equals(two.extractShiftID()));
 	}
 	
 	@SuppressWarnings("unused")
 	private static void testEquals() {
-		PositionID<Server> one = new PositionID<>(Server.class, Day.MONDAY, PositionType.Bar, ShiftType.DINNER, 10);
-		PositionID<Server> two = new PositionID<>(Server.class, Day.MONDAY, PositionType.Bar, ShiftType.DINNER, 10);
+		PositionID<Server> one = new PositionID<>(Server.class, LocalDate.now(), PositionType.Bar, ShiftType.DINNER, 10);
+		PositionID<Server> two = new PositionID<>(Server.class, LocalDate.now(), PositionType.Bar, ShiftType.DINNER, 10);
 		ArrayList<PositionType> king = new ArrayList<>(5);
 		king.add(PositionType.Closer);
 		king.add(PositionType.Head_Wait);
@@ -443,7 +440,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	
 	@SuppressWarnings("unused")
 	private static void testClone() {
-		PositionID<Server> one = new PositionID<>(Server.class, Day.MONDAY, PositionType.Bar, ShiftType.DINNER, 10);
+		PositionID<Server> one = new PositionID<>(Server.class, LocalDate.now(), PositionType.Bar, ShiftType.DINNER, 10);
 		System.out.println(one.priority);
 		PositionID<Server> two = one.clone();
 		ArrayList<PositionType> king = new ArrayList<>(5);
@@ -456,7 +453,7 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	}
 	
 	public static void testExtractShiftID() {
-		PositionID<Server> pos = new PositionID<>(Server.class, Day.MONDAY, PositionType.Bar, ShiftType.DINNER, 4.9);
+		PositionID<Server> pos = new PositionID<>(Server.class, LocalDate.now(), PositionType.Bar, ShiftType.DINNER, 4.9);
 		ShiftID extracted = pos.extractShiftID();
 		System.out.println(extracted.toString());
 	}

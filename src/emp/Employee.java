@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.logging.Level;
 
-import Menu.Menu;
 import driver.Driver;
+import menu.CMenu;
 import restaurant.PositionID;
 import restaurant.PositionType;
 import restaurant.Restaurant;
@@ -41,7 +41,7 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 	int filledShifts;
 	public final Restaurant restaurant;
 	
-	Menu serverMod;
+	CMenu serverMod;
 	
 	ArrayList<PositionType> qualifiedFor;
 	ArrayList<PositionID<? extends Employee>> assignedShifts;
@@ -82,7 +82,7 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 		this.restaurant = Restaurant.HACIENDA;
 		employeePriority = new EmployeePriority(this);
 		
-		serverMod = new Menu(NAME + " modification menu. What would you like to change?");
+		serverMod = new CMenu(NAME + " modification menu. What would you like to change?");
 		serverMod.add("Change available hours", null);
 		serverMod.add("View assgined shifts", () -> viewAssignedShifts());
 		// TODO

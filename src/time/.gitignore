@@ -32,3 +32,5 @@
 /InvalidSubtypeException.class
 /TimeBasedIntervals.class
 /AbstractTimeBasedInterval.class
+/DayOfWeekBuilder.class
+/DayOfWeekBuilder$PrioritizedDayOfWeek.class

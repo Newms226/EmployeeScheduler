@@ -7,9 +7,9 @@ import java.time.LocalTime;
 import java.util.Date;
 import java.util.logging.*;
 
-import Menu.Menu;
 import WorkingSet.WorkingSet;
 import emp.Server;
+import menu.CMenu;
 import restaurant.Restaurant;
 import tools.CollectionTools;
 
@@ -115,7 +115,7 @@ public class Driver {
 	}
 	
 	private String intro;
-	private Menu beginningInput, mainMenu, scheduleMenu, employeeMenu, scheduleViewer;
+	private CMenu beginningInput, mainMenu, scheduleMenu, employeeMenu, scheduleViewer;
 	
 	Restaurant restaurant;
 	Scheduler<Server> DA_KING_MAKER;
@@ -131,13 +131,13 @@ public class Driver {
 			 + "\n+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+"
 			 + "\n\n";
 		
-		beginningInput = new Menu("Input Menu", () -> mainMenu.selection());
+		beginningInput = new CMenu("Input Menu", () -> mainMenu.selection());
 		beginningInput.add("Build from testing material",
 				() -> buildTestingMaterial());
 		beginningInput.add("Build from previous Set-Up", null); // TODO
 		beginningInput.add("Build a new Restaurant & set-up", null); // TODO
 		
-		mainMenu = new Menu ("Main Menu",
+		mainMenu = new CMenu ("Main Menu",
 				null); // by default, do nothing after selection
 		mainMenu.add("Schedule", 
 				() -> schedule(), // TODO: Tests for needed components
@@ -155,7 +155,7 @@ public class Driver {
 					System.exit(0);
 				});
 		
-		scheduleViewer = new Menu("Schedule Viewer");
+		scheduleViewer = new CMenu("Schedule Viewer");
 		scheduleViewer.add("View whole schedule",
 				() -> System.out.println(getSchedule()));
 		scheduleViewer.add("View indvidual servers shifts", 
@@ -163,7 +163,7 @@ public class Driver {
 	
 				});
 		
-		scheduleMenu = new Menu("Schedule Set-Up");
+		scheduleMenu = new CMenu("Schedule Set-Up");
 		scheduleMenu.add("Set-up days/shifts/priority", 
 				() -> workingSet.setUp.dayMenu());
 		scheduleMenu.add("Add a pre-defined schedule", null); // TODO
@@ -171,7 +171,7 @@ public class Driver {
 				() -> mainMenu.selection(),
 				null); // do nothing after this option
 		
-		employeeMenu = new Menu("Employee Menu");
+		employeeMenu = new CMenu("Employee Menu");
 //		employeeMenu.add("Add a new employee", 
 //				() -> serverList.addServer()); // TODO
 		employeeMenu.add("Modify employee", null); // TODO

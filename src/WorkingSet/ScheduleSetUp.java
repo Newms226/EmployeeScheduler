@@ -16,11 +16,11 @@ import javax.swing.plaf.synth.SynthSeparatorUI;
 
 import com.sun.org.apache.xerces.internal.impl.dv.dtd.NMTOKENDatatypeValidator;
 
-import Menu.Menu;
 import driver.Driver;
 import emp.ClassNotEqualException;
 import emp.Employee;
 import emp.Server;
+import menu.CMenu;
 import restaurant.PositionID;
 import time.Day;
 import tools.FileTools;
@@ -39,7 +39,7 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	private static int DEFAULT_GLOBAL_MAX_HOURS = 40;
 	private int GLOBAL_MAX_HOURS;
 	private List<PositionID<? extends Employee>> positionIDs;
-	Menu setupMenu, dayMenu;
+	CMenu setupMenu, dayMenu;
 	
 	public ScheduleSetUp() {
 		this(DEFAULT_GLOBAL_MAX_HOURS);
@@ -59,7 +59,7 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 		
 		
 		
-		dayMenu = new Menu("Which day would you like to view/modify?");
+		dayMenu = new CMenu("Which day would you like to view/modify?");
 		dayMenu.add("All days (View Only)",
 				() -> System.out.println(viewAll()));
 		dayMenu.add("Sunday",
@@ -109,7 +109,7 @@ public class ScheduleSetUp <E extends Employee> implements Serializable {
 	
 	void modifyDay(Day day) {
 		Driver.setUpLog.log(Level.FINEST, "Modifying day", day);
-		setupMenu = new Menu("Schedule Modifier for " + day);
+		setupMenu = new CMenu("Schedule Modifier for " + day);
 		setupMenu.add("Add a new shift", 
 			() -> {
 				PositionID<E> temp = PositionID.build();
