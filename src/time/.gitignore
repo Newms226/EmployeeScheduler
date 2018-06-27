@@ -26,3 +26,8 @@
 /Week.class
 /DateTimeInterval.class
 /DayInterval.class
+/TimeBasedInterval.class
+/DayBasedInterval.class
+/ZonedTimeInterval.class
+/InvalidSubtypeException.class
+/TimeBasedIntervals.class

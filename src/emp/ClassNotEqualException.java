@@ -1,5 +1,9 @@
 package emp;
 
+import java.util.logging.Level;
+
+import driver.Driver;
+
 public class ClassNotEqualException extends RuntimeException {
 	private static final long serialVersionUID = -7810345225876661177L;
 	private Class<?> actualClass, expectedClass;
@@ -10,8 +14,11 @@ public class ClassNotEqualException extends RuntimeException {
 	}
 	
 	public static void assertEqual(Class<?> expectedClass, Class<?> actualClass) {
-		if (!test(expectedClass, actualClass))
-			throw new ClassNotEqualException(expectedClass, actualClass);
+		if (!test(expectedClass, actualClass)) {
+			ClassNotEqualException e = new ClassNotEqualException(expectedClass, actualClass);
+			Driver.setUpLog.log(Level.SEVERE, e.getMessage(), e);
+			throw e;
+		}
 		//else System.out.println("PASS");
 	}
 	

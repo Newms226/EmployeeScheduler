@@ -15,7 +15,7 @@ import tools.CollectionTools;
 
 public class Driver {
 	//public static final boolean debugging = true; 
-	public static Logger driverLog, deciderLog, setUpLog, fileManagerLog, masterLog, availabilityLog;
+	public static Logger driverLog, deciderLog, setUpLog, fileManagerLog, masterLog, availabilityLog, timeLog;
 	public static final String LOG_DIRECTORY = "/Users/Michael/gitHub/EmployeeScheduler/logs/";
 	static {
 		masterLog = Logger.getLogger("");
@@ -35,7 +35,8 @@ public class Driver {
 			    setUpFile = null,
 			    fileManagerFile = null,
 			    masterFile = null,
-			    availabilityFile = null;
+			    availabilityFile = null,
+			    timeFile = null;
 		try {
 			masterFile = new FileHandler(workingDir + "/%u.MASTER_LOG.txt");
 			driverFile = new FileHandler(workingDir + "/%u.driverLog.txt");
@@ -43,6 +44,7 @@ public class Driver {
 			setUpFile = new FileHandler(workingDir + "/%u.setUpLog.txt");
 			fileManagerFile = new FileHandler(workingDir + "/%u.fileManagerLog.txt");
 			availabilityFile = new FileHandler(workingDir + "/%u.availabilityLog.txt");
+			timeFile = new FileHandler(workingDir + "/%u.timeLog.txt");
 		} catch (SecurityException | IOException e) {
 			throw new Error(e.getMessage() + " @ " + e.getStackTrace()[0]);
 		}
@@ -101,6 +103,15 @@ public class Driver {
 		availabilityLog.addHandler(masterFile);
 		availabilityLog.addHandler(console);
 		availabilityLog.setLevel(Level.ALL);
+		
+		timeFile.setFormatter(formater);
+		timeFile.setLevel(Level.ALL);
+		timeLog = Logger.getLogger("time");
+		timeLog.setUseParentHandlers(false);
+		timeLog.addHandler(timeFile);
+		timeLog.addHandler(masterFile);
+		timeLog.addHandler(console);
+		timeLog.setLevel(Level.ALL);
 	}
 	
 	private String intro;

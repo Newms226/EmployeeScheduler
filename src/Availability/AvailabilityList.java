@@ -9,11 +9,11 @@ import java.util.logging.Logger;
 
 import driver.Driver;
 import racer.StopWatch;
-import time.TimeInterval;
+import time.LocalTimeInterval;
 import time.Interval_SF;
 
 class AvailabilityList {
-	protected List<TimeInterval> list;
+	protected List<LocalTimeInterval> list;
 	protected final Interval_SF statusFlag;
 	private static Logger log = Driver.availabilityLog;
 	
@@ -25,18 +25,18 @@ class AvailabilityList {
 	}
 	
 	// Note: This performs a shallow clone
-	AvailabilityList(Collection<TimeInterval> toAdd, Interval_SF statusFlag) {
+	AvailabilityList(Collection<LocalTimeInterval> toAdd, Interval_SF statusFlag) {
 		list = new ArrayList<>();
 		this.statusFlag = statusFlag;
 	}
 	
 	void addGeneric(LocalDate date) {
 		if (statusFlag == Interval_SF.AVAILABLE) {
-			list.add(TimeInterval.getAlwaysAvailable(date));
+			list.add(LocalTimeInterval.getAlwaysAvailable(date));
 		}
 	}
 	
-	boolean add(TimeInterval interval) {
+	boolean add(LocalTimeInterval interval) {
 		log.entering(this.getClass().getName(), "add: SF = " + statusFlag.name());
 		NotEqualException.assertEqual(statusFlag, interval.getStatusFlag());
 		
@@ -54,7 +54,7 @@ class AvailabilityList {
 		list.add(interval);
 		
 		long startTime = System.nanoTime();
-		list.sort(TimeInterval.NATURAL_ORDER);
+		list.sort(LocalTimeInterval.NATURAL_ORDER);
 		long endTime = System.nanoTime();
 		log.info("Sorted list in " + StopWatch.nanosecondsToString(endTime - startTime));
 		
@@ -65,8 +65,8 @@ class AvailabilityList {
 		return statusFlag;
 	}
 	
-	boolean contains(TimeInterval searchFor) {
-		for (TimeInterval interval: list) {
+	boolean contains(LocalTimeInterval searchFor) {
+		for (LocalTimeInterval interval: list) {
 			if (interval.contains(searchFor)) return true;
 		}
 		return false;

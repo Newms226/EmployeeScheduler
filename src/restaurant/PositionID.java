@@ -13,7 +13,7 @@ import emp.Employee;
 import emp.EmployeeType;
 import emp.Server;
 import time.Day;
-import time.TimeInterval;
+import time.LocalTimeInterval;
 import tools.NumberTools;
 
 public class PositionID<E extends Employee> implements Comparable<PositionID<? extends Employee>>,
@@ -61,14 +61,20 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 	transient Menu modify;
 	private boolean debugging;
 	public final Class<? extends Employee> employeeType;
+	final LocalTimeInterval timeInterval;
 	
 	public PositionID(Class<? extends Employee> employeeType, Day day, PositionType positionType, ShiftType shiftType, double shiftPriority) {
+		this(employeeType, day, positionType, shiftType, shiftPriority, LocalTimeInterval.getAlwaysAvailabile());
+	}
+	
+	public PositionID(Class<? extends Employee> employeeType, Day day, PositionType positionType, ShiftType shiftType, double shiftPriority, LocalTimeInterval interval) {
 		Driver.setUpLog.log(Level.FINEST, "Created new PositionID", new Object[] {employeeType, day, positionType, shiftType, shiftPriority});
 		this.day = day;
 		this.positionType = positionType;
 		this.shiftType = shiftType;
 		this.priority = shiftPriority;
 		this.employeeType = employeeType;
+		this.timeInterval = interval;
 //		calculatePriority(shiftPriority);
 		
 		modify = new Menu(this + "\nWhat would you like to change?", 
@@ -182,11 +188,11 @@ public class PositionID<E extends Employee> implements Comparable<PositionID<? e
 		this.day = day;
 	}
 	
-	void setInterval(TimeInterval chunk) {
+	void setInterval(LocalTimeInterval chunk) {
 		// TODO
 	}
 	
-	public TimeInterval getInterval() {
+	public LocalTimeInterval getInterval() {
 		// TODO
 		return null;
 	}
