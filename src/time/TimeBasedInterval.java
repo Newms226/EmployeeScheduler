@@ -1,31 +1,30 @@
 package time;
 
-public interface TimeBasedInterval extends Interval, Comparable<TimeBasedInterval> {
+import java.time.temporal.Temporal;
+
+public interface TimeBasedInterval<INTERVAL extends TimeBasedInterval<INTERVAL, UNIT>, UNIT extends Temporal & Comparable<UNIT>> 
+								extends Interval<INTERVAL, UNIT> {
 	
+	@Override
 	public default boolean isTimeSupported() {
 		return true;
 	}
 	
-	@Override
-	public default boolean isDateSupported() {
-		return false;
-	}
-	
 	public long getMinutes();
 	
-	public boolean contains(TimeBasedInterval interval);
+	public boolean isLinked();
 	
-	public default boolean isWithin(TimeBasedInterval interval) {
-		return interval.contains(this);
+	public INTERVAL getNext();
+	
+	public INTERVAL getPrevious();
+	
+	public default INTERVAL withNext(INTERVAL interval, INTERVAL next) {
+		return linkedTo(null, next);
 	}
 	
-	public boolean isBefore(TimeBasedInterval temporal);
+	public default INTERVAL withPrevious(INTERVAL previous, INTERVAL interval) {
+		return linkedTo(previous, null);
+	}
 	
-	public boolean isAfter(TimeBasedInterval temporal);
-	
-	public boolean intersects(TimeBasedInterval interval);
-	
-	public boolean intersectsThisOnLeft(TimeBasedInterval interval);
-	
-	public boolean intersectsThisOnRight(TimeBasedInterval interval);
+	public INTERVAL linkedTo(INTERVAL previous, INTERVAL next);
 }

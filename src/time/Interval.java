@@ -1,9 +1,11 @@
 package time;
 
+import java.io.Serializable;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.Period;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.Temporal;
 import java.time.temporal.TemporalAccessor;
@@ -13,9 +15,12 @@ import java.time.temporal.TemporalUnit;
 import java.util.List;
 import java.util.logging.Logger;
 
+import org.omg.CORBA.INTERNAL;
+
 import driver.Driver;
 
-interface Interval extends TemporalAmount {
+interface Interval <INTERVAL extends Interval<INTERVAL, UNIT>, UNIT extends Temporal & Comparable<UNIT>> 
+					extends TemporalAmount, Comparable<INTERVAL>, Serializable {
 	
 	static final Logger log = Driver.timeLog;
 	
@@ -37,12 +42,6 @@ interface Interval extends TemporalAmount {
 	
 	public boolean isDateSupported();
 	
-	public boolean isLinked();
-	
-	public Interval getLinked();
-	
-	public void setLinked(Interval linkTo);
-	
 	public String toString();
 	
 	public boolean isSupported(TemporalUnit unit);
@@ -54,5 +53,27 @@ interface Interval extends TemporalAmount {
 	public boolean isNegative();
 	
 	public boolean isZero();
+	
+	public UNIT getStart();
+	
+	public UNIT getEnd();
+	
+	public boolean contains(INTERVAL interval);
+	
+	public boolean isWithin(INTERVAL interval);
+	
+	public boolean isBefore(INTERVAL temporal);
+	
+	public boolean isAfter(INTERVAL temporal);
+	
+	public default boolean intersects(INTERVAL interval) {
+		return intersectsThisOnLeft(interval) || intersectsThisOnRight(interval);
+	}
+	
+	public boolean intersectsThisOnLeft(INTERVAL interval);
+	
+	public boolean intersectsThisOnRight(INTERVAL interval);
+	
+	public DateTimeFormatter getFormatter();
 	
 }
