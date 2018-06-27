@@ -24,3 +24,5 @@
 /Interval_SF.class
 /TimeInterval.class
 /Week.class
+/DateTimeInterval.class
+/DayInterval.class

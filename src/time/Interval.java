@@ -5,55 +5,51 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.temporal.ChronoUnit;
+import java.time.temporal.Temporal;
 import java.time.temporal.TemporalAccessor;
+import java.time.temporal.TemporalAmount;
 import java.time.temporal.TemporalUnit;
 import java.util.List;
 
-public interface Interval extends Comparable<Interval> {
+interface Interval extends Comparable<Interval>, Temporal, TemporalAmount {
 	
 	public Interval_SF getStatusFlag();
 	
 	public void setStatusFlag(Interval_SF sf);
 	
-//	public long startToEpochMilli();
-//	
-//	public long endToEpochMilli();
+	public Duration getDuration();
 	
-	public long getDurationAsUnit(TemporalUnit unit);
-	
-	public abstract Duration getDuration();
-	
-	public abstract Period getPeriod();
+	public Period getPeriod();
 	
 	public LocalDateTime startToLocalDateTime();
 	
 	public LocalDateTime endToLocalDateTime();
 	
-	public boolean spansOvernight();
+	public boolean spansMultipleDays();
 	
-	public abstract long getMinutes();
+	public long getDays();
 	
-	public abstract long getDays();
+	public long getMinutes();
 	
-	public boolean contains(Interval interval);
+	public boolean contains(TemporalAccessor interval);
 	
-	public abstract boolean isWithin(Interval interval);
+	public boolean isWithin(TemporalAccessor interval);
 	
-	public boolean isBefore(Interval interval);
+	public boolean isBefore(TemporalAccessor temporal);
 	
-	public abstract boolean isBefore(TemporalAccessor temporal);
-	
-	public boolean isAfter(Interval interval);
-	
-	public abstract boolean isAfter(TemporalAccessor temporal);
+	public boolean isAfter(TemporalAccessor temporal);
 	
 	public boolean intersects(Interval interval);
 	
-	public abstract boolean intersectsThisOnLeft(Interval interval);
+	public boolean intersectsThisOnLeft(Interval interval);
 	
-	public abstract boolean intersectsThisOnRight(Interval interval);
+	public boolean intersectsThisOnRight(Interval interval);
 	
 	public boolean equals(Object o);
+	
+	public boolean isTimeSupported();
+	
+	public boolean isDateSupported();
 	
 	public int compareTo(Interval interval);
 	
