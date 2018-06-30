@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.logging.*;
 
 import WorkingSet.WorkingSet;
+import emp.EmployeeModifier;
 import emp.Server;
 import menu.ConsoleMenu;
 import menu.RunnableOption;
@@ -116,7 +117,7 @@ public class Driver {
 	}
 	
 	private String intro;
-	private ConsoleMenu beginningInput, mainMenu, scheduleMenu, employeeMenu, scheduleViewer;
+	private ConsoleMenu beginningInput, mainMenu, scheduleMenu, scheduleViewer;
 	
 	Restaurant restaurant;
 	Scheduler<Server> DA_KING_MAKER;
@@ -148,7 +149,7 @@ public class Driver {
 				() -> System.out.println(getSchedule()), // TODO: View previous schedules
 				() -> mainMenu.selection()));
 		mainMenu.add(new RunnableOption("Employee menu", 
-				() -> employeeMenu.selection()));
+				() -> EmployeeModifier.mainMenu.selection())); // TODO
 		mainMenu.add(new RunnableOption("Schedule set-up", 
 				() -> scheduleMenu.selection()));
 		mainMenu.add(new RunnableOption("Exit program",
@@ -159,29 +160,20 @@ public class Driver {
 		
 		scheduleViewer = new ConsoleMenu("Schedule Viewer");
 		scheduleViewer.add(new RunnableOption("View whole schedule",
-				() -> System.out.println(getSchedule()));
+				() -> System.out.println(getSchedule())));
 		scheduleViewer.add("View indvidual servers shifts", 
 				() -> {
 	
 				});
 		
-		scheduleMenu = new CMenu("Schedule Set-Up");
-		scheduleMenu.add("Set-up days/shifts/priority", 
-				() -> workingSet.setUp.dayMenu());
-		scheduleMenu.add("Add a pre-defined schedule", null); // TODO
-		scheduleMenu.add("Return to main menu",
+		scheduleMenu = new ConsoleMenu("Schedule Set-Up");
+		scheduleMenu.add(new RunnableOption("Set-up days/shifts/priority", 
+				() -> workingSet.setUp.dayMenu()));
+		scheduleMenu.add(new RunnableOption("Add a pre-defined schedule", null)); // TODO
+		scheduleMenu.add(new RunnableOption("Return to main menu",
 				() -> mainMenu.selection(),
-				null); // do nothing after this option
+				null)); // do nothing after this option
 		
-		employeeMenu = new CMenu("Employee Menu");
-//		employeeMenu.add("Add a new employee", 
-//				() -> serverList.addServer()); // TODO
-		employeeMenu.add("Modify employee", null); // TODO
-		employeeMenu.add("Change grace of employee", null); // TODO
-		employeeMenu.add("Remove an employee", null); // TODO
-		employeeMenu.add("Return to the main menu", 
-				() -> mainMenu.selection(),
-				null); // Do nothing after this.
 		
 //		endMenu = new Menu("Ending program...", 
 //				() -> System.exit(0));
@@ -229,11 +221,8 @@ public class Driver {
 	}
 	
 	public static void main(String[] args) throws SecurityException, IOException {
-//		Driver work = new Driver();
-//		work.begin();
-		LocalTime one = LocalTime.of(5, 17);
-		LocalTime two = LocalTime.of(5, 16);
-		System.out.println(one.isAfter(two));
+		Driver work = new Driver();
+		work.begin();
 	}
 
 }

@@ -1,31 +1,19 @@
 package time;
 
-import java.time.LocalDateTime;
+import java.time.chrono.ChronoLocalDate;
+import java.time.temporal.Temporal;
 
-public interface DayBasedInterval extends Interval {
+public interface DayBasedInterval <INTERVAL extends DayBasedInterval<INTERVAL, UNIT>, UNIT extends Temporal & Comparable<ChronoLocalDate>> 
+								  extends Interval<INTERVAL> { 
 	
 	@Override
 	public default boolean isDateSupported() {
 		return true;
 	}
 	
-	public LocalDateTime startToLocalDateTime();
-	
-	public LocalDateTime endToLocalDateTime();
-	
 	public long getDays();
 	
-	public boolean contains(DayBasedInterval interval);
+	public UNIT getStart();
 	
-	public boolean isWithin(DayBasedInterval interval);
-	
-	public boolean isBefore(DayBasedInterval temporal);
-	
-	public boolean isAfter(DayBasedInterval temporal);
-	
-	public boolean intersects(DayBasedInterval interval);
-	
-	public boolean intersectsThisOnLeft(DayBasedInterval interval);
-	
-	public boolean intersectsThisOnRight(DayBasedInterval interval);
+	public UNIT getEnd();
 }

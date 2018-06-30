@@ -119,11 +119,6 @@ public class LocalTimeInterval extends AbstractTimeBasedInterval<LocalTimeInterv
 	}
 
 	@Override
-	public List<TemporalField> getFields() {
-		return supportedChronoFields;
-	}
-
-	@Override
 	public List<TemporalUnit> getUnits() {
 		return supportedChronoUnits;
 	}

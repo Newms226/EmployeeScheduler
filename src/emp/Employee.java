@@ -6,11 +6,10 @@ import java.util.Comparator;
 import java.util.logging.Level;
 
 import driver.Driver;
-import menu.CMenu;
+import menu.ConsoleMenu;
 import restaurant.PositionID;
 import restaurant.PositionType;
 import restaurant.Restaurant;
-import time.Day;
 import tools.ArrayTools;
 import tools.CollectionTools;
 
@@ -41,7 +40,7 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 	int filledShifts;
 	public final Restaurant restaurant;
 	
-	CMenu serverMod;
+	ConsoleMenu serverMod;
 	
 	ArrayList<PositionType> qualifiedFor;
 	ArrayList<PositionID<? extends Employee>> assignedShifts;

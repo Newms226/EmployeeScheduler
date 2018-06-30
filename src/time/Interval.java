@@ -18,8 +18,9 @@ import java.util.logging.Logger;
 import org.omg.CORBA.INTERNAL;
 
 import driver.Driver;
+import jdk.nashorn.internal.ir.annotations.Immutable;
 
-public interface Interval <INTERVAL extends Interval<INTERVAL, UNIT>, UNIT extends Temporal & Comparable<UNIT>> 
+public interface Interval <INTERVAL extends Interval<INTERVAL>> 
 					extends TemporalAmount, Comparable<INTERVAL>, Serializable {
 	
 	static final Logger log = Driver.timeLog;
@@ -48,15 +49,9 @@ public interface Interval <INTERVAL extends Interval<INTERVAL, UNIT>, UNIT exten
 	
 	public boolean isSupported(TemporalField field);
 	
-	public List<TemporalField> getFields();
-	
 	public boolean isNegative();
 	
 	public boolean isZero();
-	
-	public UNIT getStart();
-	
-	public UNIT getEnd();
 	
 	public boolean contains(INTERVAL interval);
 	

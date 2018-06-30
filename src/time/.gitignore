@@ -34,3 +34,5 @@
 /AbstractTimeBasedInterval.class
 /DayOfWeekBuilder.class
 /DayOfWeekBuilder$PrioritizedDayOfWeek.class
+/AbstractDateBasedInterval.class
+/LocalDateInterval.class

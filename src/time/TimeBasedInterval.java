@@ -3,7 +3,7 @@ package time;
 import java.time.temporal.Temporal;
 
 public interface TimeBasedInterval<INTERVAL extends TimeBasedInterval<INTERVAL, UNIT>, UNIT extends Temporal & Comparable<UNIT>> 
-								extends Interval<INTERVAL, UNIT> {
+								extends Interval<INTERVAL> {
 	
 	@Override
 	public default boolean isTimeSupported() {
@@ -17,6 +17,10 @@ public interface TimeBasedInterval<INTERVAL extends TimeBasedInterval<INTERVAL, 
 	public INTERVAL getNext();
 	
 	public INTERVAL getPrevious();
+	
+	public UNIT getStart();
+	
+	public UNIT getEnd();
 	
 	public default INTERVAL withNext(INTERVAL interval, INTERVAL next) {
 		return linkedTo(null, next);
