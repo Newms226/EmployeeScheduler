@@ -32,7 +32,7 @@ class AvailabilityList {
 	
 	void addGeneric(LocalDate date) {
 		if (statusFlag == Interval_SF.AVAILABLE) {
-			list.add(LocalTimeInterval.getAlwaysAvailable(date));
+			list.add(LocalTimeInterval.getAlwaysAvailabile());
 		}
 	}
 	

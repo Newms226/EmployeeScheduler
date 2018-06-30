@@ -10,6 +10,7 @@ import java.time.temporal.TemporalField;
 import java.time.temporal.TemporalUnit;
 import java.time.temporal.UnsupportedTemporalTypeException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.logging.Level;
 
@@ -17,7 +18,8 @@ import restaurant.Restaurant;
 
 public class LocalTimeInterval extends AbstractTimeBasedInterval<LocalTimeInterval, LocalTime> {
 	private static final long serialVersionUID = -4438381979147816413L;
-
+	
+	public static Comparator<LocalTimeInterval> NATURAL_ORDER = (a, b) -> a.compareTo(b);
 	public static ChronoField PERCISION = ChronoField.SECOND_OF_DAY;
 	
 	public static final List<TemporalField> supportedChronoFields = new ArrayList<>(15);

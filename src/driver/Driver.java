@@ -9,7 +9,8 @@ import java.util.logging.*;
 
 import WorkingSet.WorkingSet;
 import emp.Server;
-import menu.CMenu;
+import menu.ConsoleMenu;
+import menu.RunnableOption;
 import restaurant.Restaurant;
 import tools.CollectionTools;
 
@@ -115,7 +116,7 @@ public class Driver {
 	}
 	
 	private String intro;
-	private CMenu beginningInput, mainMenu, scheduleMenu, employeeMenu, scheduleViewer;
+	private ConsoleMenu beginningInput, mainMenu, scheduleMenu, employeeMenu, scheduleViewer;
 	
 	Restaurant restaurant;
 	Scheduler<Server> DA_KING_MAKER;
@@ -131,32 +132,33 @@ public class Driver {
 			 + "\n+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+"
 			 + "\n\n";
 		
-		beginningInput = new CMenu("Input Menu", () -> mainMenu.selection());
-		beginningInput.add("Build from testing material",
-				() -> buildTestingMaterial());
-		beginningInput.add("Build from previous Set-Up", null); // TODO
-		beginningInput.add("Build a new Restaurant & set-up", null); // TODO
+		beginningInput = new ConsoleMenu("Input Menu", 
+				() -> mainMenu.selection()); // Hand off control to mainMenu after run
+		beginningInput.add(new RunnableOption("Build from testing material",
+				() -> buildTestingMaterial()));
+		beginningInput.add(new RunnableOption("Load previous", null)); // TODO
+		beginningInput.add(new RunnableOption("Build a new Restaurant & set-up", null)); // TODO
 		
-		mainMenu = new CMenu ("Main Menu",
+		mainMenu = new ConsoleMenu("Main Menu",
 				null); // by default, do nothing after selection
-		mainMenu.add("Schedule", 
+		mainMenu.add(new RunnableOption("Schedule", 
 				() -> schedule(), // TODO: Tests for needed components
-				() -> mainMenu.selection());
-		mainMenu.add("View generated schedules", 
+				() -> mainMenu.selection()));
+		mainMenu.add(new RunnableOption("View generated schedules", 
 				() -> System.out.println(getSchedule()), // TODO: View previous schedules
-				() -> mainMenu.selection());
-		mainMenu.add("Employee menu", 
-				() -> employeeMenu.selection());
-		mainMenu.add("Schedule set-up", 
-				() -> scheduleMenu.selection());
-		mainMenu.add("Exit program",
+				() -> mainMenu.selection()));
+		mainMenu.add(new RunnableOption("Employee menu", 
+				() -> employeeMenu.selection()));
+		mainMenu.add(new RunnableOption("Schedule set-up", 
+				() -> scheduleMenu.selection()));
+		mainMenu.add(new RunnableOption("Exit program",
 				() -> {
 					if (workingSet != null) workingSet.save(FileManager.SF.ON_EXIT);
 					System.exit(0);
-				});
+				}));
 		
-		scheduleViewer = new CMenu("Schedule Viewer");
-		scheduleViewer.add("View whole schedule",
+		scheduleViewer = new ConsoleMenu("Schedule Viewer");
+		scheduleViewer.add(new RunnableOption("View whole schedule",
 				() -> System.out.println(getSchedule()));
 		scheduleViewer.add("View indvidual servers shifts", 
 				() -> {

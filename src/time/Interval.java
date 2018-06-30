@@ -19,7 +19,7 @@ import org.omg.CORBA.INTERNAL;
 
 import driver.Driver;
 
-interface Interval <INTERVAL extends Interval<INTERVAL, UNIT>, UNIT extends Temporal & Comparable<UNIT>> 
+public interface Interval <INTERVAL extends Interval<INTERVAL, UNIT>, UNIT extends Temporal & Comparable<UNIT>> 
 					extends TemporalAmount, Comparable<INTERVAL>, Serializable {
 	
 	static final Logger log = Driver.timeLog;

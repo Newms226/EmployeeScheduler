@@ -2,7 +2,8 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path=""/>
-	<classpathentry combineaccessrules="false" kind="src" path="/MNTools"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/ConsoleMenu"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Tools"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MethodTester"/>
 	<classpathentry kind="output" path=""/>
 </classpath>
