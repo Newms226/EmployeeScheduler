@@ -53,7 +53,7 @@ public class LocalTimeInterval extends AbstractTimeBasedInterval<LocalTimeInterv
 	}
 	
 	// TODO: This method must be called WHENEVER start > end. Or constructor will throw exception
-	public static LocalTimeInterval from(Interval_SF statusFlag, LocalTime start, LocalTime end) {
+	public static LocalTimeInterval from(Availability_Status statusFlag, LocalTime start, LocalTime end) {
 		if (start.get(PERCISION) < end.get(PERCISION)) {
 			return new LocalTimeInterval(statusFlag, start, end);
 		} else if (start.get(PERCISION) > end.get(PERCISION)) {
@@ -70,18 +70,18 @@ public class LocalTimeInterval extends AbstractTimeBasedInterval<LocalTimeInterv
 	}
 	
 	public static LocalTimeInterval getAlwaysAvailabile() {
-		return new LocalTimeInterval(Interval_SF.AVAILABLE, LocalTime.MIN, LocalTime.MAX);
+		return new LocalTimeInterval(Availability_Status.AVAILABLE, LocalTime.MIN, LocalTime.MAX);
 	}
 	
 	public static LocalTimeInterval getAlwaysAvailabile(Restaurant restaurant) {
-		return new LocalTimeInterval(Interval_SF.AVAILABLE, restaurant.dayStart, restaurant.dayEnd);
+		return new LocalTimeInterval(Availability_Status.AVAILABLE, restaurant.dayStart, restaurant.dayEnd);
 	}
 
-	private LocalTimeInterval(Interval_SF statusFlag, LocalTime start, LocalTime end) {
+	private LocalTimeInterval(Availability_Status statusFlag, LocalTime start, LocalTime end) {
 		this(null, statusFlag, start, end, null);
 	}
 	
-	private LocalTimeInterval(LocalTimeInterval previous, Interval_SF statusFlag, LocalTime start, 
+	private LocalTimeInterval(LocalTimeInterval previous, Availability_Status statusFlag, LocalTime start, 
 			LocalTime end, LocalTimeInterval next) {
 		super(previous, statusFlag, start, end, next);
 		
@@ -136,6 +136,6 @@ public class LocalTimeInterval extends AbstractTimeBasedInterval<LocalTimeInterv
 	}
 	
 	public static void main(String[] args) {
-		LocalTimeInterval test = LocalTimeInterval.from(Interval_SF.AVAILABLE, LocalTime.MIN, LocalTime.MAX);
+		LocalTimeInterval test = LocalTimeInterval.from(Availability_Status.AVAILABLE, LocalTime.MIN, LocalTime.MAX);
 	}
 }

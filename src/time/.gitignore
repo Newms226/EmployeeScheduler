@@ -36,3 +36,5 @@
 /DayOfWeekBuilder$PrioritizedDayOfWeek.class
 /AbstractDateBasedInterval.class
 /LocalDateInterval.class
+/Availability_Status.class
+/LocalDateTimeInterval.class

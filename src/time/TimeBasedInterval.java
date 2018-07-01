@@ -18,10 +18,6 @@ public interface TimeBasedInterval<INTERVAL extends TimeBasedInterval<INTERVAL, 
 	
 	public INTERVAL getPrevious();
 	
-	public UNIT getStart();
-	
-	public UNIT getEnd();
-	
 	public default INTERVAL withNext(INTERVAL interval, INTERVAL next) {
 		return linkedTo(null, next);
 	}
@@ -31,4 +27,6 @@ public interface TimeBasedInterval<INTERVAL extends TimeBasedInterval<INTERVAL, 
 	}
 	
 	public INTERVAL linkedTo(INTERVAL previous, INTERVAL next);
+	
+	public boolean contains(UNIT unit);
 }

@@ -3,7 +3,7 @@ package time;
 import java.time.chrono.ChronoLocalDate;
 import java.time.temporal.Temporal;
 
-public interface DayBasedInterval <INTERVAL extends DayBasedInterval<INTERVAL, UNIT>, UNIT extends Temporal & Comparable<ChronoLocalDate>> 
+public interface DayBasedInterval <INTERVAL extends AbstractDateBasedInterval<INTERVAL, UNIT>, UNIT extends ChronoLocalDate> 
 								  extends Interval<INTERVAL> { 
 	
 	@Override
@@ -13,7 +13,5 @@ public interface DayBasedInterval <INTERVAL extends DayBasedInterval<INTERVAL, U
 	
 	public long getDays();
 	
-	public UNIT getStart();
-	
-	public UNIT getEnd();
+	public boolean contains(UNIT unit);
 }

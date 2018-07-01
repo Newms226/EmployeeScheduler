@@ -6,12 +6,18 @@ import java.time.temporal.ChronoUnit;
 import java.time.temporal.Temporal;
 import java.time.temporal.TemporalUnit;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class LocalDateInterval extends AbstractDateBasedInterval<LocalDateInterval, LocalDate> {
 	private static final long serialVersionUID = -7651643355466848652L;
 	
 	public static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE, MMMM d, uuuu");
+	public static Comparator<LocalDateInterval> NATURAL_ORDER = (a, b) -> a.compareTo(b);
+	
+	public static LocalDateInterval ofSingleton(Availability_Status statusFlag, LocalDate startAndEnd) {
+		return new LocalDateInterval(statusFlag, startAndEnd, startAndEnd);
+	}
 	
 	private static final List<TemporalUnit> supportedUnits = new ArrayList<>();
 	static {
@@ -25,8 +31,20 @@ public class LocalDateInterval extends AbstractDateBasedInterval<LocalDateInterv
 		supportedUnits.add(ChronoUnit.ERAS);
 	}
 
-	public LocalDateInterval(Interval_SF statusFlag, LocalDate start, LocalDate end) {
+	public LocalDateInterval(Availability_Status statusFlag, LocalDate start, LocalDate end) {
 		super(statusFlag, start, end);
+	}
+	
+	public List<LocalDate> extractLocalDates(){
+		log.entering(this.getClass().getName(), "extractLocalDates");
+		List<LocalDate> toReturn = new ArrayList<>();
+		LocalDate current = start;
+		do {
+			toReturn.add(current);
+			current = current.plusDays(1);
+		} while (current.compareTo(end) <= 0);
+		log.finer("RETURN: extractLocalDates:\n\t" + toReturn);
+		return toReturn;
 	}
 
 	@Override

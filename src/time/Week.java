@@ -14,38 +14,25 @@ public class Week implements Serializable {
 	private static final long serialVersionUID = -8732566734072764466L;
 	private static final Logger log = Driver.setUpLog;
 	
-	public static final int DEFAULT_DAY_COUNT = 7;
 	public static final DateTimeFormatter formatter =
 			DateTimeFormatter.ofPattern("EEEE, MMMM d, uuuu");
 	
 	public final LocalDate[] dates;
 	public final LocalDate firstDayOfWeek;
-	public final int dayCount;
 	public final String SUMMARY;
 	
 	public Week(LocalDate firstDayOfWeek) {
-		this(firstDayOfWeek, DEFAULT_DAY_COUNT);
-	}
-	
-	public Week(LocalDate firstDayOfWeek, int dayCount) {
-		if (0 >= dayCount || dayCount > 9) {
-			IllegalArgumentException e = 
-					new IllegalArgumentException("INVALID DAY COUNT: " + 
-									dayCount + " Excepted Range: [1-9]");
-			log.log(Level.SEVERE, e.getMessage(), e);
-		}
 		this.firstDayOfWeek = firstDayOfWeek;
-		this.dayCount = dayCount;
 		dates = fillWeek();
 		SUMMARY = generateString();
 		log.fine("Generated " + toString());
 	}
 	
 	private LocalDate[] fillWeek() {
-		LocalDate[] dates = new LocalDate[dayCount];
+		LocalDate[] dates = new LocalDate[7];
 		dates[0] = firstDayOfWeek;
 		
-		for (int i = 1; i < dayCount; i++) {
+		for (int i = 1; i < 7; i++) {
 			dates[i] = dates[i - 1].plusDays(1);
 		}
 		
@@ -64,27 +51,14 @@ public class Week implements Serializable {
 	}
 	
 	private String generateString() {
-		StringBuffer buffer = new StringBuffer(dayCount + " day week beginning on " 
+		StringBuffer buffer = new StringBuffer("Week beginning on " 
 										+ formatter.format(firstDayOfWeek) + "\n");
 		
-		for (int i = 0; i < dayCount; i++) {
+		for (int i = 0; i < 7; i++) {
 			buffer.append("   " + (i+1) + ": " + formatter.format(dates[i]) + "\n");
 		}
 		
 		return buffer.toString();
-	}
-	
-	public DayOfWeek[] getDaysOfWeek() {
-		if (dayCount >= 7) {
-			return DayOfWeek.values();
-		}
-		
-		// else
-		DayOfWeek[] toReturn = new DayOfWeek[dayCount];
-		for(int i = 0; i < dayCount; i++) {
-			toReturn[i] = dates[i].getDayOfWeek();
-		}
-		return toReturn;
 	}
 	
 	public String toString() {

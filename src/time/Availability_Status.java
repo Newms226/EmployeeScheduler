@@ -1,15 +1,14 @@
 package time;
 
-public enum Interval_SF {
+public enum Availability_Status {
 	AVAILABLE            (true),
 	STRICTLY_AVAILABLE   (true),
 	OUTSIDE_AVAILABILITY (false),
-	SCHEDULED            (false),
-	TIMEOFF              (false);
+	SCHEDULED            (false);
 	
 	public final boolean SCHEDULEABLE;
 	
-	private Interval_SF(boolean schedulable) {
+	private Availability_Status(boolean schedulable) {
 		this.SCHEDULEABLE = schedulable;
 	}
 }

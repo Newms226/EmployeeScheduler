@@ -9,3 +9,8 @@
 /TimeOffList.class
 /AvailabilityList.class
 /NotEqualException.class
+/IntervalList.class
+/AbstractIntervalList.class
+/WeeklyAvailabilityList.class
+/PersistantAvailabilityList.class
+/WeekAvailability.class

@@ -15,57 +15,63 @@ import emp.Employee;
 import restaurant.PositionID;
 //import time.Day;
 import time.Interval;
-import time.Interval_SF;
+import time.Availability_Status;
 import time.LocalTimeInterval;
 import time.TimeBasedInterval;
+import time.Week;
 
 public class Availability {
 	public static final long AVOID_MINUTE_AMOUNT = 60;
 	public static final Duration AVOID_DURATION = Duration.of(AVOID_MINUTE_AMOUNT, ChronoUnit.MINUTES);
 	private static final Logger log = Driver.availabilityLog;
 	
-	Map <LocalDate, Map<Interval_SF, AvailabilityList>> map;
+	PersistantAvailabilityList persistantWeeklyAvailability;
+	TimeOffList timeOffList;
 	
 	public Availability() {
-		map = new HashMap<>();
-	}
-	
-	public boolean inAvailability(PositionID<? extends Employee> ID) {
-		log.entering("Availability", "inAvailability(" + ID + ")");
-		return query(Interval_SF.AVAILABLE, ID.getInterval(), ID.getDay());
-	}
-	
-	private boolean internalQuery(Interval_SF statusFlag, LocalTimeInterval interval, LocalDate date) {
-		return map.computeIfAbsent(date, d -> new HashMap<Interval_SF, AvailabilityList>())
-					.computeIfAbsent(statusFlag, sf -> new AvailabilityList(statusFlag))
-						.contains(interval);
-	}
-	
-	public boolean query(Interval_SF statusFlag, LocalTimeInterval interval, LocalDate date) {
-		return internalQuery(statusFlag, interval, date) 
-				&& interval.isLinked() ? internalQuery(statusFlag, interval.getNext(), date) : true;
-	}
-	
-	public boolean markAvailable(PositionID<? extends Employee> ID) {
-		// TODO
-		return false;
-	}
-	
-	public boolean markUNAvailable(PositionID<? extends Employee> ID) {
-		// TODO
-		return false;
-	}
-	
-	public int condense() {
-		// TODO
-		return 0;
-	}
-	
-	public void validateNoOverlap() {
 		
 	}
 	
-	public void buildFrom(AvailabilityList buildFrom) {
-		// TODO
+	public WeekAvailability getWeekAvailability(Week week) {
+		
 	}
+	
+//	public boolean inAvailability(PositionID<? extends Employee> ID) {
+//		log.entering("Availability", "inAvailability(" + ID + ")");
+//		return query(Availability_Status.AVAILABLE, ID.getInterval(), ID.getDay());
+//	}
+//	
+//	private boolean internalQuery(Availability_Status statusFlag, LocalTimeInterval interval, LocalDate date) {
+//		return map.computeIfAbsent(date, d -> new HashMap<Availability_Status, AvailabilityList>())
+//					.computeIfAbsent(statusFlag, sf -> new AvailabilityList(statusFlag))
+//						.contains(interval);
+//	}
+//	
+//	public boolean query(Availability_Status statusFlag, LocalTimeInterval interval, LocalDate date) {
+//		return internalQuery(statusFlag, interval, date) 
+//				&& interval.isLinked() ? internalQuery(statusFlag, interval.getNext(), date) : true;
+//	}
+//	
+//	public boolean markAvailable(PositionID<? extends Employee> ID) {
+//		// TODO
+//		return false;
+//	}
+//	
+//	public boolean markUNAvailable(PositionID<? extends Employee> ID) {
+//		// TODO
+//		return false;
+//	}
+//	
+//	public int condense() {
+//		// TODO
+//		return 0;
+//	}
+//	
+//	public void validateNoOverlap() {
+//		
+//	}
+//	
+//	public void buildFrom(AvailabilityList buildFrom) {
+//		// TODO
+//	}
 }

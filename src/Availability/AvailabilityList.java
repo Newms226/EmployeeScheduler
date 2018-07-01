@@ -1,74 +1,78 @@
 package Availability;
 
-import java.time.Duration;
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
-import java.util.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import driver.Driver;
-import racer.StopWatch;
 import time.LocalTimeInterval;
-import time.Interval_SF;
 
-class AvailabilityList {
-	protected List<LocalTimeInterval> list;
-	protected final Interval_SF statusFlag;
-	private static Logger log = Driver.availabilityLog;
+import java.util.logging.Level;
+
+import time.Availability_Status;
+
+final class AvailabilityList extends AbstractIntervalList<LocalTimeInterval> {
+	private static final long serialVersionUID = -5533798423626365230L;
 	
+	private final Availability_Status statusFlag;
 	
-	AvailabilityList(Interval_SF statusFlag) {
-		list = new ArrayList<>();
+	AvailabilityList(Availability_Status statusFlag) {
+		super(LocalTimeInterval.NATURAL_ORDER);
 		this.statusFlag = statusFlag;
-		
+		addGeneric();
 	}
 	
-	// Note: This performs a shallow clone
-	AvailabilityList(Collection<LocalTimeInterval> toAdd, Interval_SF statusFlag) {
-		list = new ArrayList<>();
-		this.statusFlag = statusFlag;
-	}
-	
-	void addGeneric(LocalDate date) {
-		if (statusFlag == Interval_SF.AVAILABLE) {
+	void addGeneric() {
+		if (statusFlag == Availability_Status.AVAILABLE) {
 			list.add(LocalTimeInterval.getAlwaysAvailabile());
 		}
 	}
 	
-	boolean add(LocalTimeInterval interval) {
-		log.entering(this.getClass().getName(), "add: SF = " + statusFlag.name());
-		NotEqualException.assertEqual(statusFlag, interval.getStatusFlag());
-		
-		if (contains(interval)) {
-			log.log(Level.SEVERE,
-					"Attempted to add {0} when it was already present",
-					interval);
-			return false;
-		}
-		
-		// else
-		log.log(Level.FINE,
-				"Added {0}",
-				interval);
-		list.add(interval);
-		
-		long startTime = System.nanoTime();
-		list.sort(LocalTimeInterval.NATURAL_ORDER);
-		long endTime = System.nanoTime();
-		log.info("Sorted list in " + StopWatch.nanosecondsToString(endTime - startTime));
-		
-		return true;
-	}
-	
-	Interval_SF getStatusFlag() {
+	Availability_Status getStatusFlag() {
 		return statusFlag;
 	}
-	
-	boolean contains(LocalTimeInterval searchFor) {
-		for (LocalTimeInterval interval: list) {
-			if (interval.contains(searchFor)) return true;
+
+	@Override
+	public boolean condense() {
+		log.entering(this.getClass().getName(), "condense");
+		LocalTimeInterval first, second;
+		boolean changes = false;
+		for (int i = 0; i < list.size() - 1; i++) {
+			first = list.get(i);
+			second = list.get(i + 1);
+			if (first.getEnd().compareTo(second.getStart()) == 0){
+				log.info(first + " is directly adjecent to " + second);
+				condense(first, second);
+				changes = true;
+			}
 		}
-		return false;
+		log.log(Level.FINER, "RETURNING after " + changes + " modifications");
+		return changes;
 	}
+	
+	private void condense(LocalTimeInterval start, LocalTimeInterval end) {
+		log.finer("Internal condese of " + start + " & " + end);
+		list.remove(end);
+		list.remove(start);
+		list.add(LocalTimeInterval.from(statusFlag, start.getStart(), end.getEnd()));
+		log.exiting(this.getClass().getName(), "private condense");
+	}
+
+	@Override
+	public boolean validate() {
+		log.entering(this.getClass().getName(), "validate");
+		LocalTimeInterval toTest;
+		int overlap;
+		for (int i = 0; i < list.size() - 1; i++) {
+			toTest = list.get(i);
+			if ((overlap = getContainingAfter(toTest, i + 1)) != -1) {
+				log.warning("OVERLAP: " + toTest + " overlaps with " + list.get(overlap) + " at index " + overlap);
+				return false;
+			}
+		}
+		log.fine("Passed validate");
+		return true;
+	}
+
+	@Override
+	public void archive() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

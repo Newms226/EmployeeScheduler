@@ -13,26 +13,26 @@ import java.util.logging.Logger;
 import driver.Driver;
 import emp.ClassNotEqualException;
 
-public abstract class AbstractInterval <INTERVAL extends Interval<INTERVAL>, UNIT extends Temporal & Comparable<?>>
+public abstract class AbstractInterval <INTERVAL extends AbstractInterval<INTERVAL, UNIT>, UNIT extends Temporal & Comparable<?>>
 									   implements Interval<INTERVAL> {
 	private static final long serialVersionUID = 8664569071286330116L;
 	
 	UNIT start, end;
-	Interval_SF statusFlag;
+	Availability_Status statusFlag;
 	
-	protected AbstractInterval(Interval_SF statusFlag, UNIT start, UNIT end) {
+	protected AbstractInterval(Availability_Status statusFlag, UNIT start, UNIT end) {
 		this.start = start;
 		this.end = end;
 		this.statusFlag = statusFlag;
 	}
 
 	@Override
-	public Interval_SF getStatusFlag() {
+	public Availability_Status getStatusFlag() {
 		return statusFlag;
 	}
 
 	@Override
-	public void setStatusFlag(Interval_SF sf) {
+	public void setStatusFlag(Availability_Status sf) {
 		this.statusFlag = sf;
 	}
 
@@ -60,4 +60,17 @@ public abstract class AbstractInterval <INTERVAL extends Interval<INTERVAL>, UNI
 	public boolean isSupported(TemporalField field) {
 		return start.isSupported(field);
 	}
+	
+	public UNIT getStart() {
+		return start;
+	}
+	
+	public UNIT getEnd() {
+		return end;
+	}
+	
+	public String toString() {
+		return start + " - " + end;
+	}
+	
 }

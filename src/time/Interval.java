@@ -25,9 +25,9 @@ public interface Interval <INTERVAL extends Interval<INTERVAL>>
 	
 	static final Logger log = Driver.timeLog;
 	
-	public Interval_SF getStatusFlag();
+	public Availability_Status getStatusFlag();
 	
-	public void setStatusFlag(Interval_SF sf);
+	public void setStatusFlag(Availability_Status sf);
 	
 	public Duration getDuration();
 	
@@ -60,6 +60,10 @@ public interface Interval <INTERVAL extends Interval<INTERVAL>>
 	public boolean isBefore(INTERVAL temporal);
 	
 	public boolean isAfter(INTERVAL temporal);
+	
+	public default boolean conflictsWith(INTERVAL interval) {
+		return intersects(interval) || contains(interval);
+	}
 	
 	public default boolean intersects(INTERVAL interval) {
 		return intersectsThisOnLeft(interval) || intersectsThisOnRight(interval);
