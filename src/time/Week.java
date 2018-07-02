@@ -5,6 +5,10 @@ import java.time.DateTimeException;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -63,6 +67,21 @@ public class Week implements Serializable {
 	
 	public String toString() {
 		return SUMMARY;
+	}
+	
+	public String toCondensedString() {
+		return formatter.format(firstDayOfWeek) + " - " + formatter.format(dates[6]);
+	}
+	
+	public Set<LocalDate> getDatesAsSet(){
+		log.entering(this.getClass().getName(), "getDatesAsSet()");
+		Set<LocalDate> toReturn = new HashSet<>();
+		for (LocalDate date: dates) {
+			toReturn.add(LocalDate.from(date));
+		}
+		log.log(Level.FINER, "RETURNING: getDatesAsSet()\n\tArray:{0}\n\tSet:{1}",
+				new Object[] {Arrays.toString(dates), toReturn.toString()});
+		return toReturn;
 	}
 	
 	public static void main(String[] args) {

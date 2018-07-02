@@ -2,14 +2,21 @@ package Availability;
 
 import time.LocalTimeInterval;
 
+import java.time.LocalTime;
 import java.util.logging.Level;
 
 import time.Availability_Status;
 
-final class AvailabilityList extends AbstractIntervalList<LocalTimeInterval> {
+final class AvailabilityList extends AbstractIntervalList<LocalTimeInterval, LocalTime> {
 	private static final long serialVersionUID = -5533798423626365230L;
 	
 	private final Availability_Status statusFlag;
+	
+	public static AvailabilityList getAlways(Availability_Status statusFlag) {
+		AvailabilityList toReturn = new AvailabilityList(statusFlag);
+		toReturn.add(LocalTimeInterval.getAlways(statusFlag));
+		return toReturn;
+	}
 	
 	AvailabilityList(Availability_Status statusFlag) {
 		super(LocalTimeInterval.NATURAL_ORDER);
@@ -45,7 +52,8 @@ final class AvailabilityList extends AbstractIntervalList<LocalTimeInterval> {
 		return changes;
 	}
 	
-	private void condense(LocalTimeInterval start, LocalTimeInterval end) {
+	@Override
+	protected void condense(LocalTimeInterval start, LocalTimeInterval end) {
 		log.finer("Internal condese of " + start + " & " + end);
 		list.remove(end);
 		list.remove(start);
@@ -60,7 +68,7 @@ final class AvailabilityList extends AbstractIntervalList<LocalTimeInterval> {
 		int overlap;
 		for (int i = 0; i < list.size() - 1; i++) {
 			toTest = list.get(i);
-			if ((overlap = getContainingAfter(toTest, i + 1)) != -1) {
+			if ((overlap = getConflictsWithAfter(toTest, i + 1)) != -1) {
 				log.warning("OVERLAP: " + toTest + " overlaps with " + list.get(overlap) + " at index " + overlap);
 				return false;
 			}
@@ -73,6 +81,11 @@ final class AvailabilityList extends AbstractIntervalList<LocalTimeInterval> {
 	public void archive() {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	@Override
+	public String toString() {
+		return statusFlag + ": " + super.toString();
 	}
 
 }

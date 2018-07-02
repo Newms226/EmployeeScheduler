@@ -1,5 +1,6 @@
 package time;
 
+import java.time.Duration;
 import java.time.temporal.Temporal;
 
 public interface TimeBasedInterval<INTERVAL extends TimeBasedInterval<INTERVAL, UNIT>, UNIT extends Temporal & Comparable<UNIT>> 
@@ -9,6 +10,8 @@ public interface TimeBasedInterval<INTERVAL extends TimeBasedInterval<INTERVAL, 
 	public default boolean isTimeSupported() {
 		return true;
 	}
+	
+	public Duration getDuration();
 	
 	public long getMinutes();
 	

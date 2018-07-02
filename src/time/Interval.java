@@ -12,7 +12,9 @@ import java.time.temporal.TemporalAccessor;
 import java.time.temporal.TemporalAmount;
 import java.time.temporal.TemporalField;
 import java.time.temporal.TemporalUnit;
+import java.time.temporal.UnsupportedTemporalTypeException;
 import java.util.List;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.omg.CORBA.INTERNAL;
@@ -25,13 +27,28 @@ public interface Interval <INTERVAL extends Interval<INTERVAL>>
 	
 	static final Logger log = Driver.timeLog;
 	
+	public static <I extends Interval<I>> boolean validateStatusFlag(String callingMethod, Availability_Status expectedFlag, I interval) {
+		return validateStatusFlag(callingMethod, expectedFlag, interval.getStatusFlag(), log);
+	}
+	
+	public static <I extends Interval<I>> boolean validateStatusFlag(String callingMethod, Availability_Status expectedFlag, I interval, Logger log) {
+		return validateStatusFlag(callingMethod, expectedFlag, interval.getStatusFlag(), log);
+	}
+	
+	public static <I extends Interval<I>> boolean validateStatusFlag(String callingMethod, Availability_Status expectedFlag, Availability_Status actualFlag, Logger log) {
+		log.entering("INTERFACE: Interval", callingMethod + ".validateStatusFlag(" + expectedFlag + ", " + actualFlag + ", " + log.getName() + ")");
+		if (actualFlag == expectedFlag) {
+			log.finer("PASS");
+			return true;
+		} else {
+			log.warning("FAIL: validateStatusFlag(" + expectedFlag + ", " + actualFlag + ", " + log.getName() + ")");
+			return false;
+		}
+	}
+	
 	public Availability_Status getStatusFlag();
 	
 	public void setStatusFlag(Availability_Status sf);
-	
-	public Duration getDuration();
-	
-	public Period getPeriod();
 	
 	public long get(TemporalUnit unit);
 	
@@ -74,5 +91,35 @@ public interface Interval <INTERVAL extends Interval<INTERVAL>>
 	public boolean intersectsThisOnRight(INTERVAL interval);
 	
 	public DateTimeFormatter getFormatter();
+	
+	public INTERVAL addTo(INTERVAL interval);
+	
+	public INTERVAL subtractFrom(INTERVAL interval);
+	
+	public INTERVAL condense(INTERVAL end);
+	
+	@Override
+	public default Temporal addTo(Temporal temporal) {
+		log.warning("Called TemporalAmount.addTo NOT Interval.addTo");
+		try {
+			return (Temporal) 
+					addTo((INTERVAL) temporal);
+		} catch (ClassCastException | UnsupportedTemporalTypeException e) {
+			log.log(Level.SEVERE, "Called TemporalAmount.addTo(temporal) and failed to execute\n\t" + e.getMessage(), e);
+			throw e;
+		}
+	}
+
+	@Override
+	public default Temporal subtractFrom(Temporal temporal) {
+		log.warning("Called TemporalAmount.subtractFrom NOT Interval.subtractFrom");
+		try {
+			return (Temporal) 
+					subtractFrom((INTERVAL) temporal);
+		} catch (ClassCastException | UnsupportedTemporalTypeException e) {
+			log.log(Level.SEVERE, "Called TemporalAmount.subtractFrom(temporal) and failed to execute\n\tException:" + e.getMessage(), e);
+			throw e;
+		}
+	}
 	
 }

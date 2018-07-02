@@ -10,13 +10,13 @@ public interface IntervalList <INTERVAL extends Interval<INTERVAL>> extends Seri
 	
 	public boolean remove(INTERVAL interval);
 	
-	public boolean contains(INTERVAL interval);
+	public boolean containsConflicts(INTERVAL interval);
 	
-	public default int getContaining(INTERVAL interval) {
-		return getContainingAfter(interval, 0);
+	public default int getConflictsWith(INTERVAL interval) {
+		return getConflictsWithAfter(interval, 0);
 	}
 	
-	public int getContainingAfter(INTERVAL interval, int searchInclusive);
+	public int getConflictsWithAfter(INTERVAL interval, int searchInclusive);
 	
 	public boolean condense();
 	

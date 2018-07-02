@@ -1,6 +1,7 @@
 package time;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.Temporal;
@@ -75,6 +76,12 @@ public class LocalDateInterval extends AbstractDateBasedInterval<LocalDateInterv
 
 	@Override
 	public Temporal subtractFrom(Temporal temporal) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Period getPeriod() {
 		// TODO Auto-generated method stub
 		return null;
 	}

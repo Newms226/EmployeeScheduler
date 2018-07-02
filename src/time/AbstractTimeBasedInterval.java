@@ -1,5 +1,6 @@
 package time;
 
+import java.time.Duration;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.Temporal;
@@ -181,6 +182,11 @@ public abstract class AbstractTimeBasedInterval <INTERVAL extends AbstractTimeBa
 	@Override
 	public DateTimeFormatter getFormatter() {
 		return formatter;
+	}
+	
+	@Override
+	public Duration getDuration() {
+		return Duration.between(start, end);
 	}
 	
 	@Override

@@ -2,6 +2,7 @@ package time;
 
 import java.time.Duration;
 import java.time.Period;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.Temporal;
 import java.time.temporal.TemporalField;
 import java.time.temporal.TemporalUnit;
@@ -16,6 +17,10 @@ import emp.ClassNotEqualException;
 public abstract class AbstractInterval <INTERVAL extends AbstractInterval<INTERVAL, UNIT>, UNIT extends Temporal & Comparable<?>>
 									   implements Interval<INTERVAL> {
 	private static final long serialVersionUID = 8664569071286330116L;
+	
+
+	
+	
 	
 	UNIT start, end;
 	Availability_Status statusFlag;
@@ -34,16 +39,6 @@ public abstract class AbstractInterval <INTERVAL extends AbstractInterval<INTERV
 	@Override
 	public void setStatusFlag(Availability_Status sf) {
 		this.statusFlag = sf;
-	}
-
-	@Override
-	public Duration getDuration() {
-		return Duration.between(start, end);
-	}
-
-	@Override
-	public Period getPeriod() {
-		return Period.from(this);
 	}
 
 	@Override
@@ -71,6 +66,22 @@ public abstract class AbstractInterval <INTERVAL extends AbstractInterval<INTERV
 	
 	public String toString() {
 		return start + " - " + end;
+	}
+	
+	@Override
+	@SuppressWarnings("unchecked")
+	public INTERVAL addTo(INTERVAL otherInterval) {
+		if (intersectsThisOnLeft(otherInterval)) {
+			return otherInterval.condense((INTERVAL) this);
+		} else if (intersectsThisOnRight(otherInterval)) {
+			return this.condense(otherInterval);
+		} else if (otherInterval.getStart().equals(getStart()) 
+					&& otherInterval.getEnd().equals(getEnd())){
+			return otherInterval;
+		} 
+		
+		// else
+		throw new UnsupportedOperationException(otherInterval + " cannot be combined with " + this);
 	}
 	
 }

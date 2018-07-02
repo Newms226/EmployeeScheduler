@@ -73,6 +73,10 @@ public class LocalTimeInterval extends AbstractTimeBasedInterval<LocalTimeInterv
 		return new LocalTimeInterval(Availability_Status.AVAILABLE, LocalTime.MIN, LocalTime.MAX);
 	}
 	
+	public static LocalTimeInterval getAlways(Availability_Status statusFlag) {
+		return new LocalTimeInterval(statusFlag, LocalTime.MIN, LocalTime.MAX); 
+	}
+	
 	public static LocalTimeInterval getAlwaysAvailabile(Restaurant restaurant) {
 		return new LocalTimeInterval(Availability_Status.AVAILABLE, restaurant.dayStart, restaurant.dayEnd);
 	}
@@ -119,18 +123,28 @@ public class LocalTimeInterval extends AbstractTimeBasedInterval<LocalTimeInterv
 	}
 
 	@Override
-	public List<TemporalUnit> getUnits() {
-		return supportedChronoUnits;
-	}
-
-	@Override
-	public Temporal addTo(Temporal temporal) {
+	public LocalTimeInterval addTo(LocalTimeInterval interval) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Temporal subtractFrom(Temporal temporal) {
+	public LocalTimeInterval subtractFrom(LocalTimeInterval interval) {
+		if (interval.intersectsThisOnLeft(anotherInterval)) {
+			return interval.addTo(this);
+		} else if (interval.intersectsThisOnRight(anotherInterval)) {
+			return interval.addTo(anotherInterval);
+		} else if (interval.getStart().equals(anotherInterval.getStart()) 
+					&& interval.getEnd().equals(anotherInterval.getEnd())){
+			return interval;
+		} 
+		
+		// else
+		throw new UnsupportedOperationException(interval + " cannot be combined with " + anotherInterval);
+	}
+
+	@Override
+	public List<TemporalUnit> getUnits() {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -138,4 +152,5 @@ public class LocalTimeInterval extends AbstractTimeBasedInterval<LocalTimeInterv
 	public static void main(String[] args) {
 		LocalTimeInterval test = LocalTimeInterval.from(Availability_Status.AVAILABLE, LocalTime.MIN, LocalTime.MAX);
 	}
+	
 }

@@ -33,7 +33,7 @@ public class Availability {
 	}
 	
 	public WeekAvailability getWeekAvailability(Week week) {
-		
+		return WeekAvailability.from(persistantWeeklyAvailability, timeOffList, week);
 	}
 	
 //	public boolean inAvailability(PositionID<? extends Employee> ID) {
