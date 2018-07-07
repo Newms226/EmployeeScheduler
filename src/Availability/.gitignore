@@ -14,3 +14,12 @@
 /WeeklyAvailabilityList.class
 /PersistantAvailabilityList.class
 /WeekAvailability.class
+/PersistantWeeklyAvailability.class
+/AvailabilityChunk.class
+/AvailabilityStatus.class
+/TimeChunk.class
+/AvailabilityStatus$internalStatus$1.class
+/AvailabilityStatus$internalStatus$2.class
+/AvailabilityStatus$internalStatus$3.class
+/AvailabilityStatus$internalStatus.class
+/AvailabilityStatus$internalStatus$4.class

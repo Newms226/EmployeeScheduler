@@ -1,0 +1,26 @@
+Jun 30, 2018 6:36:46 PM Availability.TimeOffList add(time.LocalDateInterval@7291c18f)
+FINER: ENTRY
+Jun 30, 2018 6:36:46 PM Availability.TimeOffList contains(time.LocalDateInterval@7291c18f)
+FINER: ENTRY
+Jun 30, 2018 6:36:46 PM Availability.TimeOffList getContainingAfter(time.LocalDateInterval@7291c18f, 0)
+FINER: ENTRY
+Jun 30, 2018 6:36:46 PM Availability.AbstractIntervalList getContainingAfter
+INFO: Failed to find time.LocalDateInterval@7291c18f
+Jun 30, 2018 6:36:46 PM Availability.AbstractIntervalList add
+FINE: Added time.LocalDateInterval@7291c18f
+Jun 30, 2018 6:36:46 PM Availability.AbstractIntervalList add
+INFO: Sorted list in 10,646 nanoseconds
+Jun 30, 2018 6:36:46 PM Availability.TimeOffList add(time.LocalDateInterval@7291c18f)
+FINER: RETURN
+Jun 30, 2018 6:36:46 PM Availability.TimeOffList add(time.LocalDateInterval@7cc355be)
+FINER: ENTRY
+Jun 30, 2018 6:36:46 PM Availability.TimeOffList contains(time.LocalDateInterval@7cc355be)
+FINER: ENTRY
+Jun 30, 2018 6:36:46 PM Availability.TimeOffList getContainingAfter(time.LocalDateInterval@7cc355be, 0)
+FINER: ENTRY
+Jun 30, 2018 6:36:46 PM Availability.AbstractIntervalList getContainingAfter
+INFO: Found time.LocalDateInterval@7291c18f at index 0 which contained time.LocalDateInterval@7cc355be
+Jun 30, 2018 6:36:46 PM Availability.AbstractIntervalList add
+SEVERE: Attempted to add time.LocalDateInterval@7cc355be when it was already present
+Jun 30, 2018 6:36:46 PM Availability.TimeOffList getDaysOff
+CONFIG: FOUND NO TIME OFF REQUESTS: 2018-02-03 - 2018-02-09

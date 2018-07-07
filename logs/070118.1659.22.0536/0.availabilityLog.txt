@@ -1,0 +1,31 @@
+Jul 01, 2018 4:59:22 PM Availability.TimeOffList add(2018-02-01 - 2018-02-05)
+FINER: ENTRY
+Jul 01, 2018 4:59:22 PM Availability.TimeOffList contains(2018-02-01 - 2018-02-05)
+FINER: ENTRY
+Jul 01, 2018 4:59:22 PM Availability.TimeOffList getContainingAfter(2018-02-01 - 2018-02-05, 0)
+FINER: ENTRY
+Jul 01, 2018 4:59:22 PM Availability.AbstractIntervalList getContainingAfter
+INFO: Failed to find 2018-02-01 - 2018-02-05
+Jul 01, 2018 4:59:22 PM Availability.AbstractIntervalList add
+FINE: Added 2018-02-01 - 2018-02-05
+Jul 01, 2018 4:59:22 PM Availability.AbstractIntervalList add
+INFO: Sorted list in 7,078 nanoseconds
+Jul 01, 2018 4:59:22 PM Availability.TimeOffList add(2018-02-01 - 2018-02-05)
+FINER: RETURN
+Jul 01, 2018 4:59:22 PM Availability.TimeOffList add(2018-02-08 - 2018-02-10)
+FINER: ENTRY
+Jul 01, 2018 4:59:22 PM Availability.TimeOffList contains(2018-02-08 - 2018-02-10)
+FINER: ENTRY
+Jul 01, 2018 4:59:22 PM Availability.TimeOffList getContainingAfter(2018-02-08 - 2018-02-10, 0)
+FINER: ENTRY
+Jul 01, 2018 4:59:22 PM Availability.AbstractIntervalList getContainingAfter
+INFO: Failed to find 2018-02-08 - 2018-02-10
+Jul 01, 2018 4:59:22 PM Availability.AbstractIntervalList add
+FINE: Added 2018-02-08 - 2018-02-10
+Jul 01, 2018 4:59:22 PM Availability.AbstractIntervalList add
+INFO: Sorted list in 6,989,881 nanoseconds
+Jul 01, 2018 4:59:22 PM Availability.TimeOffList add(2018-02-08 - 2018-02-10)
+FINER: RETURN
+Jul 01, 2018 4:59:22 PM Availability.TimeOffList getDaysOff
+CONFIG: FOUND TIME OFF REQUESTS:
+	[2018-02-03, 2018-02-04, 2018-02-05, 2018-02-08, 2018-02-09]

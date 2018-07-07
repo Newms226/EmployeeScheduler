@@ -1,0 +1,7 @@
+Jul 06, 2018 6:49:50 PM Availability.AvailabilityChunk ensureValidity
+SEVERE: status is out of range: [0, 3)
+java.lang.IllegalArgumentException: status is out of range: [0, 3)
+	at Availability.AvailabilityChunk.ensureValidity(AvailabilityChunk.java:40)
+	at Availability.AvailabilityChunk.<init>(AvailabilityChunk.java:34)
+	at Availability.AvailabilityChunk.main(AvailabilityChunk.java:51)
+
