@@ -76,7 +76,8 @@ public abstract class AbstractInterval <INTERVAL extends AbstractInterval<INTERV
 		} else if (intersectsThisOnRight(otherInterval)) {
 			return this.condense(otherInterval);
 		} else if (otherInterval.getStart().equals(getStart()) 
-					&& otherInterval.getEnd().equals(getEnd())){
+					&& otherInterval.getEnd().equals(getEnd())
+					&& getStatusFlag() == otherInterval.getStatusFlag()){
 			return otherInterval;
 		} 
 		

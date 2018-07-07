@@ -4,7 +4,7 @@ import java.time.chrono.ChronoLocalDate;
 import java.time.temporal.ChronoUnit;
 
 abstract class AbstractDateBasedInterval <INTERVAL extends AbstractDateBasedInterval<INTERVAL, UNIT>, UNIT extends ChronoLocalDate>
-			extends AbstractInterval<INTERVAL, UNIT> implements DayBasedInterval<INTERVAL, UNIT> {
+			extends AbstractInterval<INTERVAL, UNIT> implements DateBasedInterval<INTERVAL, UNIT> {
 	private static final long serialVersionUID = 8714586373771736374L;
 
 	protected AbstractDateBasedInterval(Availability_Status statusFlag, UNIT start, UNIT end) {

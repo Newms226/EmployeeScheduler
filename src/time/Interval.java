@@ -94,10 +94,11 @@ public interface Interval <INTERVAL extends Interval<INTERVAL>>
 	
 	public INTERVAL addTo(INTERVAL interval);
 	
-	public INTERVAL subtractFrom(INTERVAL interval);
+	public INTERVAL[] subtractFrom(INTERVAL interval);
 	
 	public INTERVAL condense(INTERVAL end);
 	
+	@SuppressWarnings("unchecked")
 	@Override
 	public default Temporal addTo(Temporal temporal) {
 		log.warning("Called TemporalAmount.addTo NOT Interval.addTo");
@@ -112,14 +113,9 @@ public interface Interval <INTERVAL extends Interval<INTERVAL>>
 
 	@Override
 	public default Temporal subtractFrom(Temporal temporal) {
-		log.warning("Called TemporalAmount.subtractFrom NOT Interval.subtractFrom");
-		try {
-			return (Temporal) 
-					subtractFrom((INTERVAL) temporal);
-		} catch (ClassCastException | UnsupportedTemporalTypeException e) {
-			log.log(Level.SEVERE, "Called TemporalAmount.subtractFrom(temporal) and failed to execute\n\tException:" + e.getMessage(), e);
-			throw e;
-		}
+		UnsupportedOperationException e = new UnsupportedOperationException("Called TemporalAmount.subtractFrom(temporal)");
+		log.log(Level.SEVERE, e.getMessage(), e);
+		throw e;
 	}
 	
 }
