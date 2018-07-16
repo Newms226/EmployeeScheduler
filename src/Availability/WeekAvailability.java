@@ -20,7 +20,7 @@ public class WeekAvailability {
 	}
 	
 	private WeekAvailability() {
-		availability = new byte[AvailabilityStatus.WEEK_DAY_COUNT]
+		availability = new byte[AvailabilityStatus.TOTAL_DAYS]
 				               [AvailabilityStatus.TOTAL_HOURS]
 				            	   [AvailabilityStatus.TOTAL_MINUTES];
 	}
@@ -28,6 +28,7 @@ public class WeekAvailability {
 	private boolean query(byte status, TimeChunk chunk) {
 		if (chunk.isLinked()) {
 			TimeChunk link = chunk.link;
+			log.fine(chunk + " is linked in " + AvailabilityStatus.toString(status));
 			return query(status, chunk.day, chunk.hourStart, chunk.hourEnd, chunk.minuteStart, chunk.minuteEnd)
 					&& query(status, link.day, link.hourStart, link.hourEnd, link.minuteStart, link.minuteEnd);
 		} else {
@@ -43,12 +44,16 @@ public class WeekAvailability {
 	{
 		try {
 			if (!AvailabilityStatus.isStatusByteValid(status)) {
-				throw new IllegalArgumentException(status + " is not a valid status byte. Range: [0, " + AvailabilityStatus.MAX_AVAIL_CONSTANT + ")");
+				throw new IllegalArgumentException(status + " is not a valid status byte. Range: [0, " 
+						+ AvailabilityStatus.MAX_AVAIL_CONSTANT + ")");
 			}
 			
 			for ( ; hourStart <= hourEnd; hourStart++) {
 				for ( ; minuteStart <= minuteEnd; minuteStart++) {
 					if (availability[dayStart][hourStart][minuteStart] != status) {
+						log.info("FAILED query of " + AvailabilityStatus.toString(status) + " from" 
+								+ AvailabilityStatus.toString(availability[dayStart][hourStart][minuteStart]) 
+								+ " at [" + dayStart + "][" + hourStart + "][" + minuteStart + "]");
 						return false;
 					} // test condition
 				} // minutes
@@ -57,7 +62,7 @@ public class WeekAvailability {
 			log.log(Level.SEVERE, e.getMessage(), e);
 			return false;
 		}
-		
+		log.fine("Succeded from " + AvailabilityStatus.toString(status));
 		return true;
 	}
 	
@@ -65,17 +70,55 @@ public class WeekAvailability {
 		return query(AvailabilityStatus.AVAILABILE, chunk);
 	}
 	
-	public boolean inSTRICTAvailability(TimeChunk chunk) {
-		return query(AvailabilityStatus.STRICTLY_AVAILABLE, chunk);
-	}
-	
 	public boolean inUNAvailability(TimeChunk chunk) {
 		return query(AvailabilityStatus.NOT_AVAILABLE, chunk);
 	}
 	
-	private boolean set(String methodName, byte toSetTo, byte[] errorStatuses, TimeChunk chunk) {
+//	public boolean inSTRICTAvailability(TimeChunk chunk) {
+//		return query(AvailabilityStatus.STRICTLY_AVAILABLE, chunk);
+//	}
+	
+	public boolean inSTRICTAvailability(TimeChunk chunk) {
 		if (chunk.isLinked()) {
 			TimeChunk link = chunk.link;
+			log.fine(chunk + " is linked from inSTRICTAvailability");
+			return inSTRICTAvailability(chunk.day, chunk.hourStart, chunk.hourEnd, chunk.minuteStart, chunk.minuteEnd)
+					&& inSTRICTAvailability(link.day, link.hourStart, link.hourEnd, link.minuteStart, link.minuteEnd);
+		} else {
+			return inSTRICTAvailability(chunk.day, chunk.hourStart, chunk.hourEnd, chunk.minuteStart, chunk.minuteEnd);
+		}
+		
+	}
+	
+	public boolean inSTRICTAvailability(int dayStart,
+                          int hourStart, int hourEnd,
+                          int minuteStart, int minuteEnd)
+	{
+		byte toTest;
+		
+		try {
+			for ( ; hourStart <= hourEnd; hourStart++) {
+				for ( ; minuteStart <= minuteEnd; minuteStart++) {
+					toTest = availability[dayStart][hourStart][minuteStart];
+					if (toTest != AvailabilityStatus.AVAILABILE || toTest != AvailabilityStatus.STRICTLY_AVAILABLE) {
+						log.info("FAILED inSTRICTAvailability from" + AvailabilityStatus.toString(toTest) 
+								+ " at [" + dayStart + "][" + hourStart + "][" + minuteStart + "]");
+						return false;
+					} // test condition
+				} // minutes
+			} // hours
+		} catch (IllegalArgumentException | ArrayIndexOutOfBoundsException e) {
+			log.log(Level.SEVERE, e.getMessage(), e);
+			return false;
+		}
+		log.fine("Succeded from inSTRICTAvailability));
+		return true;
+	}
+	
+	private boolean set(String methodName, byte toSetTo, byte errorStatuses, TimeChunk chunk) {
+		if (chunk.isLinked()) {
+			TimeChunk link = chunk.link;
+			log.finer(chunk + " is linked. Calling linked set...");
 			return set(methodName, toSetTo, errorStatuses, chunk.day, chunk.hourStart, chunk.minuteStart, chunk.hourEnd, chunk.minuteEnd)
 					&& set(methodName, toSetTo, errorStatuses, link.day, link.hourStart, link.minuteStart, link.hourEnd, link.minuteEnd);
 		} else {
@@ -84,26 +127,24 @@ public class WeekAvailability {
 	}
 	
 	private boolean set(String methodName,
-			            byte statusToSetTo, byte[] errorStatuses,
+			            byte statusToSetTo, byte errorStatus,
 			            int day,
 			            int hourStart, int minuteStart,
 			            int hourEnd, int minuteEnd) 
 	{
 		for ( ; hourStart <= hourEnd; hourStart++) {
 			for ( ; minuteStart <= minuteEnd; minuteStart++) {
-				for (int i = 0; i < errorStatuses.length; i++) {
-					if (availability[day][hourStart][minuteStart] == errorStatuses[i]) {
-						log.severe(methodName + " ALERT: availability[" + day + "][" + hourStart + "][" + minuteStart + "]"
-								+ " was marked as " + AvailabilityStatus.toString(errorStatuses[i]));
-						return false;
-					} // error Tester
-				} // errors loop
+				if (availability[day][hourStart][minuteStart] == errorStatus) {
+					log.severe(methodName + " ALERT: availability[" + day + "][" + hourStart + "][" + minuteStart + "]"
+							+ " was marked as " + AvailabilityStatus.toString(errorStatus));
+					return false;
+				} // error Tester
 				
 				// else
 				availability[day][hourStart][minuteStart] = statusToSetTo;
 			} // minutes
 		} // hours
-		
+		log.finer("Succeded from " + methodName);
 		return true;
 	}
 	
@@ -114,8 +155,22 @@ public class WeekAvailability {
 		 *   > set to Avail
 		 *   > else >> log Level.SEVERE & do not set
 		 */
-		return set("toAvailable(" + chunk + ")", AvailabilityStatus.AVAILABILE, new byte[] {AvailabilityStatus.NEVER_AVAILABLE}, chunk);
-		
+//		return set("toAvailable(" + chunk + ")", AvailabilityStatus.AVAILABILE, AvailabilityStatus.NEVER_AVAILABLE, chunk);
+		int d = chunk.day;
+		for (int h = chunk.hourStart ; h <= chunk.hourEnd; h++) {
+			for (int m = chunk.minuteStart; m <= chunk.minuteEnd; m++) {
+				if (availability[d][h][m] == AvailabilityStatus.NEVER_AVAILABLE) {
+					log.severe("ALERT: availability[" + d + "][" + h + "][" + m + "] was marked as NEVER Available");
+					return false;
+				} // error Tester
+				
+				// else
+				availability[d][h][m] = AvailabilityStatus.AVAILABILE;
+			} // minutes
+		} // hours
+		log.finer("Succeded from toAvailable");
+		return true;
+	}
 		
 //		if (chunk.isLinked()) {
 //			TimeChunk link = chunk.link;
@@ -124,7 +179,6 @@ public class WeekAvailability {
 //		} else {
 //			return toAvailable(chunk.day, chunk.hourStart, chunk.minuteStart, chunk.hourEnd, chunk.minuteEnd);
 //		}
-	}
 	
 //	private boolean toAvailable(int day,
 //			                    int hourStart, int minuteStart,
@@ -144,17 +198,32 @@ public class WeekAvailability {
 		 *   > if (i == Available) >> SET TO Strict
 		 *   > else break >> log a failure to set whole limit
 		 */
-		return false;
-	}
-	
-	public boolean toSTRICTAvailabilityBACKWARDS(TimeChunk setToUnavail) {
-		/*TODO
-		 * Backwards & Forwards methods
-		 * > while (i = start; i >= end; i--)
-		 *   > if (i == Available) >> SET TO Strict
-		 *   > else break >> log a failure to set whole limit >>> Level.warning
-		 */
-		return false;
+		int d = setToUnavail.day,
+		    h = setToUnavail.hourStart,
+		    m = setToUnavail.minuteStart,
+		    minutesSet = 0;
+		while (minutesSet < AvailabilityStatus.AVOID_MINUTE_COUNT && availability[d][h][m] == AvailabilityStatus.AVAILABILE) {
+			availability[d][h][m] = AvailabilityStatus.STRICTLY_AVAILABLE;
+			m++;
+			
+			if (m == AvailabilityStatus.TOTAL_MINUTES) {
+				m = 0;
+				
+				h++;
+				if (h == AvailabilityStatus.TOTAL_HOURS) {
+					log.warning("Went past the end of the day when trying to set " + setToUnavail + " to strictly available");
+					break;
+				} // if "reached the end of the day
+			} // if "m needs to be reset"
+		} // while loop
+		    
+		if (minutesSet == AvailabilityStatus.AVOID_MINUTE_COUNT) {
+			log.fine("Successfully set " + AvailabilityStatus.AVOID_MINUTE_COUNT + " minutes to strictly available"); 
+			return true;
+		} else {
+			log.warning("Failed to set " + AvailabilityStatus.AVOID_MINUTE_COUNT + " minutes to strictly available. Set: " + minutesSet);
+			return false;
+		}
 	}
 	
 	public boolean toUNavailable(TimeChunk chunk) {
@@ -174,7 +243,7 @@ public class WeekAvailability {
 		}
 		
 		// else
-		if (!(toSTRICTAvailabilityBACKWARDS(chunk) | toSTRICTAvailabilityFORWARDS(chunk))) {
+		if (!toSTRICTAvailabilityFORWARDS(chunk)) {
 			return false;
 		}
 		
@@ -182,12 +251,12 @@ public class WeekAvailability {
 	}
 	
 	public boolean toUNavailableIGNORE_STRICT(TimeChunk chunk) {
-		if (!set("toUNAvailable(" + chunk + ")", AvailabilityStatus.NOT_AVAILABLE, new byte[] {AvailabilityStatus.NOT_AVAILABLE}, chunk)) {
+		if (!set("toUNAvailable(" + chunk + ")", AvailabilityStatus.NOT_AVAILABLE, AvailabilityStatus.NOT_AVAILABLE, chunk)) {
 			return false;
 		}
 		
 		// else
-		if (!(toSTRICTAvailabilityBACKWARDS(chunk) | toSTRICTAvailabilityFORWARDS(chunk))) {
+		if (!toSTRICTAvailabilityFORWARDS(chunk)) {
 			return false;
 		}
 		

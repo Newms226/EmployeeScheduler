@@ -2,7 +2,9 @@ package emp;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 import java.util.logging.Level;
 
 import driver.Driver;
@@ -209,6 +211,10 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 		StringBuffer buffer2 = new StringBuffer();
 		qualifiedFor.stream().forEach(s-> buffer2.append(s));
 		Driver.setUpLog.config("Changied " + NAME + " qualifications to\n\t" + buffer.toString());
+	}
+	
+	public List<PositionType> getQualifications(){
+		return Collections.unmodifiableList(qualifiedFor);
 	}
 	
 	@Override

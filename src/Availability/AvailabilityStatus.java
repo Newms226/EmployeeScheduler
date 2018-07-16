@@ -37,10 +37,11 @@ public class AvailabilityStatus {
 			                 MAX_AVAIL_CONSTANT = (byte) internalStatus.values().length;
 	
 	public static final int TOTAL_DAYS = 7,
-			                WEEK_DAY_COUNT = 8, // Include the day after the last day of the week
+//			                WEEK_DAY_COUNT = 8, // Include the day after the last day of the week
 			                TOTAL_HOURS = 24,
 			                MINUTE_CHUNK = 1, // MUST BE AN EVEN DIVISOR OF 60!!
-			                TOTAL_MINUTES = 60 / MINUTE_CHUNK; // REMAINDER MUST BE 0!!
+			                TOTAL_MINUTES = 60 / MINUTE_CHUNK, // REMAINDER MUST BE 0!!
+			                AVOID_MINUTE_COUNT = 60;
 	
 	
 	static {

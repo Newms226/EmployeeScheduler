@@ -4,7 +4,9 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.logging.Level;
 import java.util.stream.Collectors;
@@ -104,6 +106,13 @@ public class EmployeeSet<E extends Employee> {
 		return employeeSet.stream()
 			.filter(predicate)
 			.collect(Collectors.toSet());
+	}
+	
+	public <V> Map<Integer, V> mapWithID(Function<Employee, V> valueMapper){
+		return employeeSet.stream()
+				.collect(
+					Collectors.toMap(e -> e.ID, 
+							         e -> valueMapper.apply(e)));
 	}
 	
 	public void viewServerPositions() {
