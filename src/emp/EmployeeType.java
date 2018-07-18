@@ -5,18 +5,13 @@ import java.util.Arrays;
 import tools.DriverTools;
 
 public enum EmployeeType {
-	Bartender(Server.class), 
-	Server(Server.class), 
-	Cook(null), // TODO
-	ServerAssistant(null), // TODO 
-	Host(null), // TODO 
-	House(Employee.class); // TODO
+	Bartender, 
+	Server, 
+	Cook, // TODO
+	ServerAssistant, // TODO 
+	Host, // TODO 
+	House; // TODO
 	
-	public final Class<? extends Employee> classType;
-	
-	private EmployeeType(Class<? extends Employee> classType) {
-		this.classType = classType;
-	}
 	
 	public static EmployeeType build() {
 		EmployeeType toReturn = null;

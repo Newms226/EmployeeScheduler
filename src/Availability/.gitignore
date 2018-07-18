@@ -23,3 +23,15 @@
 /AvailabilityStatus$internalStatus$3.class
 /AvailabilityStatus$internalStatus.class
 /AvailabilityStatus$internalStatus$4.class
+/AvailabilityStatusByteException.class
+/IntTimeRangeException.class
+/ByteFunction.class
+/ByteBooleanSupplier.class
+/ByteConsumerBooleanSupplier.class
+/ByteRejecterBooleanSupplier.class
+/ByteRejecter.class
+/LabledTimeChunk.class
+/AvailabilityArray.class
+/SchedulableTimeChunk.class
+/WorkingAvailability.class
+/ShiftID.class

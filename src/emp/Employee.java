@@ -15,12 +15,26 @@ import restaurant.Restaurant;
 import tools.ArrayTools;
 import tools.CollectionTools;
 
-public abstract class Employee implements Comparable<Employee>, Serializable {
+public class Employee implements Comparable<Employee>, Serializable {
+	
+	/******************************************************************************
+	 *                                                                            *
+	 *                               Static Fields                                *
+	 *                                                                            *
+	 ******************************************************************************/
 	
 	private static final long serialVersionUID = 9156517117805277061L;
 	public static final Comparator<Employee> DESENDING_PRIORITY_ORDER = (a, b) -> -a.compareTo(b);
 	public static final Comparator<Employee> NAME_ORDER = (a, b) -> a.NAME.compareToIgnoreCase(b.NAME);
 	public static final Comparator<Employee> PRIORITY_ORDER = (a, b) -> a.compareTo(b);
+	
+	/******************************************************************************
+	 *                                                                            *
+	 *                                                                            *
+	 *                        Instance Fields & Methods                           *
+	 *                                                                            *
+	 *                                                                            *
+	 ******************************************************************************/
 	
 	public final int ID;
 	public final String NAME;
@@ -244,14 +258,10 @@ public abstract class Employee implements Comparable<Employee>, Serializable {
 		return buffer.toString();
 	}
 	
-	public Class<?> getEmployeeType() {
-		if (employeeType == null) {
-			throw new Error("  must call getEmployeeType from sub-class");
-		}
-		return employeeType.classType;
+	public EmployeeType getEmployeeType() {
+		// TODO
+		return null;
 	}
-	
-	public abstract boolean ofType(Class<?> type);
 	
 	public double updateEmployeePriority(double averageFill) {
 		return employeePriority.getCurrentPriority(averageFill);

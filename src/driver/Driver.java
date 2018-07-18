@@ -18,7 +18,7 @@ import tools.CollectionTools;
 
 public class Driver {
 	//public static final boolean debugging = true; 
-	public static Logger driverLog, deciderLog, setUpLog, fileManagerLog, masterLog, availabilityLog, timeLog;
+	public static Logger driverLog, deciderLog, setUpLog, fileManagerLog, masterLog, availabilityLog, timeLog, errorLog;
 	public static final String LOG_DIRECTORY = "/Users/Michael/gitHub/EmployeeScheduler/logs/";
 	static {
 		masterLog = Logger.getLogger("");

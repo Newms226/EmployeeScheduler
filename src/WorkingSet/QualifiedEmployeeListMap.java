@@ -10,15 +10,15 @@ import emp.EmployeeSet;
 import restaurant.PositionID;
 import restaurant.PositionID.ShiftID;
 
-public class QualifiedEmployeeListMap<E extends Employee> {
+public class QualifiedEmployeeListMap {
 
-	Map <ShiftID, QualifiedEmployeeList<E>> availabilityMap;
-	EmployeeSet<E> list;
+	Map <ShiftID, QualifiedEmployeeList> availabilityMap;
+	EmployeeSet list;
 	final int globalMax;
 	
-	public QualifiedEmployeeListMap(EmployeeSet<E> list, int globalMax) {
+	public QualifiedEmployeeListMap(EmployeeSet list, int globalMax) {
 		this.list = list;
-		availabilityMap = new TreeMap<ShiftID, QualifiedEmployeeList<E>>(PositionID.SHIFT_ID_ORDER);
+		availabilityMap = new TreeMap<ShiftID, QualifiedEmployeeList>(PositionID.SHIFT_ID_ORDER);
 		this.globalMax = globalMax;
 	}
 	

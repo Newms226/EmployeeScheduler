@@ -25,46 +25,7 @@ public class WeekAvailability {
 				            	   [AvailabilityStatus.TOTAL_MINUTES];
 	}
 	
-	private boolean query(byte status, TimeChunk chunk) {
-		if (chunk.isLinked()) {
-			TimeChunk link = chunk.link;
-			log.fine(chunk + " is linked in " + AvailabilityStatus.toString(status));
-			return query(status, chunk.day, chunk.hourStart, chunk.hourEnd, chunk.minuteStart, chunk.minuteEnd)
-					&& query(status, link.day, link.hourStart, link.hourEnd, link.minuteStart, link.minuteEnd);
-		} else {
-			return query(status, chunk.day, chunk.hourStart, chunk.hourEnd, chunk.minuteStart, chunk.minuteEnd);
-		}
-		
-	}
 	
-	private boolean query(byte status,
-                          int dayStart,
-                          int hourStart, int hourEnd,
-                          int minuteStart, int minuteEnd)
-	{
-		try {
-			if (!AvailabilityStatus.isStatusByteValid(status)) {
-				throw new IllegalArgumentException(status + " is not a valid status byte. Range: [0, " 
-						+ AvailabilityStatus.MAX_AVAIL_CONSTANT + ")");
-			}
-			
-			for ( ; hourStart <= hourEnd; hourStart++) {
-				for ( ; minuteStart <= minuteEnd; minuteStart++) {
-					if (availability[dayStart][hourStart][minuteStart] != status) {
-						log.info("FAILED query of " + AvailabilityStatus.toString(status) + " from" 
-								+ AvailabilityStatus.toString(availability[dayStart][hourStart][minuteStart]) 
-								+ " at [" + dayStart + "][" + hourStart + "][" + minuteStart + "]");
-						return false;
-					} // test condition
-				} // minutes
-			} // hours
-		} catch (IllegalArgumentException | ArrayIndexOutOfBoundsException e) {
-			log.log(Level.SEVERE, e.getMessage(), e);
-			return false;
-		}
-		log.fine("Succeded from " + AvailabilityStatus.toString(status));
-		return true;
-	}
 	
 	public boolean inAvailability(TimeChunk chunk) {
 		return query(AvailabilityStatus.AVAILABILE, chunk);
@@ -226,6 +187,11 @@ public class WeekAvailability {
 		}
 	}
 	
+	/**
+	 * Method to 
+	 * @param chunk The period of time to set to unavailable
+	 * @return
+	 */
 	public boolean toUNavailable(TimeChunk chunk) {
 		/*TODO
 		 * > Test whole chunk to make sure presently Available || Strict
@@ -267,5 +233,46 @@ public class WeekAvailability {
 		WeekAvailability testString = new WeekAvailability();
 		System.out.println(AvailabilityStatus.toString(testString.availability, "Week Avail"));
 	}
+	
+//	private boolean query(byte status, TimeChunk chunk) {
+//		if (chunk.isLinked()) {
+//			TimeChunk link = chunk.link;
+//			log.fine(chunk + " is linked in " + AvailabilityStatus.toString(status));
+//			return query(status, chunk.day, chunk.hourStart, chunk.hourEnd, chunk.minuteStart, chunk.minuteEnd)
+//					&& query(status, link.day, link.hourStart, link.hourEnd, link.minuteStart, link.minuteEnd);
+//		} else {
+//			return query(status, chunk.day, chunk.hourStart, chunk.hourEnd, chunk.minuteStart, chunk.minuteEnd);
+//		}
+//		
+//	}
+//	
+//	private boolean query(byte status,
+//                          int dayStart,
+//                          int hourStart, int hourEnd,
+//                          int minuteStart, int minuteEnd)
+//	{
+//		try {
+//			if (!AvailabilityStatus.isStatusByteValid(status)) {
+//				throw new IllegalArgumentException(status + " is not a valid status byte. Range: [0, " 
+//						+ AvailabilityStatus.MAX_AVAIL_CONSTANT + ")");
+//			}
+//			
+//			for ( ; hourStart <= hourEnd; hourStart++) {
+//				for ( ; minuteStart <= minuteEnd; minuteStart++) {
+//					if (availability[dayStart][hourStart][minuteStart] != status) {
+//						log.info("FAILED query of " + AvailabilityStatus.toString(status) + " from" 
+//								+ AvailabilityStatus.toString(availability[dayStart][hourStart][minuteStart]) 
+//								+ " at [" + dayStart + "][" + hourStart + "][" + minuteStart + "]");
+//						return false;
+//					} // test condition
+//				} // minutes
+//			} // hours
+//		} catch (IllegalArgumentException | ArrayIndexOutOfBoundsException e) {
+//			log.log(Level.SEVERE, e.getMessage(), e);
+//			return false;
+//		}
+//		log.fine("Succeded from " + AvailabilityStatus.toString(status));
+//		return true;
+//	}
 	
 }

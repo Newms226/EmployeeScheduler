@@ -3,6 +3,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 import emp.EmployeeType;
 import tools.DriverTools;
@@ -19,7 +20,7 @@ public enum PositionType implements Serializable {
 	public final char ABR;
 	
 	// TODO
-	EmployeeType employeeType;
+	private List<EmployeeType> qualifiedEmployeeTypes;
 	
 	public static final double POSITION_TYPE_COUNT = 5,
 			                   MAX_POSITION_VALUE = 25; //TODO: Only applies with this setup
@@ -45,6 +46,10 @@ public enum PositionType implements Serializable {
 				System.out.println(e.getMessage() + " Try Again.");
 			}
 		}
+	}
+	
+	public boolean employeeTypeIsCompatible(EmployeeType type) {
+		return qualifiedEmployeeTypes.contains(type);
 	}
 	
 	public static PositionType parse(int x) {
