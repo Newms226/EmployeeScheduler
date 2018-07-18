@@ -15,6 +15,7 @@ import driver.Driver;
 import menu.ConsoleMenu;
 import restaurant.PositionType;
 import restaurant.Restaurant;
+import time.Week;
 import tools.CollectionTools;
 import tools.NumberTools;
 
@@ -50,7 +51,7 @@ public class Employee implements Comparable<Employee>, Serializable {
 	private double PAY;
 	
 	public transient EmployeePriority employeePriority; // TODO: Transient?
-	Availability availability;
+	public Availability availability;
 	private WorkingAvailability currentAvailability;
 	
 	private int MAX_HOURS,
@@ -224,6 +225,7 @@ public class Employee implements Comparable<Employee>, Serializable {
 				+ "\n\tCurrent Hours: " + currentHours);
 		assignedShifts.add(chunk);
 		currentHours += (double) chunk.getMinutes() / 60;
+		currentAvailability.schedule(chunk);
 		log.finest("SUCCESS: SCHEDULED"
 				+ "\n\tCurrent hours: " + currentHours
 				+ "\n\tAssigned Shifts: " + assignedShifts);
@@ -277,6 +279,12 @@ public class Employee implements Comparable<Employee>, Serializable {
 	void addToCurrentHours(double toAdd) {
 		log.warning("UPDATE: " + NAME + "'s hours by adding " + toAdd);
 		currentHours += toAdd;
+	}
+	
+	public void prepare(Week week) {
+		this.currentAvailability = availability.getWorkingAvailability(week);
+		assignedShifts = new ArrayList<>();
+		currentHours = 0;
 	}
 	
 	/******************************************************************************

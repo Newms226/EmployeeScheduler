@@ -132,7 +132,7 @@ public class ScheduleSetUp implements Serializable {
 		StringBuffer buffer = new StringBuffer();
 		timeChunks
 			.stream()
-			.sorted(SchedulableTimeChunk.NATURAL_ORDER)
+			.sorted(SchedulableTimeChunk.VIEW_ORDER)
 			.forEach(s -> buffer.append(s + "\n"));
 		return buffer.toString();
 	}

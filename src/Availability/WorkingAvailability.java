@@ -12,7 +12,7 @@ public class WorkingAvailability extends AvailabilityArray {
 		return currentHours;
 	}
 	
-	boolean schedule(TimeChunk chunk) {
+	public boolean schedule(TimeChunk chunk) {
 		log.info("SCHEDULE: " + chunk);
 		return toNotAvailable(chunk) && toSTRICTLYAvailableFORWARD(chunk.indexEnd);
 	}

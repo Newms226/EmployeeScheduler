@@ -9,6 +9,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.logging.Level;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import driver.Driver;
 import tools.CollectionTools;
@@ -84,6 +85,10 @@ public class EmployeeSet implements Serializable {
 	
 	public int count() {
 		return employeeSet.size();
+	}
+	
+	public Stream<Employee> stream() {
+		return employeeSet.stream();
 	}
 	
 	public Set<Employee> filter(Predicate<Employee> predicate){

@@ -15,6 +15,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import WorkingSet.OperationStack;
 import WorkingSet.Schedule;
 import WorkingSet.ScheduleSetUp;
 import driver.FileManager.SF;
@@ -79,6 +80,11 @@ public class FileManager {
 	
 	public static boolean serializeSchedule(SF statusFlag, Schedule toSerialize) {
 		// TODO
+		return false;
+	}
+	
+	public static boolean serializeOperationsStack(SF statusFlag, OperationStack opStack) {
+		// TODO 
 		return false;
 	}
 	

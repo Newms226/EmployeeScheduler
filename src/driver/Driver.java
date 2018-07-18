@@ -24,6 +24,7 @@ import menu.ConsoleMenu;
 import menu.RunnableOption;
 import restaurant.PositionType;
 import restaurant.Restaurant;
+import time.Week;
 
 public class Driver {
 	//public static final boolean debugging = true; 
@@ -136,6 +137,7 @@ public class Driver {
 	EmployeeSet employeeSet;
 	ScheduleSetUp setUp;
 	Schedule schedule;
+	Week operativeWeek;
 	
 	public Driver() throws SecurityException, IOException {
 		intro =  "+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+"
@@ -178,7 +180,7 @@ public class Driver {
 //		scheduleViewer.add("View indvidual Employees shifts", 
 //				() -> {
 //	
-//				});
+//				});\
 //		
 		scheduleMenu = new ConsoleMenu("Schedule Set-Up");
 //		scheduleMenu.add(new RunnableOption("Set-up days/shifts/priority", 
@@ -229,6 +231,7 @@ public class Driver {
 		me.promote();
 		gregs.promote();
 		brandon.promote();
+		wade.availability.setToPersistantlyUNAVAILABLE(TimeChunk.from(5, 0, 0, 5, 23, 59));
 		List<Employee> Employees = new ArrayList<>();
 		Employees.add(kim);
 		Employees.add(wade);
@@ -281,11 +284,13 @@ public class Driver {
 		setUp.addTimeChunk(SchedulableTimeChunk.from(TimeChunk.from(5, 15, 0, 5, 23, 0), 9, PositionType.Head_Wait));
 		setUp.addTimeChunk(SchedulableTimeChunk.from(TimeChunk.from(5, 15, 0, 5, 22, 0), 6, PositionType.Sales));
 		setUp.addTimeChunk(SchedulableTimeChunk.from(TimeChunk.from(5, 15, 0, 5, 21, 0), 5, PositionType.Sales));
-		setUp.addTimeChunk(SchedulableTimeChunk.from(TimeChunk.from(5, 16, 0, 5, 21, 0), 6, PositionType.Sales));
-		setUp.addTimeChunk(SchedulableTimeChunk.from(TimeChunk.from(5, 16, 0, 5, 21, 0), 6, PositionType.Sales));
-		setUp.addTimeChunk(SchedulableTimeChunk.from(TimeChunk.from(5, 17, 0, 5, 21, 0), 6, PositionType.Sales));
-		setUp.addTimeChunk(SchedulableTimeChunk.from(TimeChunk.from(5, 17, 0, 5, 21, 0), 6, PositionType.Sales));
-		setUp.addTimeChunk(SchedulableTimeChunk.from(TimeChunk.from(5, 17, 0, 5, 20, 0), 6, PositionType.Sales));
+		setUp.addTimeChunk(SchedulableTimeChunk.from(TimeChunk.from(5, 16, 0, 5, 21, 0), 4, PositionType.Sales));
+		setUp.addTimeChunk(SchedulableTimeChunk.from(TimeChunk.from(5, 16, 0, 5, 21, 0), 4, PositionType.Sales));
+		setUp.addTimeChunk(SchedulableTimeChunk.from(TimeChunk.from(5, 17, 0, 5, 21, 0), 4, PositionType.Sales));
+		setUp.addTimeChunk(SchedulableTimeChunk.from(TimeChunk.from(5, 17, 0, 5, 21, 0), 4, PositionType.Sales));
+		setUp.addTimeChunk(SchedulableTimeChunk.from(TimeChunk.from(5, 17, 0, 5, 20, 0), 4, PositionType.Sales));
+		
+		operativeWeek = new Week(LocalDate.now());
 		
 		driverLog.config("Successfully built testing material from Driver.buildTestingMaterial()");
 	}
@@ -302,8 +307,8 @@ public class Driver {
 //		}
 //			
 		driverLog.log(Level.INFO, "HANDING OFF TO SCHEDULER");
-		DA_KING_MAKER = new Scheduler(employeeSet, setUp);
-		DA_KING_MAKER.run();
+		DA_KING_MAKER = new Scheduler(employeeSet, setUp, operativeWeek);
+		schedule = DA_KING_MAKER.run();
 		driverLog.log(Level.INFO, "RETURNED TO DRIVER");
 		
 	}
@@ -313,8 +318,8 @@ public class Driver {
 	}
 	
 	public static void main(String[] args) throws SecurityException, IOException {
-//		Driver work = new Driver();
-//		work.begin();
+		Driver work = new Driver();
+		work.begin();
 	}
 
 }

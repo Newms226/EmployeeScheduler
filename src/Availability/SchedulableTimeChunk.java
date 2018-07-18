@@ -58,18 +58,19 @@ public class SchedulableTimeChunk extends TimeChunk {
 	
 	public static final Comparator<SchedulableTimeChunk> PRIORITY_ORDER = 
 			(a, b) -> {
-				if (a.priority < b.priority) return -1;
-				if (a.priority > b.priority) return 1;
+				if (a.priority < b.priority) return 1;
+				if (a.priority > b.priority) return -1;
 				return 0;
 			};
 	
-	public static final Comparator<SchedulableTimeChunk> NATURAL_ORDER = 
+	public static final Comparator<SchedulableTimeChunk> VIEW_ORDER = 
 			(a, b) -> {
+				if (a.dayStart < b.dayStart) return -1;
+				if (a.dayStart > b.dayStart) return 1;
+				if (a.positionType.compareTo(b.positionType) < 0) return -1;
+				if (a.positionType.compareTo(b.positionType) > 0) return 1;
 				if (a.indexStart < b.indexStart) return -1;
 				if (a.indexStart > b.indexStart) return 1;
-				if (a.priority < b.priority) return -1;
-				if (a.priority > b.priority) return 1;
-				
 				return 0;
 			};
 			
@@ -129,17 +130,17 @@ public class SchedulableTimeChunk extends TimeChunk {
 		}
 		
 		// TODO: This is technically redundant
-		if (positionType.employeeTypeIsCompatible(employee.getEmployeeType())) {
+//		if (positionType.employeeTypeIsCompatible(employee.getEmployeeType())) {
 			this.employee = employee;
 			log.fine("SUCCESS: Scheduled " + employee + " to " + this);
 			return true;
-		}
-		
-		// else
-		log.log(Level.SEVERE,
-				"FAILURE: Attempted to set " + employee + " to " + this + " when they were not qualified",
-				new IllegalArgumentException());
-		return false;
+//		}
+//		
+//		// else
+//		log.log(Level.SEVERE,
+//				"FAILURE: Attempted to set " + employee + " to " + this + " when they were not qualified",
+//				new IllegalArgumentException());
+//		return false;
 	}
 	
 	public Employee getEmployee() {
@@ -174,7 +175,7 @@ public class SchedulableTimeChunk extends TimeChunk {
 		if (employee == null) return super.toString();
 		
 		// else
-		return super.toString() + "\n\t" + employee;
+		return super.toString() + " " + positionType + "\n\t" + employee;
 	}
 	
 	@Override
@@ -201,6 +202,10 @@ public class SchedulableTimeChunk extends TimeChunk {
 		return SchedulableTimeChunk.from(TimeChunk.fromIndex(indexStart, indexEnd), 
 				                         priority, 
 				                         positionType);
+	}
+	
+	public static void main(String[] args) {
+		SchedulableTimeChunk test = SchedulableTimeChunk.from(TimeChunk.from(5, 17, 0, 5, 20, 0), 6, PositionType.Sales);
 	}
 	
 }

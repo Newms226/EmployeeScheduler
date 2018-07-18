@@ -71,6 +71,7 @@ public class AssignmentOperation implements Operation<SchedulableTimeChunk>,
 		
 		employee = list.getEmployee();
 		employee.accept(chunk);
+		chunk.setEmployee(employee);
 		averager.update(employee.updateEmployeePriority(currentAverage));
 		
 		time = LocalDateTime.now();

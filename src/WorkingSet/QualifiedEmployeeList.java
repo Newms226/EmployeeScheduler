@@ -107,13 +107,13 @@ public class QualifiedEmployeeList implements Serializable {
 			}
 		}
 		
-		if (!found) {
-			optionalEmployee.of(new HouseShift());
+		if (optionalEmployee.isPresent()) {
+			log.finer("RETURNING: getEmployee(" + chunk + ") with " + optionalEmployee.get());
+			return optionalEmployee.get();
+		} else {
 			log.info("SCHEDULED: HOUSE to " + chunk);
+			return new HouseShift();
 		}
-		
-		log.finer("RETURNING: getEmployee(" + chunk + ") with " + optionalEmployee.get());
-		return optionalEmployee.get();
 	}
 	
 	Optional<Employee> conditionalFill(Predicate<Employee> predicate) {

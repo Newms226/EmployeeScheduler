@@ -1,6 +1,9 @@
 package Availability;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.Set;
 import java.util.logging.Logger;
 
 import driver.Driver;
@@ -13,12 +16,27 @@ public class Availability {
 	TimeOffList timeOff;
 	
 	public Availability() {
-		// TODO Auto-generated constructor stub
+		persistantAvail = new PersistantWeeklyAvailability();
+		timeOff = new TimeOffList();
 	}
 	
 	public WorkingAvailability getWorkingAvailability(Week week) {
-		// TODO
-		return null;
+		log.finer("CONSTRUCTOR: generating new WorkingAvailabilty for " + week);
+		
+		WorkingAvailability toReturn = new WorkingAvailability();
+		for (LocalDate date: timeOff.getDaysOff(week)) {
+			int day = TimeOffset.getIndexFromDayOfWeek(date.getDayOfWeek()) / TimeChunk.DAY_OFFSET;
+			toReturn.toNotAvailable(TimeChunk.fromLocalTime(day, LocalTime.MIN, day, LocalTime.MAX));
+		}
+		for (LocalDate date: timeOff.getAvailableDays(week)) {
+			int startPosition = TimeOffset.getIndexFromDayOfWeek(date.getDayOfWeek());
+			System.arraycopy(persistantAvail.availability, 
+					         startPosition,
+					         toReturn.availability,
+					         startPosition,
+					         TimeChunk.DAY_OFFSET);
+		}
+		return toReturn;
 	}
 	
 	public boolean buildTimeOff() {
@@ -34,8 +52,12 @@ public class Availability {
 		return timeOff.contains(date);
 	}
 	
-	public boolean setPersistantAvailability(TimeChunk chunk) {
+	public boolean setToPersistantlyAvailable(TimeChunk chunk) {
 		return persistantAvail.toAvailable(chunk);
+	}
+	
+	public boolean setToPersistantlyUNAVAILABLE(TimeChunk chunk) {
+		return persistantAvail.toNEVERAvailable(chunk);
 	}
 	
 	public boolean isInsidePersistantAvailability(TimeChunk chunk) {

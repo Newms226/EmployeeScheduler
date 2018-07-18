@@ -26,15 +26,8 @@ public abstract class AvailabilityArray implements Serializable {
 	private static final long serialVersionUID = 3350277295951138995L;
 	protected static final Logger log = Driver.availabilityLog;
 	
-	public static final int SUNDAY_OFFSET    = 0,
-	                        MONDAY_OFFSET    = 1_440,
-	                        TUESDAY_OFFSET   = 2_880,
-	                        WEDNESDAY_OFFSET = 4_320,
-	                        THURSDAY_OFFSET  = 5_760,
-	                        FRIDAY_OFFSET    = 7_200,
-	                        SATURDAY_OFFSET  = 8_640,
-	                        MAX_INDEX_VALUE  = 10_080;
-		
+	public static final int MAX_INDEX_VALUE  = 10_080;
+	
 	public static final byte AVAILABLE         = 0,
 			                 STRICTLY_AVAILABLE = 1,
 			                 NOT_AVAILABLE      = 2,

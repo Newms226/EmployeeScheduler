@@ -1,0 +1,57 @@
+Jul 18, 2018 8:45:58 AM driver.Scheduler prepare
+WARNING: Preparing to schedule...
+Jul 18, 2018 8:45:58 AM driver.Scheduler prepare
+WARNING: Properly serialized
+Jul 18, 2018 8:45:58 AM driver.Scheduler run
+FINER: ENTRY
+Jul 18, 2018 8:45:58 AM driver.Scheduler run
+FINEST: SUCCESS: Copied PositionIDs
+Jul 18, 2018 8:45:58 AM driver.Scheduler run
+FINEST: Current List: 
+Current Sorted List: Monday 11:00AM - Monday 02:00PM
+Monday 11:00AM - Monday 02:00PM
+Monday 11:00AM - Monday 02:00PM
+Thursday 05:59PM - Thursday 09:00PM
+Thursday 05:59PM - Thursday 09:00PM
+Monday 09:00AM - Monday 03:00PM
+Monday 10:00AM - Monday 03:00PM
+Monday 10:00AM - Monday 03:00PM
+Monday 10:00AM - Monday 03:00PM
+Thursday 05:59PM - Thursday 09:00PM
+Friday 03:00PM - Friday 09:00PM
+Thursday 04:15PM - Thursday 09:00PM
+Thursday 04:15PM - Thursday 08:02PM
+Friday 03:00PM - Friday 10:00PM
+Friday 04:00PM - Friday 09:00PM
+Friday 04:00PM - Friday 09:00PM
+Friday 05:00PM - Friday 09:00PM
+Friday 05:00PM - Friday 09:00PM
+Friday 05:00PM - Friday 08:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Friday 05:00PM - Friday 11:00PM
+Friday 03:00PM - Friday 11:00PM
+Friday 03:00PM - Friday 08:00PM
+Friday 04:00PM - Friday 09:00PM
+Friday 03:00PM - Friday 08:30PM
+Friday 04:30PM - Friday 11:00PM
+Friday 03:00PM - Friday 11:00PM
+Friday 03:00PM - Friday 11:00PM
+Friday 03:00PM - Friday 11:00PM
+
+Jul 18, 2018 8:45:58 AM driver.Scheduler run
+INFO: Begin schedule
+Jul 18, 2018 8:45:58 AM driver.Scheduler run
+INFO: ASSIGNING: Monday 11:00AM - Monday 02:00PM
+Jul 18, 2018 8:45:58 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Monday 11:00AM - Monday 02:00PM)
+Jul 18, 2018 8:45:58 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Monday 11:00AM - Monday 02:00PM is not present
+Jul 18, 2018 8:45:58 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Monday 11:00AM - Monday 02:00PM
+Jul 18, 2018 8:45:58 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()

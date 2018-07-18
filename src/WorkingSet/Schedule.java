@@ -67,9 +67,9 @@ public class Schedule {
 		StringBuffer buffer = new StringBuffer();
 		completedIDs
 			.stream()
-			.sorted(SchedulableTimeChunk.PRIORITY_ORDER)
+			.sorted(SchedulableTimeChunk.VIEW_ORDER)
 			.forEach(s -> {
-				buffer.append(s);
+				buffer.append(s + "\n");
 			});
 		return buffer.toString();
 	}

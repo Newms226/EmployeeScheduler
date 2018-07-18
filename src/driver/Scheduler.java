@@ -11,9 +11,11 @@ import WorkingSet.OperationStack;
 import WorkingSet.QualifiedEmployeeListMap;
 import WorkingSet.Schedule;
 import WorkingSet.ScheduleSetUp;
+import driver.FileManager.SF;
 import emp.Employee;
 import emp.EmployeeSet;
 import racer.StopWatch;
+import time.Week;
 import tools.FileTools;
 import util.Averager;
 
@@ -25,10 +27,12 @@ public class Scheduler {
 	ScheduleSetUp setUp;
 	OperationStack opStack;
 	QualifiedEmployeeListMap qualMap;
+	Week week;
 	
-	public Scheduler(EmployeeSet employees, ScheduleSetUp setUp) {
+	public Scheduler(EmployeeSet employees, ScheduleSetUp setUp, Week week) {
 		this.employees = employees;
 		this.setUp = setUp;
+		this.week = week;
 		opStack = new OperationStack();
 		qualMap = new QualifiedEmployeeListMap(employees);
 		averager = new Averager();
@@ -36,10 +40,12 @@ public class Scheduler {
 	}
 	
 	void prepare() {
-		log.warning("Preparing to schedule...");
+		log.info("Preparing to schedule...");
 		FileManager.serializeEmployeeSet(FileManager.SF.BEFORE_SCHEDULE, employees);
 		FileManager.serializeScheduleSetUp(FileManager.SF.BEFORE_SCHEDULE, setUp);
-		log.warning("Properly serialized");
+		log.info("Properly serialized");
+		employees.stream().forEach(emp -> emp.prepare(week));
+		log.info("PREPARED");
 	}
 	
 	public Schedule run() {
@@ -76,6 +82,7 @@ public class Scheduler {
 		
 		Schedule results = new Schedule(chunks);
 		FileManager.serializeSchedule(FileManager.SF.AFTER_SCHEDULE, results);
+		FileManager.serializeOperationsStack(SF.AFTER_SCHEDULE, opStack);
 		
 		long endTime = System.nanoTime();
 		String timeString = "COMPLETE: Scheduler\n  IN: " 

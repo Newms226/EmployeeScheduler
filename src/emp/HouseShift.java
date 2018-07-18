@@ -84,6 +84,13 @@ public class HouseShift extends Employee {
 		if (chunk.positionType != PositionType.Sales) {
 			log.severe("ASSIGINING " + chunk.positionType + " TO A HOUSE SHIFT FOR " + chunk);
 		}
-		super.accept(chunk);
+		
+		log.fine("SCHEDULED: House to " + chunk 
+				+ "\n\tCurrent Hours: " + currentHours);
+		assignedShifts.add(chunk);
+		currentHours += (double) chunk.getMinutes() / 60;
+		log.finest("SUCCESS: SCHEDULED"
+				+ "\n\tCurrent hours: " + currentHours
+				+ "\n\tAssigned Shifts: " + assignedShifts);
 	}
 }
