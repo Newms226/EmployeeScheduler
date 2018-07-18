@@ -1,8 +1,0 @@
-Jul 06, 2018 9:49:22 PM Availability.TimeChunk throwRangeException
-SEVERE: Invalid minute order: 1 - 1. Must be: first <= second
-java.lang.IllegalArgumentException: Invalid minute order: 1 - 1. Must be: first <= second
-	at Availability.TimeChunk.throwRangeException(TimeChunk.java:85)
-	at Availability.TimeChunk.<init>(TimeChunk.java:54)
-	at Availability.TimeChunk.from(TimeChunk.java:36)
-	at Availability.TimeChunk.main(TimeChunk.java:95)
-

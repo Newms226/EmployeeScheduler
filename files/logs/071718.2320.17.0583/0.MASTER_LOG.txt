@@ -1,0 +1,2 @@
+Jul 17, 2018 11:20:17 PM driver.FileManager cleanUpLogs()
+FINER: ENTRY

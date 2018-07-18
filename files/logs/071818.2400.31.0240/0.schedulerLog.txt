@@ -1,0 +1,280 @@
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:31 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 5.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(5.0000 - 0.3571) = -4.3112
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 5.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(5.0000 - 0.3571) = -4.3112
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 0.3571
+Jul 18, 2018 12:00:36 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.3571) = 0.0255
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 10.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(10.0000 - 0.7143) = -17.2449
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 10.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(10.0000 - 0.7143) = -17.2449
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 0.7143
+Jul 18, 2018 12:00:40 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7143) = 0.1020

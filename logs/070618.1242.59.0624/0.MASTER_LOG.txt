@@ -1,8 +1,0 @@
-Jul 06, 2018 12:42:59 PM time.LocalTimeInterval (12:00AM - 05:00AM).intersectsThisOnLeft(04:40AM - 05:40AM)
-FINER: ENTRY
-Jul 06, 2018 12:42:59 PM time.AbstractTimeBasedInterval intersectsThisOnLeft
-FINER: FALSE
-Jul 06, 2018 12:42:59 PM time.LocalTimeInterval (12:00AM - 05:00AM).intersectsThisOnRight(04:40AM - 05:40AM)
-FINER: ENTRY
-Jul 06, 2018 12:42:59 PM time.AbstractTimeBasedInterval intersectsThisOnRight
-FINER: TRUE

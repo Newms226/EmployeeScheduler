@@ -1,0 +1,4 @@
+Jul 17, 2018 11:33:20 PM driver.FileManager cleanUpLogs()
+FINER: ENTRY
+Jul 17, 2018 11:33:20 PM driver.FileManager cleanUpLogs
+FINER: RETURNING: SUCCESS > cleanUpLogs() in 97,979,189 nanoseconds

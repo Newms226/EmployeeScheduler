@@ -1,6 +1,0 @@
-Jun 30, 2018 6:35:47 PM Availability.TimeOffList add(time.LocalDateInterval@7291c18f)
-FINER: ENTRY
-Jun 30, 2018 6:35:47 PM Availability.TimeOffList contains(time.LocalDateInterval@7291c18f)
-FINER: ENTRY
-Jun 30, 2018 6:35:47 PM Availability.TimeOffList getContainingAfter(time.LocalDateInterval@7291c18f, 0)
-FINER: ENTRY

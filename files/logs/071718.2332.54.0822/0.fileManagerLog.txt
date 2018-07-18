@@ -1,0 +1,1812 @@
+Jul 17, 2018 11:32:54 PM driver.FileManager cleanUpLogs()
+FINER: ENTRY
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1850.04.0963/0.setUpLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1850.04.0963/0.driverLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1850.04.0963/0.schedulerLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1850.04.0963/0.fileManagerLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1850.04.0963/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1850.04.0963
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1731.45.01630.setUpLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476/0.setUpLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476/0.driverLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476/0.schedulerLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476/0.fileManagerLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476/0.timeLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476/0.availabilityLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967/0.setUpLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967/0.driverLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967/0.schedulerLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967/0.fileManagerLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967/0.timeLog.txt
+Jul 17, 2018 11:32:54 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1732.42.0676/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1732.42.0676/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1732.42.0676/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1732.42.0676/1.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1732.42.0676/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1732.42.0676
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1746.24.0347/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1746.24.0347/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1746.24.0347/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1746.24.0347/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1746.24.0347/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1746.24.0347
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062518.2054.24.0764 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062518.2054.24.0764 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062518.2054.24.0764 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062518.2054.24.0764 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062518.2054.24.0764 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062518.2054.24.0764 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062518.2054.24.0764 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1915.11.0967 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1731.45.01630.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1746.24.0347 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1746.24.0347 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1746.24.0347 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1746.24.0347 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1746.24.0347 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1746.24.0347 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.11.0253/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.11.0253/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.11.0253/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.11.0253/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.11.0253/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.11.0253/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.11.0253
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1743.20.0121 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1743.20.0121 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1743.20.0121 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1743.20.0121 copy/1.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1743.20.0121 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1743.20.0121 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1734.16.0335 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1734.16.0335 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1734.16.0335 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1734.16.0335 copy/1.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1734.16.0335 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1734.16.0335 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1731.45.01630.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2002.31.0080
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1731.45.01630.MASTER_LOG copy.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.27.0919/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.27.0919/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.27.0919/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.27.0919/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.27.0919/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.27.0919/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.27.0919
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1731.45.01630.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1907.33.0476 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2150.34.0451 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2152.48.0404 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1920.23.0390
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1923.53.0310
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745 copy/0.driverLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745 copy/0.fileManagerLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745 copy/0.MASTER_LOG.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745 copy/0.schedulerLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745 copy/0.setUpLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1850.04.0963 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1850.04.0963 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1850.04.0963 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1850.04.0963 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1850.04.0963 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1850.04.0963 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.13.0474
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2118.37.0667 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2118.37.0667 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2118.37.0667 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2118.37.0667 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2118.37.0667 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2118.37.0667 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.22.0434
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1922.08.0865
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1735.42.0320 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1735.42.0320 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1735.42.0320 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1735.42.0320 copy/1.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1735.42.0320 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1735.42.0320 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1743.20.0121/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1743.20.0121/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1743.20.0121/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1743.20.0121/1.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1743.20.0121/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1743.20.0121
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2153.44.0110 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2153.44.0110 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2153.44.0110 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2153.44.0110 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2153.44.0110 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2153.44.0110 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2152.52.0894 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2152.52.0894 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2152.52.0894 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2152.52.0894 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2152.52.0894 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2152.52.0894 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2153.44.0110/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2153.44.0110/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2153.44.0110/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2153.44.0110/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2153.44.0110/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2153.44.0110
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2152.52.0894/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2152.52.0894/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2152.52.0894/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2152.52.0894/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2152.52.0894/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2152.52.0894
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1734.16.0335/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1734.16.0335/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1734.16.0335/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1734.16.0335/1.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1734.16.0335/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1734.16.0335
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.45.0512
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1731.45.01631.driverLog copy.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.35.0302 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2118.37.0667/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2118.37.0667/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2118.37.0667/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2118.37.0667/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2118.37.0667/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062318.2118.37.0667
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.22.0838 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868/0.driverLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868/1.driverLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868/0.MASTER_LOG.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868/0.schedulerLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868/0.setUpLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868/1.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.11.0253 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.11.0253 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.11.0253 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.11.0253 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.11.0253 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.11.0253 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.11.0253 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.04.0625
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062718.2459.11.0223 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1731.45.01630.schedulerLog copy.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1732.42.0676 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1732.42.0676 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1732.42.0676 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1732.42.0676 copy/1.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1732.42.0676 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1732.42.0676 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.11.0558 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1850.06.0713 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1731.45.01630.driverLog copy.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.47.0040 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1909.11.0733
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1836.45.0924
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1731.45.01630.setUpLog copy.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1835.46.0897
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.02.0155 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.23.0346
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.22.0536
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062518.2054.24.0764/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062518.2054.24.0764/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062518.2054.24.0764/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062518.2054.24.0764/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062518.2054.24.0764/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062518.2054.24.0764/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062518.2054.24.0764
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868 copy/0.driverLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868 copy/1.driverLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868 copy/0.MASTER_LOG.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868 copy/0.schedulerLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868 copy/0.setUpLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868 copy/1.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1736.44.0868 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1924.14.0063 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062918.1908.57.0883
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745/0.driverLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745/0.fileManagerLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745/0.MASTER_LOG.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745/0.schedulerLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745/0.setUpLog.txt.lck
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062218.1808.10.0745
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1838.01.0495 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1244.27.0363 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.50.0504 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.58.0542 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1737.46.0532/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1737.46.0532/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1737.46.0532/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1737.46.0532/1.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1737.46.0532/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1737.46.0532
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1737.46.0532 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1737.46.0532 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1737.46.0532 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1737.46.0532 copy/1.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1737.46.0532 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1737.46.0532 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1735.42.0320/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1735.42.0320/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1735.42.0320/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1735.42.0320/1.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1735.42.0320/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1735.42.0320
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172 copy/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172 copy/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1903.07.0172 copy
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1846.10.0062
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832/0.driverLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832/0.schedulerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832/0.fileManagerLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832/0.timeLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832/0.availabilityLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.35.0832
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:55 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683 copy/0.driverLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683 copy/0.timeLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1912.03.0683 copy
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920 copy/0.driverLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920 copy/0.timeLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1919.20.0920 copy
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112/0.setUpLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112/0.driverLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112/0.schedulerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112/0.fileManagerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112/0.timeLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112/0.availabilityLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2149.57.0112
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755/0.setUpLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755/0.driverLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755/0.schedulerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755/0.fileManagerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755/0.timeLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755/0.availabilityLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1855.28.0755
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744/0.setUpLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744/0.driverLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744/0.schedulerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744/0.fileManagerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744/0.timeLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744/0.availabilityLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1918.56.0744
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957 copy/0.driverLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957 copy/0.timeLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1849.59.0957 copy
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.27.0919 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.27.0919 copy/0.driverLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.27.0919 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.27.0919 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.27.0919 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.27.0919 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/062418.1348.27.0919 copy
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491 copy/0.driverLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491 copy/0.timeLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/063018.1925.39.0491 copy
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908/0.setUpLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908/0.driverLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908/0.schedulerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908/0.fileManagerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908/0.timeLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908/0.availabilityLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070118.1659.07.0908
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923 copy/0.driverLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923 copy/0.timeLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.2151.37.0923 copy
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/062118.1731.45.01631.driverLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624 copy/0.setUpLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624 copy/0.driverLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624 copy/0.schedulerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624 copy/0.fileManagerLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624 copy/0.timeLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624 copy/0.availabilityLog.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor visitFile
+FINEST: ATTEMPT: Deleting > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624 copy/0.MASTER_LOG.txt
+Jul 17, 2018 11:32:56 PM driver.FileManager$DeleteFileVisitor postVisitDirectory
+FINEST: ATTEMPT: Deleting dir > /Users/Michael/gitHub/EmployeeScheduler/logs/070618.1242.59.0624 copy
+Jul 17, 2018 11:32:56 PM driver.FileManager cleanUpLogs
+FINER: RETURNING: SUCCESS > cleanUpLogs() in 1.1856 second

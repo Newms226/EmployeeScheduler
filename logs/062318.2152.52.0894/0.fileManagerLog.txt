@@ -1,2 +1,0 @@
-Jun 23, 2018 9:52:54 PM restaurant.PositionID fromCSV
-FINER: parsing: [1, 1, b, 6]

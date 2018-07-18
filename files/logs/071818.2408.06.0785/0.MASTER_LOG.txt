@@ -1,0 +1,1254 @@
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Kim at 4.5992 from:
+  Date
+     Value: 563
+     Normalized from range: [0, 6,773]
+     Resulting in: 0.6992
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 18, 2018 12:08:06 AM emp.Employee <init>
+CONFIG: Generated generic employee Kim
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Wade at 8.5000 from:
+  Date
+     Value: 6773
+     Normalized from range: [0, 6,773]
+     Resulting in: 4.0000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 18, 2018 12:08:06 AM emp.Employee <init>
+CONFIG: Generated generic employee wade
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Olson at 7.5289 from:
+  Date
+     Value: 4946
+     Normalized from range: [0, 6,773]
+     Resulting in: 3.0289
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 18, 2018 12:08:06 AM emp.Employee <init>
+CONFIG: Generated generic employee Olson
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Alecia at 7.1409 from:
+  Date
+     Value: 4216
+     Normalized from range: [0, 6,773]
+     Resulting in: 2.6409
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 18, 2018 12:08:06 AM emp.Employee <init>
+CONFIG: Generated generic employee alecia
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Chris at 5.7583 from:
+  Date
+     Value: 3120
+     Normalized from range: [0, 6,773]
+     Resulting in: 2.0583
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar, Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.2000
+Jul 18, 2018 12:08:06 AM emp.Employee <init>
+CONFIG: Generated generic employee Chris
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Dena at 5.3758 from:
+  Date
+     Value: 2024
+     Normalized from range: [0, 6,773]
+     Resulting in: 1.4758
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 18, 2018 12:08:06 AM emp.Employee <init>
+CONFIG: Generated generic employee Dena
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Blake at 4.9818 from:
+  Date
+     Value: 1659
+     Normalized from range: [0, 6,773]
+     Resulting in: 1.2818
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar, Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.2000
+Jul 18, 2018 12:08:06 AM emp.Employee <init>
+CONFIG: Generated generic employee blake
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Chels at 5.9583 from:
+  Date
+     Value: 3120
+     Normalized from range: [0, 6,773]
+     Resulting in: 2.0583
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 18, 2018 12:08:06 AM emp.Employee <init>
+CONFIG: Generated generic employee chels
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Brandon at 4.4052 from:
+  Date
+     Value: 198
+     Normalized from range: [0, 6,773]
+     Resulting in: 0.5052
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 18, 2018 12:08:06 AM emp.Employee <init>
+CONFIG: Generated generic employee brandon
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Me at 4.5992 from:
+  Date
+     Value: 563
+     Normalized from range: [0, 6,773]
+     Resulting in: 0.6992
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 18, 2018 12:08:06 AM emp.Employee <init>
+CONFIG: Generated generic employee me
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Marcy at 5.0052 from:
+  Date
+     Value: 198
+     Normalized from range: [0, 6,773]
+     Resulting in: 0.5052
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 18, 2018 12:08:06 AM emp.Employee <init>
+CONFIG: Generated generic employee Marcy
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Paul 2 at 4.5190 from:
+  Date
+     Value: 412
+     Normalized from range: [0, 6,773]
+     Resulting in: 0.6190
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar, Closer, Head_Wait, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 18, 2018 12:08:06 AM emp.Employee <init>
+CONFIG: Generated generic employee Paul 2
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Paul 3 at 5.0052 from:
+  Date
+     Value: 198
+     Normalized from range: [0, 6,773]
+     Resulting in: 0.5052
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 18, 2018 12:08:06 AM emp.Employee <init>
+CONFIG: Generated generic employee Paul 3
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Gregs at 4.9075 from:
+  Date
+     Value: 1143
+     Normalized from range: [0, 6,773]
+     Resulting in: 1.0075
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 18, 2018 12:08:06 AM emp.Employee <init>
+CONFIG: Generated generic employee Gregs
+Jul 18, 2018 12:08:06 AM emp.Employee fastPromote
+FINE: Fast promote: Kim
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority internalSetGrace
+INFO: Setting Kim's grace to 10.0
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Kim at 6.0992 from:
+  Date
+     Value: 563
+     Normalized from range: [0, 6,773]
+     Resulting in: 0.6992
+  Grace:
+     Value: 10.0
+     Normalized from range: [0, 10]
+     Resulting in: 5.0000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 18, 2018 12:08:06 AM emp.Employee fastPromote
+FINE: Fast promote: Wade
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority internalSetGrace
+INFO: Setting Wade's grace to 10.0
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Wade at 10.0000 from:
+  Date
+     Value: 6773
+     Normalized from range: [0, 6,773]
+     Resulting in: 4.0000
+  Grace:
+     Value: 10.0
+     Normalized from range: [0, 10]
+     Resulting in: 5.0000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 18, 2018 12:08:06 AM emp.Employee lowPromote
+FINE: Low promote: Brandon
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority internalSetGrace
+INFO: Setting Brandon's grace to 8.0
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Brandon at 4.9052 from:
+  Date
+     Value: 198
+     Normalized from range: [0, 6,773]
+     Resulting in: 0.5052
+  Grace:
+     Value: 8.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.0000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 18, 2018 12:08:06 AM emp.Employee fastPromote
+FINE: Fast promote: Dena
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority internalSetGrace
+INFO: Setting Dena's grace to 10.0
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Dena at 6.8758 from:
+  Date
+     Value: 2024
+     Normalized from range: [0, 6,773]
+     Resulting in: 1.4758
+  Grace:
+     Value: 10.0
+     Normalized from range: [0, 10]
+     Resulting in: 5.0000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Wade has the same number of hours as the average. No change from fill double
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Wade's current priority is 10.0000 from 10.0000 - (0.2000 * 0.0000)
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Olson has the same number of hours as the average. No change from fill double
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Olson's current priority is 7.5289 from 7.5289 - (0.2000 * 0.0000)
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Alecia has the same number of hours as the average. No change from fill double
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Alecia's current priority is 7.1409 from 7.1409 - (0.2000 * 0.0000)
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Dena has the same number of hours as the average. No change from fill double
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Dena's current priority is 6.8758 from 6.8758 - (0.2000 * 0.0000)
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Kim has the same number of hours as the average. No change from fill double
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Kim's current priority is 6.0992 from 6.0992 - (0.2000 * 0.0000)
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Chels has the same number of hours as the average. No change from fill double
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chels's current priority is 5.9583 from 5.9583 - (0.2000 * 0.0000)
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Chris has the same number of hours as the average. No change from fill double
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chris's current priority is 5.7583 from 5.7583 - (0.2000 * 0.0000)
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Marcy has the same number of hours as the average. No change from fill double
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Marcy's current priority is 5.0052 from 5.0052 - (0.2000 * 0.0000)
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Paul 3 has the same number of hours as the average. No change from fill double
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 3's current priority is 5.0052 from 5.0052 - (0.2000 * 0.0000)
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Blake has the same number of hours as the average. No change from fill double
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Blake's current priority is 4.9818 from 4.9818 - (0.2000 * 0.0000)
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Gregs has the same number of hours as the average. No change from fill double
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Gregs's current priority is 4.9075 from 4.9075 - (0.2000 * 0.0000)
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Brandon has the same number of hours as the average. No change from fill double
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Brandon's current priority is 4.9052 from 4.9052 - (0.2000 * 0.0000)
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Me has the same number of hours as the average. No change from fill double
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Me's current priority is 4.5992 from 4.5992 - (0.2000 * 0.0000)
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 0.0000
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getFillDouble
+FINER: Paul 2 has the same number of hours as the average. No change from fill double
+Jul 18, 2018 12:08:06 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 2's current priority is 4.5190 from 4.5190 - (0.2000 * 0.0000)
+Jul 18, 2018 12:08:17 AM java.util.logging.LogManager$RootLogger log
+INFO: UPDATE: Wade's hours by adding 6.0
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 6.0000 AverageFill: 0.4286
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(6.0000 - 0.4286) = -6.2082
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Wade's current priority is 3.7918 from 10.0000 - (0.2000 * -6.2082)
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 0.0000 AverageFill: 0.4286
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.4286) = 0.0367
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Olson's current priority is 7.5656 from 7.5289 - (0.2000 * 0.0367)
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 0.0000 AverageFill: 0.4286
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.4286) = 0.0367
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Alecia's current priority is 7.1776 from 7.1409 - (0.2000 * 0.0367)
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 0.4286
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.4286) = 0.0367
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Dena's current priority is 6.9125 from 6.8758 - (0.2000 * 0.0367)
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 0.4286
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.4286) = 0.0367
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Kim's current priority is 6.1360 from 6.0992 - (0.2000 * 0.0367)
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 0.4286
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.4286) = 0.0367
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chels's current priority is 5.9951 from 5.9583 - (0.2000 * 0.0367)
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 0.0000 AverageFill: 0.4286
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.4286) = 0.0367
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chris's current priority is 5.7951 from 5.7583 - (0.2000 * 0.0367)
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 0.4286
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.4286) = 0.0367
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Marcy's current priority is 5.0420 from 5.0052 - (0.2000 * 0.0367)
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 0.4286
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.4286) = 0.0367
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 3's current priority is 5.0420 from 5.0052 - (0.2000 * 0.0367)
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 0.0000 AverageFill: 0.4286
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.4286) = 0.0367
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Blake's current priority is 5.0185 from 4.9818 - (0.2000 * 0.0367)
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 0.4286
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.4286) = 0.0367
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Gregs's current priority is 4.9443 from 4.9075 - (0.2000 * 0.0367)
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 0.4286
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.4286) = 0.0367
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Brandon's current priority is 4.9420 from 4.9052 - (0.2000 * 0.0367)
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 0.4286
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.4286) = 0.0367
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Me's current priority is 4.6360 from 4.5992 - (0.2000 * 0.0367)
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 0.4286
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.4286) = 0.0367
+Jul 18, 2018 12:08:17 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 2's current priority is 4.5557 from 4.5190 - (0.2000 * 0.0367)
+Jul 18, 2018 12:08:29 AM java.util.logging.LogManager$RootLogger log
+INFO: UPDATE: Olson's hours by adding 5.0
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 5.0000 AverageFill: 0.7857
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(5.0000 - 0.7857) = -3.5520
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Olson's current priority is 3.9769 from 7.5289 - (0.2000 * -3.5520)
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 0.0000 AverageFill: 0.7857
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7857) = 0.1235
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Alecia's current priority is 7.2644 from 7.1409 - (0.2000 * 0.1235)
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 0.7857
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7857) = 0.1235
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Dena's current priority is 6.9993 from 6.8758 - (0.2000 * 0.1235)
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 0.7857
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7857) = 0.1235
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Kim's current priority is 6.2227 from 6.0992 - (0.2000 * 0.1235)
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 0.7857
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7857) = 0.1235
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chels's current priority is 6.0818 from 5.9583 - (0.2000 * 0.1235)
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 0.0000 AverageFill: 0.7857
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7857) = 0.1235
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chris's current priority is 5.8818 from 5.7583 - (0.2000 * 0.1235)
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 0.7857
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7857) = 0.1235
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Marcy's current priority is 5.1287 from 5.0052 - (0.2000 * 0.1235)
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 0.7857
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7857) = 0.1235
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 3's current priority is 5.1287 from 5.0052 - (0.2000 * 0.1235)
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 0.0000 AverageFill: 0.7857
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7857) = 0.1235
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Blake's current priority is 5.1053 from 4.9818 - (0.2000 * 0.1235)
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 0.7857
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7857) = 0.1235
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Gregs's current priority is 5.0310 from 4.9075 - (0.2000 * 0.1235)
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 0.7857
+Jul 18, 2018 12:08:29 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7857) = 0.1235
+Jul 18, 2018 12:08:30 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Brandon's current priority is 5.0287 from 4.9052 - (0.2000 * 0.1235)
+Jul 18, 2018 12:08:30 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 0.7857
+Jul 18, 2018 12:08:30 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7857) = 0.1235
+Jul 18, 2018 12:08:30 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Me's current priority is 4.7227 from 4.5992 - (0.2000 * 0.1235)
+Jul 18, 2018 12:08:30 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 0.7857
+Jul 18, 2018 12:08:30 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 0.7857) = 0.1235
+Jul 18, 2018 12:08:30 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 2's current priority is 4.6425 from 4.5190 - (0.2000 * 0.1235)
+Jul 18, 2018 12:08:30 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 6.0000 AverageFill: 0.7857
+Jul 18, 2018 12:08:30 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(6.0000 - 0.7857) = -5.4378
+Jul 18, 2018 12:08:30 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Wade's current priority is 4.5622 from 10.0000 - (0.2000 * -5.4378)
+Jul 18, 2018 12:08:38 AM java.util.logging.LogManager$RootLogger log
+INFO: UPDATE: Alecia's hours by adding 4.0
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 4.0000 AverageFill: 1.0714
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(4.0000 - 1.0714) = -1.7153
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Alecia's current priority is 5.4256 from 7.1409 - (0.2000 * -1.7153)
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 1.0714
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.0714) = 0.2296
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Dena's current priority is 7.1054 from 6.8758 - (0.2000 * 0.2296)
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 1.0714
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.0714) = 0.2296
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Kim's current priority is 6.3288 from 6.0992 - (0.2000 * 0.2296)
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 1.0714
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.0714) = 0.2296
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chels's current priority is 6.1879 from 5.9583 - (0.2000 * 0.2296)
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 0.0000 AverageFill: 1.0714
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.0714) = 0.2296
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chris's current priority is 5.9879 from 5.7583 - (0.2000 * 0.2296)
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 1.0714
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.0714) = 0.2296
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Marcy's current priority is 5.2348 from 5.0052 - (0.2000 * 0.2296)
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 1.0714
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.0714) = 0.2296
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 3's current priority is 5.2348 from 5.0052 - (0.2000 * 0.2296)
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 0.0000 AverageFill: 1.0714
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.0714) = 0.2296
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Blake's current priority is 5.2114 from 4.9818 - (0.2000 * 0.2296)
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 1.0714
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.0714) = 0.2296
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Gregs's current priority is 5.1371 from 4.9075 - (0.2000 * 0.2296)
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 1.0714
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.0714) = 0.2296
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Brandon's current priority is 5.1348 from 4.9052 - (0.2000 * 0.2296)
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 1.0714
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.0714) = 0.2296
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Me's current priority is 4.8288 from 4.5992 - (0.2000 * 0.2296)
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 1.0714
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.0714) = 0.2296
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 2's current priority is 4.7486 from 4.5190 - (0.2000 * 0.2296)
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 6.0000 AverageFill: 1.0714
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(6.0000 - 1.0714) = -4.8582
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Wade's current priority is 5.1418 from 10.0000 - (0.2000 * -4.8582)
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 5.0000 AverageFill: 1.0714
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(5.0000 - 1.0714) = -3.0867
+Jul 18, 2018 12:08:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Olson's current priority is 4.4422 from 7.5289 - (0.2000 * -3.0867)
+Jul 18, 2018 12:09:01 AM java.util.logging.LogManager$RootLogger log
+INFO: UPDATE: Chris's hours by adding 8.0
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 1.6429
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.6429) = 0.5398
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Dena's current priority is 7.4156 from 6.8758 - (0.2000 * 0.5398)
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 1.6429
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.6429) = 0.5398
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Kim's current priority is 6.6390 from 6.0992 - (0.2000 * 0.5398)
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 1.6429
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.6429) = 0.5398
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chels's current priority is 6.4981 from 5.9583 - (0.2000 * 0.5398)
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 8.0000 AverageFill: 1.6429
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(8.0000 - 1.6429) = -8.0827
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chris's current priority is -2.3243 from 5.7583 - (0.2000 * -8.0827)
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 4.0000 AverageFill: 1.6429
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(4.0000 - 1.6429) = -1.1112
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Alecia's current priority is 6.0297 from 7.1409 - (0.2000 * -1.1112)
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 1.6429
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.6429) = 0.5398
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Marcy's current priority is 5.5450 from 5.0052 - (0.2000 * 0.5398)
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 1.6429
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.6429) = 0.5398
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 3's current priority is 5.5450 from 5.0052 - (0.2000 * 0.5398)
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 0.0000 AverageFill: 1.6429
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.6429) = 0.5398
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Blake's current priority is 5.5216 from 4.9818 - (0.2000 * 0.5398)
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 6.0000 AverageFill: 1.6429
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(6.0000 - 1.6429) = -3.7969
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Wade's current priority is 6.2031 from 10.0000 - (0.2000 * -3.7969)
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 1.6429
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.6429) = 0.5398
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Gregs's current priority is 5.4473 from 4.9075 - (0.2000 * 0.5398)
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 1.6429
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.6429) = 0.5398
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Brandon's current priority is 5.4450 from 4.9052 - (0.2000 * 0.5398)
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 1.6429
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.6429) = 0.5398
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Me's current priority is 5.1390 from 4.5992 - (0.2000 * 0.5398)
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 1.6429
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 1.6429) = 0.5398
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 2's current priority is 5.0588 from 4.5190 - (0.2000 * 0.5398)
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 5.0000 AverageFill: 1.6429
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(5.0000 - 1.6429) = -2.2541
+Jul 18, 2018 12:09:01 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Olson's current priority is 5.2748 from 7.5289 - (0.2000 * -2.2541)
+Jul 18, 2018 12:09:13 AM java.util.logging.LogManager$RootLogger log
+INFO: UPDATE: Wade's hours by adding 5.0
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 2.0000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.0000) = 0.8000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Dena's current priority is 7.6758 from 6.8758 - (0.2000 * 0.8000)
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 2.0000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.0000) = 0.8000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Kim's current priority is 6.8992 from 6.0992 - (0.2000 * 0.8000)
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 2.0000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.0000) = 0.8000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chels's current priority is 6.7583 from 5.9583 - (0.2000 * 0.8000)
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 11.0000 AverageFill: 2.0000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(11.0000 - 2.0000) = -16.2000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Wade's current priority is -6.2000 from 10.0000 - (0.2000 * -16.2000)
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 4.0000 AverageFill: 2.0000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(4.0000 - 2.0000) = -0.8000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Alecia's current priority is 6.3409 from 7.1409 - (0.2000 * -0.8000)
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 2.0000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.0000) = 0.8000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Marcy's current priority is 5.8052 from 5.0052 - (0.2000 * 0.8000)
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 2.0000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.0000) = 0.8000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 3's current priority is 5.8052 from 5.0052 - (0.2000 * 0.8000)
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 0.0000 AverageFill: 2.0000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.0000) = 0.8000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Blake's current priority is 5.7818 from 4.9818 - (0.2000 * 0.8000)
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 2.0000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.0000) = 0.8000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Gregs's current priority is 5.7075 from 4.9075 - (0.2000 * 0.8000)
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 2.0000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.0000) = 0.8000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Brandon's current priority is 5.7052 from 4.9052 - (0.2000 * 0.8000)
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 5.0000 AverageFill: 2.0000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(5.0000 - 2.0000) = -1.8000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Olson's current priority is 5.7289 from 7.5289 - (0.2000 * -1.8000)
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 2.0000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.0000) = 0.8000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Me's current priority is 5.3992 from 4.5992 - (0.2000 * 0.8000)
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 2.0000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.0000) = 0.8000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 2's current priority is 5.3190 from 4.5190 - (0.2000 * 0.8000)
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 8.0000 AverageFill: 2.0000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(8.0000 - 2.0000) = -7.2000
+Jul 18, 2018 12:09:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chris's current priority is -1.4417 from 5.7583 - (0.2000 * -7.2000)
+Jul 18, 2018 12:09:26 AM java.util.logging.LogManager$RootLogger log
+INFO: UPDATE: Alecia's hours by adding 8.0
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 2.5714
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.5714) = 1.3224
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Dena's current priority is 8.1982 from 6.8758 - (0.2000 * 1.3224)
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 2.5714
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.5714) = 1.3224
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Kim's current priority is 7.4217 from 6.0992 - (0.2000 * 1.3224)
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 2.5714
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.5714) = 1.3224
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chels's current priority is 7.2808 from 5.9583 - (0.2000 * 1.3224)
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 12.0000 AverageFill: 2.5714
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(12.0000 - 2.5714) = -17.7796
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Alecia's current priority is -10.6387 from 7.1409 - (0.2000 * -17.7796)
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 2.5714
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.5714) = 1.3224
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Marcy's current priority is 6.3277 from 5.0052 - (0.2000 * 1.3224)
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 2.5714
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.5714) = 1.3224
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 3's current priority is 6.3277 from 5.0052 - (0.2000 * 1.3224)
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 0.0000 AverageFill: 2.5714
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.5714) = 1.3224
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Blake's current priority is 6.3042 from 4.9818 - (0.2000 * 1.3224)
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 5.0000 AverageFill: 2.5714
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(5.0000 - 2.5714) = -1.1796
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Olson's current priority is 6.3493 from 7.5289 - (0.2000 * -1.1796)
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 2.5714
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.5714) = 1.3224
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Gregs's current priority is 6.2300 from 4.9075 - (0.2000 * 1.3224)
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 2.5714
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.5714) = 1.3224
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Brandon's current priority is 6.2277 from 4.9052 - (0.2000 * 1.3224)
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 2.5714
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.5714) = 1.3224
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Me's current priority is 5.9217 from 4.5992 - (0.2000 * 1.3224)
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 2.5714
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 2.5714) = 1.3224
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 2's current priority is 5.8414 from 4.5190 - (0.2000 * 1.3224)
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 8.0000 AverageFill: 2.5714
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(8.0000 - 2.5714) = -5.8939
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chris's current priority is -0.1355 from 5.7583 - (0.2000 * -5.8939)
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 11.0000 AverageFill: 2.5714
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(11.0000 - 2.5714) = -14.2082
+Jul 18, 2018 12:09:26 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Wade's current priority is -4.2082 from 10.0000 - (0.2000 * -14.2082)
+Jul 18, 2018 12:09:38 AM java.util.logging.LogManager$RootLogger log
+INFO: UPDATE: Olson's hours by adding 8.0
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Dena's current priority is 8.8513 from 6.8758 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Kim's current priority is 8.0748 from 6.0992 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chels's current priority is 7.9339 from 5.9583 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 13.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(13.0000 - 3.1429) = -19.4327
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Olson's current priority is -11.9037 from 7.5289 - (0.2000 * -19.4327)
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Marcy's current priority is 6.9808 from 5.0052 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 3's current priority is 6.9808 from 5.0052 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Blake's current priority is 6.9573 from 4.9818 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Gregs's current priority is 6.8830 from 4.9075 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Brandon's current priority is 6.8808 from 4.9052 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Me's current priority is 6.5748 from 4.5992 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 2's current priority is 6.4945 from 4.5190 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 8.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(8.0000 - 3.1429) = -4.7184
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chris's current priority is 1.0400 from 5.7583 - (0.2000 * -4.7184)
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 11.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(11.0000 - 3.1429) = -12.3469
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Wade's current priority is -2.3469 from 10.0000 - (0.2000 * -12.3469)
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 12.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(12.0000 - 3.1429) = -15.6898
+Jul 18, 2018 12:09:38 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Alecia's current priority is -8.5489 from 7.1409 - (0.2000 * -15.6898)
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority internalSetGrace
+INFO: Setting Blake's grace to 6.0
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Blake at 4.4818 from:
+  Date
+     Value: 1659
+     Normalized from range: [0, 6,773]
+     Resulting in: 1.2818
+  Grace:
+     Value: 6.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.0000
+  Qualification:
+     Qualified For: [Bar, Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.2000
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Dena's current priority is 8.8513 from 6.8758 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Kim's current priority is 8.0748 from 6.0992 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chels's current priority is 7.9339 from 5.9583 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Marcy's current priority is 6.9808 from 5.0052 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 3's current priority is 6.9808 from 5.0052 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Blake's current priority is 6.4573 from 4.4818 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Gregs's current priority is 6.8830 from 4.9075 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Brandon's current priority is 6.8808 from 4.9052 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Me's current priority is 6.5748 from 4.5992 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.1429) = 1.9755
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 2's current priority is 6.4945 from 4.5190 - (0.2000 * 1.9755)
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 8.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(8.0000 - 3.1429) = -4.7184
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chris's current priority is 1.0400 from 5.7583 - (0.2000 * -4.7184)
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 11.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(11.0000 - 3.1429) = -12.3469
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Wade's current priority is -2.3469 from 10.0000 - (0.2000 * -12.3469)
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 12.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(12.0000 - 3.1429) = -15.6898
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Alecia's current priority is -8.5489 from 7.1409 - (0.2000 * -15.6898)
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 13.0000 AverageFill: 3.1429
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(13.0000 - 3.1429) = -19.4327
+Jul 18, 2018 12:09:52 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Olson's current priority is -11.9037 from 7.5289 - (0.2000 * -19.4327)
+Jul 18, 2018 12:10:02 AM java.util.logging.LogManager$RootLogger log
+INFO: UPDATE: Blake's hours by adding 5.0
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 3.5000
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.5000) = 2.4500
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Dena's current priority is 9.3258 from 6.8758 - (0.2000 * 2.4500)
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 3.5000
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.5000) = 2.4500
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Kim's current priority is 8.5492 from 6.0992 - (0.2000 * 2.4500)
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 3.5000
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.5000) = 2.4500
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chels's current priority is 8.4083 from 5.9583 - (0.2000 * 2.4500)
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 3.5000
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.5000) = 2.4500
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Marcy's current priority is 7.4552 from 5.0052 - (0.2000 * 2.4500)
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 3.5000
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.5000) = 2.4500
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 3's current priority is 7.4552 from 5.0052 - (0.2000 * 2.4500)
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 3.5000
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.5000) = 2.4500
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Gregs's current priority is 7.3575 from 4.9075 - (0.2000 * 2.4500)
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 3.5000
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.5000) = 2.4500
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Brandon's current priority is 7.3552 from 4.9052 - (0.2000 * 2.4500)
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 3.5000
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.5000) = 2.4500
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Me's current priority is 7.0492 from 4.5992 - (0.2000 * 2.4500)
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 3.5000
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 3.5000) = 2.4500
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 2's current priority is 6.9690 from 4.5190 - (0.2000 * 2.4500)
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 5.0000 AverageFill: 3.5000
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(5.0000 - 3.5000) = -0.4500
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Blake's current priority is 4.0318 from 4.4818 - (0.2000 * -0.4500)
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 8.0000 AverageFill: 3.5000
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(8.0000 - 3.5000) = -4.0500
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chris's current priority is 1.7083 from 5.7583 - (0.2000 * -4.0500)
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 11.0000 AverageFill: 3.5000
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(11.0000 - 3.5000) = -11.2500
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Wade's current priority is -1.2500 from 10.0000 - (0.2000 * -11.2500)
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 12.0000 AverageFill: 3.5000
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(12.0000 - 3.5000) = -14.4500
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Alecia's current priority is -7.3091 from 7.1409 - (0.2000 * -14.4500)
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 13.0000 AverageFill: 3.5000
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(13.0000 - 3.5000) = -18.0500
+Jul 18, 2018 12:10:02 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Olson's current priority is -10.5211 from 7.5289 - (0.2000 * -18.0500)
+Jul 18, 2018 12:10:13 AM java.util.logging.LogManager$RootLogger log
+INFO: UPDATE: Chris's hours by adding 8.0
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 0.0000 AverageFill: 4.0714
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 4.0714) = 3.3153
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Dena's current priority is 10.1911 from 6.8758 - (0.2000 * 3.3153)
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 0.0000 AverageFill: 4.0714
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 4.0714) = 3.3153
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Kim's current priority is 9.4146 from 6.0992 - (0.2000 * 3.3153)
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 0.0000 AverageFill: 4.0714
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 4.0714) = 3.3153
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chels's current priority is 9.2737 from 5.9583 - (0.2000 * 3.3153)
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 0.0000 AverageFill: 4.0714
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 4.0714) = 3.3153
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Marcy's current priority is 8.3205 from 5.0052 - (0.2000 * 3.3153)
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 0.0000 AverageFill: 4.0714
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 4.0714) = 3.3153
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 3's current priority is 8.3205 from 5.0052 - (0.2000 * 3.3153)
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 0.0000 AverageFill: 4.0714
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 4.0714) = 3.3153
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Gregs's current priority is 8.2228 from 4.9075 - (0.2000 * 3.3153)
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 0.0000 AverageFill: 4.0714
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 4.0714) = 3.3153
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Brandon's current priority is 8.2205 from 4.9052 - (0.2000 * 3.3153)
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 0.0000 AverageFill: 4.0714
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 4.0714) = 3.3153
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Me's current priority is 7.9146 from 4.5992 - (0.2000 * 3.3153)
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 0.0000 AverageFill: 4.0714
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - 4.0714) = 3.3153
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 2's current priority is 7.8343 from 4.5190 - (0.2000 * 3.3153)
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 5.0000 AverageFill: 4.0714
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(5.0000 - 4.0714) = -0.1724
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Blake's current priority is 4.3093 from 4.4818 - (0.2000 * -0.1724)
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 16.0000 AverageFill: 4.0714
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(16.0000 - 4.0714) = -28.4582
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chris's current priority is -22.6998 from 5.7583 - (0.2000 * -28.4582)
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 11.0000 AverageFill: 4.0714
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(11.0000 - 4.0714) = -9.6010
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Wade's current priority is 0.3990 from 10.0000 - (0.2000 * -9.6010)
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 12.0000 AverageFill: 4.0714
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(12.0000 - 4.0714) = -12.5724
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Alecia's current priority is -5.4316 from 7.1409 - (0.2000 * -12.5724)
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 13.0000 AverageFill: 4.0714
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(13.0000 - 4.0714) = -15.9439
+Jul 18, 2018 12:10:13 AM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Olson's current priority is -8.4150 from 7.5289 - (0.2000 * -15.9439)

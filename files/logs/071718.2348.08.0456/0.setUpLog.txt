@@ -1,0 +1,224 @@
+Jul 17, 2018 11:48:08 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Kim at 5.1241 from:
+  Date
+     Value: 562
+     Normalized from range: [0, 6,772]
+     Resulting in: 0.5241
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.2000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 17, 2018 11:48:08 PM emp.Employee <init>
+CONFIG: Generated generic employee Kim
+Jul 17, 2018 11:48:08 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Wade at 8.2000 from:
+  Date
+     Value: 6772
+     Normalized from range: [0, 6,772]
+     Resulting in: 3.0000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.2000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 17, 2018 11:48:08 PM emp.Employee <init>
+CONFIG: Generated generic employee wade
+Jul 17, 2018 11:48:08 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Olson at 7.4716 from:
+  Date
+     Value: 4945
+     Normalized from range: [0, 6,772]
+     Resulting in: 2.2716
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.2000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 17, 2018 11:48:08 PM emp.Employee <init>
+CONFIG: Generated generic employee Olson
+Jul 17, 2018 11:48:08 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Alecia at 7.1805 from:
+  Date
+     Value: 4215
+     Normalized from range: [0, 6,772]
+     Resulting in: 1.9805
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.2000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 17, 2018 11:48:08 PM emp.Employee <init>
+CONFIG: Generated generic employee alecia
+Jul 17, 2018 11:48:08 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Chris at 5.9435 from:
+  Date
+     Value: 3119
+     Normalized from range: [0, 6,772]
+     Resulting in: 1.5435
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.2000
+  Qualification:
+     Qualified For: [Bar, Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.2000
+Jul 17, 2018 11:48:08 PM emp.Employee <init>
+CONFIG: Generated generic employee Chris
+Jul 17, 2018 11:48:08 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Dena at 5.7066 from:
+  Date
+     Value: 2023
+     Normalized from range: [0, 6,772]
+     Resulting in: 1.1066
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.2000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 17, 2018 11:48:08 PM emp.Employee <init>
+CONFIG: Generated generic employee Dena
+Jul 17, 2018 11:48:08 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Blake at 5.3610 from:
+  Date
+     Value: 1658
+     Normalized from range: [0, 6,772]
+     Resulting in: 0.9610
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.2000
+  Qualification:
+     Qualified For: [Bar, Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.2000
+Jul 17, 2018 11:48:08 PM emp.Employee <init>
+CONFIG: Generated generic employee blake
+Jul 17, 2018 11:48:08 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Chels at 6.1435 from:
+  Date
+     Value: 3119
+     Normalized from range: [0, 6,772]
+     Resulting in: 1.5435
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.2000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 17, 2018 11:48:08 PM emp.Employee <init>
+CONFIG: Generated generic employee chels
+Jul 17, 2018 11:48:08 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Brandon at 4.9785 from:
+  Date
+     Value: 197
+     Normalized from range: [0, 6,772]
+     Resulting in: 0.3785
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.2000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 17, 2018 11:48:08 PM emp.Employee <init>
+CONFIG: Generated generic employee brandon
+Jul 17, 2018 11:48:08 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Me at 5.1241 from:
+  Date
+     Value: 562
+     Normalized from range: [0, 6,772]
+     Resulting in: 0.5241
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.2000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 17, 2018 11:48:08 PM emp.Employee <init>
+CONFIG: Generated generic employee me
+Jul 17, 2018 11:48:08 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Marcy at 5.5785 from:
+  Date
+     Value: 197
+     Normalized from range: [0, 6,772]
+     Resulting in: 0.3785
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.2000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 17, 2018 11:48:08 PM emp.Employee <init>
+CONFIG: Generated generic employee Marcy
+Jul 17, 2018 11:48:08 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Paul 2 at 5.0639 from:
+  Date
+     Value: 411
+     Normalized from range: [0, 6,772]
+     Resulting in: 0.4639
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.2000
+  Qualification:
+     Qualified For: [Bar, Closer, Head_Wait, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 17, 2018 11:48:08 PM emp.Employee <init>
+CONFIG: Generated generic employee Paul 2
+Jul 17, 2018 11:48:08 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Paul 3 at 5.5785 from:
+  Date
+     Value: 197
+     Normalized from range: [0, 6,772]
+     Resulting in: 0.3785
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.2000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 17, 2018 11:48:08 PM emp.Employee <init>
+CONFIG: Generated generic employee Paul 3
+Jul 17, 2018 11:48:08 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Gregs at 5.3553 from:
+  Date
+     Value: 1142
+     Normalized from range: [0, 6,772]
+     Resulting in: 0.7553
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.2000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 17, 2018 11:48:08 PM emp.Employee <init>
+CONFIG: Generated generic employee Gregs

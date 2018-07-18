@@ -1,8 +1,0 @@
-Jul 06, 2018 9:51:23 PM Availability.TimeChunk assertNumericValidity
-SEVERE: day is out of range: -1 Range: [0, 7)
-java.lang.IllegalArgumentException: day is out of range: -1 Range: [0, 7)
-	at Availability.TimeChunk.assertNumericValidity(TimeChunk.java:77)
-	at Availability.TimeChunk.<init>(TimeChunk.java:57)
-	at Availability.TimeChunk.from(TimeChunk.java:36)
-	at Availability.TimeChunk.main(TimeChunk.java:100)
-
