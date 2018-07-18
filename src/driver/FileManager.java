@@ -17,6 +17,7 @@ import java.util.logging.Logger;
 
 import WorkingSet.Schedule;
 import WorkingSet.ScheduleSetUp;
+import driver.FileManager.SF;
 import emp.EmployeeSet;
 import racer.StopWatch;
 
@@ -84,6 +85,20 @@ public class FileManager {
 	private static boolean serialize(SF statusFlag, Serializable toSerialize, File location) {
 		// TODO
 		return false;
+	}
+	
+	public static void onExit(ScheduleSetUp setUp, EmployeeSet employeeSet, Schedule schedule) {
+		if (setUp != null) {
+			serializeScheduleSetUp(SF.ON_EXIT, setUp);
+		}
+		
+		if (schedule != null) {
+			serializeSchedule(SF.ON_EXIT, schedule);
+		}
+		
+		if (employeeSet != null) {
+			serializeEmployeeSet(SF.ON_EXIT, employeeSet);
+		}
 	}
 
 	/******************************************************************************

@@ -68,12 +68,12 @@ public class Employee implements Comparable<Employee>, Serializable {
 	public final EmployeeType employeeType;
 	
 	
-	Employee(String name, int ID, LocalDate startDate, ArrayList<PositionType> possibleShifts) {
+	public Employee(String name, int ID, LocalDate startDate, ArrayList<PositionType> possibleShifts) {
 		this (name, ID, startDate, 0, 40, 35, 0, possibleShifts, EmployeeType.Server);
 		Driver.setUpLog.log(Level.CONFIG, "Generated generic employee {0}", name);
 	}
 	
-	Employee(String name, int ID, LocalDate startDate,
+	public Employee(String name, int ID, LocalDate startDate,
 			double pay, int maxHours, int desiredHours, int minHours,
 			ArrayList<PositionType> possibleShifts, EmployeeType employeeType)
 	{
@@ -147,6 +147,7 @@ public class Employee implements Comparable<Employee>, Serializable {
 	 *                                                                            *
 	 ******************************************************************************/
 	
+	// TODO: Dont allow certian employees to work a chunk which has a high priority (& vice versa)
 	public boolean canWork(SchedulableTimeChunk chunk) {
 		log.finer("WORK QUERY: " + NAME + " for " + chunk);
 		if (qualifiedFor(chunk) && availableToWork(chunk)) {
