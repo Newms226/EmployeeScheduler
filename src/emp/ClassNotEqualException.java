@@ -32,7 +32,7 @@ public class ClassNotEqualException extends RuntimeException {
 	}
 	
 	public static void main(String[] args) {
-		assertEqual(Server.class, Employee.class);
+
 	}
 }
 

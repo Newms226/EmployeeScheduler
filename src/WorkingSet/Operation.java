@@ -28,10 +28,6 @@ public interface Operation<T extends Cloneable> extends Cloneable {
 	
 	public boolean equals(Object that); // for roll back
 	
-	public int getIdentifier(); // For CSV import / export
-	
-	public String toCSV();
-	
 	public String toString();
 //	
 //	public static Operation<? extends Cloneable> fromCSV(String str);

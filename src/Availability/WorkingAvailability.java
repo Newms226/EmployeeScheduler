@@ -6,6 +6,12 @@ public class WorkingAvailability extends AvailabilityArray {
 
 	private static final long serialVersionUID = 8800343351835372328L;
 	
+	private double currentHours;
+	
+	public double getCurrentHours() {
+		return currentHours;
+	}
+	
 	boolean schedule(TimeChunk chunk) {
 		log.info("SCHEDULE: " + chunk);
 		return toNotAvailable(chunk) && toSTRICTLYAvailableFORWARD(chunk.indexEnd);
@@ -49,9 +55,11 @@ public class WorkingAvailability extends AvailabilityArray {
 				pass = false;
 			}
 		}
+		
 		log.finer("RETURNING: Made" + NumberTools.format(modifications) + " changes."
 				+ "\n\t:Pass: " + pass + 
-				(pass ? "" : " " + NumberTools.formatPercent((double)modifications/chunk.getMinutes())));
+				(pass ? "" : " " + NumberTools.formatPercent((double)modifications/chunk.getMinutes()))
+				+ "\n\tCurrent Hours: " + currentHours + " -> " + (currentHours += (double) modifications/60));
 		return pass;
 	}
 	
@@ -67,11 +75,16 @@ public class WorkingAvailability extends AvailabilityArray {
 	boolean toAvailable(TimeChunk chunk) {
 		log.entering(getClass().getName(), "toAvailable(" + chunk + ")");
 		int modifications = 0;
+		int subractions = 0;
 		byte testByte;
 		boolean pass = true;
 		for (int i = chunk.indexStart; i < chunk.indexEnd; i++) {
 			testByte = availability[i];
-			if (testByte == NOT_AVAILABLE || testByte == STRICTLY_AVAILABLE) {
+			if (testByte == NOT_AVAILABLE) {
+				modifications++;
+				subractions++;
+				availability[i] = AVAILABLE;
+			} else if (testByte == STRICTLY_AVAILABLE) { 
 				modifications++;
 				availability[i] = AVAILABLE;
 			} else if (testByte == NEVER_AVAILABLE) {
@@ -83,7 +96,8 @@ public class WorkingAvailability extends AvailabilityArray {
 		
 		log.finer("RETURNING: Made" + NumberTools.format(modifications) + " changes."
 				+ "\n\t:Pass: " + pass + 
-				(pass ? "" : " " + NumberTools.formatPercent((double)modifications/chunk.getMinutes())));
+				(pass ? "" : " " + NumberTools.formatPercent((double)modifications/chunk.getMinutes()))
+				+ "\n\tCurrent Hours: " + currentHours + " -> " + (currentHours -= (double) subractions/60));
 		return pass;
 	}
 
@@ -129,7 +143,8 @@ public class WorkingAvailability extends AvailabilityArray {
 		}
 		log.finer("RETURNING: Made" + NumberTools.format(modifications) + " changes."
 				+ "\n\t:Pass: " + pass + 
-				(pass ? "" : " " + NumberTools.formatPercent((double)modifications/chunk.getMinutes())));
+				(pass ? "" : " " + NumberTools.formatPercent((double)modifications/chunk.getMinutes()))
+				+ "\n\tCurrent Hours: " + currentHours + " -> " + (currentHours += (double) modifications/60));
 		return pass;
 	}
 

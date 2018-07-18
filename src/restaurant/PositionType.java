@@ -2,7 +2,6 @@ package restaurant;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 import emp.EmployeeType;
@@ -136,20 +135,28 @@ public enum PositionType implements Serializable {
 	}
 	
 	public static double getQualifactionDouble(ArrayList<PositionType> qualifications) {
-		Collections.sort(qualifications);
-		return NumberTools.normalizeToRange(
-			//value:
-				((double) qualifications
-							.stream()
-							.mapToInt(PositionType::getPriority)
-							.sum()) 
-					* ((double) 1) / ((double) qualifications.size())
-					* qualifications.get(qualifications.size() - 1).priority,
-				
-			// Min
-				0,
-			// Max
-				MAX_POSITION_VALUE);
+		switch(qualifications.size()) {
+		case 5: return 2;
+		case 4: return 4;
+		case 3: return 6;
+		case 2: return 8;
+		case 1: return 10;
+		default: throw new Error();
+		}
+//		Collections.sort(qualifications);
+//		return NumberTools.normalizeToRange(
+//			//value:
+//				((double) qualifications
+//							.stream()
+//							.mapToInt(PositionType::getPriority)
+//							.sum()) 
+//					* ((double) 1) / ((double) qualifications.size())
+//					* qualifications.get(qualifications.size() - 1).priority,
+//				
+//			// Min
+//				0,
+//			// Max
+//				MAX_POSITION_VALUE);
 	}
 	
 	public static void main(String[] args) {

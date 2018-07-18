@@ -1,61 +1,89 @@
 package emp;
 import java.time.LocalDate;
+import java.util.logging.Logger;
 
+import Availability.SchedulableTimeChunk;
 import driver.Driver;
-import restaurant.PositionID;
 import restaurant.PositionType;
 
-public class HouseShift extends Server {
+public class HouseShift extends Employee {
+	
+	/******************************************************************************
+	 *                                                                            *
+	 *                               Static Fields                                *
+	 *                                                                            *
+	 ******************************************************************************/
 	private static final long serialVersionUID = 50945142347011571L;
+	private static final Logger log = Driver.deciderLog;
 
 	public HouseShift() {
-		super("House Shift", -1, LocalDate.now(), PositionType.getHouseQualList());
-		employeeType = EmployeeType.House;
+		super("HouseShift", -1, LocalDate.now(), 0, 0, 0, 0, PositionType.getNewKid(), EmployeeType.House);
 		Driver.deciderLog.fine("Generated new house shift");
 	}
 	
+	/******************************************************************************
+	 *                                                                            *
+	 *                             Question Methods                               *
+	 *                                                                            *
+	 ******************************************************************************/
+	
 	@Override
-	public boolean canWork(PositionID<? extends Employee> ID) {
+	public boolean canWork(SchedulableTimeChunk chunk) {
 		return true;
 	}
 	
 	@Override
-	public String toCSV() {
-		return "HOUSE";
+	public boolean availableToWork(SchedulableTimeChunk chunk) {
+		return true;
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+	
 	@Override
-	public void accept(PositionID<? extends Employee> ID) {
-		// TODO Auto-generated method stub
+	public boolean isEverAvailableFor(SchedulableTimeChunk chunk) {
+		return true;
+	}
+	
+	@Override
+	public boolean qualifiedFor(SchedulableTimeChunk ID) {
+		if (ID.positionType == PositionType.Sales) {
+			return true;
+		}
 		
-	}
-
-	@Override
-	public void rollBack(PositionID<? extends Employee> ID) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void markAvailable(PositionID<? extends Employee> ID) {
-		// do nothing
-	}
-
-	@Override
-	public void markUnavailable(PositionID<? extends Employee> ID) {
-		// do nothing
-		
-	}
-
-	@Override
-	public boolean ofType(Class<?> type) {
-		// TODO Auto-generated method stub
+		// else
+		log.severe("UNSUPPORTED: Asked if a House Shift was qualifed for " + ID.positionType);
 		return false;
 	}
+	
+	@Override
+	public boolean bellowMinimumHours() {
+		return true;
+	}
 
+	@Override
+	public boolean bellowDesiredHours() {
+		return true;
+	}
+	
+	@Override
+	public boolean bellowPersonalMax() {
+		return true;
+	}
+
+	@Override
+	public boolean bellowGlobalMax() {
+		return true;
+	}
+	
+	/******************************************************************************
+	 *                                                                            *
+	 *                             Schedule Methods                               *
+	 *                                                                            *
+	 ******************************************************************************/
+	
+	@Override
+	public void accept(SchedulableTimeChunk chunk) {
+		if (chunk.positionType != PositionType.Sales) {
+			log.severe("ASSIGINING " + chunk.positionType + " TO A HOUSE SHIFT FOR " + chunk);
+		}
+		super.accept(chunk);
+	}
 }

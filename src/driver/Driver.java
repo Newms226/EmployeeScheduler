@@ -2,24 +2,17 @@ package driver;
 
 import java.io.File;
 import java.io.IOException;
-import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.Date;
-import java.util.logging.*;
-
-import WorkingSet.WorkingSet;
-import daKingMaker.Scheduler;
-import emp.EmployeeModifier;
-import emp.Server;
-import menu.ConsoleMenu;
-import menu.RunnableOption;
-import restaurant.Restaurant;
-import tools.CollectionTools;
+import java.util.logging.ConsoleHandler;
+import java.util.logging.FileHandler;
+import java.util.logging.Handler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 public class Driver {
 	//public static final boolean debugging = true; 
 	public static Logger driverLog, deciderLog, setUpLog, fileManagerLog, masterLog, availabilityLog, timeLog, errorLog;
-	public static final String LOG_DIRECTORY = "/Users/Michael/gitHub/EmployeeScheduler/logs/";
 	static {
 		masterLog = Logger.getLogger("");
 		Handler[] handlers = masterLog.getHandlers();
@@ -27,7 +20,10 @@ public class Driver {
 			masterLog.removeHandler(handlers[0]);
 		}
 		
-		File workingDir = new File(LOG_DIRECTORY + FileManager.fileFormat.format(new Date()));
+		File workingDir = new File(
+				FileManager.logFolder + "/" +
+				FileManager.fileFormat.format(
+						new Date()));
 		if (!workingDir.mkdirs()) {
 			throw new Error("COULD NOT MAKE DIRECTORIES AT:\n\t" + workingDir);
 		}
@@ -116,114 +112,114 @@ public class Driver {
 		timeLog.addHandler(console);
 		timeLog.setLevel(Level.ALL);
 	}
-	
-	private String intro;
-	private ConsoleMenu beginningInput, mainMenu, scheduleMenu, scheduleViewer;
-	
-	Restaurant restaurant;
-	Scheduler<Server> DA_KING_MAKER;
-	WorkingSet<Server> workingSet;
-	
-	public Driver() throws SecurityException, IOException {
-		intro =  "+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+"
-		     + "\n|                                                |"
-		 	 + "\n|                                                |"
-			 + "\n|              Restaurant Scheduler              |"
-			 + "\n|                                                |"
-			 + "\n|                                 Michael Newman |"
-			 + "\n+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+"
-			 + "\n\n";
-		
-		beginningInput = new ConsoleMenu("Input Menu", 
-				() -> mainMenu.selection()); // Hand off control to mainMenu after run
-		beginningInput.add(new RunnableOption("Build from testing material",
-				() -> buildTestingMaterial()));
-		beginningInput.add(new RunnableOption("Load previous", null)); // TODO
-		beginningInput.add(new RunnableOption("Build a new Restaurant & set-up", null)); // TODO
-		
-		mainMenu = new ConsoleMenu("Main Menu",
-				null); // by default, do nothing after selection
-		mainMenu.add(new RunnableOption("Schedule", 
-				() -> schedule(), // TODO: Tests for needed components
-				() -> mainMenu.selection()));
-		mainMenu.add(new RunnableOption("View generated schedules", 
-				() -> System.out.println(getSchedule()), // TODO: View previous schedules
-				() -> mainMenu.selection()));
-		mainMenu.add(new RunnableOption("Employee menu", 
-				() -> EmployeeModifier.mainMenu.selection())); // TODO
-		mainMenu.add(new RunnableOption("Schedule set-up", 
-				() -> scheduleMenu.selection()));
-		mainMenu.add(new RunnableOption("Exit program",
-				() -> {
-					if (workingSet != null) workingSet.save(FileManager.SF.ON_EXIT);
-					System.exit(0);
-				}));
-		
-		scheduleViewer = new ConsoleMenu("Schedule Viewer");
-		scheduleViewer.add(new RunnableOption("View whole schedule",
-				() -> System.out.println(getSchedule())));
-		scheduleViewer.add("View indvidual servers shifts", 
-				() -> {
-	
-				});
-		
-		scheduleMenu = new ConsoleMenu("Schedule Set-Up");
-		scheduleMenu.add(new RunnableOption("Set-up days/shifts/priority", 
-				() -> workingSet.setUp.dayMenu()));
-		scheduleMenu.add(new RunnableOption("Add a pre-defined schedule", null)); // TODO
-		scheduleMenu.add(new RunnableOption("Return to main menu",
-				() -> mainMenu.selection(),
-				null)); // do nothing after this option
-		
-		
-//		endMenu = new Menu("Ending program...", 
-//				() -> System.exit(0));
-//		endMenu.add("Save the set-up", null); // TODO
-//		endMenu.add("Save the schedule", null); // TODO
-//		endMenu.add("Save the server list", null); // TODO
-//		endMenu.add("Save the restuarant", null); // TODO
-//		endMenu.add("Save everything", null); // TODO
-//		endMenu.add("Exit", () -> System.exit(0));
-		//logSetUp();
-	}
-	
-	void begin() {
-		driverLog.finest("Began program, in begin()");
-		System.out.println(intro);
-		beginningInput.selection();
-	}
-	
-	void buildTestingMaterial() {
-		driverLog.config("Building testing material from Driver.buildTestingMaterial()");
-		workingSet = WorkingSet.serverTrainingData();
-		driverLog.config("Successfully built testing material from Driver.buildTestingMaterial()");
-	}
-
-	void schedule() {
-		driverLog.info("Began scheduling process from driver");
-		if (workingSet.employeeList.count() == 0) {
-			driverLog.severe("Employee list is empty");
-		}
-		if (workingSet.setUp.positionIDCount() == 0) {
-			driverLog.severe("Schedule is not set-up");
-//			workingSet.setUp.dayMenu();
-			throw new Error();
-		}
-		
-		driverLog.log(Level.INFO, "HANDING OFF TO SCHEDULER");
-		DA_KING_MAKER = new Scheduler<>(workingSet);
-		DA_KING_MAKER.run();
-		driverLog.log(Level.INFO, "RETURNED TO DRIVER");
-		
-	}
-	
-	String getSchedule() {
-		return workingSet.getSchedule().viewAll();
-	}
-	
+//	
+//	private String intro;
+//	private ConsoleMenu beginningInput, mainMenu, scheduleMenu, scheduleViewer;
+//	
+//	Restaurant restaurant;
+//	Scheduler<Server> DA_KING_MAKER;
+//	WorkingSet<Server> workingSet;
+//	
+//	public Driver() throws SecurityException, IOException {
+//		intro =  "+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+"
+//		     + "\n|                                                |"
+//		 	 + "\n|                                                |"
+//			 + "\n|              Restaurant Scheduler              |"
+//			 + "\n|                                                |"
+//			 + "\n|                                 Michael Newman |"
+//			 + "\n+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+"
+//			 + "\n\n";
+//		
+//		beginningInput = new ConsoleMenu("Input Menu", 
+//				() -> mainMenu.selection()); // Hand off control to mainMenu after run
+//		beginningInput.add(new RunnableOption("Build from testing material",
+//				() -> buildTestingMaterial()));
+//		beginningInput.add(new RunnableOption("Load previous", null)); // TODO
+//		beginningInput.add(new RunnableOption("Build a new Restaurant & set-up", null)); // TODO
+//		
+//		mainMenu = new ConsoleMenu("Main Menu",
+//				null); // by default, do nothing after selection
+//		mainMenu.add(new RunnableOption("Schedule", 
+//				() -> schedule(), // TODO: Tests for needed components
+//				() -> mainMenu.selection()));
+//		mainMenu.add(new RunnableOption("View generated schedules", 
+//				() -> System.out.println(getSchedule()), // TODO: View previous schedules
+//				() -> mainMenu.selection()));
+//		mainMenu.add(new RunnableOption("Employee menu", 
+//				() -> EmployeeModifier.mainMenu.selection())); // TODO
+//		mainMenu.add(new RunnableOption("Schedule set-up", 
+//				() -> scheduleMenu.selection()));
+//		mainMenu.add(new RunnableOption("Exit program",
+//				() -> {
+//					if (workingSet != null) workingSet.save(FileManager.SF.ON_EXIT);
+//					System.exit(0);
+//				}));
+//		
+//		scheduleViewer = new ConsoleMenu("Schedule Viewer");
+//		scheduleViewer.add(new RunnableOption("View whole schedule",
+//				() -> System.out.println(getSchedule())));
+//		scheduleViewer.add("View indvidual servers shifts", 
+//				() -> {
+//	
+//				});
+//		
+//		scheduleMenu = new ConsoleMenu("Schedule Set-Up");
+//		scheduleMenu.add(new RunnableOption("Set-up days/shifts/priority", 
+//				() -> workingSet.setUp.dayMenu()));
+//		scheduleMenu.add(new RunnableOption("Add a pre-defined schedule", null)); // TODO
+//		scheduleMenu.add(new RunnableOption("Return to main menu",
+//				() -> mainMenu.selection(),
+//				null)); // do nothing after this option
+//		
+//		
+////		endMenu = new Menu("Ending program...", 
+////				() -> System.exit(0));
+////		endMenu.add("Save the set-up", null); // TODO
+////		endMenu.add("Save the schedule", null); // TODO
+////		endMenu.add("Save the server list", null); // TODO
+////		endMenu.add("Save the restuarant", null); // TODO
+////		endMenu.add("Save everything", null); // TODO
+////		endMenu.add("Exit", () -> System.exit(0));
+//		//logSetUp();
+//	}
+//	
+//	void begin() {
+//		driverLog.finest("Began program, in begin()");
+//		System.out.println(intro);
+//		beginningInput.selection();
+//	}
+//	
+//	void buildTestingMaterial() {
+//		driverLog.config("Building testing material from Driver.buildTestingMaterial()");
+//		workingSet = WorkingSet.serverTrainingData();
+//		driverLog.config("Successfully built testing material from Driver.buildTestingMaterial()");
+//	}
+//
+//	void schedule() {
+//		driverLog.info("Began scheduling process from driver");
+//		if (workingSet.employeeList.count() == 0) {
+//			driverLog.severe("Employee list is empty");
+//		}
+//		if (workingSet.setUp.positionIDCount() == 0) {
+//			driverLog.severe("Schedule is not set-up");
+////			workingSet.setUp.dayMenu();
+//			throw new Error();
+//		}
+//			
+//		driverLog.log(Level.INFO, "HANDING OFF TO SCHEDULER");
+//		DA_KING_MAKER = new Scheduler<>(workingSet);
+//		DA_KING_MAKER.run();
+//		driverLog.log(Level.INFO, "RETURNED TO DRIVER");
+//		
+//	}
+//	
+//	String getSchedule() {
+//		return workingSet.getSchedule().viewAll();
+//	}
+//	
 	public static void main(String[] args) throws SecurityException, IOException {
-		Driver work = new Driver();
-		work.begin();
+//		Driver work = new Driver();
+//		work.begin();
 	}
 
 }

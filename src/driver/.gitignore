@@ -8,3 +8,6 @@
 /Scheduler.class
 /FileManager$SF.class
 /FileManager.class
+/FileManager$1.class
+/FileManager$DeleteFileVisitor.class
+/FileManager$ReadyToDeleteFilter.class

@@ -7,7 +7,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -22,17 +21,15 @@ public class Week implements Serializable {
 			DateTimeFormatter.ofPattern("EEEE, MMMM d, uuuu");
 	
 	public final LocalDate[] dates;
-	public final LocalDate firstDayOfWeek;
 	public final String SUMMARY;
 	
 	public Week(LocalDate firstDayOfWeek) {
-		this.firstDayOfWeek = firstDayOfWeek;
-		dates = fillWeek();
+		dates = fillWeek(firstDayOfWeek);
 		SUMMARY = generateString();
 		log.fine("Generated " + toString());
 	}
 	
-	private LocalDate[] fillWeek() {
+	private LocalDate[] fillWeek(LocalDate firstDayOfWeek) {
 		LocalDate[] dates = new LocalDate[7];
 		dates[0] = firstDayOfWeek;
 		
@@ -56,7 +53,7 @@ public class Week implements Serializable {
 	
 	private String generateString() {
 		StringBuffer buffer = new StringBuffer("Week beginning on " 
-										+ formatter.format(firstDayOfWeek) + "\n");
+										+ formatter.format(dates[0]) + "\n");
 		
 		for (int i = 0; i < 7; i++) {
 			buffer.append("   " + (i+1) + ": " + formatter.format(dates[i]) + "\n");
@@ -70,7 +67,7 @@ public class Week implements Serializable {
 	}
 	
 	public String toCondensedString() {
-		return formatter.format(firstDayOfWeek) + " - " + formatter.format(dates[6]);
+		return formatter.format(dates[0]) + " - " + formatter.format(dates[6]);
 	}
 	
 	public Set<LocalDate> getDatesAsSet(){

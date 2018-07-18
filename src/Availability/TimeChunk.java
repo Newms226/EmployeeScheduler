@@ -2,14 +2,11 @@ package Availability;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.time.DateTimeException;
-import java.time.DayOfWeek;
 import java.time.Duration;
-import java.time.LocalDate;
 import java.time.LocalTime;
-import java.time.Year;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Random;
@@ -29,7 +26,7 @@ import tools.FileTools;
  * 
  *
  */
-public class TimeChunk {
+public class TimeChunk implements Serializable, Cloneable {
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		creationOptionsTimeTest();
@@ -88,6 +85,7 @@ public class TimeChunk {
 	 *                                                                            *
 	 ******************************************************************************/
 	
+	private static final long serialVersionUID = -6334533923887427675L;
 	protected static final Logger log = Driver.availabilityLog;
 	public static final DateTimeFormatter timeFormat12Hour = DateTimeFormatter.ofPattern("hh:mma");
 	
@@ -232,8 +230,8 @@ public class TimeChunk {
 	
 	public final int indexStart, indexEnd;
 	public final boolean isNegative, isZero;
+	public final int dayStart, dayEnd;
 	
-	protected final int dayStart, dayEnd;
 	protected final LocalTime start, end;
 	protected final String summary;
 	
@@ -347,6 +345,11 @@ public class TimeChunk {
 		if (indexEnd != that.indexEnd) return false;
 		
 		return true;
+	}
+	
+	@Override
+	public TimeChunk clone() {
+		return TimeChunk.fromIndex(indexStart, indexEnd);
 	}
 		
 	/******************************************************************************

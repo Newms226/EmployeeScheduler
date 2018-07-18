@@ -1,8 +1,7 @@
 package emp;
+import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -14,20 +13,17 @@ import java.util.stream.Collectors;
 import driver.Driver;
 import tools.CollectionTools;
 import tools.NumberTools;
-import tools.StringTools;
 
-public class EmployeeSet<E extends Employee> {
-	List<E> employeeSet;
-	public final Class<? extends Employee> employeeType;
+public class EmployeeSet implements Serializable {
+	List<Employee> employeeSet;
 	
-	public EmployeeSet(Class<? extends Employee> employeeType) {
-		Driver.setUpLog.config("Intalizing ServerList Object");
-		this.employeeType = employeeType;
+	public EmployeeSet() {
+		Driver.setUpLog.config("Intalizing EmployeeSet Object");
 		employeeSet = new ArrayList<>();
 	}
 	
-	public boolean addEmployee(E employee) {
-		Driver.setUpLog.info("Adding " + employee + " to ServerList");
+	public boolean addEmployee(Employee employee) {
+		Driver.setUpLog.info("Adding " + employee + " to EmployeeSet");
 		if (employeeSet.contains(employee)) {
 			Driver.setUpLog.log(Level.WARNING,
 					            "Set already contains {0}",
@@ -41,7 +37,7 @@ public class EmployeeSet<E extends Employee> {
 		return true;
 	}
 	
-	public void addMultipleEmployees(Collection<? extends E> collection) {
+	public void addMultipleEmployees(Collection<Employee> collection) {
 		collection.stream().forEach(s -> {
 			if(addEmployee(s)) {
 				Driver.setUpLog.info(s + " passed adding from addingMultipleEmployee");
@@ -51,23 +47,30 @@ public class EmployeeSet<E extends Employee> {
 		});
 	}
 	
-	public E findEmployee(E toFind) {
+	public Employee findEmployee(Employee toFind) {
 		return CollectionTools.findFirst(employeeSet, s -> s.equals(toFind));
 	}
 	
-	public E findEmployee(String name) {
+	public Employee findEmployee(String name) {
 		return CollectionTools.findFirst(employeeSet, s -> s.NAME.equalsIgnoreCase(name));
 	}
 	
-	public E findEmployee(int ID) {
+	public Employee findEmployee(int ID) {
 		return CollectionTools.findFirst(employeeSet, s -> s.ID == ID);
+	}
+	
+	public Collection<Employee> getEmployeesByType(EmployeeType type){
+		return employeeSet
+				.stream()
+				.filter(e -> e.employeeType == type)
+				.collect(Collectors.toList());
 	}
 	
 	double getAverageFill() {
 		Driver.setUpLog.finer("In average fill");
 		return employeeSet
 			.stream()
-			.mapToDouble(s -> s.getFillCount())
+			.mapToDouble(s -> s.currentHours)
 			.average()
 			.getAsDouble();
 	}
@@ -83,28 +86,11 @@ public class EmployeeSet<E extends Employee> {
 		return employeeSet.size();
 	}
 	
-	public String toCSV() {
-		Driver.fileManagerLog.finer("In toCSV of EmployeeSet");
-		StringBuffer buffer = new StringBuffer();
-		
-		employeeSet.stream()
-			.forEach(server -> buffer.append(server.toCSV() + "\n"));
-		
-		return buffer.toString();
-	}
-	
-	public static <E extends Employee> EmployeeSet<E> fromCSV(String[] csvString, Class<E> employeeType) {
-		Driver.fileManagerLog.finer("In fromCSV of EmployeeSet");
-		EmployeeSet<E> toReturn = new EmployeeSet<>(employeeType);
-		Arrays.asList(csvString).stream()
-			.forEach(str -> toReturn.addEmployee(Employee.fromCSV(employeeType)));
-		return toReturn;
-	}
-	
-	public Set<E> filter(Predicate<? super Employee> predicate){
+	public Set<Employee> filter(Predicate<Employee> predicate){
 		Driver.fileManagerLog.finer("In filter of EmployeeSet");
 		return employeeSet.stream()
 			.filter(predicate)
+			.sorted(Employee.DESENDING_PRIORITY_ORDER)
 			.collect(Collectors.toSet());
 	}
 	
@@ -126,7 +112,7 @@ public class EmployeeSet<E extends Employee> {
 			.viewAssignedShifts();
 	}
 	
-	@SuppressWarnings("unchecked")
+
 	@Override
 	public boolean equals(Object o) {
 		if (o == this) return true;
@@ -134,11 +120,7 @@ public class EmployeeSet<E extends Employee> {
 		
 		if (!this.getClass().equals(o.getClass())) return false;
 		
-		try {
-			if (!employeeSet.containsAll(((EmployeeSet<E>) o).employeeSet)) return false;
-		} catch (ClassCastException e) {
-			return false;
-		}
+		if (!employeeSet.containsAll(((EmployeeSet) o).employeeSet)) return false;
 		
 		return true;
 	}
@@ -183,6 +165,23 @@ public class EmployeeSet<E extends Employee> {
 //				} // loop through lunch or dinner
 //			} // loop through each day
 //		} // loop through each server
+//	}
+//	public String toCSV() {
+//		Driver.fileManagerLog.finer("In toCSV of EmployeeSet");
+//		StringBuffer buffer = new StringBuffer();
+//		
+//		employeeSet.stream()
+//			.forEach(server -> buffer.append(server.toCSV() + "\n"));
+//		
+//		return buffer.toString();
+//	}
+//	
+//	public static <E extends Employee> EmployeeSet<E> fromCSV(String[] csvString, Class<E> employeeType) {
+//		Driver.fileManagerLog.finer("In fromCSV of EmployeeSet");
+//		EmployeeSet<E> toReturn = new EmployeeSet<>(employeeType);
+//		Arrays.asList(csvString).stream()
+//			.forEach(str -> toReturn.addEmployee(Employee.fromCSV(employeeType)));
+//		return toReturn;
 //	}
 	
 	public static void main(String[] args) {

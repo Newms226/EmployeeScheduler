@@ -11,9 +11,9 @@ import tools.NumberTools;
 public class EmployeePriority implements Comparable<EmployeePriority> {
 	
 	public static final double GRACE_FACTOR = .5,
-            DATE_FACTOR = .3,
-            QUAL_FACTOR = .2,
-            FILLED_FACTOR = 1,
+            DATE_FACTOR = .4,
+            QUAL_FACTOR = .1,
+            FILLED_FACTOR = .2,
 
             // Grace Variables:
             DEFAULT_GRACE = 7,
@@ -35,7 +35,8 @@ public class EmployeePriority implements Comparable<EmployeePriority> {
 	
 	// Priority Variables
 	double staticPriority,
-	               currentPriority;
+	               currentPriority,
+	               fillFactor;
 	
 	public EmployeePriority(Employee employee) {
 		this(employee, DEFAULT_GRACE);
@@ -63,9 +64,9 @@ public class EmployeePriority implements Comparable<EmployeePriority> {
 	//					if (Driver.debugging) System.out.println(NAME + " is past their max hours.");
 	//					currentPriority = PAST_MAX;
 	//				}
-		double fillDouble = FILLED_FACTOR * getFillDouble(currentAverageFill);
+		double fillDouble = getFillDouble(currentAverageFill);
 		currentPriority = staticPriority + fillDouble;
-		Driver.setUpLog.config(employee.NAME + "'s current priority is " + NumberTools.format(currentPriority)
+		Driver.setUpLog.config("UPDATE: " + employee.NAME + "'s current priority is " + NumberTools.format(currentPriority)
 				+ " from " + NumberTools.format(staticPriority) + " - (" + 
 				NumberTools.format(FILLED_FACTOR) + " * " +  NumberTools.format(fillDouble)
 				+ ")");
@@ -74,19 +75,20 @@ public class EmployeePriority implements Comparable<EmployeePriority> {
 	}
 	
 	private double getFillDouble(double averageCount) {
-		Driver.deciderLog.finer("Getting fill factor for:" + employee.NAME + ". Fill: " + NumberTools.format(employee.filledShifts)
+		Driver.deciderLog.finer("Getting fill factor for:" + employee.NAME + ". Fill: " + NumberTools.format(employee.currentHours)
 				+ " AverageFill: " + NumberTools.format(averageCount));
-		if (employee.filledShifts == averageCount) {
-			Driver.setUpLog.finer(employee.NAME + " has the same number of shfits as the average. No change from fill double");
+		if (employee.currentHours == averageCount) {
+			Driver.setUpLog.finer(employee.NAME + " has the same number of hours as the average. No change from fill double");
 			return 0;
 		}
 		
-		double x = employee.filledShifts - averageCount,
+		double x = employee.currentHours - averageCount,
 		       y = x * x * FILLED_FACTOR;
 		if (x > 0) y	 = -y;
 		
-		Driver.deciderLog.finer(Character.toString((char) 402) + "(" + NumberTools.format(employee.filledShifts) + " - " + NumberTools.format(averageCount) 
+		Driver.deciderLog.finer(Character.toString((char) 402) + "(" + NumberTools.format(employee.currentHours) + " - " + NumberTools.format(averageCount) 
 				+ ") = "+ NumberTools.format(y));
+		fillFactor = y;
 		return y;
 	}
 	
@@ -103,6 +105,12 @@ public class EmployeePriority implements Comparable<EmployeePriority> {
 	
 	private double getQualDouble() {
 		return QUAL_FACTOR * PositionType.getQualifactionDouble(employee.qualifiedFor);
+	}
+	
+	public String getSimplePriorityString(double currentAverageFill) {
+		return new StringBuffer(NumberTools.format(currentPriority) + "\n\tD: " + NumberTools.format(getDateDouble()) 
+			+ " G: " + NumberTools.format(getGraceDouble()) + " Q: " + NumberTools.format(getQualDouble()) 
+			+ " + F: " + NumberTools.format(fillFactor)).toString();
 	}
 	
 	double calculateStaticPriority() {

@@ -4,7 +4,6 @@ import java.util.Comparator;
 import java.util.logging.Level;
 
 import emp.Employee;
-import emp.EmployeeType;
 import restaurant.PositionType;
 import tools.NumberTools;
 
@@ -23,6 +22,8 @@ public class SchedulableTimeChunk extends TimeChunk {
 	 *                                                                            *
 	 ******************************************************************************/
 	
+	private static final long serialVersionUID = 1712752644013694520L;
+
 	/******************************************************************************
 	 *                                                                            *
 	 *                        Static Constructor Methods                          *
@@ -127,6 +128,7 @@ public class SchedulableTimeChunk extends TimeChunk {
 					+ "\n\tWILL EXECUTE" );
 		}
 		
+		// TODO: This is technically redundant
 		if (positionType.employeeTypeIsCompatible(employee.getEmployeeType())) {
 			this.employee = employee;
 			log.fine("SUCCESS: Scheduled " + employee + " to " + this);
@@ -185,9 +187,20 @@ public class SchedulableTimeChunk extends TimeChunk {
 		if (indexEnd != that.indexEnd) return false;
 		if (priority != that.priority) return false;
 		if (positionType != that.positionType) return false;
+		
+		if (that.employee == null && employee != null) return false;
+		if (that.employee != null && employee == null) return false;
+		if (that.employee == null && employee == null) return true;
 		if (!employee.equals(that.employee)) return false;
 		
 		return true;
+	}
+	
+	@Override
+	public SchedulableTimeChunk clone() {
+		return SchedulableTimeChunk.from(TimeChunk.fromIndex(indexStart, indexEnd), 
+				                         priority, 
+				                         positionType);
 	}
 	
 }

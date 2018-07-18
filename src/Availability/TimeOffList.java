@@ -1,16 +1,14 @@
 package Availability;
 
-import java.util.Comparator;
+import java.io.Serializable;
+import java.time.LocalDate;
+import java.util.NavigableSet;
+import java.util.Set;
+import java.util.TreeSet;
 import java.util.function.Predicate;
 import java.util.logging.Logger;
 
 import driver.Driver;
-import racer.StopWatch;
-
-import java.util.*;
-import java.io.Serializable;
-import java.time.*;
-
 import time.LocalDateInterval;
 import time.Week;
 
@@ -35,43 +33,43 @@ public class TimeOffList implements Serializable {
 			return false;
 		}
 	}
-	
-	private boolean testAllAndLog(Predicate<LocalDate> predicate, LocalDateInterval interval, String methodName) {
-		log.entering(this.getClass().getName(), methodName);
-		boolean toReturn = true;
-		for (LocalDate date : interval.extractLocalDates()) {
-			if (!predicate.test(date)) toReturn = false;
-		}
-		return toReturn;
-	}
+//	
+//	private boolean testAllAndLog(Predicate<LocalDate> predicate, LocalDateInterval interval, String methodName) {
+//		log.entering(this.getClass().getName(), methodName);
+//		boolean toReturn = true;
+//		for (LocalDate date : interval.extractLocalDates()) {
+//			if (!predicate.test(date)) toReturn = false;
+//		}
+//		return toReturn;
+//	}
 	
 	public boolean add(LocalDate date) {
 		return testAndLog(d -> datesOff.add(d), date, "add(" + date + ")");
 	}
 	
-	public boolean addAll(LocalDateInterval interval) {
-		return testAllAndLog(d -> datesOff.add(d), interval, "addAll(" + interval + ")");
-	}
+//	public boolean addAll(LocalDateInterval interval) {
+//		return testAllAndLog(d -> datesOff.add(d), interval, "addAll(" + interval + ")");
+//	}
 
 	public boolean remove(LocalDate date) {
 		return testAndLog(d -> datesOff.remove(d), date, "remove(" + date + ")");
 	}
 	
-	public boolean removeAll(LocalDateInterval interval) {
-		return testAllAndLog(d -> datesOff.remove(d), interval, "removeAll(" + interval + ")");
-	}
+//	public boolean removeAll(LocalDateInterval interval) {
+//		return testAllAndLog(d -> datesOff.remove(d), interval, "removeAll(" + interval + ")");
+//	}
 	
 	public boolean contains(LocalDate date) {
 		return testAndLog(d -> datesOff.contains(d), date, "contains(" + date + ")");
 	}
 	
-	public boolean containsAll(LocalDateInterval interval) {
-		return testAllAndLog(d -> datesOff.contains(d), interval, "containsAll(" + interval + ")");
-	}
+//	public boolean containsAll(LocalDateInterval interval) {
+//		return testAllAndLog(d -> datesOff.contains(d), interval, "containsAll(" + interval + ")");
+//	}
 	
 	public Set<LocalDate> getAvailableDays(Week week) {
 		log.entering(this.getClass().getName(), "getAvailableDays(" + week.toCondensedString() + ")");
-		Set<LocalDate> tempSet = datesOff.subSet(week.firstDayOfWeek, true, week.dates[6], true);
+		Set<LocalDate> tempSet = datesOff.subSet(week.dates[0], true, week.dates[6], true);
 		Set<LocalDate> toReturn = week.getDatesAsSet();
 		toReturn.removeAll(tempSet);
 		log.finer("RETURNING FROM " + this.getClass().getName() + ".getDaysOff()"
@@ -84,7 +82,7 @@ public class TimeOffList implements Serializable {
 	
 	public Set<LocalDate> getDaysOff(Week week) {
 		log.entering(this.getClass().getName(), "getDaysOff(" + week.toCondensedString() + ")");
-		return datesOff.subSet(week.firstDayOfWeek, true, week.dates[6], true);
+		return datesOff.subSet(week.dates[0], true, week.dates[6], true);
 	}
 	
 	public int size() {

@@ -3,9 +3,6 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 
-import driver.Driver;
-import tools.NumberTools;
-
 public class Restaurant {
 	public static final Restaurant HACIENDA = new Restaurant("Hacienda", 
 													LocalDate.of(2000, 1, 1),
@@ -24,8 +21,8 @@ public class Restaurant {
 					  LocalTime dayStart, LocalTime dayEnd) {
 		OPEN_DAY = openDay;
 		NAME = name.trim();
-		Driver.setUpLog.config(name + " has been open for " 
-					+ NumberTools.format(getDaysSinceOpen()) + " days");
+//		Driver.setUpLog.config(name + " has been open for " 
+//					+ NumberTools.format(getDaysSinceOpen()) + " days");
 		this.globalMaxHours = globalMaxHours;
 		this.dayEnd = dayEnd;
 		this.dayStart = dayStart;
@@ -33,7 +30,7 @@ public class Restaurant {
 	
 	public int getDaysSinceOpen() {
 		if (!validDaysSinceOpenCount) {
-			Driver.setUpLog.warning("Invalid daysSinceOpenCount. Revalidating");
+//			Driver.setUpLog.warning("Invalid daysSinceOpenCount. Revalidating");
 			daysSinceOpen = (int) OPEN_DAY.until(LocalDate.now(), ChronoUnit.DAYS);
 			validDaysSinceOpenCount = true;
 		}

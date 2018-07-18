@@ -1,12 +1,9 @@
 package Availability;
 
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import driver.Driver;
-import time.LocalDateInterval;
 import time.Week;
 
 public class Availability {
@@ -19,7 +16,7 @@ public class Availability {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public WeekAvailability getWeekAvailability(Week week) {
+	public WorkingAvailability getWorkingAvailability(Week week) {
 		// TODO
 		return null;
 	}
@@ -31,10 +28,6 @@ public class Availability {
 	
 	public boolean setTimeOff(LocalDate date) {
 		return timeOff.add(date);
-	}
-	
-	public boolean setTimeOff(LocalDateInterval dateInterval) {
-		return timeOff.addAll(dateInterval);
 	}
 	
 	public boolean inTimeOff(LocalDate date) {

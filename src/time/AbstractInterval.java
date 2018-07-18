@@ -1,18 +1,8 @@
 package time;
 
-import java.time.Duration;
-import java.time.Period;
-import java.time.format.DateTimeFormatter;
 import java.time.temporal.Temporal;
 import java.time.temporal.TemporalField;
 import java.time.temporal.TemporalUnit;
-import java.util.List;
-import java.util.Objects;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import driver.Driver;
-import emp.ClassNotEqualException;
 
 public abstract class AbstractInterval <INTERVAL extends AbstractInterval<INTERVAL, UNIT>, UNIT extends Temporal & Comparable<?>>
 									   implements Interval<INTERVAL> {

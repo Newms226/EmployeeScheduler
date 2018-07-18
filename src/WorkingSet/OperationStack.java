@@ -6,11 +6,10 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.stream.Collectors;
 
+import Availability.SchedulableTimeChunk;
 import driver.Driver;
 import emp.Employee;
 import emp.EmployeeSet;
-import restaurant.PositionID;
-import tools.FileTools;
 
 public class OperationStack implements Cloneable, Serializable {
 	private static final long serialVersionUID = 7548634254297027242L;
@@ -69,46 +68,9 @@ public class OperationStack implements Cloneable, Serializable {
 		return clone; // TODO: Return empty clone or null?
 	}
 	
-	public String toCSV() {
-		Driver.fileManagerLog.entering(OperationStack.class.getName(), "toCSV");
-		if (stack.size() == 0) {
-			Driver.deciderLog.warning("EMPTY STACK");
-			return "EMPTY STACK";
-		}
-		StringBuffer buffer = new StringBuffer();
-		stack.stream()
-			.forEach(o -> buffer.append(o.toCSV() + "\n"));
-		Driver.fileManagerLog.exiting(OperationStack.class.getName(), "toCSV");
-		return buffer.toString();
-	}
-	
-	public static OperationStack fromCSV(String[] csvFileLines, EmployeeSet<? extends Employee> list){
-		Driver.fileManagerLog.entering(OperationStack.class.getName(), "fromCSV");
-		OperationStack toReturn = new OperationStack();
-		for (int i = csvFileLines.length - 1; i >= 0; i--) {
-			if (csvFileLines[i].split(",")[0].equals(AssignmentOperation.class.getCanonicalName())) {
-				toReturn.push(AssignmentOperation.fromCSV(csvFileLines[i], list));
-			} else {
-				Error e = new Error("Bottomed out in OperationStack.fromCSV: " + csvFileLines[i].split(",")[0]);
-				Driver.deciderLog.log(Level.SEVERE, e.getMessage(), e);
-				throw e;
-			}
-		}
-		Driver.fileManagerLog.exiting(OperationStack.class.getName(), "fromCSV");
-		return toReturn;
-	}
-	
 	public OperationStack clone() {
 		// TODO
 		return null;
-	}
-	
-	public List<PositionID<? extends Employee>> extractPositionIDs(){
-		Driver.deciderLog.entering(OperationStack.class.getName(), "extractPositionIDs");
-		return stack.stream()
-			.filter(o -> o.getClass().equals(AssignmentOperation.class))
-			.map(a -> ((AssignmentOperation)a).getPositionID())
-			.collect(Collectors.toList());
 	}
 	
 	public int count() {
@@ -134,3 +96,40 @@ public class OperationStack implements Cloneable, Serializable {
 		return true;
 	}
 }
+//
+//public List<SchedulableTimeChunk> extractPositionIDs(){
+//	Driver.deciderLog.entering(OperationStack.class.getName(), "extractPositionIDs");
+//	return stack.stream()
+//		.filter(o -> o.getClass().equals(AssignmentOperation.class))
+//		.map(a -> ((AssignmentOperation)a).getPositionID())
+//		.collect(Collectors.toList());
+//}
+//
+//public String toCSV() {
+//	Driver.fileManagerLog.entering(OperationStack.class.getName(), "toCSV");
+//	if (stack.size() == 0) {
+//		Driver.deciderLog.warning("EMPTY STACK");
+//		return "EMPTY STACK";
+//	}
+//	StringBuffer buffer = new StringBuffer();
+//	stack.stream()
+//		.forEach(o -> buffer.append(o.toCSV() + "\n"));
+//	Driver.fileManagerLog.exiting(OperationStack.class.getName(), "toCSV");
+//	return buffer.toString();
+//}
+//
+//public static OperationStack fromCSV(String[] csvFileLines, EmployeeSet<? extends Employee> list){
+//	Driver.fileManagerLog.entering(OperationStack.class.getName(), "fromCSV");
+//	OperationStack toReturn = new OperationStack();
+//	for (int i = csvFileLines.length - 1; i >= 0; i--) {
+//		if (csvFileLines[i].split(",")[0].equals(AssignmentOperation.class.getCanonicalName())) {
+//			toReturn.push(AssignmentOperation.fromCSV(csvFileLines[i], list));
+//		} else {
+//			Error e = new Error("Bottomed out in OperationStack.fromCSV: " + csvFileLines[i].split(",")[0]);
+//			Driver.deciderLog.log(Level.SEVERE, e.getMessage(), e);
+//			throw e;
+//		}
+//	}
+//	Driver.fileManagerLog.exiting(OperationStack.class.getName(), "fromCSV");
+//	return toReturn;
+//}

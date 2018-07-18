@@ -1,103 +1,150 @@
 
 package WorkingSet;
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 import java.util.function.Predicate;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 
+import Availability.SchedulableTimeChunk;
 import driver.Driver;
 import emp.Employee;
 import emp.EmployeeSet;
-import restaurant.PositionID;
+import emp.EmployeeType;
+import emp.HouseShift;
+import restaurant.PositionType;
 import tools.StringTools;
 
-public class QualifiedEmployeeList<E extends Employee> {
+public class QualifiedEmployeeList implements Serializable {
+	
+	/******************************************************************************
+	 *                                                                            *
+	 *                               Static Fields                                *
+	 *                                                                            *
+	 ******************************************************************************/
 	private static final long serialVersionUID = 4736584683492745894L;
+	private static final Logger log = Driver.deciderLog;
+	
+	/******************************************************************************
+	 *                                                                            *
+	 *                                                                            *
+	 *                        Instance Fields & Methods                           *
+	 *                                                                            *
+	 *                                                                            *
+	 ******************************************************************************/
+	
+	public final PositionType positionType;
+	public final SchedulableTimeChunk chunk;
+	
+	private final List<Employee> workingList;
 	
 	private SF statusFlag;
-	private final Set<E> workingList;
-	public final PositionID<E> ID;
-	final int globalMax;
-	public final Class<? extends Employee> employeeType;
-	
-	public enum SF {BELLOW_DESIRED, BELLOW_PERSONAL_MAX, BELLOW_GLOBAL_MAX, HOUSE_ONLY}
-	
-	QualifiedEmployeeList(EmployeeSet<E> list, PositionID<E> ID, int globalMax) {
-		Driver.deciderLog.log(Level.CONFIG, "Creating Qualified Employee list for {0}", ID);
-		statusFlag = SF.BELLOW_DESIRED;
-		this.ID = ID;
-		this.employeeType = list.employeeType;
-		workingList = new HashSet<E>(fill(list));
-		this.globalMax = globalMax;
+	private boolean found;
+
+	private enum SF {
+		BELLOW_DESIRED, 
+		BELLOW_PERSONAL_MAX, 
+		BELLOW_GLOBAL_MAX, 
+		HOUSE_ONLY
 	}
 	
-	Set<E> fill(EmployeeSet<E> list) {
-		Driver.deciderLog.log(Level.FINER, "ENTERING: QualifiedEmployeeList.fill()");
-		return list.filter(s -> s.canWork(ID));
+	QualifiedEmployeeList(EmployeeSet list, SchedulableTimeChunk chunk) {
+		log.log(Level.CONFIG, "Creating Qualified Employee list for {0}", chunk);
+	
+		this.chunk = chunk;
+		this.positionType = chunk.positionType;
+		statusFlag = SF.BELLOW_DESIRED;
+		workingList = new ArrayList<Employee>(fill(list));
+	}
+	
+	Set<Employee> fill(EmployeeSet list) {
+		log.log(Level.FINER, "ENTERING: QualifiedEmployeeList.fill()");
+		return list.filter(s -> s.canWork(chunk));
 	}
 
+	@SuppressWarnings("static-access")
 	Employee getEmployee() {
-		Driver.deciderLog.log(Level.FINER, 
+		log.log(Level.FINER, 
 				"ENTERING: getEmployee for {0} presently {1}", 
-				new Object[] {ID, statusFlag});
-		Optional<E> optionalEmployee = Optional.empty();
-		if (statusFlag.equals(SF.BELLOW_DESIRED)) {
-			optionalEmployee = conditionalFill(emp -> emp.currentlyAvailableFor(ID));
-			if (!optionalEmployee.isPresent()) {
+				new Object[] {chunk, statusFlag});
+		
+		Optional<Employee> optionalEmployee = Optional.empty();
+		found = false;
+		
+		if (statusFlag == SF.BELLOW_DESIRED) {
+			optionalEmployee = conditionalFill(emp -> emp.canWork(chunk));
+			if (optionalEmployee.isPresent()) {
+				found = true;
+			} else {
 				statusFlag = SF.BELLOW_PERSONAL_MAX;
+				log.info("UPDATE SF: Bellow Desired > Bellow Personal Max\n"  + this);
 			}
 		}
-		if (statusFlag.equals(SF.BELLOW_PERSONAL_MAX)) {
-			optionalEmployee = conditionalFill(emp -> emp.currentlyAvailableFor(ID) && emp.bellowPersonalMax());
-			if (!optionalEmployee.isPresent()) {
+		
+		if (!found && statusFlag == SF.BELLOW_PERSONAL_MAX) {
+			optionalEmployee = conditionalFill(emp -> emp.bellowPersonalMax()
+					                           && emp.canWork(chunk));
+			if (optionalEmployee.isPresent()) {
+				found = true;
+			} else {
 				statusFlag = SF.BELLOW_GLOBAL_MAX;
+				log.info("UPDATE SF: Bellow Personal Max > Bellow Global Max\n"  + this);
 			}
 		}
-		if (statusFlag.equals(SF.BELLOW_GLOBAL_MAX)) {
-			optionalEmployee = conditionalFill(emp -> emp.currentlyAvailableFor(ID) && emp.bellowGlobalMax(globalMax));
-			if (!optionalEmployee.isPresent()) {
+		
+		if (!found && statusFlag == SF.BELLOW_GLOBAL_MAX) {
+			optionalEmployee = conditionalFill(emp -> emp.bellowGlobalMax()
+					                           && emp.canWork(chunk));
+			if (optionalEmployee.isPresent()) {
+				found = true;
+			} else {
 				statusFlag = (SF.HOUSE_ONLY);
+				log.info("UPDATE SF: Bellow Global Max > HOUSE ONLY\n"  + this);
 			}
 		}
 		
-		Driver.deciderLog.log(Level.FINER, 
-				"Leaving: getEmployee for {0} presently {1} found {2}", 
-				new Object[] {ID, 
-						statusFlag, 
-						optionalEmployee.isPresent()});
-		
-		if (optionalEmployee.isPresent()) {
-			return optionalEmployee.get();
-		} else {
-			return null;
+		if (!found) {
+			optionalEmployee.of(new HouseShift());
+			log.info("SCHEDULED: HOUSE to " + chunk);
 		}
+		
+		log.finer("RETURNING: getEmployee(" + chunk + ") with " + optionalEmployee.get());
+		return optionalEmployee.get();
 	}
 	
-	Optional<E> conditionalFill(Predicate<E> predicate) {
+	Optional<Employee> conditionalFill(Predicate<Employee> predicate) {
 		return workingList.stream()
 			.filter(predicate)
 			.sorted(Employee.DESENDING_PRIORITY_ORDER)
 			.findFirst();
 	}
 	
+	/******************************************************************************
+	 *                                                                            *
+	 *                       Getter & Setter Methods                              *
+	 *                                                                            *
+	 ******************************************************************************/
+	
 	public SF getStatusFlag() {
 		return statusFlag;
 	}
 	
-	public String toCSV() {
-		StringBuffer buffer = new StringBuffer("(" + statusFlag.name() + "){");
-		workingList.stream()
-			.forEach(emp -> buffer.append("[" + emp.ID + "," + emp.getCurrentPrioirty() + "],"));
-		return StringTools.removeLastComma(buffer).concat("}");
+	/******************************************************************************
+	 *                                                                            *
+	 *                              Override Methods                              *
+	 *                                                                            *
+	 ******************************************************************************/
+	
+	@Override
+	public String toString() {
+		return "Qualified Employee list for " + chunk 
+				+ "\n  Size: " + workingList.size() + " StatusFlag: " + statusFlag;
 	}
 	
-	public static <E extends Employee> QualifiedEmployeeList<E> fromCSV(String string){
-		// TODO
-		return null;
-	}
-	
-	@SuppressWarnings("unchecked")
 	@Override
 	public boolean equals(Object o) {
 		if (o == this) return true;
@@ -105,32 +152,31 @@ public class QualifiedEmployeeList<E extends Employee> {
 		
 		if (!this.getClass().equals(o.getClass())) return false;
 		
-		QualifiedEmployeeList<E> that = null;
-		try {
-			that = (QualifiedEmployeeList<E>) o;
-		} catch (ClassCastException e) {
-			return false;
-		}
+		QualifiedEmployeeList that = (QualifiedEmployeeList) o;
 		
-		if (!statusFlag.equals(that.statusFlag)) return false;
-		if (globalMax != that.globalMax) return false;
-		if (!ID.equals(that.ID)) return false;
-		if (!workingList.equals(that.workingList)) return false;
+		if (statusFlag != that.statusFlag) return false;
+		if (!chunk.equals(that.chunk)) return false;
+		if (!workingList.containsAll(that.workingList)) return false;
 		
 		return true;
 	}
-	
-//	public boolean ofDay(PositionID<? extends Employee> ID) {
-//		return ID.getDay().dayOfWeek == this.ID.getDay().dayOfWeek;
-//	}
-	
-	public Class<? extends Employee> employeeType(){
-		return employeeType;
-	}
-	
-//	void update(Averager avg) {
-//		final double averageFill = avg.average();
-//		super.stream()
-//			.forEach(s -> s.employeePriority.getCurrentPriority(averageFill));
-//	}
 }
+//public boolean ofDay(PositionID<? extends Employee> ID) {
+//return ID.getDay().dayOfWeek == this.ID.getDay().dayOfWeek;
+//}
+//void update(Averager avg) {
+//final double averageFill = avg.average();
+//super.stream()
+//	.forEach(s -> s.employeePriority.getCurrentPriority(averageFill));
+//}
+//public String toCSV() {
+//	StringBuffer buffer = new StringBuffer("(" + statusFlag.name() + "){");
+//	workingList.stream()
+//		.forEach(emp -> buffer.append("[" + emp.ID + "," + emp.getCurrentPrioirty() + "],"));
+//	return StringTools.removeLastComma(buffer).concat("}");
+//}
+//
+//public static <E extends Employee> QualifiedEmployeeList<E> fromCSV(String string){
+//	// TODO
+//	return null;
+//}
