@@ -1,15 +1,19 @@
 package Availability;
 
-import java.time.DayOfWeek;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Set;
 import java.util.logging.Logger;
 
 import driver.Driver;
 import time.Week;
 
-public class Availability {
+public class Availability implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6509345631328690224L;
+
 	private static final Logger log = Driver.availabilityLog;
 	
 	PersistantWeeklyAvailability persistantAvail;

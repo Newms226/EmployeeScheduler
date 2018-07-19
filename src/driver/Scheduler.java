@@ -1,7 +1,6 @@
 package driver;
 
 
-import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -12,14 +11,13 @@ import WorkingSet.QualifiedEmployeeListMap;
 import WorkingSet.Schedule;
 import WorkingSet.ScheduleSetUp;
 import driver.FileManager.SF;
-import emp.Employee;
 import emp.EmployeeSet;
 import racer.StopWatch;
 import time.Week;
 import tools.FileTools;
 import util.Averager;
 
-public class Scheduler {
+class Scheduler {
 	private static final Logger log = Driver.deciderLog;
 	
 	Averager averager;
@@ -29,7 +27,7 @@ public class Scheduler {
 	QualifiedEmployeeListMap qualMap;
 	Week week;
 	
-	public Scheduler(EmployeeSet employees, ScheduleSetUp setUp, Week week) {
+	Scheduler(EmployeeSet employees, ScheduleSetUp setUp, Week week) {
 		this.employees = employees;
 		this.setUp = setUp;
 		this.week = week;
@@ -39,7 +37,7 @@ public class Scheduler {
 		prepare();
 	}
 	
-	void prepare() {
+	private void prepare() {
 		log.info("Preparing to schedule...");
 		FileManager.serializeEmployeeSet(FileManager.SF.BEFORE_SCHEDULE, employees);
 		FileManager.serializeScheduleSetUp(FileManager.SF.BEFORE_SCHEDULE, setUp);
@@ -48,7 +46,7 @@ public class Scheduler {
 		log.info("PREPARED");
 	}
 	
-	public Schedule run() {
+	Schedule run() {
 		log.entering(this.getClass().getName(), "run");
 		
 		long startTime = System.nanoTime();

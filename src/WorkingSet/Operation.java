@@ -1,8 +1,9 @@
 package WorkingSet;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public interface Operation<T extends Cloneable> extends Cloneable {
+public interface Operation<T extends Cloneable> extends Cloneable, Serializable {
 	
 //	public static enum OperationType {
 //		a(AssignmentOperation.class){

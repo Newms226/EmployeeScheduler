@@ -2,7 +2,6 @@ package Availability;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.HashSet;
 import java.util.NavigableSet;
 import java.util.Set;
 import java.util.TreeSet;
@@ -10,7 +9,6 @@ import java.util.function.Predicate;
 import java.util.logging.Logger;
 
 import driver.Driver;
-import time.LocalDateInterval;
 import time.Week;
 
 public class TimeOffList implements Serializable {

@@ -4,6 +4,11 @@ import java.util.logging.Level;
 
 public class LabledTimeChunk extends TimeChunk {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8649563322347330320L;
+
 	/******************************************************************************
 	 *                                                                            *
 	 *                                                                            *

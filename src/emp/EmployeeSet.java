@@ -16,6 +16,10 @@ import tools.CollectionTools;
 import tools.NumberTools;
 
 public class EmployeeSet implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3440900186372080836L;
 	List<Employee> employeeSet;
 	
 	public EmployeeSet() {

@@ -7,7 +7,6 @@ import java.util.logging.Logger;
 import Availability.SchedulableTimeChunk;
 import driver.Driver;
 import emp.Employee;
-import emp.EmployeeType;
 import util.Averager;
 
 public class AssignmentOperation implements Operation<SchedulableTimeChunk>,

@@ -1,9 +1,15 @@
 package restaurant;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 
-public class Restaurant {
+public class Restaurant implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3222029558593377007L;
+
 	public static final Restaurant HACIENDA = new Restaurant("Hacienda", 
 													LocalDate.of(2000, 1, 1),
 													60,

@@ -1,18 +1,19 @@
 package WorkingSet;
 
+import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
-import java.util.Vector;
 import java.util.logging.Level;
 
 import Availability.SchedulableTimeChunk;
 import driver.Driver;
-import emp.Employee;
-import emp.EmployeeSet;
 
-public class Schedule {
+public class Schedule implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8129711733263558792L;
 	public boolean valid;
 	private List<SchedulableTimeChunk> completedIDs;
 	

@@ -1,10 +1,11 @@
 package emp;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
 import tools.DriverTools;
 
-public enum EmployeeType {
+public enum EmployeeType implements Serializable {
 	Bartender, 
 	Server, 
 	Cook, // TODO

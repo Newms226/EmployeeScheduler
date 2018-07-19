@@ -1,0 +1,1074 @@
+Jul 18, 2018 9:36:52 AM driver.Scheduler prepare
+INFO: Preparing to schedule...
+Jul 18, 2018 9:36:52 AM driver.Scheduler prepare
+INFO: Properly serialized
+Jul 18, 2018 9:36:52 AM driver.Scheduler prepare
+INFO: PREPARED
+Jul 18, 2018 9:36:52 AM driver.Scheduler run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+FINEST: SUCCESS: Copied PositionIDs
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+FINEST: Current List: 
+Current Sorted List: Monday 11:00AM - Monday 02:00PM
+Monday 11:00AM - Monday 02:00PM
+Monday 11:00AM - Monday 02:00PM
+Thursday 05:59PM - Thursday 09:00PM
+Thursday 05:59PM - Thursday 09:00PM
+Monday 09:00AM - Monday 03:00PM
+Monday 10:00AM - Monday 03:00PM
+Monday 10:00AM - Monday 03:00PM
+Monday 10:00AM - Monday 03:00PM
+Thursday 05:59PM - Thursday 09:00PM
+Friday 03:00PM - Friday 09:00PM
+Thursday 04:15PM - Thursday 09:00PM
+Thursday 04:15PM - Thursday 08:02PM
+Friday 03:00PM - Friday 10:00PM
+Friday 04:00PM - Friday 09:00PM
+Friday 04:00PM - Friday 09:00PM
+Friday 05:00PM - Friday 09:00PM
+Friday 05:00PM - Friday 09:00PM
+Friday 05:00PM - Friday 08:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Friday 05:00PM - Friday 11:00PM
+Friday 03:00PM - Friday 11:00PM
+Friday 03:00PM - Friday 08:00PM
+Friday 04:00PM - Friday 09:00PM
+Friday 03:00PM - Friday 08:30PM
+Friday 04:30PM - Friday 11:00PM
+Friday 03:00PM - Friday 11:00PM
+Friday 03:00PM - Friday 11:00PM
+Friday 03:00PM - Friday 11:00PM
+
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: Begin schedule
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Monday 11:00AM - Monday 02:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Monday 11:00AM - Monday 02:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Monday 11:00AM - Monday 02:00PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Monday 11:00AM - Monday 02:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Monday 11:00AM - Monday 02:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Monday 11:00AM - Monday 02:00PM
+	Qualified Employee list for Monday 11:00AM - Monday 02:00PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Monday 11:00AM - Monday 02:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Monday 11:00AM - Monday 02:00PM) with Dena
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 3.0000 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(3.0000 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Monday 11:00AM - Monday 02:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Monday 11:00AM - Monday 02:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Monday 11:00AM - Monday 02:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Monday 11:00AM - Monday 02:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Monday 11:00AM - Monday 02:00PM
+	Qualified Employee list for Monday 11:00AM - Monday 02:00PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Monday 11:00AM - Monday 02:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Monday 11:00AM - Monday 02:00PM) with Kim
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 3.0000 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(3.0000 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Monday 11:00AM - Monday 02:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Monday 11:00AM - Monday 02:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Monday 11:00AM - Monday 02:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Monday 11:00AM - Monday 02:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Monday 11:00AM - Monday 02:00PM
+	Qualified Employee list for Monday 11:00AM - Monday 02:00PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Monday 11:00AM - Monday 02:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Monday 11:00AM - Monday 02:00PM) with Chels
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 3.0000 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(3.0000 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Thursday 05:59PM - Thursday 09:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 05:59PM - Thursday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Thursday 05:59PM - Thursday 09:00PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Thursday 05:59PM - Thursday 09:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 05:59PM - Thursday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 05:59PM - Thursday 09:00PM
+	Qualified Employee list for Thursday 05:59PM - Thursday 09:00PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 05:59PM - Thursday 09:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 05:59PM - Thursday 09:00PM) with Me
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 3.0167 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(3.0167 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Thursday 05:59PM - Thursday 09:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 05:59PM - Thursday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Thursday 05:59PM - Thursday 09:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 05:59PM - Thursday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 05:59PM - Thursday 09:00PM
+	Qualified Employee list for Thursday 05:59PM - Thursday 09:00PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 05:59PM - Thursday 09:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 05:59PM - Thursday 09:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 3.0167 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(3.0167 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Monday 09:00AM - Monday 03:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Monday 09:00AM - Monday 03:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Monday 09:00AM - Monday 03:00PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Monday 09:00AM - Monday 03:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Monday 09:00AM - Monday 03:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Monday 09:00AM - Monday 03:00PM
+	Qualified Employee list for Monday 09:00AM - Monday 03:00PM
+  Size: 6 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Monday 09:00AM - Monday 03:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Monday 09:00AM - Monday 03:00PM) with Wade
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 6.0000 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(6.0000 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Monday 10:00AM - Monday 03:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Monday 10:00AM - Monday 03:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Monday 10:00AM - Monday 03:00PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Monday 10:00AM - Monday 03:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Monday 10:00AM - Monday 03:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Monday 10:00AM - Monday 03:00PM
+	Qualified Employee list for Monday 10:00AM - Monday 03:00PM
+  Size: 9 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Monday 10:00AM - Monday 03:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Monday 10:00AM - Monday 03:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 8.0167 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(8.0167 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Monday 10:00AM - Monday 03:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Monday 10:00AM - Monday 03:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Monday 10:00AM - Monday 03:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Monday 10:00AM - Monday 03:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Monday 10:00AM - Monday 03:00PM
+	Qualified Employee list for Monday 10:00AM - Monday 03:00PM
+  Size: 9 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Monday 10:00AM - Monday 03:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Monday 10:00AM - Monday 03:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 13.0167 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(13.0167 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Monday 10:00AM - Monday 03:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Monday 10:00AM - Monday 03:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Monday 10:00AM - Monday 03:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Monday 10:00AM - Monday 03:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Monday 10:00AM - Monday 03:00PM
+	Qualified Employee list for Monday 10:00AM - Monday 03:00PM
+  Size: 9 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Monday 10:00AM - Monday 03:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Monday 10:00AM - Monday 03:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 18.0167 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(18.0167 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Thursday 05:59PM - Thursday 09:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 05:59PM - Thursday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Thursday 05:59PM - Thursday 09:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 05:59PM - Thursday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 05:59PM - Thursday 09:00PM
+	Qualified Employee list for Thursday 05:59PM - Thursday 09:00PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 05:59PM - Thursday 09:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 05:59PM - Thursday 09:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 21.0333 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(21.0333 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 09:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 03:00PM - Friday 09:00PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 03:00PM - Friday 09:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 09:00PM
+	Qualified Employee list for Friday 03:00PM - Friday 09:00PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 09:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 09:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 27.0333 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(27.0333 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Thursday 04:15PM - Thursday 09:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 04:15PM - Thursday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Thursday 04:15PM - Thursday 09:00PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Thursday 04:15PM - Thursday 09:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 04:15PM - Thursday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 04:15PM - Thursday 09:00PM
+	Qualified Employee list for Thursday 04:15PM - Thursday 09:00PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 04:15PM - Thursday 09:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 04:15PM - Thursday 09:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 31.7833 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(31.7833 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Thursday 04:15PM - Thursday 08:02PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 04:15PM - Thursday 08:02PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Thursday 04:15PM - Thursday 08:02PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Thursday 04:15PM - Thursday 08:02PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 04:15PM - Thursday 08:02PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 04:15PM - Thursday 08:02PM
+	Qualified Employee list for Thursday 04:15PM - Thursday 08:02PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 04:15PM - Thursday 08:02PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 04:15PM - Thursday 08:02PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 35.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(35.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 10:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 10:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 03:00PM - Friday 10:00PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 03:00PM - Friday 10:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 10:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 10:00PM
+	Qualified Employee list for Friday 03:00PM - Friday 10:00PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 10:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 10:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 42.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(42.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 04:00PM - Friday 09:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 04:00PM - Friday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 04:00PM - Friday 09:00PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 04:00PM - Friday 09:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 04:00PM - Friday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 04:00PM - Friday 09:00PM
+	Qualified Employee list for Friday 04:00PM - Friday 09:00PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 04:00PM - Friday 09:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 04:00PM - Friday 09:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 47.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(47.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 04:00PM - Friday 09:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 04:00PM - Friday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Friday 04:00PM - Friday 09:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 04:00PM - Friday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 04:00PM - Friday 09:00PM
+	Qualified Employee list for Friday 04:00PM - Friday 09:00PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 04:00PM - Friday 09:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 04:00PM - Friday 09:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 52.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(52.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 05:00PM - Friday 09:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 05:00PM - Friday 09:00PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 05:00PM - Friday 09:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 05:00PM - Friday 09:00PM
+	Qualified Employee list for Friday 05:00PM - Friday 09:00PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 05:00PM - Friday 09:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 05:00PM - Friday 09:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 56.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(56.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 05:00PM - Friday 09:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Friday 05:00PM - Friday 09:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 05:00PM - Friday 09:00PM
+	Qualified Employee list for Friday 05:00PM - Friday 09:00PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 05:00PM - Friday 09:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 05:00PM - Friday 09:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 60.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(60.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 05:00PM - Friday 08:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 08:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 05:00PM - Friday 08:00PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 05:00PM - Friday 08:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 08:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 05:00PM - Friday 08:00PM
+	Qualified Employee list for Friday 05:00PM - Friday 08:00PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 05:00PM - Friday 08:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 05:00PM - Friday 08:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 63.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(63.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Thursday 03:00PM - Thursday 10:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Thursday 03:00PM - Thursday 10:00PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 03:00PM - Thursday 10:00PM
+	Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM
+  Size: 8 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 03:00PM - Thursday 10:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 03:00PM - Thursday 10:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 70.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(70.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Thursday 03:00PM - Thursday 10:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Thursday 03:00PM - Thursday 10:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 03:00PM - Thursday 10:00PM
+	Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM
+  Size: 8 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 03:00PM - Thursday 10:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 03:00PM - Thursday 10:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 77.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(77.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Thursday 03:00PM - Thursday 10:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Thursday 03:00PM - Thursday 10:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 03:00PM - Thursday 10:00PM
+	Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM
+  Size: 8 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 03:00PM - Thursday 10:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 03:00PM - Thursday 10:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 84.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(84.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Thursday 03:00PM - Thursday 10:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Thursday 03:00PM - Thursday 10:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 03:00PM - Thursday 10:00PM
+	Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM
+  Size: 8 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 03:00PM - Thursday 10:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 03:00PM - Thursday 10:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 91.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(91.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Thursday 03:00PM - Thursday 10:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Thursday 03:00PM - Thursday 10:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 03:00PM - Thursday 10:00PM
+	Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM
+  Size: 8 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 03:00PM - Thursday 10:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 03:00PM - Thursday 10:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 98.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(98.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Thursday 03:00PM - Thursday 10:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Thursday 03:00PM - Thursday 10:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 03:00PM - Thursday 10:00PM
+	Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM
+  Size: 8 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 03:00PM - Thursday 10:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 03:00PM - Thursday 10:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 105.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(105.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 05:00PM - Friday 11:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 11:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 05:00PM - Friday 11:00PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 05:00PM - Friday 11:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 11:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 05:00PM - Friday 11:00PM
+	Qualified Employee list for Friday 05:00PM - Friday 11:00PM
+  Size: 6 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 05:00PM - Friday 11:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 05:00PM - Friday 11:00PM) with Alecia
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 6.0000 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(6.0000 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 11:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 03:00PM - Friday 11:00PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 03:00PM - Friday 11:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 11:00PM
+	Qualified Employee list for Friday 03:00PM - Friday 11:00PM
+  Size: 9 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 11:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 11:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 113.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(113.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 08:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 08:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 03:00PM - Friday 08:00PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 03:00PM - Friday 08:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 08:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 08:00PM
+	Qualified Employee list for Friday 03:00PM - Friday 08:00PM
+  Size: 6 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 08:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 08:00PM) with Alecia
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 11.0000 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(11.0000 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 04:00PM - Friday 09:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 04:00PM - Friday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Friday 04:00PM - Friday 09:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 04:00PM - Friday 09:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 04:00PM - Friday 09:00PM
+	Qualified Employee list for Friday 04:00PM - Friday 09:00PM
+  Size: 11 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 04:00PM - Friday 09:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 04:00PM - Friday 09:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 118.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(118.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 08:30PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 08:30PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 03:00PM - Friday 08:30PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 03:00PM - Friday 08:30PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 08:30PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 08:30PM
+	Qualified Employee list for Friday 03:00PM - Friday 08:30PM
+  Size: 8 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 08:30PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 08:30PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 124.0667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(124.0667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 04:30PM - Friday 11:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 04:30PM - Friday 11:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 04:30PM - Friday 11:00PM is not present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 04:30PM - Friday 11:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 04:30PM - Friday 11:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 04:30PM - Friday 11:00PM
+	Qualified Employee list for Friday 04:30PM - Friday 11:00PM
+  Size: 8 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 04:30PM - Friday 11:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 04:30PM - Friday 11:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 130.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(130.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 11:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Friday 03:00PM - Friday 11:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 11:00PM
+	Qualified Employee list for Friday 03:00PM - Friday 11:00PM
+  Size: 9 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 11:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 11:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 138.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(138.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 11:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Friday 03:00PM - Friday 11:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 11:00PM
+	Qualified Employee list for Friday 03:00PM - Friday 11:00PM
+  Size: 9 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 11:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 11:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 146.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(146.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 11:00PM
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Friday 03:00PM - Friday 11:00PM map is present
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM)
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 11:00PM
+	Qualified Employee list for Friday 03:00PM - Friday 11:00PM
+  Size: 9 StatusFlag: BELLOW_DESIRED
+	util.Averager@1de0aca6
+Jul 18, 2018 9:36:53 AM WorkingSet.OperationStack push
+FINER: pusing
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 11:00PM presently BELLOW_DESIRED
+Jul 18, 2018 9:36:53 AM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 11:00PM) with Brandon
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 154.5667 AverageFill: �
+Jul 18, 2018 9:36:53 AM emp.EmployeePriority getFillDouble
+FINER: ƒ(154.5667 - �) = �
+Jul 18, 2018 9:36:53 AM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 18, 2018 9:36:53 AM WorkingSet.Schedule <init>
+CONFIG: Called constructor for Schedule
+Jul 18, 2018 9:36:53 AM driver.Scheduler run
+INFO: COMPLETE: Scheduler
+  IN: 626,517,171 nanoseconds

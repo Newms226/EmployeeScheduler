@@ -1,4 +1,5 @@
 package emp;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
@@ -8,8 +9,13 @@ import driver.Driver;
 import restaurant.PositionType;
 import tools.NumberTools;
 
-public class EmployeePriority implements Comparable<EmployeePriority> {
+public class EmployeePriority implements Comparable<EmployeePriority>, Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5892393713077521485L;
+
 	public static final double GRACE_FACTOR = .5,
             DATE_FACTOR = .4,
             QUAL_FACTOR = .1,

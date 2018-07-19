@@ -2,7 +2,6 @@
 package WorkingSet;
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -14,10 +13,8 @@ import Availability.SchedulableTimeChunk;
 import driver.Driver;
 import emp.Employee;
 import emp.EmployeeSet;
-import emp.EmployeeType;
 import emp.HouseShift;
 import restaurant.PositionType;
-import tools.StringTools;
 
 public class QualifiedEmployeeList implements Serializable {
 	
@@ -59,11 +56,14 @@ public class QualifiedEmployeeList implements Serializable {
 		this.positionType = chunk.positionType;
 		statusFlag = SF.BELLOW_DESIRED;
 		workingList = new ArrayList<Employee>(fill(list));
+		if (workingList.size() > 0 ) found = true;
+		// TODO: Note that this will cause if errors, if calling method does not immpediately
+		// ask for the first employee
 	}
 	
 	Set<Employee> fill(EmployeeSet list) {
 		log.log(Level.FINER, "ENTERING: QualifiedEmployeeList.fill()");
-		return list.filter(s -> s.canWork(chunk));
+		return list.filter(s -> s.bellowMinimumHours() && s.canWork(chunk));
 	}
 
 	@SuppressWarnings("static-access")
@@ -72,11 +72,18 @@ public class QualifiedEmployeeList implements Serializable {
 				"ENTERING: getEmployee for {0} presently {1}", 
 				new Object[] {chunk, statusFlag});
 		
-		Optional<Employee> optionalEmployee = Optional.empty();
-		found = false;
+		Optional<Employee> optionalEmployee;
+		
+		if (found) {
+			optionalEmployee = Optional.of(workingList.get(0));
+			log.fine("CONSTRUCTOR: Found: " + optionalEmployee.get() + " immediately");
+		} else {
+			optionalEmployee = Optional.empty();
+		}
 		
 		if (statusFlag == SF.BELLOW_DESIRED) {
-			optionalEmployee = conditionalFill(emp -> emp.canWork(chunk));
+			optionalEmployee = conditionalFill(emp -> emp.bellowDesiredHours() 
+					                           && emp.availableToWork(chunk));
 			if (optionalEmployee.isPresent()) {
 				found = true;
 			} else {
@@ -87,7 +94,7 @@ public class QualifiedEmployeeList implements Serializable {
 		
 		if (!found && statusFlag == SF.BELLOW_PERSONAL_MAX) {
 			optionalEmployee = conditionalFill(emp -> emp.bellowPersonalMax()
-					                           && emp.canWork(chunk));
+					                           && emp.availableToWork(chunk));
 			if (optionalEmployee.isPresent()) {
 				found = true;
 			} else {
@@ -98,7 +105,7 @@ public class QualifiedEmployeeList implements Serializable {
 		
 		if (!found && statusFlag == SF.BELLOW_GLOBAL_MAX) {
 			optionalEmployee = conditionalFill(emp -> emp.bellowGlobalMax()
-					                           && emp.canWork(chunk));
+					                           && emp.availableToWork(chunk));
 			if (optionalEmployee.isPresent()) {
 				found = true;
 			} else {
@@ -107,13 +114,20 @@ public class QualifiedEmployeeList implements Serializable {
 			}
 		}
 		
-		if (optionalEmployee.isPresent()) {
+		if (!found && statusFlag == SF.HOUSE_ONLY) {
+			optionalEmployee = Optional.of(new HouseShift());
+			log.info("SCHEDULED: HOUSE to " + chunk);
+		}
+		
+		found = false; // reset found;
+		
+//		if (optionalEmployee.isPresent()) {
 			log.finer("RETURNING: getEmployee(" + chunk + ") with " + optionalEmployee.get());
 			return optionalEmployee.get();
-		} else {
-			log.info("SCHEDULED: HOUSE to " + chunk);
-			return new HouseShift();
-		}
+//		} else {
+//			
+//			return new HouseShift();
+//		}
 	}
 	
 	Optional<Employee> conditionalFill(Predicate<Employee> predicate) {
