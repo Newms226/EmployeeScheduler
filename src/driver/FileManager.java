@@ -1,7 +1,9 @@
 package driver;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.io.Serializable;
 import java.nio.file.DirectoryStream;
 import java.nio.file.FileVisitResult;
@@ -12,6 +14,8 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
+import java.util.Date;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -20,6 +24,7 @@ import WorkingSet.Schedule;
 import WorkingSet.ScheduleSetUp;
 import emp.EmployeeSet;
 import racer.StopWatch;
+import tools.FileTools;
 
 public class FileManager {
 	
@@ -38,7 +43,7 @@ public class FileManager {
 	 ******************************************************************************/
 	
 	public final static SimpleDateFormat fileFormat = new SimpleDateFormat("MMddyy.kkmm.ss.SSSS"); 
-	private static final Logger log = Driver.fileManagerLog;
+	private static final Logger log = Driver.masterLog;
 	
 	public static final String WORKING_FOLDER = "/Users/Michael/gitHub/EmployeeScheduler/files/";
 	static final String logFolder = WORKING_FOLDER + "logs";
@@ -85,6 +90,34 @@ public class FileManager {
 	public static boolean serializeOperationsStack(SF statusFlag, OperationStack opStack) {
 		// TODO 
 		return false;
+	}
+	
+	public static boolean serializeProcessLogs(List<ProcessLog> logs) {
+		File dir = new File(Driver.workingLogDir + "/processLogs");
+		if (!dir.exists()) {
+			log.finer("Generated: " + dir);
+			if (!dir.mkdirs()) {
+				log.severe("FAILURE: Could not create directories above " + dir);
+				return false;
+			} else {
+				log.finer("SUCCESS: Generated directories above " + dir);
+			}
+		} else {
+			log.warning(dir + " ALREADY EXISTED");
+		}
+		
+		File file;
+		for (int i = 0; i < logs.size(); i++) {
+			file = new File(dir.toString() + "/" + i + ".txt");
+			try {
+				FileTools.writeToFile(new PrintWriter(file), logs.get(i));
+			} catch (FileNotFoundException e) {
+				log.log(Level.SEVERE, e.getMessage(), e);
+				return false;
+			}
+		}
+		
+		return true;
 	}
 	
 	private static boolean serialize(SF statusFlag, Serializable toSerialize, File location) {

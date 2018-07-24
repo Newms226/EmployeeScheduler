@@ -6,7 +6,9 @@ import java.util.logging.Logger;
 
 import Availability.SchedulableTimeChunk;
 import driver.Driver;
+import driver.ProcessLog;
 import emp.Employee;
+import emp.EmployeeSet;
 import util.Averager;
 
 public class AssignmentOperation implements Operation<SchedulableTimeChunk>,
@@ -43,7 +45,7 @@ public class AssignmentOperation implements Operation<SchedulableTimeChunk>,
 			                   QualifiedEmployeeList list,
 			                   Averager avg) {
 		log.finest("CONSTRUCTOR: Building new AssignmentOperation"
-				+ "\n\t" + chunk
+				+ "\n\t" + chunk.getInfoString()
 				+ "\n\t" + list 
 				+ "\n\t" + avg);
 
@@ -76,6 +78,10 @@ public class AssignmentOperation implements Operation<SchedulableTimeChunk>,
 		time = LocalDateTime.now();
 		log.exiting(AssignmentOperation.class.getName(), "run");
 		return chunk;
+	}
+	
+	public ProcessLog getProcessLog(int i, EmployeeSet allEmployees) {
+		return new ProcessLog(i, employee, list, allEmployees);
 	}
 
 	@Override

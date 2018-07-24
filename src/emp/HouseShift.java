@@ -87,8 +87,8 @@ public class HouseShift extends Employee {
 		
 		log.fine("SCHEDULED: House to " + chunk 
 				+ "\n\tCurrent Hours: " + currentHours);
-		assignedShifts.add(chunk);
-		currentHours += (double) chunk.getMinutes() / 60;
+//		assignedShifts.add(chunk);
+//		currentHours += (double) chunk.getMinutes() / 60;
 		log.finest("SUCCESS: SCHEDULED"
 				+ "\n\tCurrent hours: " + currentHours
 				+ "\n\tAssigned Shifts: " + assignedShifts);

@@ -163,7 +163,7 @@ public class ScheduleSetUp implements Serializable {
 					.collect(Collectors.toList());
 	}
 	
-	public int positionIDCount() {
+	public int size() {
 		return timeChunks.size();
 	}
 	

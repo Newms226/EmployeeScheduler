@@ -80,6 +80,8 @@ public class SchedulableTimeChunk extends TimeChunk {
 				if (a.indexStart > b.indexStart) return 1;
 				if (a.indexEnd < b.indexEnd) return -1;
 				if (a.indexEnd > b.indexEnd) return 1;
+				if (a.positionType.compareTo(b.positionType) < 0) return -1;
+				if (a.positionType.compareTo(b.positionType) > 0) return 1;
 				return 0;
 			};
 			
@@ -112,6 +114,25 @@ public class SchedulableTimeChunk extends TimeChunk {
 		log.finest("CONSTRUCTOR: Created new ScheduleableTimeChunk:\n\t" + this);
 	}
 	
+	/******************************************************************************
+	 *                                                                            *
+	 *                                                                            *
+	 *                            Setter & Getter Methods                         *
+	 *                                                                            *
+	 *                                                                            *
+	 ******************************************************************************/
+
+	void overidePriority(double priority) {
+		try {
+			NumberTools.assertWithinRange1_10(priority);
+		} catch (IllegalArgumentException e) {
+			log.log(Level.SEVERE, "FAILURE: Attempted to set priority to " + NumberTools.format(priority) 
+				+ " when it was not within range.\n\t", e);
+		}
+		log.config("OVERIDE: Priority was set to " + NumberTools.format(priority) + " from " + NumberTools.format(this.priority));
+		this.priority = priority; 
+	}
+	
 	/**
 	 * 
 	 * @param employee
@@ -119,20 +140,20 @@ public class SchedulableTimeChunk extends TimeChunk {
 	 */
 	public boolean setEmployee(Employee employee) {
 		if (employee == null) {
-			log.log(Level.SEVERE, "NULL POINTER: Attepted to set " + this + " to a null employee. Returning false",
+			log.log(Level.SEVERE, "NULL POINTER: Attepted to set " + getInfoString() + " to a null employee. Returning false",
 					new IllegalArgumentException());
 			return false;
 		}
 		
 		if (this.employee != null) {
-			log.severe("OVERWRITE: Setting " + employee + " to " + this + " when " + this.employee + " was already scheduled"
+			log.severe("OVERWRITE: Setting " + employee + " to " + getInfoString() + " when " + this.employee + " was already scheduled"
 					+ "\n\tWILL EXECUTE" );
 		}
 		
 		// TODO: This is technically redundant
 //		if (positionType.employeeTypeIsCompatible(employee.getEmployeeType())) {
 			this.employee = employee;
-			log.fine("SUCCESS: Scheduled " + employee + " to " + this);
+			log.fine("SUCCESS: Scheduled " + employee + " to " + getInfoString());
 			return true;
 //		}
 //		
@@ -151,17 +172,6 @@ public class SchedulableTimeChunk extends TimeChunk {
 		return priority;
 	}
 
-	void overidePriority(double priority) {
-		try {
-			NumberTools.assertWithinRange1_10(priority);
-		} catch (IllegalArgumentException e) {
-			log.log(Level.SEVERE, "FAILURE: Attempted to set priority to " + NumberTools.format(priority) 
-				+ " when it was not within range.\n\t", e);
-		}
-		log.config("OVERIDE: Priority was set to " + NumberTools.format(priority) + " from " + NumberTools.format(this.priority));
-		this.priority = priority; 
-	}
-
 	/******************************************************************************
 	 *                                                                            *
 	 *                                                                            *
@@ -172,10 +182,10 @@ public class SchedulableTimeChunk extends TimeChunk {
 	
 	@Override
 	public String toString() {
-		if (employee == null) return super.toString();
-		
-		// else
-		return super.toString() + " " + positionType + "\n\t" + employee;
+//		if (employee == null) return super.toString();
+//		
+//		// else
+		return super.toString() + " " + positionType /*+ "\n\t" + employee*/;
 	}
 	
 	@Override

@@ -43,6 +43,7 @@ public class QualifiedEmployeeList implements Serializable {
 	private boolean found;
 
 	private enum SF {
+		BELLOW_PERSONAL_MIN,
 		BELLOW_DESIRED, 
 		BELLOW_PERSONAL_MAX, 
 		BELLOW_GLOBAL_MAX, 
@@ -54,35 +55,46 @@ public class QualifiedEmployeeList implements Serializable {
 	
 		this.chunk = chunk;
 		this.positionType = chunk.positionType;
-		statusFlag = SF.BELLOW_DESIRED;
+		statusFlag = SF.BELLOW_PERSONAL_MIN;
 		workingList = new ArrayList<Employee>(fill(list));
-		if (workingList.size() > 0 ) found = true;
+		log.fine("RESULT: Created a list of size " + workingList.size() + " from an employee set of size " + list.count());
+//		if (workingList.size() > 0 ) found = true;
 		// TODO: Note that this will cause if errors, if calling method does not immpediately
 		// ask for the first employee
 	}
 	
 	Set<Employee> fill(EmployeeSet list) {
 		log.log(Level.FINER, "ENTERING: QualifiedEmployeeList.fill()");
-		return list.filter(s -> s.bellowMinimumHours() && s.canWork(chunk));
+		return list.filter(s -> /*s.bellowMinimumHours() && */ s.canWork(chunk));
 	}
 
-	@SuppressWarnings("static-access")
 	Employee getEmployee() {
 		log.log(Level.FINER, 
 				"ENTERING: getEmployee for {0} presently {1}", 
-				new Object[] {chunk, statusFlag});
+				new Object[] {chunk.getInfoString(), statusFlag});
 		
 		Optional<Employee> optionalEmployee;
 		
-		if (found) {
-			optionalEmployee = Optional.of(workingList.get(0));
-			log.fine("CONSTRUCTOR: Found: " + optionalEmployee.get() + " immediately");
-		} else {
+//		if (found) {
+//			optionalEmployee = Optional.of(workingList.get(0));
+//			log.fine("CONSTRUCTOR: Found: " + optionalEmployee.get() + " immediately");
+//		} else {
 			optionalEmployee = Optional.empty();
+//		}
+		
+		if (statusFlag == SF.BELLOW_PERSONAL_MIN) {
+			optionalEmployee = conditionalFind(emp -> emp.bellowMinimumHours()
+					                           && emp.availableToWork(chunk));
+			if (optionalEmployee.isPresent()) {
+				found = true;
+			} else {
+				statusFlag = SF.BELLOW_DESIRED;
+				log.info("UPDATE SF: Bellow Personal Min > Bellow Desired\n"  + this);
+			}
 		}
 		
-		if (statusFlag == SF.BELLOW_DESIRED) {
-			optionalEmployee = conditionalFill(emp -> emp.bellowDesiredHours() 
+		if (!found && statusFlag == SF.BELLOW_DESIRED) {
+			optionalEmployee = conditionalFind(emp -> emp.bellowDesiredHours() 
 					                           && emp.availableToWork(chunk));
 			if (optionalEmployee.isPresent()) {
 				found = true;
@@ -93,7 +105,7 @@ public class QualifiedEmployeeList implements Serializable {
 		}
 		
 		if (!found && statusFlag == SF.BELLOW_PERSONAL_MAX) {
-			optionalEmployee = conditionalFill(emp -> emp.bellowPersonalMax()
+			optionalEmployee = conditionalFind(emp -> emp.bellowPersonalMax()
 					                           && emp.availableToWork(chunk));
 			if (optionalEmployee.isPresent()) {
 				found = true;
@@ -104,7 +116,7 @@ public class QualifiedEmployeeList implements Serializable {
 		}
 		
 		if (!found && statusFlag == SF.BELLOW_GLOBAL_MAX) {
-			optionalEmployee = conditionalFill(emp -> emp.bellowGlobalMax()
+			optionalEmployee = conditionalFind(emp -> emp.bellowGlobalMax()
 					                           && emp.availableToWork(chunk));
 			if (optionalEmployee.isPresent()) {
 				found = true;
@@ -116,13 +128,13 @@ public class QualifiedEmployeeList implements Serializable {
 		
 		if (!found && statusFlag == SF.HOUSE_ONLY) {
 			optionalEmployee = Optional.of(new HouseShift());
-			log.info("SCHEDULED: HOUSE to " + chunk);
+			log.info("SCHEDULED: HOUSE to " + chunk.getInfoString());
 		}
 		
 		found = false; // reset found;
 		
 //		if (optionalEmployee.isPresent()) {
-			log.finer("RETURNING: getEmployee(" + chunk + ") with " + optionalEmployee.get());
+			log.finer("RETURNING: getEmployee(" + chunk.getInfoString() + ") with " + optionalEmployee.get());
 			return optionalEmployee.get();
 //		} else {
 //			
@@ -130,7 +142,7 @@ public class QualifiedEmployeeList implements Serializable {
 //		}
 	}
 	
-	Optional<Employee> conditionalFill(Predicate<Employee> predicate) {
+	Optional<Employee> conditionalFind(Predicate<Employee> predicate) {
 		return workingList.stream()
 			.filter(predicate)
 			.sorted(Employee.DESENDING_PRIORITY_ORDER)
@@ -145,6 +157,17 @@ public class QualifiedEmployeeList implements Serializable {
 	
 	public SF getStatusFlag() {
 		return statusFlag;
+	}
+	
+	public String getProcessString() {
+		StringBuffer buffer = new StringBuffer();
+		
+		workingList.sort(Employee.DESENDING_PRIORITY_ORDER);
+		for (Employee e: workingList) {
+			buffer.append(e.getCurrentStatusString() + "\n");
+		}
+		
+		return buffer.toString();
 	}
 	
 	/******************************************************************************

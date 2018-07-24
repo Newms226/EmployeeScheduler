@@ -121,6 +121,16 @@ public class EmployeeSet implements Serializable {
 			.viewAssignedShifts();
 	}
 	
+	public String getProcessString() {
+		StringBuffer buffer = new StringBuffer();
+		
+		employeeSet.sort(Employee.DESENDING_PRIORITY_ORDER);
+		for (Employee e: employeeSet) {
+			buffer.append(e.getCurrentStatusString() + "\n");
+		}
+		
+		return buffer.toString();
+	}
 
 	@Override
 	public boolean equals(Object o) {

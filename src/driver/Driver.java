@@ -28,6 +28,7 @@ import time.Week;
 public class Driver {
 	//public static final boolean debugging = true; 
 	public static Logger driverLog, deciderLog, setUpLog, fileManagerLog, masterLog, availabilityLog, timeLog, errorLog;
+	public static final File workingLogDir;
 	static {
 		masterLog = Logger.getLogger("");
 		Handler[] handlers = masterLog.getHandlers();
@@ -35,12 +36,12 @@ public class Driver {
 			masterLog.removeHandler(handlers[0]);
 		}
 		
-		File workingDir = new File(
+		workingLogDir = new File(
 				FileManager.logFolder + "/" +
 				FileManager.fileFormat.format(
 						new Date()));
-		if (!workingDir.mkdirs()) {
-			throw new Error("COULD NOT MAKE DIRECTORIES AT:\n\t" + workingDir);
+		if (!workingLogDir.mkdirs()) {
+			throw new Error("COULD NOT MAKE DIRECTORIES AT:\n\t" + workingLogDir);
 		}
 		
 		Handler console = new ConsoleHandler();
@@ -52,13 +53,13 @@ public class Driver {
 			    availabilityFile = null,
 			    timeFile = null;
 		try {
-			masterFile = new FileHandler(workingDir + "/%u.MASTER_LOG.txt");
-			driverFile = new FileHandler(workingDir + "/%u.driverLog.txt");
-			deciderFile = new FileHandler(workingDir + "/%u.schedulerLog.txt");
-			setUpFile = new FileHandler(workingDir + "/%u.setUpLog.txt");
-			fileManagerFile = new FileHandler(workingDir + "/%u.fileManagerLog.txt");
-			availabilityFile = new FileHandler(workingDir + "/%u.availabilityLog.txt");
-			timeFile = new FileHandler(workingDir + "/%u.timeLog.txt");
+			masterFile = new FileHandler(workingLogDir + "/%u.MASTER_LOG.txt");
+			driverFile = new FileHandler(workingLogDir + "/%u.driverLog.txt");
+			deciderFile = new FileHandler(workingLogDir + "/%u.schedulerLog.txt");
+			setUpFile = new FileHandler(workingLogDir + "/%u.setUpLog.txt");
+			fileManagerFile = new FileHandler(workingLogDir + "/%u.fileManagerLog.txt");
+			availabilityFile = new FileHandler(workingLogDir + "/%u.availabilityLog.txt");
+			timeFile = new FileHandler(workingLogDir + "/%u.timeLog.txt");
 		} catch (SecurityException | IOException e) {
 			throw new Error(e.getMessage() + " @ " + e.getStackTrace()[0]);
 		}
@@ -161,7 +162,7 @@ public class Driver {
 				() -> schedule(), // TODO: Tests for needed components
 				() -> mainMenu.selection()));
 		mainMenu.add(new RunnableOption("View generated schedules", 
-				() -> System.out.println(getSchedule()), // TODO: View previous schedules
+				() -> scheduleViewer.selection(), // TODO: View previous schedules
 				() -> mainMenu.selection()));
 //		mainMenu.add(new RunnableOption("Employee menu", 
 //				() -> EmployeeModifier.mainMenu.selection())); // TODO
@@ -171,15 +172,34 @@ public class Driver {
 				() -> {
 					FileManager.onExit(setUp, employeeSet, schedule);
 					System.out.println("GOODBYE ^.^");
+					System.exit(0);
 				}));
 		
 		scheduleViewer = new ConsoleMenu("Schedule Viewer");
 		scheduleViewer.add(new RunnableOption("View whole schedule",
 				() -> System.out.println(getSchedule())));
-//		scheduleViewer.add("View indvidual Employees shifts", 
-//				() -> {
-//	
-//				});\
+		String failureMessage = "FAILURE: Cannot view schedule by employee > NULL SCHEDULE";
+		scheduleViewer.add(new RunnableOption("View indvidual Employees shifts", 
+				() -> {
+					if (schedule == null) {
+						System.out.println(failureMessage);
+						driverLog.severe(failureMessage);
+						return;
+					}
+					
+					// else
+					employeeSet.viewServerPositions();
+				}));
+		scheduleViewer.add(new RunnableOption("View process log",
+				() ->  {
+					if (DA_KING_MAKER == null) {
+						System.out.println("Scheduler is null. Returning");
+						return;
+					}
+					
+					// else
+					DA_KING_MAKER.examineProcessLogs();
+				}));
 //		
 		scheduleMenu = new ConsoleMenu("Schedule Set-Up");
 //		scheduleMenu.add(new RunnableOption("Set-up days/shifts/priority", 

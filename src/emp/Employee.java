@@ -17,6 +17,7 @@ import restaurant.PositionType;
 import restaurant.Restaurant;
 import time.Week;
 import tools.CollectionTools;
+import tools.NumberTools;
 
 public class Employee implements Comparable<Employee>, Serializable {
 	
@@ -33,7 +34,7 @@ public class Employee implements Comparable<Employee>, Serializable {
 	
 	public static final Comparator<Employee> DESENDING_PRIORITY_ORDER = (a, b) -> -a.compareTo(b);
 	public static final Comparator<Employee> NAME_ORDER = (a, b) -> a.NAME.compareToIgnoreCase(b.NAME);
-	public static final Comparator<Employee> PRIORITY_ORDER = (a, b) -> a.compareTo(b);
+//	public static final Comparator<Employee> PRIORITY_ORDER = (a, b) -> a.compareTo(b);
 	
 	
 	/******************************************************************************
@@ -150,7 +151,7 @@ public class Employee implements Comparable<Employee>, Serializable {
 	
 	// TODO: Dont allow certian employees to work a chunk which has a high priority (& vice versa)
 	public boolean canWork(SchedulableTimeChunk chunk) {
-		log.finer("WORK QUERY: " + NAME + " for " + chunk);
+		log.finer("WORK QUERY: " + NAME + " for " + chunk.getInfoString());
 		if (qualifiedFor(chunk) && availableToWork(chunk)) {
 			log.info("SUCCESS: " + NAME + " can work " + chunk);
 			return true;
@@ -162,7 +163,7 @@ public class Employee implements Comparable<Employee>, Serializable {
 	}
 	
 	public boolean availableToWork(SchedulableTimeChunk chunk) {
-		log.finer("Testing: " + NAME + " is available during " + chunk);
+		log.finer("Testing: " + NAME + " is available during " + chunk.getInfoString());
 		if (currentAvailability.isAvailable(chunk)) {
 			log.finer("SUCCESS");
 			return true;
@@ -174,7 +175,7 @@ public class Employee implements Comparable<Employee>, Serializable {
 	}
 	
 	public boolean isEverAvailableFor(SchedulableTimeChunk chunk) {
-		log.finer("Testing if " + chunk + " is inside " + NAME + "'s persistant availability");
+		log.finer("Testing if " + chunk.getInfoString() + " is inside " + NAME + "'s persistant availability");
 		if (availability.isInsidePersistantAvailability(chunk)) {
 			log.finer("SUCCESS");
 			return true;
@@ -198,20 +199,20 @@ public class Employee implements Comparable<Employee>, Serializable {
 	}
 	
 	public boolean bellowMinimumHours() {
-		return currentHours < MIN_HOURS;
+		return currentHours <= MIN_HOURS;
 	}
 
 	public boolean bellowDesiredHours() {
-		return currentHours < DESIRED_HOURS;
+		return currentHours <= DESIRED_HOURS;
 	}
 	
 	public boolean bellowPersonalMax() {
-		return currentHours < MAX_HOURS;
+		return currentHours <= MAX_HOURS;
 	}
 	
 	// TODO: Only some employees are allowed to broach this limit. They have their own 'overtimeLimit'
 	public boolean bellowGlobalMax() {
-		return currentHours < restaurant.globalMaxHours;
+		return currentHours <= restaurant.globalMaxHours;
 	}
 	
 	/******************************************************************************
@@ -221,7 +222,7 @@ public class Employee implements Comparable<Employee>, Serializable {
 	 ******************************************************************************/
 	
 	public void accept(SchedulableTimeChunk chunk) {
-		log.fine("SCHEDULED: " + NAME + " for " + chunk 
+		log.fine("SCHEDULED: " + NAME + " for " + chunk.getInfoString() 
 				+ "\n\tCurrent Hours: " + currentHours);
 		assignedShifts.add(chunk);
 		currentHours += (double) chunk.getMinutes() / 60;
@@ -285,6 +286,19 @@ public class Employee implements Comparable<Employee>, Serializable {
 		this.currentAvailability = availability.getWorkingAvailability(week);
 		assignedShifts = new ArrayList<>();
 		currentHours = 0;
+	}
+	
+	public String getCurrentStatusString() {
+		StringBuffer buffer = new StringBuffer(NAME + " PRIORITY: " + getCurrentPrioirty() + "\n");
+		
+		buffer.append("  HOURS > Current: " + NumberTools.format(currentHours)
+				+ " Min: " + NumberTools.format(MIN_HOURS)
+				+ " Desired: " + NumberTools.format(DESIRED_HOURS) 
+				+ " P.Max: " + NumberTools.format(MAX_HOURS) + "\n");
+		
+		buffer.append("  CURRENT SHIFTS > " + assignedShifts);
+		
+		return buffer.toString();
 	}
 	
 	/******************************************************************************

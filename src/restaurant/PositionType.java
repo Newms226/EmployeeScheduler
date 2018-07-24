@@ -111,7 +111,7 @@ public enum PositionType implements Serializable {
 	
 	public static ArrayList<PositionType> getAllButCocktail() {
 		ArrayList<PositionType> handyMan = new ArrayList<>(5);
-		handyMan.add(PositionType.Bar);
+//		handyMan.add(PositionType.Bar);
 		handyMan.add(PositionType.Closer);
 		handyMan.add(PositionType.Head_Wait);
 		handyMan.add(PositionType.Sales);

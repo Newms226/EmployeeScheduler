@@ -2,13 +2,14 @@ package WorkingSet;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 
 import driver.Driver;
 
 public class OperationStack implements Cloneable, Serializable {
 	private static final long serialVersionUID = 7548634254297027242L;
-	private ArrayList<Operation<? extends Cloneable>> stack;
+	private List<Operation<? extends Cloneable>> stack;
 	
 //	Class<? extends Operation> classType;
 	

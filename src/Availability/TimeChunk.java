@@ -317,8 +317,9 @@ public class TimeChunk implements Serializable, Cloneable {
 		return dayStart == 6 && dayEnd == 1;
 	}
 	
-	public String toString() {
-		return summary;
+	
+	public String getInfoString() {
+		return this.toString();
 	}
 	
 	private String generateString() {
@@ -333,6 +334,11 @@ public class TimeChunk implements Serializable, Cloneable {
 	 *                                                                            *
 	 *                                                                            *
 	 ******************************************************************************/
+	
+	@Override
+	public String toString() {
+		return summary;
+	}
 	
 	@Override
 	public boolean equals(Object o) {

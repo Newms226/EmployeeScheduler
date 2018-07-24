@@ -61,6 +61,10 @@ public class EmployeePriority implements Comparable<EmployeePriority>, Serializa
 		return staticPriority;
 	}
 	
+	double getCurrentPrioirty() {
+		return currentPriority;
+	}
+	
 	double getCurrentPriority(double currentAverageFill) {
 	//				if (filledShifts >= DESIRED_HOURS) {
 	//					if (Driver.debugging) System.out.println(NAME + " is past their desired hours");
