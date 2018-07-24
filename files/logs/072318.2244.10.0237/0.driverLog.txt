@@ -1,0 +1,10 @@
+Jul 23, 2018 10:44:10 PM driver.Driver begin
+FINEST: Began program, in begin()
+Jul 23, 2018 10:44:12 PM driver.Driver buildTestingMaterial
+CONFIG: Building testing material from Driver.buildTestingMaterial()
+Jul 23, 2018 10:44:12 PM driver.Driver buildTestingMaterial
+CONFIG: Successfully built testing material from Driver.buildTestingMaterial()
+Jul 23, 2018 10:44:13 PM driver.Driver schedule
+INFO: HANDING OFF TO SCHEDULER
+Jul 23, 2018 10:44:14 PM driver.Driver schedule
+INFO: RETURNED TO DRIVER

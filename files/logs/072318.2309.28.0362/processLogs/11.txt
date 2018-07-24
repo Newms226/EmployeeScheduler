@@ -1,0 +1,75 @@
+07/23/2018  11:09PM
+
+11: Thursday 03:00PM - Thursday 10:00PM Head_Wait
+SELECTION: Paul 2
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer, Thursday 03:00PM - Thursday 10:00PM Head_Wait]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer, Thursday 03:00PM - Thursday 10:00PM Head_Wait]
+Me PRIORITY: NaN
+  HOURS > Current: 5.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail]
+Chris PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar]
+Chels PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail]
+Dena PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer]
+Kim PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait]
+Brandon PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait]
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Dena PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer]
+Kim PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait]
+Chels PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail]
+Gregs PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail]
+Chris PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar]
+Me PRIORITY: NaN
+  HOURS > Current: 5.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail]
+Brandon PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait]
+Marcy PRIORITY: NaN
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar, Thursday 03:00PM - Thursday 10:00PM Closer]
+Olson PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer, Thursday 03:00PM - Thursday 10:00PM Head_Wait]

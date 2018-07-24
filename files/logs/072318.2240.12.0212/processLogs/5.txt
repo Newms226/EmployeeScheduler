@@ -1,0 +1,34 @@
+07/23/2018  10:40PM
+
+5: Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+SELECTION: Gregs
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer
+	Gregs]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Blake PRIORITY: 4.983800531130127
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Brandon PRIORITY: 5.407819415756861
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer
+	Gregs]
+Chris PRIORITY: 5.759781646503394
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: 4.521481262909413
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Me PRIORITY: 5.601681912068457
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chels PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer
+	Chels]

@@ -1,0 +1,22 @@
+07/23/2018  10:44PM
+
+15: Thursday 04:15PM - Thursday 09:00PM Sales
+	Paul 3
+SELECTION: Paul 3
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 4.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales
+	Paul 3]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 4.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales
+	Paul 3]
+Paul 2 PRIORITY: 4.521481262909413
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Marcy PRIORITY: 5.0078194157568605
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []

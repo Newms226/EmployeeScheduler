@@ -1,0 +1,96 @@
+Jul 23, 2018 8:35:56 PM driver.Scheduler prepare
+INFO: Preparing to schedule...
+Jul 23, 2018 8:35:56 PM driver.Scheduler prepare
+INFO: Properly serialized
+Jul 23, 2018 8:35:56 PM driver.Scheduler prepare
+INFO: PREPARED
+Jul 23, 2018 8:35:56 PM driver.Scheduler run
+FINER: ENTRY
+Jul 23, 2018 8:35:56 PM driver.Scheduler run
+FINEST: SUCCESS: Copied PositionIDs
+Jul 23, 2018 8:35:56 PM driver.Scheduler run
+FINEST: Current List: 
+Current Sorted List: Friday 03:00PM - Friday 08:00PM
+Friday 04:00PM - Friday 09:00PM
+Friday 03:00PM - Friday 08:30PM
+Friday 04:30PM - Friday 11:00PM
+Friday 03:00PM - Friday 11:00PM
+Friday 03:00PM - Friday 11:00PM
+Friday 03:00PM - Friday 11:00PM
+Friday 05:00PM - Friday 11:00PM
+Friday 03:00PM - Friday 11:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 03:00PM - Thursday 10:00PM
+Thursday 04:15PM - Thursday 09:00PM
+Thursday 04:15PM - Thursday 08:02PM
+Friday 03:00PM - Friday 10:00PM
+Monday 09:00AM - Monday 03:00PM
+Monday 10:00AM - Monday 03:00PM
+Monday 10:00AM - Monday 03:00PM
+Monday 10:00AM - Monday 03:00PM
+Thursday 05:59PM - Thursday 09:00PM
+Friday 03:00PM - Friday 09:00PM
+Thursday 05:59PM - Thursday 09:00PM
+Friday 04:00PM - Friday 09:00PM
+Friday 04:00PM - Friday 09:00PM
+Friday 05:00PM - Friday 09:00PM
+Friday 05:00PM - Friday 09:00PM
+Friday 05:00PM - Friday 08:00PM
+Monday 11:00AM - Monday 02:00PM
+Thursday 05:59PM - Thursday 09:00PM
+Monday 11:00AM - Monday 02:00PM
+Monday 11:00AM - Monday 02:00PM
+
+Jul 23, 2018 8:35:56 PM driver.Scheduler run
+INFO: Begin schedule
+Jul 23, 2018 8:35:56 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 8:35:56 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 08:00PM)
+Jul 23, 2018 8:35:56 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 03:00PM - Friday 08:00PM is not present
+Jul 23, 2018 8:35:56 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 8:35:56 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 23, 2018 8:35:56 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 08:00PM)
+Jul 23, 2018 8:35:56 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 08:00PM
+	Qualified Employee list for Friday 03:00PM - Friday 08:00PM
+  Size: 0 StatusFlag: BELLOW_DESIRED
+	util.Averager@3eb07fd3
+Jul 23, 2018 8:35:56 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 23, 2018 8:35:56 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 23, 2018 8:35:56 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 08:00PM presently BELLOW_DESIRED
+Jul 23, 2018 8:35:56 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Desired > Bellow Personal Max
+Qualified Employee list for Friday 03:00PM - Friday 08:00PM
+  Size: 0 StatusFlag: BELLOW_PERSONAL_MAX
+Jul 23, 2018 8:35:56 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Personal Max > Bellow Global Max
+Qualified Employee list for Friday 03:00PM - Friday 08:00PM
+  Size: 0 StatusFlag: BELLOW_GLOBAL_MAX
+Jul 23, 2018 8:35:56 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Global Max > HOUSE ONLY
+Qualified Employee list for Friday 03:00PM - Friday 08:00PM
+  Size: 0 StatusFlag: HOUSE_ONLY
+Jul 23, 2018 8:35:56 PM emp.HouseShift <init>
+FINE: Generated new house shift
+Jul 23, 2018 8:35:56 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: SCHEDULED: HOUSE to Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 8:35:56 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 08:00PM) with HouseShift
+Jul 23, 2018 8:35:56 PM emp.HouseShift accept
+SEVERE: ASSIGINING Bar TO A HOUSE SHIFT FOR Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 8:35:56 PM emp.HouseShift accept
+FINE: SCHEDULED: House to Friday 03:00PM - Friday 08:00PM
+	Current Hours: 0.0

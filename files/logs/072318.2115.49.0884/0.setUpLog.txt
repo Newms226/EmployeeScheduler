@@ -1,0 +1,2304 @@
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Kim at 4.6017 from:
+  Date
+     Value: 568
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.7017
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 23, 2018 9:15:51 PM emp.Employee <init>
+CONFIG: Generated generic employee Kim
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Wade at 8.5000 from:
+  Date
+     Value: 6778
+     Normalized from range: [0, 6,778]
+     Resulting in: 4.0000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:51 PM emp.Employee <init>
+CONFIG: Generated generic employee wade
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Olson at 7.5296 from:
+  Date
+     Value: 4951
+     Normalized from range: [0, 6,778]
+     Resulting in: 3.0296
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:51 PM emp.Employee <init>
+CONFIG: Generated generic employee Olson
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Alecia at 7.1419 from:
+  Date
+     Value: 4221
+     Normalized from range: [0, 6,778]
+     Resulting in: 2.6419
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:51 PM emp.Employee <init>
+CONFIG: Generated generic employee alecia
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Chris at 5.7598 from:
+  Date
+     Value: 3125
+     Normalized from range: [0, 6,778]
+     Resulting in: 2.0598
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar, Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.2000
+Jul 23, 2018 9:15:51 PM emp.Employee <init>
+CONFIG: Generated generic employee Chris
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Dena at 5.3777 from:
+  Date
+     Value: 2029
+     Normalized from range: [0, 6,778]
+     Resulting in: 1.4777
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 23, 2018 9:15:51 PM emp.Employee <init>
+CONFIG: Generated generic employee Dena
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Blake at 4.9838 from:
+  Date
+     Value: 1664
+     Normalized from range: [0, 6,778]
+     Resulting in: 1.2838
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar, Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.2000
+Jul 23, 2018 9:15:51 PM emp.Employee <init>
+CONFIG: Generated generic employee blake
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Chels at 5.9598 from:
+  Date
+     Value: 3125
+     Normalized from range: [0, 6,778]
+     Resulting in: 2.0598
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 23, 2018 9:15:51 PM emp.Employee <init>
+CONFIG: Generated generic employee chels
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Brandon at 4.4078 from:
+  Date
+     Value: 203
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.5078
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 23, 2018 9:15:51 PM emp.Employee <init>
+CONFIG: Generated generic employee brandon
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Me at 4.6017 from:
+  Date
+     Value: 568
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.7017
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 23, 2018 9:15:51 PM emp.Employee <init>
+CONFIG: Generated generic employee me
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Marcy at 5.0078 from:
+  Date
+     Value: 203
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.5078
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:51 PM emp.Employee <init>
+CONFIG: Generated generic employee Marcy
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Paul 2 at 4.5215 from:
+  Date
+     Value: 417
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.6215
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar, Closer, Head_Wait, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 23, 2018 9:15:51 PM emp.Employee <init>
+CONFIG: Generated generic employee Paul 2
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Paul 3 at 5.0078 from:
+  Date
+     Value: 203
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.5078
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:51 PM emp.Employee <init>
+CONFIG: Generated generic employee Paul 3
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Gregs at 4.9097 from:
+  Date
+     Value: 1148
+     Normalized from range: [0, 6,778]
+     Resulting in: 1.0097
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 23, 2018 9:15:51 PM emp.Employee <init>
+CONFIG: Generated generic employee Gregs
+Jul 23, 2018 9:15:51 PM emp.Employee highPromote
+FINE: High promote: Kim
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority internalSetGrace
+INFO: Setting Kim's grace to 10.0
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Kim at 6.1017 from:
+  Date
+     Value: 568
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.7017
+  Grace:
+     Value: 10.0
+     Normalized from range: [0, 10]
+     Resulting in: 5.0000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 23, 2018 9:15:51 PM emp.Employee highPromote
+FINE: High promote: Dena
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority internalSetGrace
+INFO: Setting Dena's grace to 10.0
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Dena at 6.8777 from:
+  Date
+     Value: 2029
+     Normalized from range: [0, 6,778]
+     Resulting in: 1.4777
+  Grace:
+     Value: 10.0
+     Normalized from range: [0, 10]
+     Resulting in: 5.0000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 23, 2018 9:15:51 PM emp.Employee highPromote
+FINE: High promote: Wade
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority internalSetGrace
+INFO: Setting Wade's grace to 10.0
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Wade at 10.0000 from:
+  Date
+     Value: 6778
+     Normalized from range: [0, 6,778]
+     Resulting in: 4.0000
+  Grace:
+     Value: 10.0
+     Normalized from range: [0, 10]
+     Resulting in: 5.0000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:51 PM emp.Employee promote
+FINE: Promote: Olson
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority internalSetGrace
+INFO: Setting Olson's grace to 9.0
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Olson at 8.5296 from:
+  Date
+     Value: 4951
+     Normalized from range: [0, 6,778]
+     Resulting in: 3.0296
+  Grace:
+     Value: 9.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.5000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:51 PM emp.Employee promote
+FINE: Promote: Me
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority internalSetGrace
+INFO: Setting Me's grace to 9.0
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Me at 5.6017 from:
+  Date
+     Value: 568
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.7017
+  Grace:
+     Value: 9.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 23, 2018 9:15:51 PM emp.Employee promote
+FINE: Promote: Gregs
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority internalSetGrace
+INFO: Setting Gregs's grace to 9.0
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Gregs at 5.9097 from:
+  Date
+     Value: 1148
+     Normalized from range: [0, 6,778]
+     Resulting in: 1.0097
+  Grace:
+     Value: 9.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 23, 2018 9:15:51 PM emp.Employee promote
+FINE: Promote: Brandon
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority internalSetGrace
+INFO: Setting Brandon's grace to 9.0
+Jul 23, 2018 9:15:51 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Brandon at 5.4078 from:
+  Date
+     Value: 203
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.5078
+  Grace:
+     Value: 9.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet <init>
+CONFIG: Intalizing EmployeeSet Object
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+INFO: Adding Kim to EmployeeSet
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+FINE: Successfully added Kim
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet lambda$0
+INFO: Kim passed adding from addingMultipleEmployee
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+INFO: Adding Wade to EmployeeSet
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+FINE: Successfully added Wade
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet lambda$0
+INFO: Wade passed adding from addingMultipleEmployee
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+INFO: Adding Chris to EmployeeSet
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+FINE: Successfully added Chris
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet lambda$0
+INFO: Chris passed adding from addingMultipleEmployee
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+INFO: Adding Blake to EmployeeSet
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+FINE: Successfully added Blake
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet lambda$0
+INFO: Blake passed adding from addingMultipleEmployee
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+INFO: Adding Chels to EmployeeSet
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+FINE: Successfully added Chels
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet lambda$0
+INFO: Chels passed adding from addingMultipleEmployee
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+INFO: Adding Brandon to EmployeeSet
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+FINE: Successfully added Brandon
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet lambda$0
+INFO: Brandon passed adding from addingMultipleEmployee
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+INFO: Adding Dena to EmployeeSet
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+FINE: Successfully added Dena
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet lambda$0
+INFO: Dena passed adding from addingMultipleEmployee
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+INFO: Adding Olson to EmployeeSet
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+FINE: Successfully added Olson
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet lambda$0
+INFO: Olson passed adding from addingMultipleEmployee
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+INFO: Adding Me to EmployeeSet
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+FINE: Successfully added Me
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet lambda$0
+INFO: Me passed adding from addingMultipleEmployee
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+INFO: Adding Alecia to EmployeeSet
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+FINE: Successfully added Alecia
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet lambda$0
+INFO: Alecia passed adding from addingMultipleEmployee
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+INFO: Adding Marcy to EmployeeSet
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+FINE: Successfully added Marcy
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet lambda$0
+INFO: Marcy passed adding from addingMultipleEmployee
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+INFO: Adding Paul 3 to EmployeeSet
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+FINE: Successfully added Paul 3
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet lambda$0
+INFO: Paul 3 passed adding from addingMultipleEmployee
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+INFO: Adding Paul 2 to EmployeeSet
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+FINE: Successfully added Paul 2
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet lambda$0
+INFO: Paul 2 passed adding from addingMultipleEmployee
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+INFO: Adding Gregs to EmployeeSet
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet addEmployee
+FINE: Successfully added Gregs
+Jul 23, 2018 9:15:51 PM emp.EmployeeSet lambda$0
+INFO: Gregs passed adding from addingMultipleEmployee
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM WorkingSet.ScheduleSetUp addTimeChunk
+FINER: Adding SchedulableTimeChunk from ScheduleSetUp.addTimeChunk
+Jul 23, 2018 9:15:51 PM time.Week <init>
+FINE: Generated Week beginning on Monday, July 23, 2018
+   1: Monday, July 23, 2018
+   2: Tuesday, July 24, 2018
+   3: Wednesday, July 25, 2018
+   4: Thursday, July 26, 2018
+   5: Friday, July 27, 2018
+   6: Saturday, July 28, 2018
+   7: Sunday, July 29, 2018
+
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet()
+FINER: ENTRY
+Jul 23, 2018 9:15:52 PM time.Week getDatesAsSet
+FINER: RETURNING: getDatesAsSet()
+	Array:[2018-07-23, 2018-07-24, 2018-07-25, 2018-07-26, 2018-07-27, 2018-07-28, 2018-07-29]
+	Set:[2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Kim for Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Kim can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Kim can NOT work Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Wade for Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Wade can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Wade is available during Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Wade can NOT work Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Chris for Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Chris can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Chris can work Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Blake for Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Blake can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Blake can work Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Chels for Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Chels can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Chels can NOT work Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Brandon for Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Brandon can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Brandon can NOT work Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Dena for Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Dena can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Dena can NOT work Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Olson for Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Olson can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Olson is available during Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Olson can work Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Me for Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Me can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Me can NOT work Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Alecia for Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Alecia can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Alecia is available during Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Alecia can work Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Marcy for Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Marcy can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Marcy can NOT work Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 3 for Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 3 can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Paul 3 can NOT work Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 2 for Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 2 can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Paul 2 can work Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Gregs for Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Gregs can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Gregs can NOT work Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Olson is available during Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Alecia is available during Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINE: SCHEDULED: Olson for Friday 03:00PM - Friday 08:00PM
+	Current Hours: 0.0
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 5.0
+	Assigned Shifts: [Friday 03:00PM - Friday 08:00PM]
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Olson's current priority is � from 8.5296 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Kim for Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Kim can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Kim can NOT work Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Wade for Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Wade can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Wade is available during Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Wade can NOT work Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Chris for Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Chris can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Chris can work Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Blake for Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Blake can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Blake can work Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Chels for Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Chels can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Chels can NOT work Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Brandon for Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Brandon can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Brandon can NOT work Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Dena for Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Dena can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Dena can NOT work Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Me for Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Me can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Me can NOT work Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Alecia for Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Alecia can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Alecia is available during Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Alecia can work Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Marcy for Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Marcy can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Marcy can NOT work Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 3 for Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 3 can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Paul 3 can NOT work Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 2 for Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 2 can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Paul 2 can work Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Gregs for Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Gregs can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Gregs can NOT work Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Alecia is available during Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINE: SCHEDULED: Alecia for Friday 04:00PM - Friday 09:00PM
+	Current Hours: 0.0
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 5.0
+	Assigned Shifts: [Friday 04:00PM - Friday 09:00PM]
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Alecia's current priority is � from 7.1419 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Kim for Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Kim can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Kim is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Kim can work Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Wade for Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Wade can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Wade can NOT work Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Chris for Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Chris can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Chris can work Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Blake for Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Blake can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Blake can work Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Chels for Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Chels can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chels is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Chels can work Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Brandon for Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Brandon can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Brandon is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Brandon can work Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Dena for Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Dena can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Dena is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Dena can work Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Me for Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Me can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Me is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Me can work Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Marcy for Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Marcy can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Marcy can NOT work Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 3 for Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 3 can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Paul 3 can NOT work Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 2 for Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 2 can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Paul 2 can NOT work Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Gregs for Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Gregs can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Gregs is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Gregs can work Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Me is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chels is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Dena is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Kim is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Brandon is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Gregs is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINE: SCHEDULED: Dena for Friday 03:00PM - Friday 08:30PM
+	Current Hours: 0.0
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 5.5
+	Assigned Shifts: [Friday 03:00PM - Friday 08:30PM]
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Dena's current priority is � from 6.8777 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Kim for Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Kim can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Kim is available during Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Kim can work Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Wade for Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Wade can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Wade can NOT work Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Chris for Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Chris can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Chris can work Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Blake for Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Blake can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Blake can work Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Chels for Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Chels can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chels is available during Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Chels can work Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Brandon for Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Brandon can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Brandon is available during Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Brandon can work Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Me for Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Me can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Me is available during Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Me can work Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Marcy for Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Marcy can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Marcy can NOT work Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 3 for Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 3 can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Paul 3 can NOT work Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 2 for Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 2 can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Paul 2 can NOT work Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Gregs for Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Gregs can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Gregs is available during Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Gregs can work Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Me is available during Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chels is available during Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Kim is available during Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Brandon is available during Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Gregs is available during Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINE: SCHEDULED: Kim for Friday 04:30PM - Friday 11:00PM
+	Current Hours: 0.0
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 6.5
+	Assigned Shifts: [Friday 04:30PM - Friday 11:00PM]
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Kim's current priority is � from 6.1017 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Wade for Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Wade can work a Closer shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Wade can NOT work Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Chris for Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Chris can work a Closer shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Chris can work Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Blake for Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Blake can work a Closer shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Blake can work Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Chels for Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Chels can work a Closer shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chels is available during Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Chels can work Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Brandon for Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Brandon can work a Closer shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Brandon is available during Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Brandon can work Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Me for Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Me can work a Closer shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Me is available during Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Me can work Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Marcy for Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Marcy can work a Closer shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Marcy can NOT work Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 3 for Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 3 can work a Closer shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Paul 3 can NOT work Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 2 for Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 2 can work a Closer shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Paul 2 can work Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Gregs for Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Gregs can work a Closer shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Gregs is available during Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Gregs can work Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Me is available during Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chels is available during Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Brandon is available during Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Gregs is available during Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINE: SCHEDULED: Chels for Friday 03:00PM - Friday 11:00PM
+	Current Hours: 0.0
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 8.0
+	Assigned Shifts: [Friday 03:00PM - Friday 11:00PM]
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chels's current priority is � from 5.9598 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Me is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chels is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Brandon is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Gregs is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINE: SCHEDULED: Gregs for Friday 03:00PM - Friday 11:00PM
+	Current Hours: 0.0
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 8.0
+	Assigned Shifts: [Friday 03:00PM - Friday 11:00PM]
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Gregs's current priority is � from 5.9097 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Me is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chels is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Brandon is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Gregs is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINE: SCHEDULED: Chris for Friday 03:00PM - Friday 11:00PM
+	Current Hours: 0.0
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 8.0
+	Assigned Shifts: [Friday 03:00PM - Friday 11:00PM]
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Chris's current priority is � from 5.7598 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Wade for Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Wade can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Wade is available during Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Wade can NOT work Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Blake for Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Blake can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Blake can work Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Brandon for Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Brandon can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Brandon can NOT work Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Me for Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Me can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Me can NOT work Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Marcy for Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Marcy can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Marcy can NOT work Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 3 for Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 3 can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Paul 3 can NOT work Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 2 for Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 2 can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Paul 2 can work Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINE: SCHEDULED: Blake for Friday 05:00PM - Friday 11:00PM
+	Current Hours: 0.0
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 6.0
+	Assigned Shifts: [Friday 05:00PM - Friday 11:00PM]
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Blake's current priority is � from 4.9838 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Me is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chels is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Brandon is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Gregs is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINE: SCHEDULED: Me for Friday 03:00PM - Friday 11:00PM
+	Current Hours: 0.0
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 8.0
+	Assigned Shifts: [Friday 03:00PM - Friday 11:00PM]
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Me's current priority is � from 5.6017 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Wade for Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Wade can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Wade can NOT work Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Brandon for Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Brandon can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Brandon is available during Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Brandon can work Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Marcy for Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Marcy can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Marcy can NOT work Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 3 for Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 3 can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Paul 3 can NOT work Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 2 for Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 2 can work a Cocktail shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Paul 2 can NOT work Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Brandon is available during Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINE: SCHEDULED: Brandon for Thursday 03:00PM - Thursday 10:00PM
+	Current Hours: 0.0
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 7.0
+	Assigned Shifts: [Thursday 03:00PM - Thursday 10:00PM]
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Brandon's current priority is � from 5.4078 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Brandon is available during Thursday 03:00PM - Thursday 10:00PM Cocktail
+	Brandon
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Brandon is available during Thursday 03:00PM - Thursday 10:00PM Cocktail
+	Brandon
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Brandon is available during Thursday 03:00PM - Thursday 10:00PM Cocktail
+	Brandon
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Wade for Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Wade can work a Sales shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Wade can NOT work Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Marcy for Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Marcy can work a Sales shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Marcy is available during Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Marcy can work Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 3 for Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 3 can work a Sales shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 3 is available during Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Paul 3 can work Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 2 for Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 2 can work a Sales shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Paul 2 can work Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 3 is available during Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Marcy is available during Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINE: SCHEDULED: Paul 3 for Thursday 04:15PM - Thursday 09:00PM
+	Current Hours: 0.0
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 4.75
+	Assigned Shifts: [Thursday 04:15PM - Thursday 09:00PM]
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 3's current priority is � from 5.0078 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Wade for Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Wade can work a Sales shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Wade can NOT work Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Marcy for Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Marcy can work a Sales shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Marcy is available during Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Marcy can work Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 2 for Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 2 can work a Sales shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Paul 2 can work Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Marcy is available during Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINE: SCHEDULED: Marcy for Thursday 04:15PM - Thursday 08:02PM
+	Current Hours: 0.0
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 3.783333333333333
+	Assigned Shifts: [Thursday 04:15PM - Thursday 08:02PM]
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Marcy's current priority is � from 5.0078 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Wade for Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Wade can work a Sales shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: FAILURE: Wade can NOT work Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Paul 2 for Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Paul 2 can work a Sales shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Paul 2 can work Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINE: SCHEDULED: Paul 2 for Friday 03:00PM - Friday 10:00PM
+	Current Hours: 0.0
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 7.0
+	Assigned Shifts: [Friday 03:00PM - Friday 10:00PM]
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Paul 2's current priority is � from 4.5215 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+FINER: WORK QUERY: Wade for Monday 09:00AM - Monday 03:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: Testing: Wade can work a Bar shift
+Jul 23, 2018 9:15:52 PM emp.Employee qualifiedFor
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Wade is available during Monday 09:00AM - Monday 03:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee canWork
+INFO: SUCCESS: Wade can work Monday 09:00AM - Monday 03:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Wade is available during Monday 09:00AM - Monday 03:00PM
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: SUCCESS
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINE: SCHEDULED: Wade for Monday 09:00AM - Monday 03:00PM
+	Current Hours: 0.0
+Jul 23, 2018 9:15:52 PM emp.Employee accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 6.0
+	Assigned Shifts: [Monday 09:00AM - Monday 03:00PM]
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: Wade's current priority is � from 10.0000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 04:00PM - Friday 09:00PM Bar
+	Alecia
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 04:00PM - Friday 09:00PM Bar
+	Alecia
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Alecia is available during Friday 04:00PM - Friday 09:00PM Bar
+	Alecia
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 04:00PM - Friday 09:00PM Bar
+	Alecia
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 04:00PM - Friday 09:00PM Bar
+	Alecia
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 04:00PM - Friday 09:00PM Bar
+	Alecia
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Alecia is available during Friday 04:00PM - Friday 09:00PM Bar
+	Alecia
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 04:00PM - Friday 09:00PM Bar
+	Alecia
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Paul 2 is available during Friday 04:00PM - Friday 09:00PM Bar
+	Alecia
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Blake is available during Friday 04:00PM - Friday 09:00PM Bar
+	Alecia
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Alecia is available during Friday 04:00PM - Friday 09:00PM Bar
+	Alecia
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: Testing: Chris is available during Friday 04:00PM - Friday 09:00PM Bar
+	Alecia
+Jul 23, 2018 9:15:52 PM emp.Employee availableToWork
+FINER: FAILURE
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of HouseShift at 4.9000 from:
+  Date
+     Value: 0
+     Normalized from range: [0, 6,778]
+     Resulting in: 0.4000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Jul 23, 2018 9:15:52 PM emp.EmployeePriority getCurrentPriority
+CONFIG: UPDATE: HouseShift's current priority is � from 4.9000 - (0.2000 * �)

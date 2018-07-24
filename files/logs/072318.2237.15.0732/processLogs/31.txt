@@ -1,0 +1,10 @@
+07/23/2018  10:37PM
+
+31: Thursday 05:59PM - Thursday 09:00PM Sales
+	HouseShift
+SELECTION: HouseShift
+HouseShift PRIORITY: �
+  HOURS > Current: 0.0000 Min: 0 Desired: 0 P.Max: 0
+  CURRENT SHIFTS > null
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

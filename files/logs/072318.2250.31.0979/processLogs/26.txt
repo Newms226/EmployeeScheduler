@@ -1,0 +1,22 @@
+07/23/2018  10:50PM
+
+26: Friday 04:00PM - Friday 09:00PM Bar
+SELECTION: HouseShift
+HouseShift PRIORITY: NaN
+  HOURS > Current: 0.0000 Min: 0 Desired: 0 P.Max: 0
+  CURRENT SHIFTS > null
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: HOUSE_ONLY
+Blake PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 10:00PM Sales]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar]

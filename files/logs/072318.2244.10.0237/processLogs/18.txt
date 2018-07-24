@@ -1,0 +1,16 @@
+07/23/2018  10:44PM
+
+18: Monday 09:00AM - Monday 03:00PM Bar
+	Wade
+SELECTION: Wade
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar
+	Wade]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar
+	Wade]

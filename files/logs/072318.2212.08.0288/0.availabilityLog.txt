@@ -1,0 +1,2407 @@
+Jul 23, 2018 10:12:09 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:09 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:09 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:09 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:09 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:09 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:09 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:09 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:09 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:09 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:09 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:09 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:09 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:09 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 00:00, 5, 23:59)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 12:00AM - Friday 11:59PM
+Jul 23, 2018 10:12:09 PM Availability.PersistantWeeklyAvailability toNEVERAvailable(Friday 12:00AM - Friday 11:59PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:09 PM Availability.PersistantWeeklyAvailability toNEVERAvailable
+FINER: RETURNING: Made1,439 changes.
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 09:00, 1, 15:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 09:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 09:00, 1, 15:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 09:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 09:00, 1, 15:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 09:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Monday 09:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 16:15, 4, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 16:15, 4, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 16:15, 4, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 16:15, 4, 20:02)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 16:15, 4, 20:02)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 16:15, 4, 20:02)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 20:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 20:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 20:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 20:30)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 20:30)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 20:30)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:30, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:30, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:30, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 22:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 21:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 20:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 20:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 20:00)
+Jul 23, 2018 10:12:09 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:09 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 05:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.Availability getWorkingAvailability
+FINER: CONSTRUCTOR: generating new WorkingAvailabilty for Week beginning on Monday, July 23, 2018
+   1: Monday, July 23, 2018
+   2: Tuesday, July 24, 2018
+   3: Wednesday, July 25, 2018
+   4: Thursday, July 26, 2018
+   5: Friday, July 27, 2018
+   6: Saturday, July 28, 2018
+   7: Sunday, July 29, 2018
+
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getDaysOff(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays
+FINER: RETURNING FROM Availability.TimeOffList.getDaysOff()
+	START: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+	MINUS: []
+	EQUALS: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 10:12:10 PM Availability.Availability getWorkingAvailability
+FINER: CONSTRUCTOR: generating new WorkingAvailabilty for Week beginning on Monday, July 23, 2018
+   1: Monday, July 23, 2018
+   2: Tuesday, July 24, 2018
+   3: Wednesday, July 25, 2018
+   4: Thursday, July 26, 2018
+   5: Friday, July 27, 2018
+   6: Saturday, July 28, 2018
+   7: Sunday, July 29, 2018
+
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getDaysOff(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays
+FINER: RETURNING FROM Availability.TimeOffList.getDaysOff()
+	START: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+	MINUS: []
+	EQUALS: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 10:12:10 PM Availability.Availability getWorkingAvailability
+FINER: CONSTRUCTOR: generating new WorkingAvailabilty for Week beginning on Monday, July 23, 2018
+   1: Monday, July 23, 2018
+   2: Tuesday, July 24, 2018
+   3: Wednesday, July 25, 2018
+   4: Thursday, July 26, 2018
+   5: Friday, July 27, 2018
+   6: Saturday, July 28, 2018
+   7: Sunday, July 29, 2018
+
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getDaysOff(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays
+FINER: RETURNING FROM Availability.TimeOffList.getDaysOff()
+	START: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+	MINUS: []
+	EQUALS: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 10:12:10 PM Availability.Availability getWorkingAvailability
+FINER: CONSTRUCTOR: generating new WorkingAvailabilty for Week beginning on Monday, July 23, 2018
+   1: Monday, July 23, 2018
+   2: Tuesday, July 24, 2018
+   3: Wednesday, July 25, 2018
+   4: Thursday, July 26, 2018
+   5: Friday, July 27, 2018
+   6: Saturday, July 28, 2018
+   7: Sunday, July 29, 2018
+
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getDaysOff(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays
+FINER: RETURNING FROM Availability.TimeOffList.getDaysOff()
+	START: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+	MINUS: []
+	EQUALS: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 10:12:10 PM Availability.Availability getWorkingAvailability
+FINER: CONSTRUCTOR: generating new WorkingAvailabilty for Week beginning on Monday, July 23, 2018
+   1: Monday, July 23, 2018
+   2: Tuesday, July 24, 2018
+   3: Wednesday, July 25, 2018
+   4: Thursday, July 26, 2018
+   5: Friday, July 27, 2018
+   6: Saturday, July 28, 2018
+   7: Sunday, July 29, 2018
+
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getDaysOff(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays
+FINER: RETURNING FROM Availability.TimeOffList.getDaysOff()
+	START: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+	MINUS: []
+	EQUALS: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 10:12:10 PM Availability.Availability getWorkingAvailability
+FINER: CONSTRUCTOR: generating new WorkingAvailabilty for Week beginning on Monday, July 23, 2018
+   1: Monday, July 23, 2018
+   2: Tuesday, July 24, 2018
+   3: Wednesday, July 25, 2018
+   4: Thursday, July 26, 2018
+   5: Friday, July 27, 2018
+   6: Saturday, July 28, 2018
+   7: Sunday, July 29, 2018
+
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getDaysOff(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays
+FINER: RETURNING FROM Availability.TimeOffList.getDaysOff()
+	START: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+	MINUS: []
+	EQUALS: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 10:12:10 PM Availability.Availability getWorkingAvailability
+FINER: CONSTRUCTOR: generating new WorkingAvailabilty for Week beginning on Monday, July 23, 2018
+   1: Monday, July 23, 2018
+   2: Tuesday, July 24, 2018
+   3: Wednesday, July 25, 2018
+   4: Thursday, July 26, 2018
+   5: Friday, July 27, 2018
+   6: Saturday, July 28, 2018
+   7: Sunday, July 29, 2018
+
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getDaysOff(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays
+FINER: RETURNING FROM Availability.TimeOffList.getDaysOff()
+	START: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+	MINUS: []
+	EQUALS: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 10:12:10 PM Availability.Availability getWorkingAvailability
+FINER: CONSTRUCTOR: generating new WorkingAvailabilty for Week beginning on Monday, July 23, 2018
+   1: Monday, July 23, 2018
+   2: Tuesday, July 24, 2018
+   3: Wednesday, July 25, 2018
+   4: Thursday, July 26, 2018
+   5: Friday, July 27, 2018
+   6: Saturday, July 28, 2018
+   7: Sunday, July 29, 2018
+
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getDaysOff(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays
+FINER: RETURNING FROM Availability.TimeOffList.getDaysOff()
+	START: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+	MINUS: []
+	EQUALS: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 10:12:10 PM Availability.Availability getWorkingAvailability
+FINER: CONSTRUCTOR: generating new WorkingAvailabilty for Week beginning on Monday, July 23, 2018
+   1: Monday, July 23, 2018
+   2: Tuesday, July 24, 2018
+   3: Wednesday, July 25, 2018
+   4: Thursday, July 26, 2018
+   5: Friday, July 27, 2018
+   6: Saturday, July 28, 2018
+   7: Sunday, July 29, 2018
+
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getDaysOff(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays
+FINER: RETURNING FROM Availability.TimeOffList.getDaysOff()
+	START: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+	MINUS: []
+	EQUALS: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 10:12:10 PM Availability.Availability getWorkingAvailability
+FINER: CONSTRUCTOR: generating new WorkingAvailabilty for Week beginning on Monday, July 23, 2018
+   1: Monday, July 23, 2018
+   2: Tuesday, July 24, 2018
+   3: Wednesday, July 25, 2018
+   4: Thursday, July 26, 2018
+   5: Friday, July 27, 2018
+   6: Saturday, July 28, 2018
+   7: Sunday, July 29, 2018
+
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getDaysOff(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays
+FINER: RETURNING FROM Availability.TimeOffList.getDaysOff()
+	START: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+	MINUS: []
+	EQUALS: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 10:12:10 PM Availability.Availability getWorkingAvailability
+FINER: CONSTRUCTOR: generating new WorkingAvailabilty for Week beginning on Monday, July 23, 2018
+   1: Monday, July 23, 2018
+   2: Tuesday, July 24, 2018
+   3: Wednesday, July 25, 2018
+   4: Thursday, July 26, 2018
+   5: Friday, July 27, 2018
+   6: Saturday, July 28, 2018
+   7: Sunday, July 29, 2018
+
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getDaysOff(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays
+FINER: RETURNING FROM Availability.TimeOffList.getDaysOff()
+	START: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+	MINUS: []
+	EQUALS: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 10:12:10 PM Availability.Availability getWorkingAvailability
+FINER: CONSTRUCTOR: generating new WorkingAvailabilty for Week beginning on Monday, July 23, 2018
+   1: Monday, July 23, 2018
+   2: Tuesday, July 24, 2018
+   3: Wednesday, July 25, 2018
+   4: Thursday, July 26, 2018
+   5: Friday, July 27, 2018
+   6: Saturday, July 28, 2018
+   7: Sunday, July 29, 2018
+
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getDaysOff(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays
+FINER: RETURNING FROM Availability.TimeOffList.getDaysOff()
+	START: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+	MINUS: []
+	EQUALS: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 10:12:10 PM Availability.Availability getWorkingAvailability
+FINER: CONSTRUCTOR: generating new WorkingAvailabilty for Week beginning on Monday, July 23, 2018
+   1: Monday, July 23, 2018
+   2: Tuesday, July 24, 2018
+   3: Wednesday, July 25, 2018
+   4: Thursday, July 26, 2018
+   5: Friday, July 27, 2018
+   6: Saturday, July 28, 2018
+   7: Sunday, July 29, 2018
+
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getDaysOff(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays
+FINER: RETURNING FROM Availability.TimeOffList.getDaysOff()
+	START: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+	MINUS: []
+	EQUALS: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 10:12:10 PM Availability.Availability getWorkingAvailability
+FINER: CONSTRUCTOR: generating new WorkingAvailabilty for Week beginning on Monday, July 23, 2018
+   1: Monday, July 23, 2018
+   2: Tuesday, July 24, 2018
+   3: Wednesday, July 25, 2018
+   4: Thursday, July 26, 2018
+   5: Friday, July 27, 2018
+   6: Saturday, July 28, 2018
+   7: Sunday, July 29, 2018
+
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getDaysOff(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays(Monday, July 23, 2018 - Sunday, July 29, 2018)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList getAvailableDays
+FINER: RETURNING FROM Availability.TimeOffList.getDaysOff()
+	START: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+	MINUS: []
+	EQUALS: [2018-07-29, 2018-07-28, 2018-07-27, 2018-07-26, 2018-07-25, 2018-07-24, 2018-07-23]
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 09:00, 1, 15:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 09:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 09:00, 1, 15:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 09:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 09:00, 1, 15:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 09:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Monday 09:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 10:00, 1, 15:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Monday 10:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(1, 11:00, 1, 14:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Monday 11:00AM - Monday 02:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 15:00, 4, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 16:15, 4, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 16:15, 4, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 16:15, 4, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 16:15, 4, 20:02)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 16:15, 4, 20:02)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 16:15, 4, 20:02)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(4, 17:59, 4, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Thursday 05:59PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 20:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 20:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 20:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 20:30)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 20:30)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 20:30)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:30, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:30, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:30, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 23:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 22:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 15:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 03:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 03:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 16:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 21:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 05:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 20:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 20:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: ENTERING: Constructor(5, 17:00, 5, 20:00)
+Jul 23, 2018 10:12:10 PM Availability.TimeChunk <init>
+FINEST: Generated new TimeChunk:
+	Friday 05:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk <init>
+FINEST: CONSTRUCTOR: Created new ScheduleableTimeChunk:
+	Friday 05:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 03:00PM - Friday 08:00PM failed to pass the query at index 8100
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability schedule
+INFO: SCHEDULE: Friday 03:00PM - Friday 08:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable(Friday 03:00PM - Friday 08:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable
+FINER: RETURNING: Made300 changes.
+	:Pass: true
+	Current Hours: 0.0 -> 5.0
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD(8400)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD
+FINER: RETURNING: Made0 changes.
+	:Pass: true
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled Olson to Friday 03:00PM - Friday 08:00PM Bar
+	Olson
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 04:00PM - Friday 09:00PM failed to pass the query at index 8160
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability schedule
+INFO: SCHEDULE: Friday 04:00PM - Friday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable(Friday 04:00PM - Friday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable
+FINER: RETURNING: Made300 changes.
+	:Pass: true
+	Current Hours: 0.0 -> 5.0
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD(8460)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD
+FINER: RETURNING: Made0 changes.
+	:Pass: true
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled Alecia to Friday 04:00PM - Friday 09:00PM Bar
+	Alecia
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability schedule
+INFO: SCHEDULE: Friday 03:00PM - Friday 08:30PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable(Friday 03:00PM - Friday 08:30PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable
+FINER: RETURNING: Made330 changes.
+	:Pass: true
+	Current Hours: 0.0 -> 5.5
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD(8430)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD
+FINER: RETURNING: Made0 changes.
+	:Pass: true
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled Dena to Friday 03:00PM - Friday 08:30PM Cocktail
+	Dena
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:30PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:30PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:30PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:30PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:30PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:30PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:30PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:30PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:30PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:30PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:30PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:30PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:30PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:30PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability schedule
+INFO: SCHEDULE: Friday 04:30PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable(Friday 04:30PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable
+FINER: RETURNING: Made390 changes.
+	:Pass: true
+	Current Hours: 0.0 -> 6.5
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD(8580)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD
+FINER: RETURNING: Made0 changes.
+	:Pass: true
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled Kim to Friday 04:30PM - Friday 11:00PM Cocktail
+	Kim
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability schedule
+INFO: SCHEDULE: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable
+FINER: RETURNING: Made480 changes.
+	:Pass: true
+	Current Hours: 0.0 -> 8.0
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD(8580)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD
+FINER: RETURNING: Made0 changes.
+	:Pass: true
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled Chels to Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 03:00PM - Friday 11:00PM Closer
+	Chels failed to pass the query at index 8100
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability schedule
+INFO: SCHEDULE: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable
+FINER: RETURNING: Made480 changes.
+	:Pass: true
+	Current Hours: 0.0 -> 8.0
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD(8580)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD
+FINER: RETURNING: Made0 changes.
+	:Pass: true
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled Gregs to Friday 03:00PM - Friday 11:00PM Closer
+	Gregs
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 03:00PM - Friday 11:00PM Closer
+	Chels failed to pass the query at index 8100
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 03:00PM - Friday 11:00PM Closer
+	Chels failed to pass the query at index 8100
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability schedule
+INFO: SCHEDULE: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable
+FINER: RETURNING: Made480 changes.
+	:Pass: true
+	Current Hours: 0.0 -> 8.0
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD(8580)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD
+FINER: RETURNING: Made0 changes.
+	:Pass: true
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled Chris to Friday 03:00PM - Friday 11:00PM Head_Wait
+	Chris
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 05:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 05:00PM - Friday 11:00PM failed to pass the query at index 8220
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 05:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 05:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 05:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 05:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability schedule
+INFO: SCHEDULE: Friday 05:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable(Friday 05:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable
+FINER: RETURNING: Made360 changes.
+	:Pass: true
+	Current Hours: 0.0 -> 6.0
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD(8580)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD
+FINER: RETURNING: Made0 changes.
+	:Pass: true
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled Blake to Friday 05:00PM - Friday 11:00PM Bar
+	Blake
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 03:00PM - Friday 11:00PM Closer
+	Chels failed to pass the query at index 8220
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 03:00PM - Friday 11:00PM Closer
+	Chels failed to pass the query at index 8100
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 03:00PM - Friday 11:00PM Closer
+	Chels failed to pass the query at index 8100
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 11:00PM Closer
+	Chels
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 11:00PM Closer
+	Chels)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 03:00PM - Friday 11:00PM Closer
+	Chels failed to pass the query at index 8100
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability schedule
+INFO: SCHEDULE: Friday 03:00PM - Friday 11:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable(Friday 03:00PM - Friday 11:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable
+FINER: RETURNING: Made480 changes.
+	:Pass: true
+	Current Hours: 0.0 -> 8.0
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD(8580)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD
+FINER: RETURNING: Made0 changes.
+	:Pass: true
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled Me to Friday 03:00PM - Friday 11:00PM Head_Wait
+	Me
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Thursday 03:00PM - Thursday 10:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Thursday 03:00PM - Thursday 10:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability schedule
+INFO: SCHEDULE: Thursday 03:00PM - Thursday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable(Thursday 03:00PM - Thursday 10:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable
+FINER: RETURNING: Made420 changes.
+	:Pass: true
+	Current Hours: 0.0 -> 7.0
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD(7080)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD
+FINER: RETURNING: Made0 changes.
+	:Pass: true
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled Brandon to Thursday 03:00PM - Thursday 10:00PM Cocktail
+	Brandon
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Thursday 03:00PM - Thursday 10:00PM Cocktail
+	Brandon)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Thursday 03:00PM - Thursday 10:00PM Cocktail
+	Brandon failed to pass the query at index 6660
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Thursday 03:00PM - Thursday 10:00PM Cocktail
+	Brandon)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Thursday 03:00PM - Thursday 10:00PM Cocktail
+	Brandon failed to pass the query at index 6660
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Thursday 03:00PM - Thursday 10:00PM Cocktail
+	Brandon)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Thursday 03:00PM - Thursday 10:00PM Cocktail
+	Brandon failed to pass the query at index 6660
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Thursday 03:00PM - Thursday 10:00PM Closer
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Thursday 03:00PM - Thursday 10:00PM Head_Wait
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Thursday 03:00PM - Thursday 10:00PM Cocktail
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Thursday 03:00PM - Thursday 10:00PM Closer
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Thursday 03:00PM - Thursday 10:00PM Head_Wait
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Thursday 04:15PM - Thursday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Thursday 04:15PM - Thursday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Thursday 04:15PM - Thursday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Thursday 04:15PM - Thursday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Thursday 04:15PM - Thursday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Thursday 04:15PM - Thursday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability schedule
+INFO: SCHEDULE: Thursday 04:15PM - Thursday 09:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable(Thursday 04:15PM - Thursday 09:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable
+FINER: RETURNING: Made285 changes.
+	:Pass: true
+	Current Hours: 0.0 -> 4.75
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD(7020)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD
+FINER: RETURNING: Made0 changes.
+	:Pass: true
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled Paul 3 to Thursday 04:15PM - Thursday 09:00PM Sales
+	Paul 3
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Thursday 04:15PM - Thursday 08:02PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Thursday 04:15PM - Thursday 08:02PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Thursday 04:15PM - Thursday 08:02PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Thursday 04:15PM - Thursday 08:02PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability schedule
+INFO: SCHEDULE: Thursday 04:15PM - Thursday 08:02PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable(Thursday 04:15PM - Thursday 08:02PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable
+FINER: RETURNING: Made227 changes.
+	:Pass: true
+	Current Hours: 0.0 -> 3.783333333333333
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD(6962)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD
+FINER: RETURNING: Made0 changes.
+	:Pass: true
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled Marcy to Thursday 04:15PM - Thursday 08:02PM Sales
+	Marcy
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 10:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 03:00PM - Friday 10:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability schedule
+INFO: SCHEDULE: Friday 03:00PM - Friday 10:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable(Friday 03:00PM - Friday 10:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable
+FINER: RETURNING: Made420 changes.
+	:Pass: true
+	Current Hours: 0.0 -> 7.0
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD(8520)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD
+FINER: RETURNING: Made0 changes.
+	:Pass: true
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled Paul 2 to Friday 03:00PM - Friday 10:00PM Sales
+	Paul 2
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Monday 09:00AM - Monday 03:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Monday 09:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Monday 09:00AM - Monday 03:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+FINER: SUCCESS: Monday 09:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability schedule
+INFO: SCHEDULE: Monday 09:00AM - Monday 03:00PM
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable(Monday 09:00AM - Monday 03:00PM)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toNotAvailable
+FINER: RETURNING: Made360 changes.
+	:Pass: true
+	Current Hours: 0.0 -> 6.0
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD(2340)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability toSTRICTLYAvailableFORWARD
+FINER: RETURNING: Made0 changes.
+	:Pass: true
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled Wade to Monday 09:00AM - Monday 03:00PM Bar
+	Wade
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Monday 10:00AM - Monday 03:00PM Closer
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Monday 10:00AM - Monday 03:00PM Closer
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Monday 10:00AM - Monday 03:00PM Head_Wait
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Thursday 05:59PM - Thursday 09:00PM Sales
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Friday 03:00PM - Friday 09:00PM Sales
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Thursday 05:59PM - Thursday 09:00PM Sales
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM Bar
+	Alecia)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 04:00PM - Friday 09:00PM Bar
+	Alecia failed to pass the query at index 8220
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM Bar
+	Alecia)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 04:00PM - Friday 09:00PM Bar
+	Alecia failed to pass the query at index 8160
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM Bar
+	Alecia)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 04:00PM - Friday 09:00PM Bar
+	Alecia failed to pass the query at index 8160
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM Bar
+	Alecia)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 04:00PM - Friday 09:00PM Bar
+	Alecia failed to pass the query at index 8160
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM Bar
+	Alecia)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 04:00PM - Friday 09:00PM Bar
+	Alecia failed to pass the query at index 8220
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM Bar
+	Alecia)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 04:00PM - Friday 09:00PM Bar
+	Alecia failed to pass the query at index 8160
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM Bar
+	Alecia)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 04:00PM - Friday 09:00PM Bar
+	Alecia failed to pass the query at index 8160
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM Bar
+	Alecia)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 04:00PM - Friday 09:00PM Bar
+	Alecia failed to pass the query at index 8160
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM Bar
+	Alecia)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 04:00PM - Friday 09:00PM Bar
+	Alecia failed to pass the query at index 8220
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM Bar
+	Alecia)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 04:00PM - Friday 09:00PM Bar
+	Alecia failed to pass the query at index 8160
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM Bar
+	Alecia)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 04:00PM - Friday 09:00PM Bar
+	Alecia failed to pass the query at index 8160
+Jul 23, 2018 10:12:10 PM Availability.WorkingAvailability isAvailable(Friday 04:00PM - Friday 09:00PM Bar
+	Alecia)
+FINER: ENTRY
+Jul 23, 2018 10:12:10 PM Availability.AvailabilityArray query
+INFO: FAILURE: Friday 04:00PM - Friday 09:00PM Bar
+	Alecia failed to pass the query at index 8160
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Friday 04:00PM - Friday 09:00PM Sales
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Friday 04:00PM - Friday 09:00PM Sales
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Friday 05:00PM - Friday 09:00PM Sales
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Friday 05:00PM - Friday 09:00PM Sales
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Friday 05:00PM - Friday 08:00PM Sales
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Monday 11:00AM - Monday 02:00PM Sales
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Thursday 05:59PM - Thursday 09:00PM Sales
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Monday 11:00AM - Monday 02:00PM Sales
+	HouseShift
+Jul 23, 2018 10:12:10 PM Availability.TimeOffList <init>
+FINER: Created new TimeOffList
+Jul 23, 2018 10:12:10 PM Availability.SchedulableTimeChunk setEmployee
+FINE: SUCCESS: Scheduled HouseShift to Monday 11:00AM - Monday 02:00PM Sales
+	HouseShift

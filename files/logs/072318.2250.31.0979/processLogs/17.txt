@@ -1,0 +1,13 @@
+07/23/2018  10:50PM
+
+17: Friday 03:00PM - Friday 10:00PM Sales
+SELECTION: Paul 2
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 10:00PM Sales]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 10:00PM Sales]

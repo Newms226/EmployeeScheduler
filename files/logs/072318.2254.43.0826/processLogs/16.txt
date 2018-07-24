@@ -1,0 +1,13 @@
+07/23/2018  10:54PM
+
+16: Thursday 04:15PM - Thursday 08:02PM Sales
+SELECTION: Marcy
+Marcy PRIORITY: NaN
+  HOURS > Current: 3.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Marcy PRIORITY: NaN
+  HOURS > Current: 3.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales]
