@@ -1,0 +1,63 @@
+07/24/2018  04:23PM
+
+31: Thursday 05:59PM - Thursday 09:00PM Sales = 5.0
+SELECTION: Chris
+Chris PRIORITY: -41246.39713647149
+  HOURS > Current: 16.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0, Thursday 05:59PM - Thursday 09:00PM Sales = 3.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Me PRIORITY: -95.86365485065329
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Gregs PRIORITY: -241.33623505585774
+  HOURS > Current: 16.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Chris PRIORITY: -41246.39713647149
+  HOURS > Current: 16.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0, Thursday 05:59PM - Thursday 09:00PM Sales = 3.0]
+
+EMPLOYEE LIST:
+Alecia PRIORITY: 6.468570605814956
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Olson PRIORITY: 5.329768402419236
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Wade PRIORITY: -7.615636751174968
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Kim PRIORITY: -13.92713779532304
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0]
+Blake PRIORITY: -18.135163409750923
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Chels PRIORITY: -33.86117858607382
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Brandon PRIORITY: -41.28420552629054
+  HOURS > Current: 14.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+Me PRIORITY: -95.86365485065329
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Marcy PRIORITY: -118.05405635060809
+  HOURS > Current: 9.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 03:00PM - Friday 09:00PM Sales = 5.0]
+Gregs PRIORITY: -241.33623505585774
+  HOURS > Current: 16.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Paul 3 PRIORITY: -275.33194137723746
+  HOURS > Current: 9.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Paul 2 PRIORITY: -575.4849178754838
+  HOURS > Current: 17.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Dena PRIORITY: -8215.490974658982
+  HOURS > Current: 15.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 11:00AM - Monday 02:00PM Sales = 3.0]
+Chris PRIORITY: -41246.39713647149
+  HOURS > Current: 16.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0, Thursday 05:59PM - Thursday 09:00PM Sales = 3.0]

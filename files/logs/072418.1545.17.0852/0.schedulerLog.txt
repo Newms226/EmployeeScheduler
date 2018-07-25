@@ -1,0 +1,3827 @@
+Jul 24, 2018 3:45:21 PM driver.Scheduler prepare
+INFO: Preparing to schedule...
+Jul 24, 2018 3:45:21 PM driver.Scheduler prepare
+INFO: Properly serialized
+Jul 24, 2018 3:45:22 PM driver.Scheduler prepare
+INFO: PREPARED
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+FINEST: SUCCESS: Copied PositionIDs
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+FINEST: TimeChunks:
+Friday 03:00PM - Friday 08:00PM Bar = 10.0
+Friday 04:00PM - Friday 09:00PM Bar = 10.0
+Friday 03:00PM - Friday 08:30PM Cocktail = 10.0
+Friday 04:30PM - Friday 11:00PM Cocktail = 10.0
+Friday 03:00PM - Friday 11:00PM Closer = 10.0
+Friday 03:00PM - Friday 11:00PM Closer = 10.0
+Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0
+Friday 05:00PM - Friday 11:00PM Bar = 9.0
+Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0
+Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0
+Thursday 03:00PM - Thursday 10:00PM Closer = 8.0
+Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0
+Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0
+Thursday 03:00PM - Thursday 10:00PM Closer = 7.0
+Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0
+Thursday 04:15PM - Thursday 09:00PM Sales = 6.0
+Thursday 04:15PM - Thursday 08:02PM Sales = 6.0
+Friday 03:00PM - Friday 10:00PM Sales = 6.0
+Monday 09:00AM - Monday 03:00PM Bar = 5.0
+Monday 10:00AM - Monday 03:00PM Closer = 5.0
+Monday 10:00AM - Monday 03:00PM Closer = 5.0
+Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0
+Thursday 05:59PM - Thursday 09:00PM Sales = 5.0
+Friday 03:00PM - Friday 09:00PM Sales = 5.0
+Thursday 05:59PM - Thursday 09:00PM Sales = 4.0
+Friday 04:00PM - Friday 09:00PM Sales = 4.0
+Friday 04:00PM - Friday 09:00PM Sales = 4.0
+Friday 05:00PM - Friday 09:00PM Sales = 4.0
+Friday 05:00PM - Friday 09:00PM Sales = 4.0
+Friday 05:00PM - Friday 08:00PM Sales = 4.0
+Monday 11:00AM - Monday 02:00PM Sales = 3.0
+Thursday 05:59PM - Thursday 09:00PM Sales = 3.0
+Monday 11:00AM - Monday 02:00PM Sales = 2.0
+Monday 11:00AM - Monday 02:00PM Sales = 1.0
+
+Employees:
+Kim
+Wade
+Chris
+Blake
+Chels
+Brandon
+Dena
+Olson
+Me
+Alecia
+Marcy
+Paul 3
+Paul 2
+Gregs
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: Begin schedule
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1/34 86,479,654 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 08:00PM Bar = 10.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 08:00PM Bar = 10.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 03:00PM - Friday 08:00PM Bar = 10.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 03:00PM - Friday 08:00PM Bar = 10.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 4 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 08:00PM Bar = 10.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 08:00PM Bar = 10.0
+	Qualified Employee list for Friday 03:00PM - Friday 08:00PM Bar = 10.0
+  Size: 4 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 08:00PM Bar = 10.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 08:00PM Bar = 10.0) with Olson
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Olson. Fill: 5.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(5.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 0: Friday 03:00PM - Friday 08:00PM Bar = 10.0
+SELECTION: Olson
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Blake PRIORITY: 4.984201209617938
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Alecia PRIORITY: 7.142100604808968
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chris PRIORITY: 5.760067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: 7.142100604808968
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Dena PRIORITY: 6.878035108423072
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Kim PRIORITY: 6.10216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chels PRIORITY: 5.960067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Gregs PRIORITY: 5.910178492403009
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chris PRIORITY: 5.760067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Me PRIORITY: 5.60216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Brandon PRIORITY: 5.408334562619856
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: 4.984201209617938
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: 4.721979643015194
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2/34 158,371,168 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 04:00PM - Friday 09:00PM Bar = 10.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 04:00PM - Friday 09:00PM Bar = 10.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 04:00PM - Friday 09:00PM Bar = 10.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 04:00PM - Friday 09:00PM Bar = 10.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 3 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 04:00PM - Friday 09:00PM Bar = 10.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 04:00PM - Friday 09:00PM Bar = 10.0
+	Qualified Employee list for Friday 04:00PM - Friday 09:00PM Bar = 10.0
+  Size: 3 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 04:00PM - Friday 09:00PM Bar = 10.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 04:00PM - Friday 09:00PM Bar = 10.0) with Alecia
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Alecia. Fill: 5.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(5.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 1: Friday 04:00PM - Friday 09:00PM Bar = 10.0
+SELECTION: Alecia
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Blake PRIORITY: 4.984201209617938
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Chris PRIORITY: 5.760067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: 6.878035108423072
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Kim PRIORITY: 6.10216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chels PRIORITY: 5.960067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Gregs PRIORITY: 5.910178492403009
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chris PRIORITY: 5.760067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Me PRIORITY: 5.60216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Brandon PRIORITY: 5.408334562619856
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: 4.984201209617938
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: 4.721979643015194
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3/34 267,199,811 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 08:30PM Cocktail = 10.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 08:30PM Cocktail = 10.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 03:00PM - Friday 08:30PM Cocktail = 10.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 03:00PM - Friday 08:30PM Cocktail = 10.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 8 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 08:30PM Cocktail = 10.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 08:30PM Cocktail = 10.0
+	Qualified Employee list for Friday 03:00PM - Friday 08:30PM Cocktail = 10.0
+  Size: 8 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 08:30PM Cocktail = 10.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 08:30PM Cocktail = 10.0) with Dena
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 5.5000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(5.5000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 2: Friday 03:00PM - Friday 08:30PM Cocktail = 10.0
+SELECTION: Dena
+Dena PRIORITY: NaN
+  HOURS > Current: 5.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Dena PRIORITY: NaN
+  HOURS > Current: 5.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0]
+Kim PRIORITY: 6.10216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chels PRIORITY: 5.960067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Gregs PRIORITY: 5.910178492403009
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chris PRIORITY: 5.760067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Me PRIORITY: 5.60216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Brandon PRIORITY: 5.408334562619856
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: 4.984201209617938
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 5.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0]
+Kim PRIORITY: 6.10216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chels PRIORITY: 5.960067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Gregs PRIORITY: 5.910178492403009
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chris PRIORITY: 5.760067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Me PRIORITY: 5.60216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Brandon PRIORITY: 5.408334562619856
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: 4.984201209617938
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: 4.721979643015194
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4/34 293,913,441 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 04:30PM - Friday 11:00PM Cocktail = 10.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 04:30PM - Friday 11:00PM Cocktail = 10.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 04:30PM - Friday 11:00PM Cocktail = 10.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 04:30PM - Friday 11:00PM Cocktail = 10.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 7 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 04:30PM - Friday 11:00PM Cocktail = 10.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 04:30PM - Friday 11:00PM Cocktail = 10.0
+	Qualified Employee list for Friday 04:30PM - Friday 11:00PM Cocktail = 10.0
+  Size: 7 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 04:30PM - Friday 11:00PM Cocktail = 10.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 04:30PM - Friday 11:00PM Cocktail = 10.0) with Kim
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 6.5000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(6.5000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 3: Friday 04:30PM - Friday 11:00PM Cocktail = 10.0
+SELECTION: Kim
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Chels PRIORITY: 5.960067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Brandon PRIORITY: 5.408334562619856
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: 4.984201209617938
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Gregs PRIORITY: 5.910178492403009
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chris PRIORITY: 5.760067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Me PRIORITY: 5.60216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 5.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Chels PRIORITY: 5.960067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Gregs PRIORITY: 5.910178492403009
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chris PRIORITY: 5.760067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Me PRIORITY: 5.60216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Brandon PRIORITY: 5.408334562619856
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: 4.984201209617938
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: 4.721979643015194
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5/34 306,746,101 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 11:00PM Closer = 10.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM Closer = 10.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 03:00PM - Friday 11:00PM Closer = 10.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 03:00PM - Friday 11:00PM Closer = 10.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 7 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM Closer = 10.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 11:00PM Closer = 10.0
+	Qualified Employee list for Friday 03:00PM - Friday 11:00PM Closer = 10.0
+  Size: 7 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 11:00PM Closer = 10.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 11:00PM Closer = 10.0) with Chels
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 8.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(8.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 4: Friday 03:00PM - Friday 11:00PM Closer = 10.0
+SELECTION: Chels
+Chels PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Chels PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Gregs PRIORITY: 5.910178492403009
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chris PRIORITY: 5.760067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Me PRIORITY: 5.60216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Brandon PRIORITY: 5.408334562619856
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: 4.984201209617938
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: 4.721979643015194
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 5.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Gregs PRIORITY: 5.910178492403009
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chris PRIORITY: 5.760067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Me PRIORITY: 5.60216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Brandon PRIORITY: 5.408334562619856
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: 4.984201209617938
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: 4.721979643015194
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6/34 341,123,756 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 11:00PM Closer = 10.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM Closer = 10.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Friday 03:00PM - Friday 11:00PM Closer = 10.0 map is present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM Closer = 10.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 11:00PM Closer = 10.0
+	Qualified Employee list for Friday 03:00PM - Friday 11:00PM Closer = 10.0
+  Size: 7 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 11:00PM Closer = 10.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 11:00PM Closer = 10.0) with Gregs
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 8.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(8.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 5: Friday 03:00PM - Friday 11:00PM Closer = 10.0
+SELECTION: Gregs
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Chels PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: 5.760067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Me PRIORITY: 5.60216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Brandon PRIORITY: 5.408334562619856
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: 4.984201209617938
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: 4.721979643015194
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 5.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: 5.760067856616021
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Me PRIORITY: 5.60216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Brandon PRIORITY: 5.408334562619856
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: 4.984201209617938
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: 4.721979643015194
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7/34 350,975,468 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 5 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0
+	Qualified Employee list for Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0
+  Size: 5 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0) with Chris
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 8.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(8.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 6: Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0
+SELECTION: Chris
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Me PRIORITY: 5.60216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Brandon PRIORITY: 5.408334562619856
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: 4.984201209617938
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Paul 2 PRIORITY: 4.721979643015194
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 5.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: 5.60216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Brandon PRIORITY: 5.408334562619856
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: 4.984201209617938
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: 4.721979643015194
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+8/34 374,745,421 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 05:00PM - Friday 11:00PM Bar = 9.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 11:00PM Bar = 9.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 05:00PM - Friday 11:00PM Bar = 9.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 05:00PM - Friday 11:00PM Bar = 9.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 1 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 11:00PM Bar = 9.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 05:00PM - Friday 11:00PM Bar = 9.0
+	Qualified Employee list for Friday 05:00PM - Friday 11:00PM Bar = 9.0
+  Size: 1 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 05:00PM - Friday 11:00PM Bar = 9.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 05:00PM - Friday 11:00PM Bar = 9.0) with Blake
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 6.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(6.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 7: Friday 05:00PM - Friday 11:00PM Bar = 9.0
+SELECTION: Blake
+Blake PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Blake PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 5.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: 5.60216846142499
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Brandon PRIORITY: 5.408334562619856
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: 4.721979643015194
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+9/34 391,687,546 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0 map is present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0
+	Qualified Employee list for Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0
+  Size: 5 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0) with Me
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 8.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(8.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 8: Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0
+SELECTION: Me
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: 5.408334562619856
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Paul 2 PRIORITY: 4.721979643015194
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 5.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: 5.408334562619856
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: 4.721979643015194
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+10/34 401,180,464 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 8 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0
+	Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0
+  Size: 8 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0) with Brandon
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 7.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(7.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 9: Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0
+SELECTION: Brandon
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Dena PRIORITY: NaN
+  HOURS > Current: 5.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 5.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: 4.721979643015194
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11/34 418,747,672 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Thursday 03:00PM - Thursday 10:00PM Closer = 8.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM Closer = 8.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Thursday 03:00PM - Thursday 10:00PM Closer = 8.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM Closer = 8.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 8 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM Closer = 8.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 03:00PM - Thursday 10:00PM Closer = 8.0
+	Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM Closer = 8.0
+  Size: 8 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 03:00PM - Thursday 10:00PM Closer = 8.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 03:00PM - Thursday 10:00PM Closer = 8.0) with Paul 2
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 7.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(7.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 10: Thursday 03:00PM - Thursday 10:00PM Closer = 8.0
+SELECTION: Paul 2
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Dena PRIORITY: NaN
+  HOURS > Current: 5.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 5.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+12/34 465,766,212 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 7 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0
+	Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0
+  Size: 7 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Personal Min > Bellow Desired
+Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0
+  Size: 7 StatusFlag: BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0) with Dena
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 12.5000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(12.5000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 11: Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0
+SELECTION: Dena
+Dena PRIORITY: NaN
+  HOURS > Current: 12.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Dena PRIORITY: NaN
+  HOURS > Current: 12.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 12.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+13/34 499,750,643 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0 map is present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0
+	Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0
+  Size: 8 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Personal Min > Bellow Desired
+Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0
+  Size: 8 StatusFlag: BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0) with Chels
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 15.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(15.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 12: Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0
+SELECTION: Chels
+Chels PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Dena PRIORITY: NaN
+  HOURS > Current: 12.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 12.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+14/34 511,930,031 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Thursday 03:00PM - Thursday 10:00PM Closer = 7.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM Closer = 7.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Thursday 03:00PM - Thursday 10:00PM Closer = 7.0 map is present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM Closer = 7.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 03:00PM - Thursday 10:00PM Closer = 7.0
+	Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM Closer = 8.0
+  Size: 8 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 03:00PM - Thursday 10:00PM Closer = 8.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Personal Min > Bellow Desired
+Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM Closer = 8.0
+  Size: 8 StatusFlag: BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 03:00PM - Thursday 10:00PM Closer = 8.0) with Blake
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 13.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(13.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 13: Thursday 03:00PM - Thursday 10:00PM Closer = 8.0
+SELECTION: Blake
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Dena PRIORITY: NaN
+  HOURS > Current: 12.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 12.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 6.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+15/34 518,989,228 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0 map is present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0
+	Qualified Employee list for Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0
+  Size: 7 StatusFlag: BELLOW_DESIRED
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0 presently BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0) with Kim
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 13.5000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(13.5000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 14: Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0
+SELECTION: Kim
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Dena PRIORITY: NaN
+  HOURS > Current: 12.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 12.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+16/34 526,008,316 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Thursday 04:15PM - Thursday 09:00PM Sales = 6.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 04:15PM - Thursday 09:00PM Sales = 6.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Thursday 04:15PM - Thursday 09:00PM Sales = 6.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Thursday 04:15PM - Thursday 09:00PM Sales = 6.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 5 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 04:15PM - Thursday 09:00PM Sales = 6.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 04:15PM - Thursday 09:00PM Sales = 6.0
+	Qualified Employee list for Thursday 04:15PM - Thursday 09:00PM Sales = 6.0
+  Size: 5 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 04:15PM - Thursday 09:00PM Sales = 6.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 04:15PM - Thursday 09:00PM Sales = 6.0) with Paul 3
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 4.7500 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(4.7500 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 15: Thursday 04:15PM - Thursday 09:00PM Sales = 6.0
+SELECTION: Paul 3
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 4.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 4.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 12.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Marcy PRIORITY: 5.008334562619855
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 4.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+17/34 553,417,286 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Thursday 04:15PM - Thursday 08:02PM Sales = 6.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 04:15PM - Thursday 08:02PM Sales = 6.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Thursday 04:15PM - Thursday 08:02PM Sales = 6.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Thursday 04:15PM - Thursday 08:02PM Sales = 6.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 4 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 04:15PM - Thursday 08:02PM Sales = 6.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 04:15PM - Thursday 08:02PM Sales = 6.0
+	Qualified Employee list for Thursday 04:15PM - Thursday 08:02PM Sales = 6.0
+  Size: 4 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 04:15PM - Thursday 08:02PM Sales = 6.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 04:15PM - Thursday 08:02PM Sales = 6.0) with Marcy
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 3.7833 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(3.7833 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 16: Thursday 04:15PM - Thursday 08:02PM Sales = 6.0
+SELECTION: Marcy
+Marcy PRIORITY: NaN
+  HOURS > Current: 3.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 3.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 12.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 3.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 4.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+18/34 617,669,941 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 10:00PM Sales = 6.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 10:00PM Sales = 6.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 03:00PM - Friday 10:00PM Sales = 6.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 03:00PM - Friday 10:00PM Sales = 6.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 4 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 10:00PM Sales = 6.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 10:00PM Sales = 6.0
+	Qualified Employee list for Friday 03:00PM - Friday 10:00PM Sales = 6.0
+  Size: 4 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 10:00PM Sales = 6.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Personal Min > Bellow Desired
+Qualified Employee list for Friday 03:00PM - Friday 10:00PM Sales = 6.0
+  Size: 4 StatusFlag: BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 10:00PM Sales = 6.0) with Paul 3
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 11.7500 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(11.7500 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 17: Friday 03:00PM - Friday 10:00PM Sales = 6.0
+SELECTION: Paul 3
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 11.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 11.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 3.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0
+  HOURS > Current: 0.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > []
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 12.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 3.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 11.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+19/34 667,090,559 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Monday 09:00AM - Monday 03:00PM Bar = 5.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Monday 09:00AM - Monday 03:00PM Bar = 5.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Monday 09:00AM - Monday 03:00PM Bar = 5.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Monday 09:00AM - Monday 03:00PM Bar = 5.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 5 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Monday 09:00AM - Monday 03:00PM Bar = 5.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Monday 09:00AM - Monday 03:00PM Bar = 5.0
+	Qualified Employee list for Monday 09:00AM - Monday 03:00PM Bar = 5.0
+  Size: 5 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Monday 09:00AM - Monday 03:00PM Bar = 5.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Monday 09:00AM - Monday 03:00PM Bar = 5.0) with Wade
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Wade. Fill: 6.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(6.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 18: Monday 09:00AM - Monday 03:00PM Bar = 5.0
+SELECTION: Wade
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 12.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 3.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 11.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20/34 684,137,792 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Monday 10:00AM - Monday 03:00PM Closer = 5.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Monday 10:00AM - Monday 03:00PM Closer = 5.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Monday 10:00AM - Monday 03:00PM Closer = 5.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Monday 10:00AM - Monday 03:00PM Closer = 5.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 9 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Monday 10:00AM - Monday 03:00PM Closer = 5.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Monday 10:00AM - Monday 03:00PM Closer = 5.0
+	Qualified Employee list for Monday 10:00AM - Monday 03:00PM Closer = 5.0
+  Size: 9 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Monday 10:00AM - Monday 03:00PM Closer = 5.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Personal Min > Bellow Desired
+Qualified Employee list for Monday 10:00AM - Monday 03:00PM Closer = 5.0
+  Size: 9 StatusFlag: BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Monday 10:00AM - Monday 03:00PM Closer = 5.0) with Dena
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Dena. Fill: 17.5000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(17.5000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 19: Monday 10:00AM - Monday 03:00PM Closer = 5.0
+SELECTION: Dena
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 15.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 3.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 11.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+21/34 726,493,276 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Monday 10:00AM - Monday 03:00PM Closer = 5.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Monday 10:00AM - Monday 03:00PM Closer = 5.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Monday 10:00AM - Monday 03:00PM Closer = 5.0 map is present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Monday 10:00AM - Monday 03:00PM Closer = 5.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Monday 10:00AM - Monday 03:00PM Closer = 5.0
+	Qualified Employee list for Monday 10:00AM - Monday 03:00PM Closer = 5.0
+  Size: 9 StatusFlag: BELLOW_DESIRED
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Monday 10:00AM - Monday 03:00PM Closer = 5.0 presently BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Monday 10:00AM - Monday 03:00PM Closer = 5.0) with Chels
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chels. Fill: 20.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(20.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 20: Monday 10:00AM - Monday 03:00PM Closer = 5.0
+SELECTION: Chels
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 3.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 11.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+22/34 738,004,551 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 7 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0
+	Qualified Employee list for Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0
+  Size: 7 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Personal Min > Bellow Desired
+Qualified Employee list for Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0
+  Size: 7 StatusFlag: BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0) with Brandon
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 12.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(12.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 21: Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0
+SELECTION: Brandon
+Brandon PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Brandon PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 3.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 11.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+23/34 774,933,402 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Thursday 05:59PM - Thursday 09:00PM Sales = 5.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 05:59PM - Thursday 09:00PM Sales = 5.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Thursday 05:59PM - Thursday 09:00PM Sales = 5.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Thursday 05:59PM - Thursday 09:00PM Sales = 5.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 3 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 05:59PM - Thursday 09:00PM Sales = 5.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 05:59PM - Thursday 09:00PM Sales = 5.0
+	Qualified Employee list for Thursday 05:59PM - Thursday 09:00PM Sales = 5.0
+  Size: 3 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 05:59PM - Thursday 09:00PM Sales = 5.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Personal Min > Bellow Desired
+Qualified Employee list for Thursday 05:59PM - Thursday 09:00PM Sales = 5.0
+  Size: 3 StatusFlag: BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 05:59PM - Thursday 09:00PM Sales = 5.0) with Gregs
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Gregs. Fill: 11.0167 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(11.0167 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 22: Thursday 05:59PM - Thursday 09:00PM Sales = 5.0
+SELECTION: Gregs
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 3.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 11.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+24/34 803,684,445 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 03:00PM - Friday 09:00PM Sales = 5.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 09:00PM Sales = 5.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 03:00PM - Friday 09:00PM Sales = 5.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 03:00PM - Friday 09:00PM Sales = 5.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 3 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 03:00PM - Friday 09:00PM Sales = 5.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 03:00PM - Friday 09:00PM Sales = 5.0
+	Qualified Employee list for Friday 03:00PM - Friday 09:00PM Sales = 5.0
+  Size: 3 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 03:00PM - Friday 09:00PM Sales = 5.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Personal Min > Bellow Desired
+Qualified Employee list for Friday 03:00PM - Friday 09:00PM Sales = 5.0
+  Size: 3 StatusFlag: BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 03:00PM - Friday 09:00PM Sales = 5.0) with Brandon
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Brandon. Fill: 18.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(18.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 23: Friday 03:00PM - Friday 09:00PM Sales = 5.0
+SELECTION: Brandon
+Brandon PRIORITY: NaN
+  HOURS > Current: 18.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0, Friday 03:00PM - Friday 09:00PM Sales = 5.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Brandon PRIORITY: NaN
+  HOURS > Current: 18.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0, Friday 03:00PM - Friday 09:00PM Sales = 5.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 3.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 18.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0, Friday 03:00PM - Friday 09:00PM Sales = 5.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 3.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 11.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+25/34 820,817,191 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Thursday 05:59PM - Thursday 09:00PM Sales = 4.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 05:59PM - Thursday 09:00PM Sales = 4.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Thursday 05:59PM - Thursday 09:00PM Sales = 4.0 map is present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 05:59PM - Thursday 09:00PM Sales = 4.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 05:59PM - Thursday 09:00PM Sales = 4.0
+	Qualified Employee list for Thursday 05:59PM - Thursday 09:00PM Sales = 5.0
+  Size: 3 StatusFlag: BELLOW_DESIRED
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 05:59PM - Thursday 09:00PM Sales = 5.0 presently BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 05:59PM - Thursday 09:00PM Sales = 5.0) with Me
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Me. Fill: 11.0167 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(11.0167 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 24: Thursday 05:59PM - Thursday 09:00PM Sales = 5.0
+SELECTION: Me
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 18.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0, Friday 03:00PM - Friday 09:00PM Sales = 5.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 3.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 11.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+26/34 831,954,429 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 04:00PM - Friday 09:00PM Sales = 4.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 04:00PM - Friday 09:00PM Sales = 4.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 04:00PM - Friday 09:00PM Sales = 4.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 04:00PM - Friday 09:00PM Sales = 4.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 2 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 04:00PM - Friday 09:00PM Sales = 4.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 04:00PM - Friday 09:00PM Sales = 4.0
+	Qualified Employee list for Friday 04:00PM - Friday 09:00PM Sales = 4.0
+  Size: 2 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 04:00PM - Friday 09:00PM Sales = 4.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Personal Min > Bellow Desired
+Qualified Employee list for Friday 04:00PM - Friday 09:00PM Sales = 4.0
+  Size: 2 StatusFlag: BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 04:00PM - Friday 09:00PM Sales = 4.0) with Marcy
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Marcy. Fill: 8.7833 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(8.7833 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 25: Friday 04:00PM - Friday 09:00PM Sales = 4.0
+SELECTION: Marcy
+Marcy PRIORITY: NaN
+  HOURS > Current: 8.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Marcy PRIORITY: NaN
+  HOURS > Current: 8.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 18.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0, Friday 03:00PM - Friday 09:00PM Sales = 5.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 8.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 11.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 7.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+27/34 874,993,211 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 04:00PM - Friday 09:00PM Sales = 4.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 04:00PM - Friday 09:00PM Sales = 4.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Friday 04:00PM - Friday 09:00PM Sales = 4.0 map is present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 04:00PM - Friday 09:00PM Sales = 4.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 04:00PM - Friday 09:00PM Sales = 4.0
+	Qualified Employee list for Friday 04:00PM - Friday 09:00PM Sales = 4.0
+  Size: 2 StatusFlag: BELLOW_DESIRED
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 04:00PM - Friday 09:00PM Sales = 4.0 presently BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 04:00PM - Friday 09:00PM Sales = 4.0) with Paul 2
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 2. Fill: 12.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(12.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 26: Friday 04:00PM - Friday 09:00PM Sales = 4.0
+SELECTION: Paul 2
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Marcy PRIORITY: NaN
+  HOURS > Current: 8.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 18.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0, Friday 03:00PM - Friday 09:00PM Sales = 5.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 8.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 11.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+28/34 891,822,448 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 05:00PM - Friday 09:00PM Sales = 4.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 09:00PM Sales = 4.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 05:00PM - Friday 09:00PM Sales = 4.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 05:00PM - Friday 09:00PM Sales = 4.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 0 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 09:00PM Sales = 4.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 05:00PM - Friday 09:00PM Sales = 4.0
+	Qualified Employee list for Friday 05:00PM - Friday 09:00PM Sales = 4.0
+  Size: 0 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 05:00PM - Friday 09:00PM Sales = 4.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Personal Min > Bellow Desired
+Qualified Employee list for Friday 05:00PM - Friday 09:00PM Sales = 4.0
+  Size: 0 StatusFlag: BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Desired > Bellow Personal Max
+Qualified Employee list for Friday 05:00PM - Friday 09:00PM Sales = 4.0
+  Size: 0 StatusFlag: BELLOW_PERSONAL_MAX
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Personal Max > Bellow Global Max
+Qualified Employee list for Friday 05:00PM - Friday 09:00PM Sales = 4.0
+  Size: 0 StatusFlag: BELLOW_GLOBAL_MAX
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Global Max > HOUSE ONLY
+Qualified Employee list for Friday 05:00PM - Friday 09:00PM Sales = 4.0
+  Size: 0 StatusFlag: HOUSE_ONLY
+Jul 24, 2018 3:45:22 PM emp.HouseShift <init>
+FINE: Generated new house shift
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: SCHEDULED: HOUSE to Friday 05:00PM - Friday 09:00PM Sales = 4.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 05:00PM - Friday 09:00PM Sales = 4.0) with HouseShift
+Jul 24, 2018 3:45:22 PM emp.HouseShift accept
+FINE: SCHEDULED: House to Friday 05:00PM - Friday 09:00PM Sales = 4.0
+	Current Hours: 0.0
+Jul 24, 2018 3:45:22 PM emp.HouseShift accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 0.0
+	Assigned Shifts: null
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:HouseShift. Fill: 0.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 27: Friday 05:00PM - Friday 09:00PM Sales = 4.0
+SELECTION: HouseShift
+HouseShift PRIORITY: NaN
+  HOURS > Current: 0.0000 Min: 0 Desired: 0 P.Max: 0
+  CURRENT SHIFTS > null
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: HOUSE_ONLY
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 18.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0, Friday 03:00PM - Friday 09:00PM Sales = 5.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 8.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 11.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+29/34 918,402,071 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 05:00PM - Friday 09:00PM Sales = 4.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 09:00PM Sales = 4.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Friday 05:00PM - Friday 09:00PM Sales = 4.0 map is present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 09:00PM Sales = 4.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 05:00PM - Friday 09:00PM Sales = 4.0
+	Qualified Employee list for Friday 05:00PM - Friday 09:00PM Sales = 4.0
+  Size: 0 StatusFlag: HOUSE_ONLY
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 05:00PM - Friday 09:00PM Sales = 4.0 presently HOUSE_ONLY
+Jul 24, 2018 3:45:22 PM emp.HouseShift <init>
+FINE: Generated new house shift
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: SCHEDULED: HOUSE to Friday 05:00PM - Friday 09:00PM Sales = 4.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 05:00PM - Friday 09:00PM Sales = 4.0) with HouseShift
+Jul 24, 2018 3:45:22 PM emp.HouseShift accept
+FINE: SCHEDULED: House to Friday 05:00PM - Friday 09:00PM Sales = 4.0
+	Current Hours: 0.0
+Jul 24, 2018 3:45:22 PM emp.HouseShift accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 0.0
+	Assigned Shifts: null
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:HouseShift. Fill: 0.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 28: Friday 05:00PM - Friday 09:00PM Sales = 4.0
+SELECTION: HouseShift
+HouseShift PRIORITY: NaN
+  HOURS > Current: 0.0000 Min: 0 Desired: 0 P.Max: 0
+  CURRENT SHIFTS > null
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: HOUSE_ONLY
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 18.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0, Friday 03:00PM - Friday 09:00PM Sales = 5.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 8.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 11.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+30/34 921,354,049 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Friday 05:00PM - Friday 08:00PM Sales = 4.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 08:00PM Sales = 4.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Friday 05:00PM - Friday 08:00PM Sales = 4.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Friday 05:00PM - Friday 08:00PM Sales = 4.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 0 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Friday 05:00PM - Friday 08:00PM Sales = 4.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Friday 05:00PM - Friday 08:00PM Sales = 4.0
+	Qualified Employee list for Friday 05:00PM - Friday 08:00PM Sales = 4.0
+  Size: 0 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Friday 05:00PM - Friday 08:00PM Sales = 4.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Personal Min > Bellow Desired
+Qualified Employee list for Friday 05:00PM - Friday 08:00PM Sales = 4.0
+  Size: 0 StatusFlag: BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Desired > Bellow Personal Max
+Qualified Employee list for Friday 05:00PM - Friday 08:00PM Sales = 4.0
+  Size: 0 StatusFlag: BELLOW_PERSONAL_MAX
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Personal Max > Bellow Global Max
+Qualified Employee list for Friday 05:00PM - Friday 08:00PM Sales = 4.0
+  Size: 0 StatusFlag: BELLOW_GLOBAL_MAX
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Global Max > HOUSE ONLY
+Qualified Employee list for Friday 05:00PM - Friday 08:00PM Sales = 4.0
+  Size: 0 StatusFlag: HOUSE_ONLY
+Jul 24, 2018 3:45:22 PM emp.HouseShift <init>
+FINE: Generated new house shift
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: SCHEDULED: HOUSE to Friday 05:00PM - Friday 08:00PM Sales = 4.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Friday 05:00PM - Friday 08:00PM Sales = 4.0) with HouseShift
+Jul 24, 2018 3:45:22 PM emp.HouseShift accept
+FINE: SCHEDULED: House to Friday 05:00PM - Friday 08:00PM Sales = 4.0
+	Current Hours: 0.0
+Jul 24, 2018 3:45:22 PM emp.HouseShift accept
+FINEST: SUCCESS: SCHEDULED
+	Current hours: 0.0
+	Assigned Shifts: null
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:HouseShift. Fill: 0.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(0.0000 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 29: Friday 05:00PM - Friday 08:00PM Sales = 4.0
+SELECTION: HouseShift
+HouseShift PRIORITY: NaN
+  HOURS > Current: 0.0000 Min: 0 Desired: 0 P.Max: 0
+  CURRENT SHIFTS > null
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: HOUSE_ONLY
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 18.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0, Friday 03:00PM - Friday 09:00PM Sales = 5.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 8.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 11.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+31/34 944,546,003 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Monday 11:00AM - Monday 02:00PM Sales = 3.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Monday 11:00AM - Monday 02:00PM Sales = 3.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+INFO: Mapping for Monday 11:00AM - Monday 02:00PM Sales = 3.0 is not present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+CONFIG: Creating Qualified Employee list for Monday 11:00AM - Monday 02:00PM Sales = 3.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList fill
+FINER: ENTERING: QualifiedEmployeeList.fill()
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList <init>
+FINE: RESULT: Created a list of size 8 from an employee set of size 14
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Monday 11:00AM - Monday 02:00PM Sales = 3.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Monday 11:00AM - Monday 02:00PM Sales = 3.0
+	Qualified Employee list for Monday 11:00AM - Monday 02:00PM Sales = 3.0
+  Size: 8 StatusFlag: BELLOW_PERSONAL_MIN
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Monday 11:00AM - Monday 02:00PM Sales = 3.0 presently BELLOW_PERSONAL_MIN
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+INFO: UPDATE SF: Bellow Personal Min > Bellow Desired
+Qualified Employee list for Monday 11:00AM - Monday 02:00PM Sales = 3.0
+  Size: 8 StatusFlag: BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Monday 11:00AM - Monday 02:00PM Sales = 3.0) with Paul 3
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Paul 3. Fill: 14.7500 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(14.7500 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 30: Monday 11:00AM - Monday 02:00PM Sales = 3.0
+SELECTION: Paul 3
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 14.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0, Monday 11:00AM - Monday 02:00PM Sales = 3.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 14.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0, Monday 11:00AM - Monday 02:00PM Sales = 3.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 8.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 8.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0]
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 18.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0, Friday 03:00PM - Friday 09:00PM Sales = 5.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 8.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 14.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0, Monday 11:00AM - Monday 02:00PM Sales = 3.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+32/34 986,705,228 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Thursday 05:59PM - Thursday 09:00PM Sales = 3.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Thursday 05:59PM - Thursday 09:00PM Sales = 3.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Thursday 05:59PM - Thursday 09:00PM Sales = 3.0 map is present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Thursday 05:59PM - Thursday 09:00PM Sales = 3.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Thursday 05:59PM - Thursday 09:00PM Sales = 3.0
+	Qualified Employee list for Thursday 05:59PM - Thursday 09:00PM Sales = 5.0
+  Size: 3 StatusFlag: BELLOW_DESIRED
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Thursday 05:59PM - Thursday 09:00PM Sales = 5.0 presently BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Thursday 05:59PM - Thursday 09:00PM Sales = 5.0) with Chris
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Chris. Fill: 11.0167 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(11.0167 - �) = �
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:22 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:22 PM driver.ProcessLog <init>
+FINEST: 31: Thursday 05:59PM - Thursday 09:00PM Sales = 5.0
+SELECTION: Chris
+Chris PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 3.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 3.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 3.0]
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 18.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0, Friday 03:00PM - Friday 09:00PM Sales = 5.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 8.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 13.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 14.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0, Monday 11:00AM - Monday 02:00PM Sales = 3.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+33/34 990,831,647 nanoseconds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:22 PM driver.Scheduler run
+INFO: ASSIGNING: Monday 11:00AM - Monday 02:00PM Sales = 2.0
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Monday 11:00AM - Monday 02:00PM Sales = 2.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Monday 11:00AM - Monday 02:00PM Sales = 2.0 map is present
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Monday 11:00AM - Monday 02:00PM Sales = 2.0)
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Monday 11:00AM - Monday 02:00PM Sales = 2.0
+	Qualified Employee list for Monday 11:00AM - Monday 02:00PM Sales = 3.0
+  Size: 8 StatusFlag: BELLOW_DESIRED
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:22 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Monday 11:00AM - Monday 02:00PM Sales = 3.0 presently BELLOW_DESIRED
+Jul 24, 2018 3:45:22 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Monday 11:00AM - Monday 02:00PM Sales = 3.0) with Blake
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Blake. Fill: 16.0000 AverageFill: �
+Jul 24, 2018 3:45:22 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(16.0000 - �) = �
+Jul 24, 2018 3:45:23 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:23 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:23 PM driver.ProcessLog <init>
+FINEST: 32: Monday 11:00AM - Monday 02:00PM Sales = 3.0
+SELECTION: Blake
+Blake PRIORITY: NaN
+  HOURS > Current: 16.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0, Monday 11:00AM - Monday 02:00PM Sales = 2.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 14.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0, Monday 11:00AM - Monday 02:00PM Sales = 3.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 16.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0, Monday 11:00AM - Monday 02:00PM Sales = 2.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 8.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 3.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 13.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 3.0]
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 18.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0, Friday 03:00PM - Friday 09:00PM Sales = 5.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 8.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 16.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0, Monday 11:00AM - Monday 02:00PM Sales = 2.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 14.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0, Monday 11:00AM - Monday 02:00PM Sales = 3.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+
+Jul 24, 2018 3:45:23 PM driver.Scheduler run
+INFO: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+34/34 1.0017 second
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jul 24, 2018 3:45:23 PM driver.Scheduler run
+INFO: ASSIGNING: Monday 11:00AM - Monday 02:00PM Sales = 1.0
+Jul 24, 2018 3:45:23 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: ENTERNG: QualifiedEmployeeListMap.getList(Monday 11:00AM - Monday 02:00PM Sales = 1.0)
+Jul 24, 2018 3:45:23 PM WorkingSet.QualifiedEmployeeListMap getList
+FINE: Monday 11:00AM - Monday 02:00PM Sales = 1.0 map is present
+Jul 24, 2018 3:45:23 PM WorkingSet.QualifiedEmployeeListMap getList
+FINER: RETURNING: QualifiedEmployeeListMap.getList(Monday 11:00AM - Monday 02:00PM Sales = 1.0)
+Jul 24, 2018 3:45:23 PM WorkingSet.AssignmentOperation <init>
+FINEST: CONSTRUCTOR: Building new AssignmentOperation
+	Monday 11:00AM - Monday 02:00PM Sales = 1.0
+	Qualified Employee list for Monday 11:00AM - Monday 02:00PM Sales = 3.0
+  Size: 8 StatusFlag: BELLOW_DESIRED
+	util.Averager@5c29bfd
+Jul 24, 2018 3:45:23 PM WorkingSet.AssignmentOperation run
+FINER: ENTRY
+Jul 24, 2018 3:45:23 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: ENTERING: getEmployee for Monday 11:00AM - Monday 02:00PM Sales = 3.0 presently BELLOW_DESIRED
+Jul 24, 2018 3:45:23 PM WorkingSet.QualifiedEmployeeList getEmployee
+FINER: RETURNING: getEmployee(Monday 11:00AM - Monday 02:00PM Sales = 3.0) with Kim
+Jul 24, 2018 3:45:23 PM emp.EmployeePriority getFillDouble
+FINER: Getting fill factor for:Kim. Fill: 16.5000 AverageFill: �
+Jul 24, 2018 3:45:23 PM emp.EmployeePriority getFillDouble
+FINER: ƒ(16.5000 - �) = �
+Jul 24, 2018 3:45:23 PM WorkingSet.AssignmentOperation run
+FINER: RETURN
+Jul 24, 2018 3:45:23 PM WorkingSet.OperationStack push
+FINER: pusing
+Jul 24, 2018 3:45:23 PM driver.ProcessLog <init>
+FINEST: 33: Monday 11:00AM - Monday 02:00PM Sales = 3.0
+SELECTION: Kim
+Kim PRIORITY: NaN
+  HOURS > Current: 16.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0, Monday 11:00AM - Monday 02:00PM Sales = 1.0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_DESIRED
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 14.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0, Monday 11:00AM - Monday 02:00PM Sales = 3.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 16.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0, Monday 11:00AM - Monday 02:00PM Sales = 2.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 16.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0, Monday 11:00AM - Monday 02:00PM Sales = 1.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 8.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 3.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+
+EMPLOYEE LIST:
+Wade PRIORITY: NaN
+  HOURS > Current: 6.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Monday 09:00AM - Monday 03:00PM Bar = 5.0]
+Alecia PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:00PM - Friday 09:00PM Bar = 10.0]
+Dena PRIORITY: NaN
+  HOURS > Current: 17.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:30PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Kim PRIORITY: NaN
+  HOURS > Current: 16.5000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 04:30PM - Friday 11:00PM Cocktail = 10.0, Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0, Monday 11:00AM - Monday 02:00PM Sales = 1.0]
+Chels PRIORITY: NaN
+  HOURS > Current: 20.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0, Monday 10:00AM - Monday 03:00PM Closer = 5.0]
+Gregs PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Closer = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 5.0]
+Chris PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0, Thursday 05:59PM - Thursday 09:00PM Sales = 3.0]
+Me PRIORITY: NaN
+  HOURS > Current: 11.0167 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0, Thursday 05:59PM - Thursday 09:00PM Sales = 4.0]
+Brandon PRIORITY: NaN
+  HOURS > Current: 18.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0, Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0, Friday 03:00PM - Friday 09:00PM Sales = 5.0]
+Marcy PRIORITY: NaN
+  HOURS > Current: 8.7833 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 08:02PM Sales = 6.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+Blake PRIORITY: NaN
+  HOURS > Current: 16.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 05:00PM - Friday 11:00PM Bar = 9.0, Thursday 03:00PM - Thursday 10:00PM Closer = 7.0, Monday 11:00AM - Monday 02:00PM Sales = 2.0]
+Olson PRIORITY: NaN
+  HOURS > Current: 5.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Friday 03:00PM - Friday 08:00PM Bar = 10.0]
+Paul 3 PRIORITY: NaN
+  HOURS > Current: 14.7500 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 04:15PM - Thursday 09:00PM Sales = 6.0, Friday 03:00PM - Friday 10:00PM Sales = 6.0, Monday 11:00AM - Monday 02:00PM Sales = 3.0]
+Paul 2 PRIORITY: NaN
+  HOURS > Current: 12.0000 Min: 0 Desired: 35 P.Max: 40
+  CURRENT SHIFTS > [Thursday 03:00PM - Thursday 10:00PM Closer = 8.0, Friday 04:00PM - Friday 09:00PM Sales = 4.0]
+
+Jul 24, 2018 3:45:23 PM WorkingSet.Schedule <init>
+CONFIG: Called constructor for Schedule
+Jul 24, 2018 3:45:23 PM driver.Scheduler run
+INFO: COMPLETE: Scheduler
+  IN: 1.0730 second
