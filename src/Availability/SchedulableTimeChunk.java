@@ -171,6 +171,10 @@ public class SchedulableTimeChunk extends TimeChunk {
 	public double getPriority() {
 		return priority;
 	}
+	
+	public String getScheduleString() {
+		return toString() + (employee == null ? "" : "\n  " + employee.NAME);
+	}
 
 	/******************************************************************************
 	 *                                                                            *
@@ -185,7 +189,7 @@ public class SchedulableTimeChunk extends TimeChunk {
 //		if (employee == null) return super.toString();
 //		
 //		// else
-		return super.toString() + " " + positionType /*+ "\n\t" + employee*/;
+		return super.toString() + " " + positionType + " = " + priority /*+ "\n\t" + employee*/;
 	}
 	
 	@Override

@@ -39,7 +39,7 @@ class Scheduler {
 		this.week = week;
 		opStack = new OperationStack();
 		qualMap = new QualifiedEmployeeListMap(employees);
-		averager = new Averager();
+		averager = new Averager(1.0);
 		processLogs = new ArrayList<>(setUp.size());
 		prepare();
 	}
@@ -66,9 +66,11 @@ class Scheduler {
 		}
 		
 		chunks.sort(SchedulableTimeChunk.PRIORITY_ORDER);
-		StringBuffer buffer = new StringBuffer();
+		StringBuffer buffer = new StringBuffer("TimeChunks:\n");
 		chunks.stream().forEachOrdered(i -> buffer.append(i + "\n"));
-		log.finest("Current List: \n" + buffer.toString());
+		buffer.append("\nEmployees:\n");
+		employees.stream().forEachOrdered(e -> buffer.append(e + "\n"));
+		log.finest(buffer.toString());
 		
 		log.info("Begin schedule");
 		SchedulableTimeChunk workingChunk;

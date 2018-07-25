@@ -70,7 +70,7 @@ public class Schedule implements Serializable {
 			.stream()
 			.sorted(SchedulableTimeChunk.VIEW_ORDER)
 			.forEach(s -> {
-				buffer.append(s + "\n");
+				buffer.append(s.getScheduleString() + "\n");
 			});
 		return buffer.toString();
 	}

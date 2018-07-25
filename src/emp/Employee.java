@@ -265,7 +265,7 @@ public class Employee implements Comparable<Employee>, Serializable {
 	}
 	
 	public double getCurrentPrioirty() {
-		return employeePriority.currentPriority;
+		return employeePriority.getCurrentPrioirty();
 	}
 	
 	public void viewAssignedShifts() {
@@ -289,7 +289,8 @@ public class Employee implements Comparable<Employee>, Serializable {
 	}
 	
 	public String getCurrentStatusString() {
-		StringBuffer buffer = new StringBuffer(NAME + " PRIORITY: " + getCurrentPrioirty() + "\n");
+		StringBuffer buffer = new StringBuffer(NAME + " PRIORITY: " + 
+				NumberTools.format(employeePriority.getCurrentPrioirty()) + "\n");
 		
 		buffer.append("  HOURS > Current: " + NumberTools.format(currentHours)
 				+ " Min: " + NumberTools.format(MIN_HOURS)

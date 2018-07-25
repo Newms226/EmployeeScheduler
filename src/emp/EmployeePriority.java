@@ -75,6 +75,10 @@ public class EmployeePriority implements Comparable<EmployeePriority>, Serializa
 	//					currentPriority = PAST_MAX;
 	//				}
 		double fillDouble = getFillDouble(currentAverageFill);
+		if (fillDouble == 0) {
+			Driver.masterLog.info("FILL DOUBLE CAME OUT AS 0, RETURNING STATIC");
+			return staticPriority;
+		}
 		currentPriority = staticPriority + fillDouble;
 		Driver.setUpLog.config("UPDATE: " + employee.NAME + "'s current priority is " + NumberTools.format(currentPriority)
 				+ " from " + NumberTools.format(staticPriority) + " - (" + 
@@ -96,7 +100,7 @@ public class EmployeePriority implements Comparable<EmployeePriority>, Serializa
 		       y = x * x * FILLED_FACTOR;
 		if (x > 0) y	 = -y;
 		
-		Driver.deciderLog.finer(Character.toString((char) 402) + "(" + NumberTools.format(employee.currentHours) + " - " + NumberTools.format(averageCount) 
+		Driver.deciderLog.finer("FILL DOUBLE: (" + NumberTools.format(employee.currentHours) + " - " + NumberTools.format(averageCount) 
 				+ ") = "+ NumberTools.format(y));
 		fillFactor = y;
 		return y;

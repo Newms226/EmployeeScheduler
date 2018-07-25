@@ -99,7 +99,7 @@ public class EmployeeSet implements Serializable {
 		Driver.fileManagerLog.finer("In filter of EmployeeSet");
 		return employeeSet.stream()
 			.filter(predicate)
-			.sorted(Employee.DESENDING_PRIORITY_ORDER)
+//			.sorted(Employee.DESENDING_PRIORITY_ORDER)
 			.collect(Collectors.toSet());
 	}
 	
