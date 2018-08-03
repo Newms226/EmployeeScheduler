@@ -3,11 +3,13 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
+import java.util.List;
 import java.util.logging.Level;
 
 import driver.Driver;
 import restaurant.PositionType;
 import tools.NumberTools;
+import util.PrimativeDoubleArrayList;
 
 public class EmployeePriority implements Comparable<EmployeePriority>, Serializable {
 	
@@ -32,6 +34,7 @@ public class EmployeePriority implements Comparable<EmployeePriority>, Serializa
             PAST_MAX = 0;
 	
 	Employee employee;
+	PrimativeDoubleArrayList pastPriorites;
 	
 	// Start Day variables:
 	LocalDate accurateDay;
@@ -52,8 +55,12 @@ public class EmployeePriority implements Comparable<EmployeePriority>, Serializa
 		if (grace < 1 || grace > 10) {
 			throw new IllegalArgumentException(grace + " is not a valid grace. [1,10]");
 		}
+		
 		this.grace = grace;
 		this.employee = employee;
+		
+		pastPriorites = new PrimativeDoubleArrayList();
+		
 		calculateStaticPriority();
 	}
 	
@@ -85,7 +92,7 @@ public class EmployeePriority implements Comparable<EmployeePriority>, Serializa
 				NumberTools.format(FILLED_FACTOR) + " * " +  NumberTools.format(fillDouble)
 				+ ")");
 		
-		return currentPriority;
+		return pastPriorites.add(currentPriority);
 	}
 	
 	private double getFillDouble(double averageCount) {
@@ -127,6 +134,14 @@ public class EmployeePriority implements Comparable<EmployeePriority>, Serializa
 			+ " + F: " + NumberTools.format(fillFactor)).toString();
 	}
 	
+	public double[] getPriorityArray() {
+		return pastPriorites.toArray(); 
+	}
+	
+	public List<Double> getPriorityList(){
+		return pastPriorites.asList();
+	}
+	
 	double calculateStaticPriority() {
 		double dateDouble = getDateDouble(),
 				   graceDouble = getGraceDouble(),
@@ -150,6 +165,7 @@ public class EmployeePriority implements Comparable<EmployeePriority>, Serializa
 		);
 		
 		currentPriority = staticPriority = toReturn;
+		pastPriorites.add(currentPriority);
 		return toReturn;
 	}
 	

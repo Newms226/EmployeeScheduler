@@ -294,11 +294,11 @@ public class TimeChunk implements Serializable, Cloneable {
 	}
 	
 	public LocalTime getStartAsLocalTime() {
-		return start;
+		return LocalTime.from(start);
 	}
 	
 	public LocalTime getEndAsLocalTime() {
-		return end;
+		return LocalTime.from(end);
 	}
 	
 	public Duration getAsDuration() {

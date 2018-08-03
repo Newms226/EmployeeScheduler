@@ -9,6 +9,7 @@ import driver.Driver;
 import driver.ProcessLog;
 import emp.Employee;
 import emp.EmployeeSet;
+import emp.QualifiedEmployeeList;
 import util.Averager;
 
 public class AssignmentOperation implements Operation<SchedulableTimeChunk>,

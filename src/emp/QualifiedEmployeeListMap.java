@@ -1,4 +1,4 @@
-package WorkingSet;
+package emp;
 import java.io.Serializable;
 import java.util.Map;
 import java.util.TreeMap;
@@ -7,7 +7,6 @@ import java.util.logging.Logger;
 
 import Availability.SchedulableTimeChunk;
 import driver.Driver;
-import emp.EmployeeSet;
 
 public class QualifiedEmployeeListMap implements Serializable {
 	
