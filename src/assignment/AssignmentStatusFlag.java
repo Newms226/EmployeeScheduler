@@ -1,20 +1,22 @@
-package WorkingSet;
+package assignment;
 
 public enum AssignmentStatusFlag {
 	BELLOW_PERSONAL_MIN (false){
 		public AssignmentStatusFlag downgrade() {return BELLOW_DESIRED;}
 	},
 	BELLOW_DESIRED (false) {
-		public AssignmentStatusFlag downgrade() {return BELLOW_PERSONAL_MAX;}
+		public AssignmentStatusFlag downgrade() {return BELLOW_DESIRED_MAX;}
 	},
-	BELLOW_PERSONAL_MAX (true) {
-		public AssignmentStatusFlag downgrade() {return BELLOW_GLOBAL_MAX;}
+	BELLOW_DESIRED_MAX (true) {
+		public AssignmentStatusFlag downgrade() {return BELLOW_ACTUAL_MAX;}
 	},
-	BELLOW_GLOBAL_MAX (true){
-		public AssignmentStatusFlag downgrade() {return OVERTIME;}
+	BELLOW_ACTUAL_MAX (true){
+		public AssignmentStatusFlag downgrade() {return PAST_ACTUAL_MAX;}
 	},
-	OVERTIME (true){
-		public AssignmentStatusFlag downgrade() {return HOUSE_ONLY;}
+	PAST_ACTUAL_MAX(false) {
+		public AssignmentStatusFlag downgrade() {
+			throw new UnsupportedOperationException("FAILURE: Cannot downgrade PAST_ACTUAL_MAX");
+		}
 	},
 	HOUSE_ONLY (false){
 		public AssignmentStatusFlag downgrade() {

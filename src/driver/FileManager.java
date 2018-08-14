@@ -19,9 +19,11 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import WorkingSet.OperationStack;
 import WorkingSet.Schedule;
 import WorkingSet.ScheduleSetUp;
+import assignment.OperationStack;
+import assignment.ProcessLog;
+import assignment.ProcessLogSet;
 import emp.EmployeeSet;
 import racer.StopWatch;
 import tools.FileTools;
@@ -83,8 +85,28 @@ public class FileManager {
 	}
 	
 	public static boolean serializeSchedule(SF statusFlag, Schedule toSerialize) {
-		// TODO
-		return false;
+		// TODO: SF considerations
+		String dirString = generateNewDirectoryUnderLog("schedule");
+		if (dirString == null) return false;
+		
+		// else
+		
+		// ensure no schedule is written over.
+		File scheudle;
+		int avoid = 0;
+		do {
+			scheudle = new File(dirString + "/" + avoid + ".scheulde.txt");
+			avoid++;
+		} while (scheudle.exists());
+		
+
+		try {
+			FileTools.writeToFile(new PrintWriter(scheudle), toSerialize.viewAll());
+		} catch (FileNotFoundException e) {
+			log.log(Level.SEVERE, e.getMessage(), e);
+			return false;
+		}
+		return true;
 	}
 	
 	public static boolean serializeOperationsStack(SF statusFlag, OperationStack opStack) {
@@ -92,23 +114,30 @@ public class FileManager {
 		return false;
 	}
 	
-	public static boolean serializeProcessLogs(List<ProcessLog> logs) {
-		File dir = new File(Driver.workingLogDir + "/processLogs");
+	private static String generateNewDirectoryUnderLog(String name) {
+		File dir = new File(Driver.workingLogDir + "/" + name);
 		if (!dir.exists()) {
 			log.finer("Generated: " + dir);
 			if (!dir.mkdirs()) {
 				log.severe("FAILURE: Could not create directories above " + dir);
-				return false;
+				return null;
 			} else {
 				log.finer("SUCCESS: Generated directories above " + dir);
 			}
 		} else {
 			log.warning(dir + " ALREADY EXISTED");
 		}
+		return dir.toString();
+	}
+	
+	public static boolean serializeProcessLogs(ProcessLogSet logSet) {
+		String dirString = generateNewDirectoryUnderLog("processLogs");
+		if (dirString == null) return false;
 		
 		File file;
+		List<ProcessLog> logs = logSet.getProcessLogs();
 		for (int i = 0; i < logs.size(); i++) {
-			file = new File(dir.toString() + "/" + i + ".txt");
+			file = new File(dirString + "/" + i + ".txt");
 			try {
 				FileTools.writeToFile(new PrintWriter(file), logs.get(i));
 			} catch (FileNotFoundException e) {

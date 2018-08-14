@@ -1,5 +1,6 @@
 
 package emp;
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -12,7 +13,7 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 import Availability.SchedulableTimeChunk;
-import WorkingSet.AssignmentStatusFlag;
+import assignment.AssignmentStatusFlag;
 import driver.Driver;
 import restaurant.PositionType;
 
@@ -91,7 +92,8 @@ public class QualifiedEmployeeList implements Serializable {
 		
 		// else
 		log.fine("FAILURE: getEmployee(" + statusFlag + ")");
-		return getEmployee(statusFlag.downgrade());
+		this.statusFlag = this.statusFlag.downgrade();
+		return getEmployee(this.statusFlag);
 	}
 	
 	// TODO: add any removed employees to the op stack for future roll back!
@@ -193,15 +195,12 @@ public class QualifiedEmployeeList implements Serializable {
 		return statusFlag;
 	}
 	
-	public String getProcessString() {
-		StringBuffer buffer = new StringBuffer();
-		
+	public <BUFFER extends CharSequence & Appendable & Serializable> void 
+				appendProcessString(BUFFER buffer) throws IOException {
 		workingList.sort(Employee.DESENDING_PRIORITY_ORDER);
 		for (Employee e: workingList) {
-			buffer.append(e.getCurrentStatusString() + "\n");
+			e.appendCurrentStatusString(buffer);
 		}
-		
-		return buffer.toString();
 	}
 	
 	/******************************************************************************

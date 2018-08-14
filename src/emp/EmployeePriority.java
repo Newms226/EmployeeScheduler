@@ -5,6 +5,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import driver.Driver;
 import restaurant.PositionType;
@@ -12,10 +13,7 @@ import tools.NumberTools;
 import util.PrimativeDoubleArrayList;
 
 public class EmployeePriority implements Comparable<EmployeePriority>, Serializable {
-	
-	/**
-	 * 
-	 */
+	private static final Logger log = Driver.setUpLog;
 	private static final long serialVersionUID = -5892393713077521485L;
 
 	public static final double GRACE_FACTOR = .5,
@@ -68,50 +66,88 @@ public class EmployeePriority implements Comparable<EmployeePriority>, Serializa
 		return staticPriority;
 	}
 	
-	double getCurrentPrioirty() {
-		return currentPriority;
-	}
+	double accurateMinute, fillDouble;
 	
-	double getCurrentPriority(double currentAverageFill) {
-	//				if (filledShifts >= DESIRED_HOURS) {
-	//					if (Driver.debugging) System.out.println(NAME + " is past their desired hours");
-	//					currentPriority = PAST_DESIRED;
-	//				}
-	//				if (filledShifts >= MAX_HOURS) {
-	//					if (Driver.debugging) System.out.println(NAME + " is past their max hours.");
-	//					currentPriority = PAST_MAX;
-	//				}
-		double fillDouble = getFillDouble(currentAverageFill);
-		if (fillDouble == 0) {
-			Driver.masterLog.info("FILL DOUBLE CAME OUT AS 0, RETURNING STATIC");
-			return staticPriority;
+	double getCurrentPriority() {
+		if (accurateMinute == employee.currentMinutes) {
+			return currentPriority;
 		}
-		currentPriority = staticPriority + fillDouble;
-		Driver.setUpLog.config("UPDATE: " + employee.NAME + "'s current priority is " + NumberTools.format(currentPriority)
-				+ " from " + NumberTools.format(staticPriority) + " - (" + 
-				NumberTools.format(FILLED_FACTOR) + " * " +  NumberTools.format(fillDouble)
-				+ ")");
+		
+		log.finer("UDPATE: " + employee.NAME + " CURRENT: " + currentPriority);
+		
+		// else
+		accurateMinute = employee.currentMinutes;
+		fillDouble = getFillDouble();
+		currentPriority = staticPriority * fillDouble;
+		
+		log.fine("UPDATE: " + employee.NAME + "'s current priority is now " 
+				+ NumberTools.format(currentPriority) + " from " 
+				+ NumberTools.format(staticPriority)
+				+ " * " +  NumberTools.format(fillDouble) + ")");
 		
 		return pastPriorites.add(currentPriority);
 	}
 	
-	private double getFillDouble(double averageCount) {
-		Driver.deciderLog.finer("Getting fill factor for:" + employee.NAME + ". Fill: " + NumberTools.format(employee.currentHours)
-				+ " AverageFill: " + NumberTools.format(averageCount));
-		if (employee.currentHours == averageCount) {
-			Driver.setUpLog.finer(employee.NAME + " has the same number of hours as the average. No change from fill double");
+	private double max;
+	
+	void updateActualMaxMinutes(int maxMinutes) {
+		max = maxMinutes;
+	}
+	
+	private double getFillDouble() {
+		if (0 < accurateMinute && accurateMinute < max) {
+			return 1 - (accurateMinute / max);
+		}
+		
+		// else if
+		if (accurateMinute == max) {
 			return 0;
 		}
 		
-		double x = employee.currentHours - averageCount,
-		       y = x * x * FILLED_FACTOR;
-		if (x > 0) y	 = -y;
-		
-		Driver.deciderLog.finer("FILL DOUBLE: (" + NumberTools.format(employee.currentHours) + " - " + NumberTools.format(averageCount) 
-				+ ") = "+ NumberTools.format(y));
-		fillFactor = y;
-		return y;
+		// else
+		return 1;
 	}
+	
+//	double getCurrentPriority(double currentAverageFill) {
+//	//				if (filledShifts >= DESIRED_HOURS) {
+//	//					if (Driver.debugging) System.out.println(NAME + " is past their desired hours");
+//	//					currentPriority = PAST_DESIRED;
+//	//				}
+//	//				if (filledShifts >= MAX_HOURS) {
+//	//					if (Driver.debugging) System.out.println(NAME + " is past their max hours.");
+//	//					currentPriority = PAST_MAX;
+//	//				}
+//		double fillDouble = getFillDouble(currentAverageFill);
+//		if (fillDouble == 0) {
+//			Driver.masterLog.info("FILL DOUBLE CAME OUT AS 0, RETURNING STATIC");
+//			return staticPriority;
+//		}
+//		currentPriority = staticPriority + fillDouble;
+//		Driver.setUpLog.config("UPDATE: " + employee.NAME + "'s current priority is " + NumberTools.format(currentPriority)
+//				+ " from " + NumberTools.format(staticPriority) + " - (" + 
+//				NumberTools.format(FILLED_FACTOR) + " * " +  NumberTools.format(fillDouble)
+//				+ ")");
+//		
+//		return pastPriorites.add(currentPriority);
+//	}
+//	
+//	private double getFillDouble(double averageCount) {
+//		Driver.deciderLog.finer("Getting fill factor for:" + employee.NAME + ". Fill: " + NumberTools.format(employee.currentHours)
+//				+ " AverageFill: " + NumberTools.format(averageCount));
+//		if (employee.currentHours == averageCount) {
+//			Driver.setUpLog.finer(employee.NAME + " has the same number of hours as the average. No change from fill double");
+//			return 0;
+//		}
+//		
+//		double x = employee.currentHours - averageCount,
+//		       y = x * x * FILLED_FACTOR;
+//		if (x > 0) y	 = -y;
+//		
+//		Driver.deciderLog.finer("FILL DOUBLE: (" + NumberTools.format(employee.currentHours) + " - " + NumberTools.format(averageCount) 
+//				+ ") = "+ NumberTools.format(y));
+//		fillFactor = y;
+//		return y;
+//	}
 	
 	private double getDateDouble() {
 		return DATE_FACTOR * NumberTools.normalizeToRange(

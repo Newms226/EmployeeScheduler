@@ -1,4 +1,4 @@
-package driver;
+package assignment;
 
 
 import java.util.ArrayList;
@@ -9,10 +9,10 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 import Availability.SchedulableTimeChunk;
-import WorkingSet.AssignmentOperation;
-import WorkingSet.OperationStack;
 import WorkingSet.Schedule;
 import WorkingSet.ScheduleSetUp;
+import driver.Driver;
+import driver.FileManager;
 import driver.FileManager.SF;
 import emp.EmployeeSet;
 import emp.QualifiedEmployeeListMap;
@@ -22,25 +22,23 @@ import time.Week;
 import tools.FileTools;
 import util.Averager;
 
-class Scheduler {
+public class Scheduler {
 	private static final Logger log = Driver.deciderLog;
 	
-	Averager averager;
 	EmployeeSet employees;
 	ScheduleSetUp setUp;
 	OperationStack opStack;
 	QualifiedEmployeeListMap qualMap;
 	Week week;
-	List<ProcessLog> processLogs;
+	ProcessLogSet processLogs;
 	
-	Scheduler(EmployeeSet employees, ScheduleSetUp setUp, Week week) {
+	public Scheduler(EmployeeSet employees, ScheduleSetUp setUp, Week week) {
 		this.employees = employees;
 		this.setUp = setUp;
 		this.week = week;
 		opStack = new OperationStack();
 		qualMap = new QualifiedEmployeeListMap(employees);
-		averager = new Averager(1.0);
-		processLogs = new ArrayList<>(setUp.size());
+		processLogs = new ProcessLogSet(setUp.size());
 		prepare();
 	}
 	
@@ -53,7 +51,7 @@ class Scheduler {
 		log.info("PREPARED");
 	}
 	
-	Schedule run() {
+	public Schedule run() {
 		log.entering(this.getClass().getName(), "run");
 		
 		long startTime = System.nanoTime();
@@ -88,11 +86,13 @@ class Scheduler {
 			workingChunk = chunks.get(i);
 			log.info("ASSIGNING: " + workingChunk);
 			currentOperation = new AssignmentOperation(workingChunk, 
-                                                       qualMap.getList(workingChunk),
-                                                       averager);
+                                                       qualMap.getList(workingChunk));
 			currentOperation.run();
 			opStack.push(currentOperation);
-			processLogs.add(currentOperation.getProcessLog(i, employees));
+			processLogs.log(i, 
+			                currentOperation.getEmployee(), 
+			                currentOperation.getQualifiedEmployeeList(), 
+			                employees);
 		}
 		
 		Schedule results = new Schedule(chunks);
@@ -112,60 +112,6 @@ class Scheduler {
 	}
 	
 	public List<ProcessLog> getProcessLogs(){
-		return Collections.unmodifiableList(processLogs);
-	}
-	
-	public void examineProcessLogs() {
-		if (processLogs.size() <= 0) {
-			System.out.println("Process logs never created");
-			return;
-		}
-		
-		Scanner scanner = new Scanner(System.in);
-		
-		int input = 0;
-		int index = 0;
-		int maxIndex = processLogs.size() - 1;
-		boolean valid = false, continueOn = true;
-		do {
-			try {
-				System.out.println(processLogs.get(index) + FileTools.LINE_BREAK + "1 for backwards, 2 for forwards. 0 to exit"
-						+ "\nCurrent index: " + index + "\nPlease enter an Integer:");
-				input = scanner.nextInt();
-				
-				if (input == 1) {
-					if (index == 0) {
-						System.out.println("Cannot go backwards when index is 0");
-					} else {
-						index--;
-					}
-				} else if (input == 2) {
-					if (index == maxIndex) {
-						System.out.println("Cannot go fowards when index is size (" + maxIndex + ")");
-					} else {
-						index++;
-					}
-				} else if (input == 0) {
-					System.out.println("Returning...");
-					continueOn = false;
-				} else {
-					System.out.println("Invalid input");
-				}
-			} catch (InputMismatchException e) { // THERE ARE OTHER EXCEPTIONS POSSIBLE HERE TOO BTW
-				System.out.println("Invalid input");
-			}
-		} while(continueOn);
-		
-		scanner.close();
-	}
-	
-	public String printProcessLogs() {
-		StringBuffer buffer = new StringBuffer();
-		
-		for (ProcessLog l: processLogs) {
-			buffer.append(l + FileTools.LINE_BREAK + FileTools.LINE_BREAK);
-		}
-		
-		return buffer.toString();
+		return processLogs.getProcessLogs();
 	}
 }

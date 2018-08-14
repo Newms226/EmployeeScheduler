@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 import java.util.logging.Logger;
 
 import Availability.SchedulableTimeChunk;
-import WorkingSet.AssignmentStatusFlag;
+import assignment.AssignmentStatusFlag;
 import driver.Driver;
 import restaurant.PositionType;
 

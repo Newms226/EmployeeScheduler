@@ -1,5 +1,6 @@
 package emp;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.logging.Logger;
 
 import Availability.SchedulableTimeChunk;
@@ -17,8 +18,9 @@ public class HouseShift extends Employee {
 	private static final Logger log = Driver.deciderLog;
 
 	public HouseShift() {
-		super("HouseShift", -1, LocalDate.now(), 0, 0, 0, 0, PositionType.getNewKid(), EmployeeType.House);
+		super("HouseShift", -1, LocalDate.now(), 0, 0, 0, 0, 0, PositionType.getNewKid(), EmployeeType.House);
 		Driver.deciderLog.fine("Generated new house shift");
+		assignedShifts = new ArrayList<>();
 	}
 	
 	/******************************************************************************
@@ -62,11 +64,6 @@ public class HouseShift extends Employee {
 	public boolean bellowDesiredHours() {
 		return true;
 	}
-	
-	@Override
-	public boolean bellowPersonalMax() {
-		return true;
-	}
 
 	@Override
 	public boolean bellowGlobalMax() {
@@ -85,12 +82,12 @@ public class HouseShift extends Employee {
 			log.severe("ASSIGINING " + chunk.positionType + " TO A HOUSE SHIFT FOR " + chunk);
 		}
 		
-		log.fine("SCHEDULED: House to " + chunk 
-				+ "\n\tCurrent Hours: " + currentHours);
-//		assignedShifts.add(chunk);
-//		currentHours += (double) chunk.getMinutes() / 60;
-		log.finest("SUCCESS: SCHEDULED"
-				+ "\n\tCurrent hours: " + currentHours
-				+ "\n\tAssigned Shifts: " + assignedShifts);
+//		log.fine("SCHEDULED: House to " + chunk 
+//				+ "\n\tCurrent Hours: " + curr);
+////		assignedShifts.add(chunk);
+////		currentHours += (double) chunk.getMinutes() / 60;
+//		log.finest("SUCCESS: SCHEDULED"
+//				+ "\n\tCurrent hours: " + currentHours
+//				+ "\n\tAssigned Shifts: " + assignedShifts);
 	}
 }

@@ -1,4 +1,4 @@
-package WorkingSet;
+package assignment;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -6,7 +6,6 @@ import java.util.logging.Logger;
 
 import Availability.SchedulableTimeChunk;
 import driver.Driver;
-import driver.ProcessLog;
 import emp.Employee;
 import emp.EmployeeSet;
 import emp.QualifiedEmployeeList;
@@ -34,31 +33,32 @@ public class AssignmentOperation implements Operation<SchedulableTimeChunk>,
 	 *                                                                            *
 	 ******************************************************************************/
 	
-	public final double currentAverage;
-	
 	private SchedulableTimeChunk chunk;
 	private LocalDateTime time;
 	private Employee employee;
 	private final QualifiedEmployeeList list;
-	private final Averager averager;
 	
 	public AssignmentOperation(SchedulableTimeChunk chunk,
-			                   QualifiedEmployeeList list,
-			                   Averager avg) {
+			                   QualifiedEmployeeList list) {
 		log.finest("CONSTRUCTOR: Building new AssignmentOperation"
 				+ "\n\t" + chunk.getInfoString()
-				+ "\n\t" + list 
-				+ "\n\t" + avg);
+				+ "\n\t" + list);
 
 		
 		this.chunk = chunk;
 		this.list = list;
-		this.averager = avg;
-		currentAverage = averager.average(); // TODO: Does this work right when the average is 0?
 	}
 	
 	public SchedulableTimeChunk getTimeChunk() {
 		return chunk;
+	}
+	
+	Employee getEmployee() {
+		return employee;
+	}
+	
+	QualifiedEmployeeList getQualifiedEmployeeList() {
+		return list;
 	}
 
 	/******************************************************************************
@@ -74,15 +74,10 @@ public class AssignmentOperation implements Operation<SchedulableTimeChunk>,
 		employee = list.getEmployee();
 		employee.accept(chunk);
 		chunk.setEmployee(employee);
-		averager.update(employee.updateEmployeePriority(currentAverage));
 		
 		time = LocalDateTime.now();
 		log.exiting(AssignmentOperation.class.getName(), "run");
 		return chunk;
-	}
-	
-	public ProcessLog getProcessLog(int i, EmployeeSet allEmployees) {
-		return new ProcessLog(i, employee, list, allEmployees);
 	}
 
 	@Override
@@ -134,8 +129,6 @@ public class AssignmentOperation implements Operation<SchedulableTimeChunk>,
 		if (!time.equals(that.time)) return false;
 		if (!employee.equals(that.employee)) return false;
 		if (!list.equals(that.list)) return false;
-		if (!averager.equals(that.averager)) return false; // TODO: Do I really want to compare these?
-		if (currentAverage != that.currentAverage) return false;
 		
 		return true;
 	}

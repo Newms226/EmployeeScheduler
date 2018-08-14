@@ -17,6 +17,7 @@ import Availability.SchedulableTimeChunk;
 import Availability.TimeChunk;
 import WorkingSet.Schedule;
 import WorkingSet.ScheduleSetUp;
+import assignment.Scheduler;
 import emp.Employee;
 import emp.EmployeeSet;
 import menu.ConsoleMenu;
@@ -190,16 +191,16 @@ public class Driver {
 					// else
 					employeeSet.viewServerPositions();
 				}));
-		scheduleViewer.add(new RunnableOption("View process log",
-				() ->  {
-					if (DA_KING_MAKER == null) {
-						System.out.println("Scheduler is null. Returning");
-						return;
-					}
-					
-					// else
-					DA_KING_MAKER.examineProcessLogs();
-				}));
+//		scheduleViewer.add(new RunnableOption("View process log",
+//				() ->  {
+//					if (DA_KING_MAKER == null) {
+//						System.out.println("Scheduler is null. Returning");
+//						return;
+//					}
+//					
+//					// else
+//					DA_KING_MAKER.examineProcessLogs();
+//				}));
 //		
 		scheduleMenu = new ConsoleMenu("Schedule Set-Up");
 //		scheduleMenu.add(new RunnableOption("Set-up days/shifts/priority", 

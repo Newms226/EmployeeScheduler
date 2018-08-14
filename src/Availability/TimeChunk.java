@@ -323,8 +323,8 @@ public class TimeChunk implements Serializable, Cloneable {
 	}
 	
 	private String generateString() {
-		return new StringBuffer(dayByteToString(dayStart) + " " + timeFormat12Hour.format(start) 
-			+ " - " + dayByteToString(dayEnd) + " " + timeFormat12Hour.format(end)).toString();
+		return dayByteToString(dayStart) + " " + timeFormat12Hour.format(start) 
+			+ " - " + dayByteToString(dayEnd) + " " + timeFormat12Hour.format(end);
 	}
 	
 	/******************************************************************************

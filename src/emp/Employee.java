@@ -1,4 +1,5 @@
 package emp;
+import java.io.IOException;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ import java.util.logging.Logger;
 import Availability.Availability;
 import Availability.SchedulableTimeChunk;
 import Availability.WorkingAvailability;
-import WorkingSet.AssignmentStatusFlag;
+import assignment.AssignmentStatusFlag;
 import driver.Driver;
 import menu.ConsoleMenu;
 import restaurant.PositionType;
@@ -56,14 +57,14 @@ public class Employee implements Comparable<Employee>, Serializable {
 	public Availability availability;
 	private WorkingAvailability currentAvailability;
 
-	private int MAX_MINUTES,
+	private int DESIRED_MAX_MINUTES,
 	            DESIRED_MINUTES,
 	            MIN_MINUTES,
+	            ACTUAL_MAX_MINUTES,
 	            GLOBAL_MAX_MINUTES;
 	public short currentMinutes;
 	
 	private boolean overtimeAllowed;
-	private int OVERTIME_LIMIT;
 
 	public final Restaurant restaurant;
 	
@@ -76,22 +77,22 @@ public class Employee implements Comparable<Employee>, Serializable {
 	
 	
 	public Employee(String name, int ID, LocalDate startDate, ArrayList<PositionType> possibleShifts) {
-		this (name, ID, startDate, 0, 40*60, 35*60, 0, possibleShifts, EmployeeType.Server, false, 0);
+		this (name, ID, startDate, 0, 40*60, 40*60, 35*60, 0, possibleShifts, EmployeeType.Server);
 		Driver.setUpLog.log(Level.CONFIG, "Generated generic employee {0}", name);
 	}
 	
-	public Employee(String name, int ID, LocalDate startDate,
-			double pay, int maxMinutes, int desiredMinutes, int minMinutes,
-			ArrayList<PositionType> possibleShifts, EmployeeType employeeType,
-			boolean overtimeAllowed, int overtimeMinutes)
+	public Employee(String name, int ID, LocalDate startDate, double pay, 
+			int desiredMaxMinutes, int actualMaxMinutes, int desiredMinutes, int minMinutes,
+			ArrayList<PositionType> possibleShifts, EmployeeType employeeType)
 	{
 		name = name.trim();
 		this.NAME = Character.toUpperCase(name.charAt(0)) + name.substring(1, name.length());
 		this.ID = ID;
 		this.PAY = pay;
-		this.MAX_MINUTES = maxMinutes;
 		this.DESIRED_MINUTES = desiredMinutes;
 		this.MIN_MINUTES = minMinutes;
+		this.ACTUAL_MAX_MINUTES = actualMaxMinutes;
+		this.DESIRED_MAX_MINUTES = desiredMaxMinutes;
 		this.qualifiedFor = possibleShifts;
 		this.START_DATE = startDate;
 		this.restaurant = Restaurant.HACIENDA;
@@ -100,18 +101,7 @@ public class Employee implements Comparable<Employee>, Serializable {
 		availability = new Availability();
 		this.employeeType = employeeType;
 		
-		this.overtimeAllowed = overtimeAllowed;
-		if (overtimeAllowed) {
-			if (overtimeMinutes < maxMinutes) {
-				IllegalArgumentException e = new IllegalArgumentException("CONSTRUCTOR FAILURE: Overtime"
-						+ " minutes (" + overtimeMinutes + ") must be greater than max (" + maxMinutes + ")");
-				log.log(Level.SEVERE, e.getMessage(), e);
-			} else if (overtimeMinutes == maxMinutes) {
-				log.warning("CONSTRUCTOR FAILURE: Overtime minutes == max minutes (" + maxMinutes + ")");
-			} else {
-				OVERTIME_LIMIT = overtimeMinutes; 
-			}
-		}
+		if (actualMaxMinutes > restaurant.globalMaxHours * 60) overtimeAllowed = true;
 		
 //		serverMod = new CMenu(NAME + " modification menu. What would you like to change?");
 //		serverMod.add("Change available hours", null);
@@ -141,10 +131,6 @@ public class Employee implements Comparable<Employee>, Serializable {
 	public void highPromote() {
 		Driver.setUpLog.fine("High promote: " + NAME);
 		employeePriority.internalSetGrace(EmployeePriority.HIGH_PROMOTE_GRACE);
-	}
-	
-	public double updateEmployeePriority(double averageFill) {
-		return employeePriority.getCurrentPriority(averageFill);
 	}
 	
 	public void changeQualifications() {
@@ -177,19 +163,52 @@ public class Employee implements Comparable<Employee>, Serializable {
 				return bellowMinimumHours();
 			case BELLOW_DESIRED:
 				return bellowDesiredHours();
-			case BELLOW_PERSONAL_MAX:
-				return bellowPersonalMaxAfter(minutes);
-			case BELLOW_GLOBAL_MAX:
-				return bellowGlobalMaxAfter(minutes);
-			case OVERTIME:
-				if (overtimeAllowed) {
-					return bellowOvertimeAfter(minutes);
-				} else return false;
+			case BELLOW_DESIRED_MAX:
+				return bellowPersonalDesiredMaxAfter(minutes);
+			case BELLOW_ACTUAL_MAX:
+				return bellowPersonalActualMaxAfter(minutes);
 			case HOUSE_ONLY: // fall through > illegal query
 			default:
 				throw new IllegalArgumentException(currentStatus + 
 						" is not a valid parameter for this method");
 		}
+	}
+	
+	/**
+	 * NOTE: This method DOES NOT TEST WHETHER AN EMPLOYEE IS QUALIFIED!
+	 * Proper method call:
+	 * > canWork() > to build the list of qualified employees
+	 * > isAssignable() > to filter down that list for the future
+	 */
+	public boolean isAssignable(SchedulableTimeChunk chunk, AssignmentStatusFlag SF) {
+		log.finer("ASSIGNABLE QUERY: " + NAME + " for " + chunk + " when " + SF);
+		if (queryFuture(chunk).compareTo(SF) <= 0 && availableToWork(chunk)) {
+			log.finer("SUCCESS: ASSIGNABLE QUERY");
+			return true;
+		}
+		
+		// else
+		log.finer("FAILURE: ASSIGNABLE QUERY");
+		return false;
+	}
+	
+	private int futureMinutes;
+	
+	// TODO: Define a buffer zone around the hours to prevent overtime from occuring during the week
+	public AssignmentStatusFlag queryFuture(SchedulableTimeChunk chunk) {
+		if (currentMinutes < MIN_MINUTES) 
+			return AssignmentStatusFlag.BELLOW_PERSONAL_MIN;
+		
+		futureMinutes = currentMinutes + chunk.getMinutes();
+		if (futureMinutes <= DESIRED_MINUTES)
+			return AssignmentStatusFlag.BELLOW_DESIRED;
+		if (futureMinutes <= DESIRED_MAX_MINUTES)
+			return AssignmentStatusFlag.BELLOW_DESIRED_MAX;
+		if (futureMinutes <= ACTUAL_MAX_MINUTES)
+			return AssignmentStatusFlag.BELLOW_ACTUAL_MAX;
+		
+		// else
+		return AssignmentStatusFlag.PAST_ACTUAL_MAX;
 	}
 	
 	// TODO: Dont allow certian employees to work a chunk which has a high priority (& vice versa)
@@ -217,7 +236,7 @@ public class Employee implements Comparable<Employee>, Serializable {
 		return false;
 	}
 	
-	boolean isEverAvailableFor(SchedulableTimeChunk chunk) {
+	public boolean isEverAvailableFor(SchedulableTimeChunk chunk) {
 		log.finer("Testing if " + chunk.getInfoString() + " is inside " + NAME + "'s persistant availability");
 		if (availability.isInsidePersistantAvailability(chunk)) {
 			log.finer("SUCCESS");
@@ -249,12 +268,20 @@ public class Employee implements Comparable<Employee>, Serializable {
 		return currentMinutes <= DESIRED_MINUTES;
 	}
 	
-	boolean bellowPersonalMax() {
-		return currentMinutes <= MAX_MINUTES;
+	boolean bellowPersonalDesiredMax() {
+		return currentMinutes <= DESIRED_MAX_MINUTES;
 	}
 	
-	boolean bellowPersonalMaxAfter(int minutes) {
-		return currentMinutes + minutes <= MAX_MINUTES;
+	boolean bellowPersonalDesiredMaxAfter(int minutes) {
+		return currentMinutes + minutes <= DESIRED_MAX_MINUTES;
+	}
+	
+	boolean bellowPersonalActualMax() {
+		return currentMinutes <= ACTUAL_MAX_MINUTES;
+	}
+	
+	boolean bellowPersonalActualMaxAfter(int minutes) {
+		return currentMinutes + minutes <= DESIRED_MAX_MINUTES;
 	}
 	
 	boolean bellowGlobalMax() {
@@ -263,14 +290,6 @@ public class Employee implements Comparable<Employee>, Serializable {
 	
 	boolean bellowGlobalMaxAfter(int minutes) {
 		return currentMinutes + minutes <= GLOBAL_MAX_MINUTES;
-	}
-	
-	boolean bellowOvertime() {
-		return currentMinutes <= OVERTIME_LIMIT;
-	}
-	
-	boolean bellowOvertimeAfter(int minutes) {
-		return currentMinutes + minutes <= OVERTIME_LIMIT;
 	}
 	
 	/******************************************************************************
@@ -318,18 +337,6 @@ public class Employee implements Comparable<Employee>, Serializable {
 		return overtimeAllowed;
 	}
 	
-	void setOvertimeEnabled(boolean enable) {
-		overtimeAllowed = enable;
-	}
-	
-	public int getOvertimeLimit() {
-		return OVERTIME_LIMIT;
-	}
-	
-	void setOvertimeLimit(int overtimeLimit) {
-		OVERTIME_LIMIT = overtimeLimit;
-	}
-	
 	public int getMinMinutes() {
 		return MIN_MINUTES;
 	}
@@ -338,8 +345,12 @@ public class Employee implements Comparable<Employee>, Serializable {
 		return DESIRED_MINUTES;
 	}
 	
-	public int getPersonalMaxMinutes() {
-		return MAX_MINUTES;
+	public int getDesiredMaxMinutes() {
+		return DESIRED_MAX_MINUTES;
+	}
+	
+	public int getActualMaxMinutes() {
+		return ACTUAL_MAX_MINUTES;
 	}
 	
 	public List<PositionType> getQualifications(){
@@ -351,7 +362,7 @@ public class Employee implements Comparable<Employee>, Serializable {
 	}
 	
 	public double getCurrentPrioirty() {
-		return employeePriority.getCurrentPrioirty();
+		return employeePriority.getCurrentPriority();
 	}
 	
 	public void viewAssignedShifts() {
@@ -359,7 +370,7 @@ public class Employee implements Comparable<Employee>, Serializable {
 	}
 	
 	void setCurrentHours(short currentMinutes) {
-		log.warning("UPDATE: " + NAME + "'s hours were set to " + currentMinutes);
+		log.warning("UPDATE: " + NAME + "'s minutes were set to " + currentMinutes);
 		this.currentMinutes = currentMinutes;
 	}
 	
@@ -372,28 +383,37 @@ public class Employee implements Comparable<Employee>, Serializable {
 		this.currentAvailability = availability.getWorkingAvailability(week);
 		assignedShifts = new ArrayList<>();
 		currentMinutes = 0;
+		employeePriority.updateActualMaxMinutes(ACTUAL_MAX_MINUTES);
 	}
 	
-	public String getCurrentStatusString() {
-		StringBuffer buffer = new StringBuffer(NAME + " PRIORITY: " + 
-				NumberTools.format(employeePriority.getCurrentPrioirty()) + "\n");
+	public <BUFFER extends CharSequence & Appendable & Serializable> void 
+				appendCurrentStatusString(BUFFER buffer) throws IOException {
+		buffer.append(NAME + " PRIORITY: " + 
+				NumberTools.format(employeePriority.getCurrentPriority()) + "\n");
 		
 		buffer.append("  MINUTES > Current: " + NumberTools.format(currentMinutes)
 				+ " Min: " + NumberTools.format(MIN_MINUTES)
 				+ " Desired: " + NumberTools.format(DESIRED_MINUTES) 
-				+ " P.Max: " + NumberTools.format(MAX_MINUTES) + "\n");
+				+ " D.Max: " + NumberTools.format(DESIRED_MAX_MINUTES)
+				+ " A.Max: " + NumberTools.format(ACTUAL_MAX_MINUTES)
+				+ "\n  CURRENT SHIFTS > ");
 		
-		buffer.append("  CURRENT SHIFTS > " + assignedShifts);
-		
-		return buffer.toString();
+		appendAssignedShifts(buffer, false);
+	}
+	
+	public <BUFFER extends CharSequence & Appendable & Serializable> void 
+				appendAssignedShifts(BUFFER buffer, boolean newLine) throws IOException {
+		for (SchedulableTimeChunk chunk: assignedShifts) {
+			buffer.append(chunk.getInfoString() + (newLine ? "\n" : ""));
+		}
+		buffer.append("\n");
 	}
 	
 	public AssignmentStatusFlag getCurrentStatus() throws Exception {
-		if (currentMinutes < MIN_MINUTES) return AssignmentStatusFlag.BELLOW_PERSONAL_MIN;
-		if (currentMinutes < DESIRED_MINUTES) return AssignmentStatusFlag.BELLOW_DESIRED;
-		if (currentMinutes < MAX_MINUTES) return AssignmentStatusFlag.BELLOW_PERSONAL_MAX;
-		if (currentMinutes <= GLOBAL_MAX_MINUTES) return AssignmentStatusFlag.BELLOW_GLOBAL_MAX;
-		if (overtimeAllowed && currentMinutes < OVERTIME_LIMIT) return AssignmentStatusFlag.OVERTIME;
+		if (currentMinutes <= MIN_MINUTES) return AssignmentStatusFlag.BELLOW_PERSONAL_MIN;
+		if (currentMinutes <= DESIRED_MINUTES) return AssignmentStatusFlag.BELLOW_DESIRED;
+		if (currentMinutes <= DESIRED_MAX_MINUTES) return AssignmentStatusFlag.BELLOW_DESIRED_MAX;
+		if (currentMinutes <= ACTUAL_MAX_MINUTES) return AssignmentStatusFlag.BELLOW_ACTUAL_MAX;
 		
 		// else
 		Exception e = new Exception("FAILURE: " + NAME + " bottomed out in getCurrentStatusFlag()");

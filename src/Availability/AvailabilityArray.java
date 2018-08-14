@@ -75,21 +75,21 @@ public abstract class AvailabilityArray implements Serializable {
 	}
 	
 	public static <A extends AvailabilityArray> List<LabledTimeChunk> getTimeChunks(A availability) {
-		byte cur;
-		int index = 0;
-		int end = MAX_INDEX_VALUE;
-		int start;
+		byte currentByte;
+		int currentIndex = 0,
+		    endIndex = MAX_INDEX_VALUE,
+		    startIndex;
 		ArrayList<LabledTimeChunk> list = new ArrayList<>();
 		byte[] array = availability.availability;
 		
-		while(index < end) {
-			cur = array[index];
-			start = index;
-			index++;
-			while (array[index] == cur && index < end) {
-				index++;
+		while(currentIndex < endIndex) {
+			currentByte = array[currentIndex];
+			startIndex = currentIndex;
+			currentIndex++;
+			while (array[currentIndex] == currentByte && currentIndex < endIndex) {
+				currentIndex++;
 			}
-			list.add(LabledTimeChunk.fromIndex(start, index, cur));
+			list.add(LabledTimeChunk.fromIndex(startIndex, currentIndex, currentByte));
 		}
 		
 		array = null;
@@ -103,6 +103,7 @@ public abstract class AvailabilityArray implements Serializable {
 			return null;
 		}
 		
+		// TODO: This is wastefull. Shouldn't build all the time chunks when it only needs a few!
 		// else
 		return getTimeChunks(availability)
 			.stream()

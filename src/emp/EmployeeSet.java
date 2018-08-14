@@ -1,4 +1,5 @@
 package emp;
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -75,16 +76,16 @@ public class EmployeeSet implements Serializable {
 		Driver.setUpLog.finer("In average fill");
 		return employeeSet
 			.stream()
-			.mapToDouble(s -> s.currentHours)
+			.mapToDouble(s -> s.currentMinutes)
 			.average()
 			.getAsDouble();
 	}
 	
-	void updatePriorities(double averageFill) {
+	void updatePriorities() {
 		Driver.setUpLog.finer("In update priorites");
 		employeeSet
 			.stream()
-			.peek(s -> s.updateEmployeePriority(averageFill));
+			.peek(s -> s.getCurrentPrioirty());
 	}
 	
 	public int count() {
@@ -121,15 +122,12 @@ public class EmployeeSet implements Serializable {
 			.viewAssignedShifts();
 	}
 	
-	public String getProcessString() {
-		StringBuffer buffer = new StringBuffer();
-		
+	public <BUFFER extends CharSequence & Appendable & Serializable> void 
+				appendProcessString(BUFFER buffer) throws IOException {
 		employeeSet.sort(Employee.DESENDING_PRIORITY_ORDER);
 		for (Employee e: employeeSet) {
-			buffer.append(e.getCurrentStatusString() + "\n");
+			e.appendCurrentStatusString(buffer);
 		}
-		
-		return buffer.toString();
 	}
 
 	@Override
