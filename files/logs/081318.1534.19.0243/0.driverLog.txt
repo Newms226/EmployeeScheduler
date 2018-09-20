@@ -1,0 +1,46 @@
+Aug 13, 2018 3:34:19 PM driver.Driver begin
+FINEST: Began program, in begin()
+Aug 13, 2018 3:34:21 PM driver.Driver buildTestingMaterial
+CONFIG: Building testing material from Driver.buildTestingMaterial()
+Aug 13, 2018 3:34:21 PM driver.Driver buildTestingMaterial
+CONFIG: Successfully built testing material from Driver.buildTestingMaterial()
+Aug 13, 2018 3:34:22 PM driver.Driver schedule
+INFO: HANDING OFF TO SCHEDULER
+Aug 13, 2018 3:34:22 PM driver.Driver schedule
+INFO: RETURNED TO DRIVER
+Aug 13, 2018 3:34:30 PM driver.Driver schedule
+INFO: HANDING OFF TO SCHEDULER
+Aug 13, 2018 3:34:31 PM driver.Driver schedule
+INFO: RETURNED TO DRIVER
+Aug 13, 2018 3:34:32 PM driver.Driver schedule
+INFO: HANDING OFF TO SCHEDULER
+Aug 13, 2018 3:34:32 PM driver.Driver schedule
+INFO: RETURNED TO DRIVER
+Aug 13, 2018 3:34:34 PM driver.Driver schedule
+INFO: HANDING OFF TO SCHEDULER
+Aug 13, 2018 3:34:34 PM driver.Driver schedule
+INFO: RETURNED TO DRIVER
+Aug 13, 2018 3:34:35 PM driver.Driver schedule
+INFO: HANDING OFF TO SCHEDULER
+Aug 13, 2018 3:34:35 PM driver.Driver schedule
+INFO: RETURNED TO DRIVER
+Aug 13, 2018 3:34:36 PM driver.Driver schedule
+INFO: HANDING OFF TO SCHEDULER
+Aug 13, 2018 3:34:36 PM driver.Driver schedule
+INFO: RETURNED TO DRIVER
+Aug 13, 2018 3:34:37 PM driver.Driver schedule
+INFO: HANDING OFF TO SCHEDULER
+Aug 13, 2018 3:34:37 PM driver.Driver schedule
+INFO: RETURNED TO DRIVER
+Aug 13, 2018 3:34:37 PM driver.Driver schedule
+INFO: HANDING OFF TO SCHEDULER
+Aug 13, 2018 3:34:38 PM driver.Driver schedule
+INFO: RETURNED TO DRIVER
+Aug 13, 2018 3:34:38 PM driver.Driver schedule
+INFO: HANDING OFF TO SCHEDULER
+Aug 13, 2018 3:34:39 PM driver.Driver schedule
+INFO: RETURNED TO DRIVER
+Aug 13, 2018 3:34:39 PM driver.Driver schedule
+INFO: HANDING OFF TO SCHEDULER
+Aug 13, 2018 3:34:40 PM driver.Driver schedule
+INFO: RETURNED TO DRIVER

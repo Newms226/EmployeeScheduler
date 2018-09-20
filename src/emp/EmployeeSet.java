@@ -1,6 +1,8 @@
 package emp;
+import java.io.File;
 import java.io.IOException;
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -12,9 +14,14 @@ import java.util.logging.Level;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import Availability.TimeChunk;
 import driver.Driver;
+import racer.StopWatch;
+import restaurant.PositionType;
 import tools.CollectionTools;
+import tools.FileTools;
 import tools.NumberTools;
+import tools.SerialTools;
 
 public class EmployeeSet implements Serializable {
 	/**
@@ -202,5 +209,52 @@ public class EmployeeSet implements Serializable {
 //	}
 	
 	public static void main(String[] args) {
+		Employee kim = new Employee("Kim",1,  LocalDate.of(2017, 1, 1), PositionType.getKing());
+		Employee wade = new Employee("wade",2,  LocalDate.of(2000, 1, 1), PositionType.getBarOnly());
+		Employee AshleyO = new Employee("Olson",3,  LocalDate.of(2005, 1, 1), PositionType.getBarOnly());
+		Employee Alecia = new Employee("alecia",14,  LocalDate.of(2007, 1, 1), PositionType.getBarOnly());
+		Employee chris = new Employee("Chris",4,  LocalDate.of(2010, 1, 1), PositionType.getHandyMan());
+		Employee dena = new Employee("Dena",5, LocalDate.of(2013, 1, 1), PositionType.getKing());
+		Employee blake = new Employee("blake",6, LocalDate.of(2014, 1, 1), PositionType.getHandyMan());
+		Employee chels = new Employee("chels",7, LocalDate.of(2010, 1, 1), PositionType.getKing());
+		Employee brandon = new Employee("brandon",8, LocalDate.of(2018, 1, 1), PositionType.getKing());
+		Employee me = new Employee("me",9, LocalDate.of(2017, 1, 1), PositionType.getKing());
+		Employee Marcy = new Employee("Marcy",10, LocalDate.of(2018, 1, 1), PositionType.getNewKid());
+		Employee Paul2 = new Employee("Paul 2",11, LocalDate.of(2017, 6, 1), PositionType.getAllButCocktail());
+		Employee paul3 = new Employee("Paul 3",12, LocalDate.of(2018, 1, 1), PositionType.getNewKid());
+		Employee gregs = new Employee("Gregs",13, LocalDate.of(2015, 6, 1), PositionType.getKing());
+		kim.highPromote();
+		dena.highPromote();
+		wade.highPromote();
+		AshleyO.promote();
+		me.promote();
+		gregs.promote();
+		brandon.promote();
+		wade.availability.setToPersistantlyUNAVAILABLE(TimeChunk.from(5, 0, 0, 5, 23, 59));
+		List<Employee> Employees = new ArrayList<>();
+		Employees.add(kim);
+		Employees.add(wade);
+		Employees.add(chris);
+		Employees.add(blake);
+		Employees.add(chels);
+		Employees.add(brandon);
+		Employees.add(dena);
+		Employees.add(AshleyO);
+		Employees.add(me);
+		Employees.add(Alecia);
+		Employees.add(Marcy);
+		Employees.add(paul3);
+		Employees.add(Paul2);
+		Employees.add(gregs);
+		
+		EmployeeSet set = new EmployeeSet();
+		set.addMultipleEmployees(Employees);
+		
+		File file = new File(FileTools.DEFAULT_IO_DIRECTORY + "SET.txt");
+		long startTime, endTime;
+		startTime = System.nanoTime();
+		SerialTools.seralizeObject(set, file);
+		endTime = System.nanoTime();
+		System.out.println("SERIALIZED IN " + StopWatch.nanosecondsToString(endTime - startTime));
 	}
 }

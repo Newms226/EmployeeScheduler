@@ -24,6 +24,10 @@ public class Availability implements Serializable {
 		timeOff = new TimeOffList();
 	}
 	
+	public String toCSV() {
+		return "{" + timeOff.toCSV() + "}"+ persistantAvail.toCSV();
+	}
+	
 	public WorkingAvailability getWorkingAvailability(Week week) {
 		log.finer("CONSTRUCTOR: generating new WorkingAvailabilty for " + week);
 		

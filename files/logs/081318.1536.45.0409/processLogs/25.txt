@@ -1,0 +1,61 @@
+08/13/2018  03:36PM
+
+25: Friday 04:00PM - Friday 09:00PM Sales = 4.0
+SELECTION: Marcy
+Marcy PRIORITY: 3.7953
+  MINUTES > Current: 585 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Thursday 04:15PM - Thursday 09:00PM Sales = 6.0Friday 04:00PM - Friday 09:00PM Sales = 4.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Paul 2 PRIORITY: 3.9038
+  MINUTES > Current: 420 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Thursday 03:00PM - Thursday 10:00PM Closer = 8.0
+Marcy PRIORITY: 3.7953
+  MINUTES > Current: 585 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Thursday 04:15PM - Thursday 09:00PM Sales = 6.0Friday 04:00PM - Friday 09:00PM Sales = 4.0
+
+EMPLOYEE LIST:
+Wade PRIORITY: 8.5000
+  MINUTES > Current: 360 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Monday 09:00AM - Monday 03:00PM Bar = 5.0
+Olson PRIORITY: 7.4660
+  MINUTES > Current: 300 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 08:00PM Bar = 10.0
+Alecia PRIORITY: 6.2528
+  MINUTES > Current: 300 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 04:00PM - Friday 09:00PM Bar = 10.0
+Kim PRIORITY: 4.0491
+  MINUTES > Current: 810 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 04:30PM - Friday 11:00PM Cocktail = 10.0Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0
+Paul 2 PRIORITY: 3.9038
+  MINUTES > Current: 420 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Thursday 03:00PM - Thursday 10:00PM Closer = 8.0
+Dena PRIORITY: 3.8731
+  MINUTES > Current: 1,050 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 08:30PM Cocktail = 10.0Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0Monday 10:00AM - Monday 03:00PM Closer = 5.0
+Blake PRIORITY: 3.8669
+  MINUTES > Current: 541 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 05:00PM - Friday 11:00PM Bar = 9.0Thursday 05:59PM - Thursday 09:00PM Sales = 5.0
+Marcy PRIORITY: 3.7953
+  MINUTES > Current: 585 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Thursday 04:15PM - Thursday 09:00PM Sales = 6.0Friday 04:00PM - Friday 09:00PM Sales = 4.0
+Me PRIORITY: 3.7880
+  MINUTES > Current: 780 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0Monday 10:00AM - Monday 03:00PM Head_Wait = 5.0
+Chels PRIORITY: 3.7286
+  MINUTES > Current: 900 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Closer = 10.0Thursday 03:00PM - Thursday 10:00PM Closer = 7.0
+Gregs PRIORITY: 3.6994
+  MINUTES > Current: 900 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Closer = 10.0Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0
+Paul 3 PRIORITY: 3.6657
+  MINUTES > Current: 647 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Thursday 04:15PM - Thursday 08:02PM Sales = 6.0Friday 03:00PM - Friday 10:00PM Sales = 6.0
+Brandon PRIORITY: 3.6576
+  MINUTES > Current: 780 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0Friday 03:00PM - Friday 09:00PM Sales = 5.0
+Chris PRIORITY: 3.4571
+  MINUTES > Current: 961 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0Monday 10:00AM - Monday 03:00PM Closer = 5.0Thursday 05:59PM - Thursday 09:00PM Sales = 4.0

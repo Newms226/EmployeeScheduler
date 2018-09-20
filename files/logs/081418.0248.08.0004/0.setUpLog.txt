@@ -1,0 +1,436 @@
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Kim at 4.6124 from:
+  Date
+     Value: 590
+     Normalized from range: [0, 6,800]
+     Resulting in: 0.7124
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Aug 14, 2018 2:48:08 AM emp.Employee <init>
+CONFIG: Generated generic employee Kim
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Wade at 8.5000 from:
+  Date
+     Value: 6800
+     Normalized from range: [0, 6,800]
+     Resulting in: 4.0000
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Aug 14, 2018 2:48:08 AM emp.Employee <init>
+CONFIG: Generated generic employee wade
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Olson at 7.5328 from:
+  Date
+     Value: 4973
+     Normalized from range: [0, 6,800]
+     Resulting in: 3.0328
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Aug 14, 2018 2:48:08 AM emp.Employee <init>
+CONFIG: Generated generic employee Olson
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Alecia at 7.1463 from:
+  Date
+     Value: 4243
+     Normalized from range: [0, 6,800]
+     Resulting in: 2.6463
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Aug 14, 2018 2:48:08 AM emp.Employee <init>
+CONFIG: Generated generic employee alecia
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Chris at 5.7661 from:
+  Date
+     Value: 3147
+     Normalized from range: [0, 6,800]
+     Resulting in: 2.0661
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar, Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.2000
+Aug 14, 2018 2:48:08 AM emp.Employee <init>
+CONFIG: Generated generic employee Chris
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Dena at 5.3858 from:
+  Date
+     Value: 2051
+     Normalized from range: [0, 6,800]
+     Resulting in: 1.4858
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Aug 14, 2018 2:48:08 AM emp.Employee <init>
+CONFIG: Generated generic employee Dena
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Blake at 4.9926 from:
+  Date
+     Value: 1686
+     Normalized from range: [0, 6,800]
+     Resulting in: 1.2926
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Bar, Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.2000
+Aug 14, 2018 2:48:08 AM emp.Employee <init>
+CONFIG: Generated generic employee blake
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Chels at 5.9661 from:
+  Date
+     Value: 3147
+     Normalized from range: [0, 6,800]
+     Resulting in: 2.0661
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Aug 14, 2018 2:48:08 AM emp.Employee <init>
+CONFIG: Generated generic employee chels
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Brandon at 4.4191 from:
+  Date
+     Value: 225
+     Normalized from range: [0, 6,800]
+     Resulting in: 0.5191
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Aug 14, 2018 2:48:08 AM emp.Employee <init>
+CONFIG: Generated generic employee brandon
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Me at 4.6124 from:
+  Date
+     Value: 590
+     Normalized from range: [0, 6,800]
+     Resulting in: 0.7124
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Aug 14, 2018 2:48:08 AM emp.Employee <init>
+CONFIG: Generated generic employee me
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Marcy at 5.0191 from:
+  Date
+     Value: 225
+     Normalized from range: [0, 6,800]
+     Resulting in: 0.5191
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Aug 14, 2018 2:48:08 AM emp.Employee <init>
+CONFIG: Generated generic employee Marcy
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Paul 2 at 4.7324 from:
+  Date
+     Value: 439
+     Normalized from range: [0, 6,800]
+     Resulting in: 0.6324
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.6000
+Aug 14, 2018 2:48:08 AM emp.Employee <init>
+CONFIG: Generated generic employee Paul 2
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Paul 3 at 5.0191 from:
+  Date
+     Value: 225
+     Normalized from range: [0, 6,800]
+     Resulting in: 0.5191
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Aug 14, 2018 2:48:08 AM emp.Employee <init>
+CONFIG: Generated generic employee Paul 3
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Gregs at 4.9194 from:
+  Date
+     Value: 1170
+     Normalized from range: [0, 6,800]
+     Resulting in: 1.0194
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Aug 14, 2018 2:48:08 AM emp.Employee <init>
+CONFIG: Generated generic employee Gregs
+Aug 14, 2018 2:48:08 AM emp.Employee highPromote
+FINE: High promote: Kim
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority internalSetGrace
+INFO: Setting Kim's grace to 10.0
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Kim at 6.1124 from:
+  Date
+     Value: 590
+     Normalized from range: [0, 6,800]
+     Resulting in: 0.7124
+  Grace:
+     Value: 10.0
+     Normalized from range: [0, 10]
+     Resulting in: 5.0000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Aug 14, 2018 2:48:08 AM emp.Employee highPromote
+FINE: High promote: Dena
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority internalSetGrace
+INFO: Setting Dena's grace to 10.0
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Dena at 6.8858 from:
+  Date
+     Value: 2051
+     Normalized from range: [0, 6,800]
+     Resulting in: 1.4858
+  Grace:
+     Value: 10.0
+     Normalized from range: [0, 10]
+     Resulting in: 5.0000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Aug 14, 2018 2:48:08 AM emp.Employee highPromote
+FINE: High promote: Wade
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority internalSetGrace
+INFO: Setting Wade's grace to 10.0
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Wade at 10.0000 from:
+  Date
+     Value: 6800
+     Normalized from range: [0, 6,800]
+     Resulting in: 4.0000
+  Grace:
+     Value: 10.0
+     Normalized from range: [0, 10]
+     Resulting in: 5.0000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Aug 14, 2018 2:48:08 AM emp.Employee promote
+FINE: Promote: Olson
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority internalSetGrace
+INFO: Setting Olson's grace to 9.0
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Olson at 8.5328 from:
+  Date
+     Value: 4973
+     Normalized from range: [0, 6,800]
+     Resulting in: 3.0328
+  Grace:
+     Value: 9.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.5000
+  Qualification:
+     Qualified For: [Bar]
+     Normalized from range: [0,25.0]
+     Resulting in: 1.0000
+Aug 14, 2018 2:48:08 AM emp.Employee promote
+FINE: Promote: Me
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority internalSetGrace
+INFO: Setting Me's grace to 9.0
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Me at 5.6124 from:
+  Date
+     Value: 590
+     Normalized from range: [0, 6,800]
+     Resulting in: 0.7124
+  Grace:
+     Value: 9.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Aug 14, 2018 2:48:08 AM emp.Employee promote
+FINE: Promote: Gregs
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority internalSetGrace
+INFO: Setting Gregs's grace to 9.0
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Gregs at 5.9194 from:
+  Date
+     Value: 1170
+     Normalized from range: [0, 6,800]
+     Resulting in: 1.0194
+  Grace:
+     Value: 9.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Aug 14, 2018 2:48:08 AM emp.Employee promote
+FINE: Promote: Brandon
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority internalSetGrace
+INFO: Setting Brandon's grace to 9.0
+Aug 14, 2018 2:48:08 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Brandon at 5.4191 from:
+  Date
+     Value: 225
+     Normalized from range: [0, 6,800]
+     Resulting in: 0.5191
+  Grace:
+     Value: 9.0
+     Normalized from range: [0, 10]
+     Resulting in: 4.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet <init>
+CONFIG: Intalizing EmployeeSet Object
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+INFO: Adding Kim to EmployeeSet
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+FINE: Successfully added Kim
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet lambda$0
+INFO: Kim passed adding from addingMultipleEmployee
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+INFO: Adding Wade to EmployeeSet
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+FINE: Successfully added Wade
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet lambda$0
+INFO: Wade passed adding from addingMultipleEmployee
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+INFO: Adding Chris to EmployeeSet
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+FINE: Successfully added Chris
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet lambda$0
+INFO: Chris passed adding from addingMultipleEmployee
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+INFO: Adding Blake to EmployeeSet
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+FINE: Successfully added Blake
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet lambda$0
+INFO: Blake passed adding from addingMultipleEmployee
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+INFO: Adding Chels to EmployeeSet
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+FINE: Successfully added Chels
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet lambda$0
+INFO: Chels passed adding from addingMultipleEmployee
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+INFO: Adding Brandon to EmployeeSet
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+FINE: Successfully added Brandon
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet lambda$0
+INFO: Brandon passed adding from addingMultipleEmployee
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+INFO: Adding Dena to EmployeeSet
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+FINE: Successfully added Dena
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet lambda$0
+INFO: Dena passed adding from addingMultipleEmployee
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+INFO: Adding Olson to EmployeeSet
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+FINE: Successfully added Olson
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet lambda$0
+INFO: Olson passed adding from addingMultipleEmployee
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+INFO: Adding Me to EmployeeSet
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+FINE: Successfully added Me
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet lambda$0
+INFO: Me passed adding from addingMultipleEmployee
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+INFO: Adding Alecia to EmployeeSet
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+FINE: Successfully added Alecia
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet lambda$0
+INFO: Alecia passed adding from addingMultipleEmployee
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+INFO: Adding Marcy to EmployeeSet
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+FINE: Successfully added Marcy
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet lambda$0
+INFO: Marcy passed adding from addingMultipleEmployee
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+INFO: Adding Paul 3 to EmployeeSet
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+FINE: Successfully added Paul 3
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet lambda$0
+INFO: Paul 3 passed adding from addingMultipleEmployee
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+INFO: Adding Paul 2 to EmployeeSet
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+FINE: Successfully added Paul 2
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet lambda$0
+INFO: Paul 2 passed adding from addingMultipleEmployee
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+INFO: Adding Gregs to EmployeeSet
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet addEmployee
+FINE: Successfully added Gregs
+Aug 14, 2018 2:48:08 AM emp.EmployeeSet lambda$0
+INFO: Gregs passed adding from addingMultipleEmployee

@@ -1,0 +1,16 @@
+Aug 14, 2018 2:25:56 AM emp.EmployeePriority calculateStaticPriority
+CONFIG: Calculated static Priority of Kim at 4.6124 from:
+  Date
+     Value: 590
+     Normalized from range: [0, 6,800]
+     Resulting in: 0.7124
+  Grace:
+     Value: 7.0
+     Normalized from range: [0, 10]
+     Resulting in: 3.5000
+  Qualification:
+     Qualified For: [Closer, Head_Wait, Cocktail, Sales]
+     Normalized from range: [0,25.0]
+     Resulting in: 0.4000
+Aug 14, 2018 2:25:56 AM emp.Employee <init>
+CONFIG: Generated generic employee Kim

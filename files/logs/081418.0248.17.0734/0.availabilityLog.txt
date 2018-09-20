@@ -1,0 +1,2 @@
+Aug 14, 2018 2:48:17 AM Availability.TimeOffList <init>
+FINER: Created new TimeOffList

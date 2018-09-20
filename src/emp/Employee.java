@@ -1,5 +1,7 @@
 package emp;
+import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -15,15 +17,44 @@ import Availability.WorkingAvailability;
 import assignment.AssignmentStatusFlag;
 import driver.Driver;
 import menu.ConsoleMenu;
+import racer.StopWatch;
 import restaurant.PositionType;
 import restaurant.Restaurant;
 import time.Week;
 import tools.CollectionTools;
+import tools.FileTools;
 import tools.NumberTools;
+import tools.SerialTools;
 
 public class Employee implements Comparable<Employee>, Serializable {
 	
-	public static void main(String[] args) {}
+	public static void main(String[] args) {
+		Employee kim = new Employee("Kim", 1,  LocalDate.of(2017, 1, 1), PositionType.getKing());
+		File file = new File(FileTools.DEFAULT_IO_DIRECTORY + "kim.txt");
+		long startTime, endTime;
+		startTime = System.nanoTime();
+		SerialTools.seralizeObject(kim, file);
+		endTime = System.nanoTime();
+		System.out.println("SERIALIZED IN " + StopWatch.nanosecondsToString(endTime - startTime));
+		
+		startTime = System.nanoTime();
+		Employee deserial = (Employee) SerialTools.deserializeObject(file);
+		endTime = System.nanoTime();
+		System.out.println("DE-SERIALIZED IN " + StopWatch.nanosecondsToString(endTime - startTime));
+		System.out.println(kim.equals(deserial));
+		
+		file = new File(FileTools.DEFAULT_IO_DIRECTORY + "kimCSV.txt");
+		startTime = System.nanoTime();
+		try (PrintWriter writer = new PrintWriter(file)) {
+			
+			writer.write(kim.toCSV());
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		endTime = System.nanoTime();
+		System.out.println("TOCSV IN " + StopWatch.nanosecondsToString(endTime - startTime));
+	}
 	
 	/******************************************************************************
 	 *                                                                            *
@@ -446,15 +477,19 @@ public class Employee implements Comparable<Employee>, Serializable {
 	public String toString() {
 		return NAME;
 	}
+	
+	public String toCSV() {
+		Driver.fileManagerLog.finest("toCSV for " + NAME);
+		return ID + "," + NAME + "," + START_DATE + ","  + PAY + ","
+				+ DESIRED_MAX_MINUTES + "," + DESIRED_MINUTES  + "," + MIN_MINUTES  + "," 
+				+ ACTUAL_MAX_MINUTES  + "," + GLOBAL_MAX_MINUTES + "," + currentMinutes
+				+ restaurant.NAME + "," + qualifiedFor.toString().replaceAll(" ", "")  + ","
+				+ (assignedShifts == null ? "" : assignedShifts.toString().replaceAll(" ", "") + "," ) 
+				+ availability.toCSV();
+	}
 }
 
-//public String toCSV() {
-//	Driver.fileManagerLog.finest("toCSV for " + NAME);
-//	return ID + "," + NAME + "," + START_DATE + ","  + PAY + ","
-//			+ ArrayTools.print2D(POSSIBLE_HOURS, false) + ","
-//			+ currentHours + "," + MAX_HOURS + "," + DESIRED_HOURS + "," + MIN_HOURS + ","
-//			+ qualifiedFor.toString().replaceAll(" ", "");
-//}
+
 //
 //public static <E extends Employee> E fromCSV(Class<E> employeeType) {
 //	if (employeeType.equals(Server.class)) {

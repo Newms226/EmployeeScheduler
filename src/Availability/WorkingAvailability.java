@@ -5,8 +5,15 @@ import tools.NumberTools;
 public class WorkingAvailability extends AvailabilityArray {
 
 	private static final long serialVersionUID = 8800343351835372328L;
+	private static final char ID_CHAR = 'w';
 	
 	private double currentHours;
+	
+	
+	@Override
+	char getID() {
+		return ID_CHAR;
+	}
 	
 	public double getCurrentHours() {
 		return currentHours;

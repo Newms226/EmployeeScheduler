@@ -32,6 +32,10 @@ public class TimeOffList implements Serializable {
 			return false;
 		}
 	}
+	
+	public String toCSV() {
+		return datesOff.toString().replaceAll(" ", "");
+	}
 //	
 //	private boolean testAllAndLog(Predicate<LocalDate> predicate, LocalDateInterval interval, String methodName) {
 //		log.entering(this.getClass().getName(), methodName);

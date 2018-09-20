@@ -1,0 +1,70 @@
+08/13/2018  03:36PM
+
+6: Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0
+SELECTION: Chris
+Chris PRIORITY: 4.6126
+  MINUTES > Current: 480 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Me PRIORITY: 5.6119
+  MINUTES > Current: 0 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > 
+Brandon PRIORITY: 5.4186
+  MINUTES > Current: 0 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > 
+Blake PRIORITY: 4.9922
+  MINUTES > Current: 0 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > 
+Paul 2 PRIORITY: 4.7319
+  MINUTES > Current: 0 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > 
+Chris PRIORITY: 4.6126
+  MINUTES > Current: 480 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0000
+  MINUTES > Current: 0 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > 
+Olson PRIORITY: 7.4660
+  MINUTES > Current: 300 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 08:00PM Bar = 10.0
+Alecia PRIORITY: 6.2528
+  MINUTES > Current: 300 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 04:00PM - Friday 09:00PM Bar = 10.0
+Dena PRIORITY: 5.9387
+  MINUTES > Current: 330 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 08:30PM Cocktail = 10.0
+Me PRIORITY: 5.6119
+  MINUTES > Current: 0 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > 
+Brandon PRIORITY: 5.4186
+  MINUTES > Current: 0 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > 
+Kim PRIORITY: 5.1187
+  MINUTES > Current: 390 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 04:30PM - Friday 11:00PM Cocktail = 10.0
+Marcy PRIORITY: 5.0186
+  MINUTES > Current: 0 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > 
+Paul 3 PRIORITY: 5.0186
+  MINUTES > Current: 0 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > 
+Blake PRIORITY: 4.9922
+  MINUTES > Current: 0 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > 
+Chels PRIORITY: 4.7726
+  MINUTES > Current: 480 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Closer = 10.0
+Gregs PRIORITY: 4.7352
+  MINUTES > Current: 480 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Closer = 10.0
+Paul 2 PRIORITY: 4.7319
+  MINUTES > Current: 0 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > 
+Chris PRIORITY: 4.6126
+  MINUTES > Current: 480 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0

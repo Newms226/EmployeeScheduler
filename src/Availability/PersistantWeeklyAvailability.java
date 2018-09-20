@@ -5,6 +5,7 @@ import tools.NumberTools;
 class PersistantWeeklyAvailability extends AvailabilityArray {
 
 	private static final long serialVersionUID = 3045147335727365848L;
+	public static final char ID_CHAR = 'p';
 
 	/******************************************************************************
 	 *                                                                            *
@@ -13,6 +14,11 @@ class PersistantWeeklyAvailability extends AvailabilityArray {
 	 *                                                                            *
 	 *                                                                            *
 	 ******************************************************************************/
+	
+	@Override
+	char getID() {
+		return ID_CHAR; 
+	}
 
 	@Override
 	boolean toAvailable(TimeChunk chunk) {

@@ -127,6 +127,8 @@ public abstract class AvailabilityArray implements Serializable {
 	
 	abstract boolean toNEVERAvailable(TimeChunk chunk);
 	
+	abstract char getID();
+	
 	/******************************************************************************
 	 *                                                                            *
 	 *                                                                            *
@@ -215,6 +217,16 @@ public abstract class AvailabilityArray implements Serializable {
 		list = null;
 		
 		return buffer.toString();
+	}
+	
+	public String toCSV() {
+		StringBuffer buffer = new StringBuffer(getID() + "{");
+		for (int i = 0; i < MAX_INDEX_VALUE - 2; i++) {
+			buffer.append(availability[i] + ",");
+		}
+		buffer.append(availability[MAX_INDEX_VALUE - 1] + "}");
+		return buffer.toString();
+		
 	}
 	
 	/******************************************************************************

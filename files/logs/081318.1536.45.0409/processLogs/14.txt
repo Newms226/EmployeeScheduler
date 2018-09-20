@@ -1,0 +1,76 @@
+08/13/2018  03:36PM
+
+14: Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0
+SELECTION: Gregs
+Gregs PRIORITY: 3.6994
+  MINUTES > Current: 900 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Closer = 10.0Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LIST STATUS: BELLOW_PERSONAL_MIN
+Dena PRIORITY: 4.7337
+  MINUTES > Current: 750 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 08:30PM Cocktail = 10.0Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0
+Chris PRIORITY: 4.6126
+  MINUTES > Current: 480 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0
+Me PRIORITY: 4.4895
+  MINUTES > Current: 480 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0
+Blake PRIORITY: 4.2434
+  MINUTES > Current: 360 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 05:00PM - Friday 11:00PM Bar = 9.0
+Kim PRIORITY: 4.0491
+  MINUTES > Current: 810 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 04:30PM - Friday 11:00PM Cocktail = 10.0Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0
+Chels PRIORITY: 3.7286
+  MINUTES > Current: 900 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Closer = 10.0Thursday 03:00PM - Thursday 10:00PM Closer = 7.0
+Gregs PRIORITY: 3.6994
+  MINUTES > Current: 900 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Closer = 10.0Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0
+
+EMPLOYEE LIST:
+Wade PRIORITY: 10.0000
+  MINUTES > Current: 0 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > 
+Olson PRIORITY: 7.4660
+  MINUTES > Current: 300 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 08:00PM Bar = 10.0
+Alecia PRIORITY: 6.2528
+  MINUTES > Current: 300 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 04:00PM - Friday 09:00PM Bar = 10.0
+Marcy PRIORITY: 5.0186
+  MINUTES > Current: 0 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > 
+Paul 3 PRIORITY: 5.0186
+  MINUTES > Current: 0 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > 
+Dena PRIORITY: 4.7337
+  MINUTES > Current: 750 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 08:30PM Cocktail = 10.0Thursday 03:00PM - Thursday 10:00PM Head_Wait = 8.0
+Chris PRIORITY: 4.6126
+  MINUTES > Current: 480 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Head_Wait = 10.0
+Me PRIORITY: 4.4895
+  MINUTES > Current: 480 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Head_Wait = 9.0
+Brandon PRIORITY: 4.4703
+  MINUTES > Current: 420 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Thursday 03:00PM - Thursday 10:00PM Cocktail = 8.0
+Blake PRIORITY: 4.2434
+  MINUTES > Current: 360 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 05:00PM - Friday 11:00PM Bar = 9.0
+Kim PRIORITY: 4.0491
+  MINUTES > Current: 810 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 04:30PM - Friday 11:00PM Cocktail = 10.0Thursday 03:00PM - Thursday 10:00PM Cocktail = 7.0
+Paul 2 PRIORITY: 3.9038
+  MINUTES > Current: 420 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Thursday 03:00PM - Thursday 10:00PM Closer = 8.0
+Chels PRIORITY: 3.7286
+  MINUTES > Current: 900 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Closer = 10.0Thursday 03:00PM - Thursday 10:00PM Closer = 7.0
+Gregs PRIORITY: 3.6994
+  MINUTES > Current: 900 Min: 0 Desired: 2,100 D.Max: 2,400 A.Max: 2,400
+  CURRENT SHIFTS > Friday 03:00PM - Friday 11:00PM Closer = 10.0Thursday 03:00PM - Thursday 10:00PM Head_Wait = 7.0
